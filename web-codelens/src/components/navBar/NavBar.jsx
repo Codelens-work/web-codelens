@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { Container, Navbar, Form, Nav, Button } from "react-bootstrap";
-//import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 //import logo from "";
 import { FaGlobe } from 'react-icons/fa';
 import './navBar.css';
 
 const NavBar = () => {
     const [navActive, setNavActive] = useState(false);
-    //    const navigate = useNavigate();
+    const navigate = useNavigate();
 
 
     // cambia el estado/color de la navbar al hacer scroll
@@ -38,17 +38,18 @@ const NavBar = () => {
                             style={{ cursor: 'pointer' }}
                         />
                     </Navbar.Brand>
-                    <Button variant="outline-light" className="mx-2 btn" >Inicio</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Quienes Somos?</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Servicios</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Contacto</Button>
-                    <Button variant="outline-light" className="mx-2 btn" > Blog</Button>
-                    
+
+                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/")}>Inicio</Button>
+                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/nosotros")}>Quienes Somos?</Button>
+                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/servicios")}>Servicios</Button>
+                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/nosotros")}>Contacto</Button>
+                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/blog")}>Blog</Button>
+
                     <spam><FaGlobe /></spam>
-                    <Form.Select className="btn"> 
+                    <Form.Select className="btn">
                         <option value="1">EN</option>
                         <option value="2">ES</option>
-                    </Form.Select> 
+                    </Form.Select>
                 </Nav>
             </Navbar>
         </header>

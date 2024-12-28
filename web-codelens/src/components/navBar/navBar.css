@@ -1,0 +1,65 @@
+
+:root {
+    /* Colores */
+    --purple: #9B5DE5;
+    --white: #FFFFFF;
+    --black: #2E2E2E;
+    --marine-green: #00C4B4;
+}
+
+.navbar-custom {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out; /* agrega padding a la transicion */
+    padding: 1rem 0; /* relleno inicial */
+    background-color: var(--purple);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.navbar-custom.active {
+  position: fixed;
+  background: rgba(155, 93, 229, 0.7); /* purple con opacidad */
+  padding: 0.5rem 0; /* saca relleno al hacer scroll */
+  z-index: 100;
+}
+
+.navbar-custom .btn { 
+  color: var(--white); 
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  border: none;
+  background: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-custom .btn:focus,
+.navbar-custom .btn:active {
+    outline: none;
+    font-weight: bold;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--marine-green); /* Subrayado verde marino */
+    color: var(--marine-green); /* Cambia el color del texto a verde marino */
+    transform: translateY(-10px);
+}
+
+.navbar-custom .btn:hover {
+    color: var(--marine-green); 
+}
+
+.navbar-custom .btn-light {
+  background-color: var(--white);
+  color: var(--purple); 
+}
+
+.logo {
+  margin-left: 10%;
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out; /* Transición para logo */
+}
+
+body {
+    padding-top: 90px; /* ajustar dependiendo la altura del navbar */
+  }

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Navbar, Form, Nav, Button } from "react-bootstrap";
+import { Navbar, Form, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 //import logo from "";
 import { FaGlobe } from 'react-icons/fa';
@@ -39,11 +39,12 @@ const NavBar = () => {
                         />
                     </Navbar.Brand>
 
-                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/")}>Inicio</Button>
-                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/nosotros")}>Quienes Somos?</Button>
-                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/servicios")}>Servicios</Button>
-                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/nosotros")}>Contacto</Button>
-                    <Button variant="outline-light" className="mx-2" onClick={() => navigate("/blog")}>Blog</Button>
+                    <a href="/" className="mx-2 btn btn-outline-light">Inicio</a>
+                    <a href="/nosotros" className="mx-2 btn btn-outline-light">Quienes Somos?</a>
+                    <a href="/servicios" className="mx-2 btn btn-outline-light">Servicios</a>
+                    <a href="/contacto" className="mx-2 btn btn-outline-light">Contacto</a>
+                    <a href="/blog" className="mx-2 btn btn-outline-light">Blog</a>
+
 
                     <spam><FaGlobe /></spam>
                     <Form.Select className="btn">

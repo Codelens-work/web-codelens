@@ -1,11 +1,5 @@
 
-:root {
-    /* Colores */
-    --purple: #9B5DE5;
-    --white: #FFFFFF;
-    --black: #2E2E2E;
-    --marine-green: #00C4B4;
-}
+
 
 .navbar-custom {
     position: fixed;

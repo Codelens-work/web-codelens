@@ -14,24 +14,30 @@ export default function Footer() {
         </div>
         <div className="servicesContainer">
           <span className="containerTitle">Servicios</span>
-          <li><a href="#">Desarrollo Web</a></li>
-          <li><a href="#">Diseño Web</a></li>
-          <li><a href="#">Mejora y Optimización</a></li>
-          <li><a href="#">Desarrollo de Aplicaciones Web</a></li>
-          <li><a href="#">Desarrollo de APIS</a></li>
+          <ul className="footerList">
+            <li><a href="#">Desarrollo Web</a></li>
+            <li><a href="#">Diseño Web</a></li>
+            <li><a href="#">Mejora y Optimización</a></li>
+            <li><a href="#">Desarrollo de Aplicaciones Web</a></li>
+            <li><a href="#">Desarrollo de APIS</a></li>
+          </ul>
         </div>
         <div className="wayContainer">
           <span className="containerTitle">Encuentra tu camino</span>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Blog</a></li>
+          <ul className="footerList">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre Nosotros</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
         <div className="helpContainer">
           <span className="containerTitle">Ayuda</span>
-          <li><a href="#">FAQs</a></li>
-          <li><a href="#">Contacto</a></li>
-          <li><a href="#">Términos y condiciones</a></li>
-          <li><a href="#">Política de privacidad</a></li>
+          <ul className="footerList">
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
         </div>
       </div>
       <div className="copyright"><span>- 2025 - Codelens -</span></div>

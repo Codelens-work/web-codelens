@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Container, Navbar, Form, Nav, Button } from "react-bootstrap";
+import { Navbar, Form, Nav, Button } from "react-bootstrap";
 //import { useNavigate } from "react-router-dom";
 //import logo from "";
 import { FaGlobe } from 'react-icons/fa';
@@ -38,12 +38,14 @@ const NavBar = () => {
                             style={{ cursor: 'pointer' }}
                         />
                     </Navbar.Brand>
-                    <Button variant="outline-light" className="mx-2 btn" >Inicio</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Quienes Somos?</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Servicios</Button>
-                    <Button variant="outline-light" className="mx-2 btn" >Contacto</Button>
-                    <Button variant="outline-light" className="mx-2 btn" > Blog</Button>
-                    
+
+                    <a href="/" className="mx-2 btn btn-outline-light">Inicio</a>
+                    <a href="/nosotros" className="mx-2 btn btn-outline-light">Quienes Somos?</a>
+                    <a href="/servicios" className="mx-2 btn btn-outline-light">Servicios</a>
+                    <a href="/contacto" className="mx-2 btn btn-outline-light">Contacto</a>
+                    <a href="/blog" className="mx-2 btn btn-outline-light">Blog</a>
+
+
                     <spam><FaGlobe /></spam>
                     <Form.Select className="btn"> 
                         <option value="1">EN</option>

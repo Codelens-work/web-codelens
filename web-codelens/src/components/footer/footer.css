@@ -1,9 +1,56 @@
+footer {
+  padding: 60px;
+  width: 100%;
+}
+.containerTitle {
+  font-size: 20px;
+  color: var(--purple);
+}
+.firstRowContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
 #footerLogo {
   height: 158px;
   width: 242px;
 }
 
+/*Iconos de redes sociales*/
 .mediaContainer a {
   height: 30px;
   width: 30px;
+}
+
+.socialLogoContainer {
+  width: 305px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+
+.socialLogoContainer span {
+  color: var(--black);
+  text-align: center;
+  font-size: 18px;
+}
+
+.mediaContainer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }

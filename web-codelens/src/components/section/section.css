@@ -4,6 +4,6 @@ section {
 
 @media(min-width: 768px) {
     section {
-        padding: 60px;
+        padding: 60px 20px;
     }
 }

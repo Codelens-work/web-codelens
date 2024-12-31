@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navbar, Form, Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-//import logo from "";
+//import logo from '/public/icons/logo_nombre.svg';
 import { FaGlobe } from 'react-icons/fa';
 import './navBar.css';
 
@@ -27,18 +27,13 @@ const NavBar = () => {
         <header>
             <Navbar className={`navbar-custom ${navActive ? 'active' : ''}`} variant="light">
                 <Nav className="d-flex align-items-center">
-                    <Navbar.Brand>
-                        <img
-                            width={navActive ? "10" : "50"} // cambia el tamaño del logo al hacer scroll
-                            height={navActive ? "40" : "50"}
-                            className="logo"
-                            // src={logo}
-                            alt="Logo"
-                            //onClick={() => navigate("/")}
-                            style={{ cursor: 'pointer' }}
-                        />
-                    </Navbar.Brand>
-
+                    <img
+                        className="logo"
+                        src='public\icons\logo_nombre.svg'
+                        alt="Logo"
+                        onClick={() => navigate("/")}
+                        style={{ cursor: 'pointer' }}
+                    />
                     <a href="/" className="mx-2 btn btn-outline-light">Inicio</a>
                     <a href="/nosotros" className="mx-2 btn btn-outline-light">Quienes Somos?</a>
                     <a href="/servicios" className="mx-2 btn btn-outline-light">Servicios</a>

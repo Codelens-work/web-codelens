@@ -10,14 +10,16 @@ footer {
   width: 100%;
   height: auto;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 .firstRowContainer > div {
 height: auto;
-padding: 3px;
+padding: 10px;
+flex: 1;
+min-width: min(100%, 300px);
 }
 
 #footerLogo {
@@ -77,4 +79,11 @@ margin-top: 10px;
 display: flex;
 flex-direction: column;
 gap: 25px;
+}
+
+
+@media (width <= 1000px) {
+  .firstRowContainer {
+    justify-content: space-evenly;
+  }
 }

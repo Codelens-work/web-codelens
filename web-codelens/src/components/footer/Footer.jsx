@@ -5,11 +5,11 @@ export default function Footer() {
     <footer>
       <div className='firstRowContainer'>
         <div className="socialLogoContainer">
-          <a href="/"><img id="footerLogo" src="/src/assets/icons/logo_Completo.svg" alt="Logo" /></a>
+          <a href="/"><img id="footerLogo" src="/icons/logo_completo.svg" alt="Logo" /></a>
           <span>Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos</span>
           <div className="mediaContainer">
-            <a href="https://www.instagram.com/codelens.tech/"><img src="/src/assets/icons/icon_instagram.svg" alt="Instagram" /></a>
-            <a href="#"><img src="/src/assets/icons/icon_facebook.svg" alt="Facebook" /></a>
+            <a href="https://www.instagram.com/codelens.tech/"><img src="/icons/icon_instagram.svg" alt="Instagram" /></a>
+            <a href="#"><img src="/icons/icon_facebook.svg" alt="Facebook" /></a>
           </div>
         </div>
         <div className="servicesContainer">

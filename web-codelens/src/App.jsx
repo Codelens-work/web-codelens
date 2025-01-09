@@ -25,7 +25,63 @@ function App() {
       path:"/servicios/app-web",
       element:(
         <MainLayout>
-          {/* <Services???AppWeb???/> */}
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/seo",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/diseno-web",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/desarrollo-web",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/desarrollo-api",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/terminos-y-condiciones",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/politica-de-privacidad",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/blog", 
+      element:(
+        <MainLayout>
+          {/* </> */}
         </MainLayout>
       ),
     },

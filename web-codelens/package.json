@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "i18next": "^24.2.1",
+    "i18next-http-backend": "^3.0.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^18.3.1",
+    "react-i18next": "^15.4.0",
     "react-icons": "^5.4.0",
     "react-router-dom": "^7.1.1",
     "reactstrap": "^9.2.3"

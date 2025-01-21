@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import {
   Navbar,
-  Form,
   Nav,
   Dropdown,
   DropdownMenu,
@@ -10,11 +9,11 @@ import {
 
 import { useNavigate } from "react-router-dom";
 //import logo from '/public/icons/logo_nombre.svg';
-import { FaGlobe } from "react-icons/fa";
+//import { FaGlobe } from "react-icons/fa";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { useLanguage } from "../../costantsLanguage/LanguageContext.jsx";
+//import { useLanguage } from "../../costantsLanguage/LanguageContext.jsx";
 
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
@@ -62,7 +61,7 @@ const NavBar = () => {
             onClick={() => navigate("/")}
             style={{ cursor: "pointer" }}
           />
-          <a href="/" className="mx-2 btn btn-outline-light">
+          <a onClick={() => navigate("/")} className="mx-2 btn btn-outline-light">
             Inicio
           </a>
           <a
@@ -84,23 +83,23 @@ const NavBar = () => {
               <Dropdown.Item onClick={() => navigate("/servicios/app-web")}>
                 App Web
               </Dropdown.Item>
-              <Dropdown.Item href="/servicios/seo">SEO</Dropdown.Item>
-              <Dropdown.Item href="/servicios/diseno-web">
+              <Dropdown.Item onClick={() => navigate("/servicios/seo")} >SEO</Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/servicios/diseno-web")}  >
                 Diseño Web
               </Dropdown.Item>
-              <Dropdown.Item href="/servicios/desarrollo-web">
+              <Dropdown.Item onClick={() => navigate("/servicios/desarrollo-web")} >
                 Desarrollo Web
               </Dropdown.Item>
-              <Dropdown.Item href="/servicios/desarrollo-api">
+              <Dropdown.Item onClick={() => navigate("/servicios/desarrollo-api")}>
                 Desarrollo API
               </Dropdown.Item>
             </DropdownMenu>
           </Dropdown>
 
-          <a href="/contacto" className="mx-2 btn btn-outline-light">
+          <a onClick={() => navigate("/contacto")} className="mx-2 btn btn-outline-light">
             Contacto
           </a>
-          <a href="/blog" className="mx-2 btn btn-outline-light">
+          <a onClick={() => navigate("/blog")} className="mx-2 btn btn-outline-light">
             Blog
           </a>
 

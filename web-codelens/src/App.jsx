@@ -1,7 +1,8 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from './components/mainLayout/MainLayout';
-
+import LegalSection from './components/lagalSection/LegalSection';
+import Services from './components/services/Services';
 
 function App() {
   const router = createBrowserRouter([
@@ -9,7 +10,7 @@ function App() {
       path:"/",
       element:(
         <MainLayout>
-          {/* <Home/> */}
+          <Services/>
         </MainLayout>
       ),
     },

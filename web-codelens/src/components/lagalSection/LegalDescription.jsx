@@ -6,7 +6,7 @@ const LegalDescription = ({ img, paragraph, secondParagraph, thirdParagraph, tex
   return (
     <div className="legal-description-container">
       <div className="right-column">
-        <img src={img} alt={`img${img}`}  />
+        <img src={img} alt={`img`}  />
       </div>
 
       <div className="left-column">

@@ -61,7 +61,10 @@ const NavBar = () => {
             onClick={() => navigate("/")}
             style={{ cursor: "pointer" }}
           />
-          <a onClick={() => navigate("/")} className="mx-2 btn btn-outline-light">
+          <a
+            onClick={() => navigate("/")}
+            className="mx-2 btn btn-outline-light"
+          >
             Inicio
           </a>
           <a
@@ -83,11 +86,13 @@ const NavBar = () => {
               <Dropdown.Item onClick={() => navigate("/servicios/app-web")}>
                 App Web
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/servicios/seo")} >SEO</Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/servicios/diseno-web")}  >
+              <Dropdown.Item onClick={() => navigate("/servicios/seo")}>
+                SEO
+              </Dropdown.Item>
+              <Dropdown.Item onClick={() => navigate("/servicios/diseno-web")}>
                 Diseño Web
               </Dropdown.Item>
-              <Dropdown.Item onClick={() => navigate("/servicios/desarrollo-web")} >
+              <Dropdown.Item onClick={() => navigate("/servicios/desarrollo-web")}>
                 Desarrollo Web
               </Dropdown.Item>
               <Dropdown.Item onClick={() => navigate("/servicios/desarrollo-api")}>
@@ -96,10 +101,16 @@ const NavBar = () => {
             </DropdownMenu>
           </Dropdown>
 
-          <a onClick={() => navigate("/contacto")} className="mx-2 btn btn-outline-light">
+          <a
+            onClick={() => navigate("/contacto")}
+            className="mx-2 btn btn-outline-light"
+          >
             Contacto
           </a>
-          <a onClick={() => navigate("/blog")} className="mx-2 btn btn-outline-light">
+          <a
+            onClick={() => navigate("/blog")}
+            className="mx-2 btn btn-outline-light"
+          >
             Blog
           </a>
 

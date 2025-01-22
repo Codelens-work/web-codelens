@@ -5,7 +5,7 @@ import { RotatingTitle } from '../../components/rotatingTitle/RotatingTiltle';
 import LinkButton from '../../components/linkButton/LinkButton';
 import { SpanTitleHome } from '../../components/span-title-home/SpanTitleHome';
 
-export function Home() {
+const Home = () => {
   return (
     <Hero 
       media={{
@@ -31,3 +31,5 @@ export function Home() {
     </Hero>
   );
 }
+
+export default Home;

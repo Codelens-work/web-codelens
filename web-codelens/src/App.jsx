@@ -3,6 +3,10 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from './components/mainLayout/MainLayout';
 import LegalSection from './components/lagalSection/LegalSection';
 import Services from './components/services/Services';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Blog from './pages/blog/Blog';
+
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +14,7 @@ function App() {
       path:"/",
       element:(
         <MainLayout>
-          <Services/>
+          <Home/>
         </MainLayout>
       ),
     },
@@ -19,30 +23,6 @@ function App() {
       element:(
         <MainLayout>
           <About />
-        </MainLayout>
-      ),
-    },
-    {
-      path:"/servicios",
-      element:(
-        <MainLayout>
-          <WebDevelopment />
-        </MainLayout>
-      ),
-    },
-    {
-      path:"/blog",
-      element:(
-        <MainLayout>
-          <Blog />
-        </MainLayout>
-      ),
-    },
-    {
-      path:"/terminos",
-      element:(
-        <MainLayout>
-          {/* </> */}
         </MainLayout>
       ),
     },
@@ -98,7 +78,7 @@ function App() {
       path:"/blog", 
       element:(
         <MainLayout>
-          {/* </> */}
+          <Blog />
         </MainLayout>
       ),
     },

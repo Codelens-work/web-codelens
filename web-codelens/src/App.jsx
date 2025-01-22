@@ -18,12 +18,28 @@ function App() {
       path:"/nosotros",
       element:(
         <MainLayout>
-          {/* <About/> */}
+          <About />
         </MainLayout>
       ),
     },
     {
-      path:"/servicios/app-web",
+      path:"/servicios",
+      element:(
+        <MainLayout>
+          <WebDevelopment />
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/blog",
+      element:(
+        <MainLayout>
+          <Blog />
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/terminos",
       element:(
         <MainLayout>
           {/* </> */}

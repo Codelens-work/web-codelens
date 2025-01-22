@@ -1,0 +1,23 @@
+.hero-content-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.title-container{
+    margin-top: 62px;
+}
+
+.hero-button{
+    margin-top: 67px;
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .span-title-container{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 130px;
+        margin-top: 80px;
+    }
+}

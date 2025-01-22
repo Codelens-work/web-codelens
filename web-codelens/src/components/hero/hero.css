@@ -1,0 +1,20 @@
+.hero {
+    position: relative;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 1rem;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  @media(min-width: 1024px) {
+    .hero{
+      height: 900px;
+    }
+  }

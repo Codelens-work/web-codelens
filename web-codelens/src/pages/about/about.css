@@ -1,0 +1,34 @@
+.about-hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about-title{
+    text-align: center;
+    font-size: 40px;
+    color: var(--white);
+}
+
+.about-description{
+    text-align: center;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--black);
+    margin-top: 10px;
+    max-width: 520px;
+}
+
+
+.hero-button{
+    margin-top: 40px;
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .about-title{
+        font-size: 70px;
+    }
+}

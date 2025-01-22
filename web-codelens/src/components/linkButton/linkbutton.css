@@ -1,0 +1,33 @@
+.link-btn {
+    display: inline-block;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;  
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Tamaños */
+.link-btn-normal{
+    padding: 0.8rem 1rem;
+}
+
+.link-btn-small{
+    padding: 0.9rem 0.2rem;
+    width: 166px;
+}
+
+
+
+.link-btn:hover{
+    background-color: #b780fa;
+    color: var(--black);
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+
+}

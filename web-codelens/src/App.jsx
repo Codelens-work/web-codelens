@@ -1,6 +1,10 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from './components/mainLayout/MainLayout';
+import { Home } from './pages/home/Home';
+import { About } from './pages/about/About';
+import { Blog } from './pages/blog/Blog';
+import { WebDevelopment } from './pages/services/webDevelopment/WebDevelopment';
 
 
 function App() {
@@ -9,7 +13,7 @@ function App() {
       path:"/",
       element:(
         <MainLayout>
-          {/* <Home/> */}
+          <Home/>
         </MainLayout>
       ),
     },
@@ -17,15 +21,30 @@ function App() {
       path:"/nosotros",
       element:(
         <MainLayout>
-          {/* <About/> */}
+          <About />
         </MainLayout>
       ),
     },
     {
-      path:"/servicios/app-web",
+      path:"/servicios",
       element:(
         <MainLayout>
-          {/* <Services???AppWeb???/> */}
+          <WebDevelopment />
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/blog",
+      element:(
+        <MainLayout>
+          <Blog />
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/terminos",
+      element:(
+        <MainLayout>
         </MainLayout>
       ),
     },

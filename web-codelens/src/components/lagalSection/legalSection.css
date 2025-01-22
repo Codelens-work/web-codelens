@@ -1,0 +1,50 @@
+.legal-description-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 25px;
+    justify-content: center;
+    padding-top    : 60px;
+    padding-bottom : 30px;
+}
+
+.left-column,
+.right-column {
+    flex   : 1;
+    /* columnas proporciones iguales */
+    padding: 0;
+}
+
+.right-column {
+    border         : 1px solid black;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.right-column img {
+    height: 568px;
+    width : 568px;
+    top   : 755px;
+    left  : 128px;
+}
+
+.left-column {
+
+    border         : 1px solid black;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1rem;
+    padding        : 20px;
+}
+
+.left-column p {
+    font-size  : 1rem;
+    line-height: 1.5rem;
+}
+
+.textColor {
+    color: #00C4B4;
+
+}

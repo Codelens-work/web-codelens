@@ -1,11 +1,8 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from './components/mainLayout/MainLayout';
-import { Home } from './pages/home/Home';
-import { About } from './pages/about/About';
-import { Blog } from './pages/blog/Blog';
-import { WebDevelopment } from './pages/services/webDevelopment/WebDevelopment';
-
+import LegalSection from './components/lagalSection/LegalSection';
+import Services from './components/services/Services';
 
 function App() {
   const router = createBrowserRouter([
@@ -13,7 +10,7 @@ function App() {
       path:"/",
       element:(
         <MainLayout>
-          <Home/>
+          <Services/>
         </MainLayout>
       ),
     },
@@ -45,6 +42,63 @@ function App() {
       path:"/terminos",
       element:(
         <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/seo",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/diseno-web",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/desarrollo-web",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/servicios/desarrollo-api",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/terminos-y-condiciones",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/politica-de-privacidad",
+      element:(
+        <MainLayout>
+          {/* </> */}
+        </MainLayout>
+      ),
+    },
+    {
+      path:"/blog", 
+      element:(
+        <MainLayout>
+          {/* </> */}
         </MainLayout>
       ),
     },

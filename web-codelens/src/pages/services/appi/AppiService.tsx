@@ -4,10 +4,12 @@ import { Hero } from '../../../components/hero/Hero';
 import './appiservice.css';
 import LinkButton from '../../../components/linkButton/LinkButton';
 
+import Services from '../../../components/services/Services.jsx';
 
 
 export function AppiService() {
   return (
+    <>
     <Hero
       media={{
         type: 'image',
@@ -26,5 +28,19 @@ export function AppiService() {
             />
        </div>
     </Hero>
+
+    <Services
+            img="../service/api.svg"
+            titleOne="Por Qué Elegir APIs Personalizadas para Tu Negocio?"
+            paragraphOne="En un mundo digital donde la conectividad y la eficiencia son clave, las APIs personalizadas te permiten crear soluciones hechas a medida para satisfacer las necesidades específicas de tu negocio."
+            titleTwo="Beneficios de elegirnos"
+            items={[
+              "APIs listas para integraciones masivas.",
+              "Seguridad garantizada para proteger datos.",
+              "Documentación clara para desarrolladores.",
+              "Soporte técnico post-implementación."
+            ]}
+          />
+    </>
   );
 }

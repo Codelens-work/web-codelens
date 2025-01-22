@@ -1,16 +1,16 @@
 .service-container {
     display        : flex;
     flex-wrap      : wrap;
-    gap            : 25px;
+    gap            : 35px;
     justify-content: center;
-    padding-top    : 60px;
-    padding-bottom : 30px;
+    padding-top    : 0;
+    padding-bottom : 0;
+    background     : linear-gradient(180deg, rgba(155, 93, 229, 0.4) 0%, #D3E7F9 100%);
 }
 
 .left-column,
 .right-column {
     flex   : 1;
-    /* columnas proporciones iguales */
     padding: 0;
 }
 
@@ -19,7 +19,7 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
-    padding: 0px;
+    padding        : 0px;
 }
 
 .left-column img {
@@ -30,22 +30,33 @@
 }
 
 .right-column {
-
     border         : 1px solid black;
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
     gap            : 1rem;
-    padding        : 40px;
+    padding        : 50px;
 }
 
-.right-column p {
+.paragraphOne p {
+    font-size    : 1rem;
+    line-height  : 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+
+.items p {
     font-size  : 1rem;
     line-height: 1.5rem;
+
 }
+
 .right-column h2 {
-    font-size  : 1rem;
+    margin-top : .1rem;
+    font-size  : 2rem;
     line-height: 1.5rem;
+    width      : 30rem;
+    line-height: 2.5rem;
 }
-

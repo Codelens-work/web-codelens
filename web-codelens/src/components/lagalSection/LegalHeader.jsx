@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 const LegalHeader = ({title}) => {
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className='legal-header'>
+      <h2>{title}</h2>
     </div>
   )
 }

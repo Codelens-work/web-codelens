@@ -37,6 +37,16 @@ export function WebDesing() {
           "Diseño Adaptado a Dispositivos: Totalmente responsive para todos los dispositivos.",
           "Consistencia de Marca: Identidad visual alineada y coherente.",
         ]}
+
+        
+        titleCarts={[
+          "Diseño de UI/UX centrado en el usuario",
+          "Identidad Visual Alineada con tu Marca",
+          "Optimización Visual para Todas las Plataformas",
+          "Prototipos Interactivos y Revisión",
+         
+        ]}
+        descriptionCart={["Creamos interfaces intuitivas y visualmente atractivas que guían a los usuarios de manera natural.", "Desarrollamos una identidad visual que captura la esencia de tu negocio, desde tipografías hasta colores y estilos.", "Cada diseño es totalmente responsive y se adapta a todos los dispositivos, asegurando una experiencia perfecta.", "Realizamos prototipos para que puedas visualizar la estructura y diseño de cada sección antes del desarrollo."]}
       />
     </>
   );

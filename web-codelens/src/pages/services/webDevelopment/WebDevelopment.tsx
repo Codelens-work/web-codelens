@@ -5,8 +5,6 @@ import "./WebDevelopment.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 
-
-
 export function WebDevelopment() {
   return (
     <>
@@ -38,6 +36,20 @@ export function WebDevelopment() {
           "Escalabilidad: Preparados para el crecimiento de tu negocio.",
           "Optimización Completa: Enfocados en rendimiento, seguridad y SEO desde el inicio.",
           "Experiencia Única de Usuario: Interfaces intuitivas y amigables para cualquier dispositivo.",
+        ]}
+
+        
+        titleCarts={[
+          "Desarrollo Completo y Personalizado",
+          "Integración de Funcionalidades Específicas",
+          "Optimización para Dispositivos Móviles y SEO",
+          "Asesoramiento en Hosting y Dominios",
+        ]}
+        descriptionCart={[
+          "Diseñamos y construimos un sitio web que representa a tu marca de manera auténtica.",
+          "Desde sistemas de reservas hasta carritos de compra, integramos todas las funcionalidades que necesitas.",
+          "Nuestro desarrollo es completamente responsivo y optimizado para mejorar tu posicionamiento en motores de búsqueda.",
+          "Te ayudamos a elegir el hosting y dominio que mejor se adapten a las necesidades de tu negocio.",
         ]}
       />
     </>

@@ -2,6 +2,7 @@ import React from "react";
 import LegalHeader from "./LegalHeader";
 import LegalDescription from "./LegalDescription";
 import PropTypes from "prop-types";
+import SectionDisplay from "./SectionDisplay";
 
 const LegalSection = ({
   title,
@@ -9,6 +10,8 @@ const LegalSection = ({
   secondParagraph,
   thirdParagraph,
   textColor,
+  titles,
+  description,
 }) => {
   return (
     <div>
@@ -19,6 +22,7 @@ const LegalSection = ({
         thirdParagraph={thirdParagraph}
         textColor={textColor}
       />
+      <SectionDisplay titles={titles} description={description} />
     </div>
   );
 };
@@ -29,6 +33,9 @@ LegalSection.propTypes = {
   secondParagraph: PropTypes.string.isRequired,
   thirdParagraph: PropTypes.string,
   textColor: PropTypes.string,
+
+  titles: PropTypes.arrayOf(PropTypes.string).isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default LegalSection;

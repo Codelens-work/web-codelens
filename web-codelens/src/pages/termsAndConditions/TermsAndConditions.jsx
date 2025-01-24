@@ -15,6 +15,10 @@ const TermsAndConditions = () => {
         "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a"
       }
       textColor={"comunicarse con nosotros."}
+      
+      
+      titles={["Acuerdo de Servicios","Medios de Pago","Política de Reembolsos","Propiedad Intelectual","Productos y servicios","Enlaces a sitios de terceros","Confidencialidad","Modificaciones y Revisiones","Exención de responsabilidad","Soporte Técnico y Mantenimiento","Fuerza mayor","Modificaciones a los Términos y Condiciones","Derechos de desistimiento","Terminación de servicio"]}
+      description={["Al contratar los servicios de desarrollo de software y diseño web ofrecidos por CodeLens, el cliente acepta todos los términos y condiciones aquí establecidos. Nos comprometemos a prestar nuestros servicios de manera profesional, cumpliendo con los estándares de calidad y plazos acordados con el cliente.","texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2","Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3","Texto4","Texxto5","Texto6","texto7","texto8","texto9","texto10"]}
     />
   );
 };

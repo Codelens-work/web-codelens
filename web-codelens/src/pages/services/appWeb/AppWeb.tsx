@@ -42,6 +42,15 @@ export function AppWeb() {
           "Optimización de Recursos: Automatización de tareas y mejor gestión del tiempo.",
           "Seguridad Personalizada: Protocolos de seguridad avanzados para proteger la información sensible.",
         ]}
+
+        
+        titleCarts={[
+          "Análisis Personalizado y Diseño de Prototipos",
+          "Desarrollo de Sistemas de Gestión Internos",
+          "Integración con Herramientas Externas",
+          "Escalabilidad y Soporte Técnico",
+         ]}
+        descriptionCart={["Evaluamos tus necesidades y diseñamos prototipos interactivos para que visualices el proyecto antes de empezar.", "Creamos aplicaciones para mejorar la gestión interna, como sistemas de control de inventario o seguimiento de pedidos.", "Conectamos tu aplicación con otros sistemas o herramientas que ya utilizas, como CRMs o ERPs, para optimizar los flujos de trabajo.", "Nos aseguramos de que tu aplicación pueda crecer junto a tu negocio, brindando soporte técnico y actualizaciones cuando lo necesites."]}
       />
     </>
   );

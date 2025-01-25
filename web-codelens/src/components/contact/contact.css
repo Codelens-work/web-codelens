@@ -1,0 +1,337 @@
+.contact-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 25px;
+    justify-content: center;
+    padding-top    : 5px;
+}
+
+.left-c,
+.right-c {
+    flex   : 1;
+    padding: 0;
+}
+
+.right-c {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 5rem 2rem 6rem 0rem;
+}
+
+.left-c {
+
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1rem;
+    padding        : 20px;
+    margin         : 0.5rem 0rem 7rem 2rem;
+
+}
+
+/*parte de texto*/
+.logo-codelens {
+    max-width : 140px;
+    max-height: 84px;
+}
+
+.logo-social {
+    max-width : 40px;
+    max-height: 40px;
+    margin    : .5rem;
+
+}
+
+.text-container {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.h2-invitation-one {
+    font-family: Roboto;
+    font-size  : 40px;
+    font-weight: 500;
+    line-height: 46.88px;
+    text-align : left;
+
+}
+
+.h2-invitation-two {
+    font-family: Roboto;
+    font-size  : 48px;
+    font-weight: 500;
+    line-height: 56.25px;
+    text-align : center;
+}
+
+.h3-invitation {
+    font-family: Roboto;
+    font-size  : 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    text-align : left;
+    color      : var(--purple);
+
+}
+
+.invitation-one {
+    width : 479px;
+    height: 120px;
+    top   : 4077px;
+    left  : 110px;
+
+}
+
+.invitation-two {
+    font-family: Roboto;
+    font-size  : 18px;
+    font-weight: 300;
+    line-height: 21.09px;
+    text-align : center;
+
+}
+
+.invitation-three {
+    font-family: Roboto;
+    font-size  : 20px;
+    font-weight: 300;
+    line-height: 23.44px;
+    text-align : left;
+
+}
+
+
+.email {
+    font-family: Roboto;
+    font-size  : 16px;
+    font-weight: 300;
+    line-height: 18.75px;
+    text-align : left;
+}
+
+
+
+
+
+/*CONTACTO FORM*/
+
+.container-form-section {
+    width           : 686px;
+    height          : 762px;
+    margin          : 0 auto;
+    border-radius   : 10px;
+    border          : 2px solid var(--purple);
+    padding         : 1.5rem;
+    background-color: #ffffff;
+    box-shadow      : 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+
+}
+
+
+.form-container {
+    width: 100%;
+
+}
+
+
+.form-group {
+    display       : flex;
+    flex-direction: column;
+    gap           : 0.5rem;
+    text-align    : left;
+    font-size     : 1rem;
+    color         : var(--purple);
+    margin-top    : 2.3rem;
+
+}
+
+
+/*Caja del Input */
+input,
+textarea {
+    max-width : 619px;
+    box-sizing: border-box;
+    padding   : 0.7em;
+    font-size : 1rem;
+    color     : var(--purple);
+    border    : 1px solid var(--purple);
+}
+
+textarea {
+    height: 226px;
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+    outline   : none;
+    box-shadow: none;
+
+}
+
+
+/*Boton del form*/
+
+.contact-button {
+    width           : 39rem;
+    height          : 2.9rem;
+    margin-top      : 3.4rem;
+    border-radius   : 10px;
+    background-color: var(--purple);
+
+}
+
+.contact-button:hover {
+    background-color: var(--black);
+}
+
+
+/*Error-Alerta*/
+.alert {
+    width: 38rem;
+
+}
+
+.input-error {
+    border-color: red;
+}
+
+.alert-warning {
+    color    : var(--black);
+    font-size: 0.875rem;
+    margin   : 1px;
+    position : relative;
+
+}
+
+
+@media (max-width: 800px) {
+    .contact-container {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        width          : 100%;
+    }
+
+    .contact-form-container {
+        padding: 10px 0;
+    }
+
+    .container-form-section {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        padding        : 0;
+        margin         : 0;
+        width          : 100%;
+    }
+
+    .form-container {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        gap            : 40px;
+        padding        : 0;
+        margin         : 0;
+        max-width      : 750px;
+    }
+
+    /*Caja del Input */
+    input,
+    textarea {
+        /* width: 30rem; */
+        width : 280px;
+        border: none;
+    }
+
+
+    .contact-button {
+        width     : 200px;
+        margin    : 0;
+        height    : 50px;
+        text-align: center;
+        font-size : 18px;
+    }
+
+    .alert {
+        width  : 280px;
+        padding: 10px;
+        margin : 0;
+    }
+
+}
+
+/* MODAL */
+.modal {
+    position        : fixed;
+    z-index         : 999;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    min-height      : 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    display         : none;
+    justify-content : center;
+    align-items     : center;
+    color           : #ffffff;
+}
+
+.modal.is-open {
+    display: flex;
+}
+
+.modal-conteiner {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    gap             : 10px;
+    position        : relative;
+    min-width       : 280px;
+    max-width       : 480px;
+    min-height      : 200px;
+    max-height      : 600px;
+    overflow-y      : auto;
+    border-radius   : 20px;
+    padding         : 1.9rem;
+    background-color: var(--marine-green);
+}
+
+.logo-container-modal {
+    margin : 0;
+    padding: 0;
+}
+
+.logo-modal {
+    width  : 180px;
+    margin : 0;
+    padding: 0;
+}
+
+.modal p {
+    color      : var(--purple);
+    text-align : center;
+    line-height: 25px;
+}
+
+.modal-cloes {
+    position: absolute;
+    top     : 1rem;
+    right   : 1rem;
+    color   : var(--purple);
+}

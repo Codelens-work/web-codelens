@@ -8,12 +8,13 @@ import { WebDevelopment } from "./pages/services/webDevelopment/WebDevelopment";
 import { SeoService } from "./pages/services/seo/SeoService";
 import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+import Contact from "./components/contact/Contact";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayout></MainLayout>,
+      element: <MainLayout><Contact/></MainLayout>,
     },
     {
       path: "/nosotros",

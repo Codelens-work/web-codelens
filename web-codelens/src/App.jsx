@@ -20,7 +20,11 @@ function App() {
     },
     {
       path: "/nosotros",
-      element: <MainLayout>{/* <About /> */}</MainLayout>,
+      element: (
+      <MainLayout>
+        <About/>
+      </MainLayout>
+      ),
     },
     {
       path: "/servicios/desarrollo-api",
@@ -157,7 +161,11 @@ function App() {
     },
     {
       path: "/blog",
-      element: <MainLayout>{/* </> */}</MainLayout>,
+      element: (
+      <MainLayout>
+        <Blog />
+      </MainLayout>
+      ),
     },
     {
       path: "/*", //Con el * cualquier ruta que no sea las indicadas tira notfound

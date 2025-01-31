@@ -60,3 +60,75 @@
     width      : 30rem;
     line-height: 2.5rem;
 }
+
+/* Seccion Cartas! */
+
+.secion-card-container {
+    display        : flex;
+    flex-direction: column;
+    justify-content: center;
+    gap            : 35px;
+    background     : #ffffff;
+    padding-top    : 0;
+    padding-bottom : 0;
+    padding: 1rem;
+    padding-bottom: 6.6rem;
+}
+
+.secion-card-container h2 {
+    font-family             : Roboto;
+    font-size               : 40px;
+    font-weight             : 500;
+    line-height             : 46.88px;
+    text-align              : left;
+    
+}
+
+.card-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: left;
+}
+
+.card-container {
+    width        : 297px;
+    height       : 192px;
+    top          : 1612px;
+    left         : 66px;
+    gap          : 0px;
+    border-radius: 10px;
+    border       : 1px solid var(--marine-green);
+    padding: 1rem;
+    box-shadow     : 0px 4px 4px 0px #00000040; 
+    transition     : transform 0.3s ease, box-shadow 0.3s ease;
+    perspective    : 1000px;
+    transform-style: preserve-3d;
+}
+
+.card-container:hover {
+    box-shadow : 0px 8px 12px 0px #00000040; 
+}
+
+.card-container h3 {
+    padding-top: 1rem;
+    font-family            : Roboto;
+    font-size              : 18px;
+    font-weight            : 500;
+    line-height            : 21.09px;
+    text-align             : center;
+    text-underline-position: from-font;
+    color                  : var(--purple);
+
+}
+
+.card-container p {
+    padding-top: .3rem;
+    font-family            : Roboto;
+    font-size              : 16px;
+    font-weight            : 400;
+    line-height            : 18.75px;
+    text-align             : center;
+    text-underline-position: from-font;
+
+}

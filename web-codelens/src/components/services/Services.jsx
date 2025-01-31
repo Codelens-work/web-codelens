@@ -1,8 +1,17 @@
 import React from "react";
 import Service from "./Service";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
+import ServiceCardSection from "./ServiceCardSection";
 
-const Services = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
+const Services = ({
+  img,
+  titleOne,
+  paragraphOne,
+  titleTwo,
+  items,
+  titleCarts,
+  descriptionCart,
+}) => {
   return (
     <div>
       <Service
@@ -11,6 +20,10 @@ const Services = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
         paragraphOne={paragraphOne}
         titleTwo={titleTwo}
         items={items}
+      />
+      <ServiceCardSection
+        titleCarts={titleCarts}
+        descriptionCart={descriptionCart}
       />
     </div>
   );
@@ -22,5 +35,8 @@ Services.propTypes = {
   paragraphOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string.isRequired,
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
+
+  titleCarts: PropTypes.arrayOf(PropTypes.string).isRequired,
+  descriptionCart: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 export default Services;

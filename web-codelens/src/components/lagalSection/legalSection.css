@@ -5,8 +5,7 @@
     flex-wrap      : wrap;
     gap            : 25px;
     justify-content: center;
-    padding-top    : 60px;
-    padding-bottom : 30px;
+    padding-top    : 5px;
 }
 
 .left-column,
@@ -47,7 +46,7 @@
 }
 
 .textColor {
-    color: #00C4B4;
+    color: var(--marine-green);
 
 }
 
@@ -64,7 +63,7 @@
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
-    color              : #9B5DE5;
+    color              : var(--purple);
     text-shadow        : 3px 3px 3px rgba(0, 0, 0, 0.5);
 
     position: relative;
@@ -81,4 +80,48 @@
     font-size  : 4rem;
     line-height: 140px;
     text-align : center;
+}
+
+/*3ra Section*/
+.section-display-container {
+    padding-top        : 64px;
+    display            : flex;
+    flex-wrap          : wrap;
+    gap                : 25px;
+    justify-content    : center;
+    /* padding-bottom  : 30px; */
+    background-color   : #D3E7F9F2;
+}
+
+.titles-for-display p {
+    font-family             : Roboto;
+    font-size               : 24px;
+    font-weight             : 300;
+    line-height             : 28.13px;
+    text-align              : left;
+    text-underline-position : from-font;
+    text-decoration-skip-ink: none;
+}
+
+.active {
+    color        : var(--marine-green);
+    border-bottom: 1px solid var(--marine-green);
+}
+
+.p-for-display {
+    padding-top    : 64px;
+    display        : flex;
+    justify-content: flex-start;
+
+}
+
+.p-for-display p {
+    font-family  : Roboto;
+    font-size    : 18px;
+    font-weight  : 300px;
+    line-height  : 21.09px;
+    text-align   : left;
+    max-width    : 33.7rem;
+    overflow-wrap: break-word;
+    word-wrap    : break-word;
 }

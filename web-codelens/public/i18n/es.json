@@ -35,10 +35,72 @@
       "contact-cta": "Ponte en contacto con nosotros",
       "socials-message": "En CodeLens, nos encanta colaborar con personas y empresas apasionadas. ¡Esperamos saber de ti pronto!",
       "chat-text": "Chatea con nosotros",
-      "media-text": "Visita nuestras redes"
+      "media-text": "Visita nuestras redes",
+      "contact-form": {
+        "inputs": {
+          "fullname": {
+            "label": "Nombre y apellido",
+            "placeholder": "John Doe",
+            "validation-error": "El campo debe tener entre 3 y 30 caracteres y contener sólo letras."
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "example@example.com",
+            "invalid-mail-error": "Debe ingresar un email válido",
+            "validation-error": "El email debe tener entre 6 y 254 caracteres"
+          },
+          "business": {
+            "label": "Empresa o negocio",
+            "placeholder": "Nombre de tu empresa",
+            "validation-error": "El campo debe tener entre 2 y 100 caracteres."
+          },
+          "content": {
+            "label": "¿Cómo podemos ayudar?",
+            "placeholder": "Cuéntanos un poco sobre tu idea",
+            "validation-error": "El campo debe tener un mínimo de 3 caracteres",
+            "size-error": "Tamaño máximo superado."
+          },
+          "submit": "Enviar"
+        },
+        "required-message": "Campo obligatorio",
+        "modals": {
+          "success": "¡Mensaje enviado! Pronto nos pondremos en contacto contigo",
+          "error": "Se produjo un error al enviar el mensaje. Intenta luego nuevamente"
+        }
+      }
     },
     "footer-section": {
-      "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos"
+      "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
+      "copyright": "- 2025 - Codelens",
+      "lists": [
+        {
+          "title": "Servicios",
+          "items": [
+            "Desarrollo Web",
+            "Diseño Web",
+            "Mejora y Optimización",
+            "Desarrollo de Aplicaciones Web",
+            "Desarrollo de APIS"
+          ]
+        },
+        {
+          "title": "Encuentra tu camino",
+          "items": [
+            "Inicio",
+            "Sobre Nosotros",
+            "Blog"
+          ]
+        },
+        {
+          "title": "Ayuda",
+          "items": [
+            "FAQs",
+            "Contacto",
+            "Términos y condiciones",
+            "Política de privacidad"
+          ]
+        }
+      ]
     }
   }
 }

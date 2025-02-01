@@ -10,19 +10,28 @@
       "privacy": "Polícita de privacidad",
       "faqs": "FAQs"
     },
-    "hero": {
-      "h1": "Crear una",
-      "logo-span": "Soluciones IT",
-      "span": "es lo que sabemos hacer"
+    "hero-section": {
+      "heading": "Crear una",
+      "logo-text": "Soluciones IT",
+      "description": "es lo que sabemos hacer"
     },
     "about-section": {
-      "h3": "Nosotros somos",
-      "h4": "Tu equipo de desarrollo web confiable y creativo",
-      "p": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
+      "heading": "Nosotros somos",
+      "subheading": "Tu equipo de desarrollo web confiable y creativo",
+      "description": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
     },
     "get-to-know-section": {
-      "h2": "Conócenos",
-      "h4": "¿Por qué elegirnos?",
-      "p": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios."
+      "heading": "Conócenos",
+      "subheading": "¿Por qué elegirnos?",
+      "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios."
+    },
+    "contact-section": {
+      "heading": "Contáctenos",
+      "intro-text": "Estamos aquí para ayudarte a subir de nivel. ¡Hablemos sobre tu próximo proyecto!",
+      "intro-description": "Ya sea que necesites un sitio web desde cero, mejorar el que ya tienes o desarrollar una aplicación personalizada, estamos aquí para ayudarte. En CodeLens, estamos comprometidos con soluciones tecnológicas claras y efectivas. Escríbenos y descubre cómo podemos colaborar.",
+      "contact-cta": "Ponte en contacto con nosotros",
+      "socials-message": "En CodeLens, nos encanta colaborar con personas y empresas apasionadas. ¡Esperamos saber de ti pronto!",
+      "chat-text": "Chatea con nosotros",
+      "media-text": "Visita nuestras redes"
     }
 }

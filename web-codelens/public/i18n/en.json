@@ -10,19 +10,28 @@
       "privacy": "Privacy policy",
       "faqs": "FAQs"
     },
-    "hero": {
-      "h1": "Create",
-      "logo-span": "IT solutions",
-      "span": "its what we do"
+    "hero-section": {
+      "heading": "Create",
+      "logo-text": "IT solutions",
+      "description": "its what we do"
     },
     "about-section": {
-  "h3": "We Are",
-  "h4": "Your Trusted and Creative Web Development Team",
-  "p": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."
+  "heading": "We Are",
+  "subheading": "Your Trusted and Creative Web Development Team",
+  "description": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."
 },
 "get-to-know-section": {
-  "h2": "Get to Know Us",
-  "h4": "Why Choose Us?",
-  "p": "At CodeLens, we take pride in our quality and efficiency in every project. We tailor our solutions to each client's goals and work flexibly to ensure lasting and satisfying results."
+  "heading": "Get to Know Us",
+  "subheading": "Why Choose Us?",
+  "description": "At CodeLens, we take pride in our quality and efficiency in every project. We tailor our solutions to each client's goals and work flexibly to ensure lasting and satisfying results."
+},
+"contact-section": {
+  "heading": "Contact Us",
+  "intro-text": "We are here to help you level up. Let's talk about your next project!",
+  "intro-description": "Whether you need a website from scratch, want to improve your current one, or develop a custom application, we are here to assist you. At CodeLens, we are committed to clear and effective tech solutions. Reach out and see how we can collaborate.",
+  "contact-cta": "Get in Touch",
+  "socials-message": "At CodeLens, we love collaborating with passionate people and businesses. We look forward to hearing from you soon!",
+  "chat-text": "Chat with us",
+  "media-text": "Visit our social media"
 }
 }

@@ -14,5 +14,10 @@
       "h1": "Create",
       "logo-span": "IT solutions",
       "span": "its what we do"
-    }
+    },
+    "about-section": {
+  "h3": "We Are",
+  "h4": "Your Trusted and Creative Web Development Team",
+  "p": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."
+}
 }

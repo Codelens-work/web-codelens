@@ -1,0 +1,50 @@
+.rotating-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: var(--black);
+}
+  
+.service-text {
+    display: inline-block;
+    color: var(--white);
+    position: relative;
+    font-size: 40px;
+    font-weight: 800;
+    
+}
+  
+.service-wrapper {
+    display: inline-block;
+    margin: 0 0.5rem;
+    min-width: 200px;
+    text-align: center;
+}
+
+.title-first{
+    font-size: 40px;
+}
+
+.title-last{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media(min-width: 1024px){
+    .rotating-title{
+        align-items: flex-start;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .title-first, .service-text{
+        font-size: 75px;
+        display: inline-block;
+    }
+
+    .title-last{
+        font-size: 40px;
+    }
+}

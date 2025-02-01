@@ -1,0 +1,127 @@
+@import url('/src/index.css');
+
+.legal-description-container {
+    display        : flex;
+    flex-wrap      : wrap;
+    gap            : 25px;
+    justify-content: center;
+    padding-top    : 5px;
+}
+
+.left-column,
+.right-column {
+    flex   : 1;
+    /* columnas proporciones iguales */
+    padding: 0;
+}
+
+.right-column {
+    border         : 1px solid black;
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.right-column img {
+    height: 568px;
+    width : 568px;
+    top   : 755px;
+    left  : 128px;
+}
+
+.left-column {
+
+    border         : 1px solid black;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    gap            : 1rem;
+    padding        : 20px;
+}
+
+.left-column p {
+    font-size  : 1rem;
+    line-height: 1.5rem;
+}
+
+.textColor {
+    color: var(--marine-green);
+
+}
+
+
+/* ---header--- */
+
+.legal-header {
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
+    width              : 1440px;
+    height             : 668px;
+    background-image   : url('public/imgs/deskAndLenses.svg');
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+    color              : var(--purple);
+    text-shadow        : 3px 3px 3px rgba(0, 0, 0, 0.5);
+
+    position: relative;
+}
+
+.legal-header h2 {
+    position   : absolute;
+    width      : 840px;
+    height     : 140px;
+    top        : 20%;
+    left       : 50%;
+    transform  : translate(-50%, -50%);
+    margin     : 0;
+    font-size  : 4rem;
+    line-height: 140px;
+    text-align : center;
+}
+
+/*3ra Section*/
+.section-display-container {
+    padding-top        : 64px;
+    display            : flex;
+    flex-wrap          : wrap;
+    gap                : 25px;
+    justify-content    : center;
+    /* padding-bottom  : 30px; */
+    background-color   : #D3E7F9F2;
+}
+
+.titles-for-display p {
+    font-family             : Roboto;
+    font-size               : 24px;
+    font-weight             : 300;
+    line-height             : 28.13px;
+    text-align              : left;
+    text-underline-position : from-font;
+    text-decoration-skip-ink: none;
+}
+
+.active {
+    color        : var(--marine-green);
+    border-bottom: 1px solid var(--marine-green);
+}
+
+.p-for-display {
+    padding-top    : 64px;
+    display        : flex;
+    justify-content: flex-start;
+
+}
+
+.p-for-display p {
+    font-family  : Roboto;
+    font-size    : 18px;
+    font-weight  : 300px;
+    line-height  : 21.09px;
+    text-align   : left;
+    max-width    : 33.7rem;
+    overflow-wrap: break-word;
+    word-wrap    : break-word;
+}

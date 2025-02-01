@@ -9,5 +9,10 @@
       "terms": "Términos y condiciones",
       "privacy": "Polícita de privacidad",
       "faqs": "FAQs"
+    },
+    "hero": {
+      "h1": "Crear una",
+      "logo-span": "Soluciones IT",
+      "span": "es lo que sabemos hacer"
     }
 }

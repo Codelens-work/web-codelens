@@ -9,5 +9,10 @@
       "terms": "Terms and conditions",
       "privacy": "Privacy policy",
       "faqs": "FAQs"
+    },
+    "hero": {
+      "h1": "Create",
+      "logo-span": "IT solutions",
+      "span": "its what we do"
     }
 }

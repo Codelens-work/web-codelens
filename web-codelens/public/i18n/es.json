@@ -19,5 +19,10 @@
       "h3": "Nosotros somos",
       "h4": "Tu equipo de desarrollo web confiable y creativo",
       "p": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
+    },
+    "get-to-know-section": {
+      "h2": "Conócenos",
+      "h4": "¿Por qué elegirnos?",
+      "p": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios."
     }
 }

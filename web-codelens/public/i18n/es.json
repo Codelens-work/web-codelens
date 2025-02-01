@@ -1,15 +1,17 @@
 {
-    "titles": {
-      "language": "es",
-      "home": "Inicio",
-      "about": "Sobre Nosotros",
-      "services": "Servicios",
-      "testimonials": "Referencias",
-      "contact": "Contacto",
-      "terms": "Términos y condiciones",
-      "privacy": "Polícita de privacidad",
-      "faqs": "FAQs"
-    },
+  "titles": {
+    "language": "es",
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "testimonials": "Referencias",
+    "contact": "Contacto",
+    "terms": "Términos y condiciones",
+    "privacy": "Polícita de privacidad",
+    "faqs": "FAQs",
+    "blog": "Blog"
+  },
+  "home": {
     "hero-section": {
       "heading": "Crear una",
       "logo-text": "Soluciones IT",
@@ -23,7 +25,8 @@
     "get-to-know-section": {
       "heading": "Conócenos",
       "subheading": "¿Por qué elegirnos?",
-      "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios."
+      "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios.",
+      "get-to-know-btn": "Sobre nosotros"
     },
     "contact-section": {
       "heading": "Contáctenos",
@@ -33,5 +36,9 @@
       "socials-message": "En CodeLens, nos encanta colaborar con personas y empresas apasionadas. ¡Esperamos saber de ti pronto!",
       "chat-text": "Chatea con nosotros",
       "media-text": "Visita nuestras redes"
+    },
+    "footer-section": {
+      "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos"
     }
+  }
 }

@@ -1,5 +1,13 @@
 {
     "titles": {
-      "language": "es"
+      "language": "es",
+      "home": "Inicio",
+      "about": "Sobre Nosotros",
+      "services": "Servicios",
+      "testimonials": "Referencias",
+      "contact": "Contacto",
+      "terms": "Términos y condiciones",
+      "privacy": "Polícita de privacidad",
+      "faqs": "FAQs"
     }
 }

@@ -4,13 +4,16 @@
   --white: #FFFFFF;
   --black: #2E2E2E;
   --marine-green: #00C4B4;
+
+  /* Fuentes */
+  --main-font: "Roboto", serif;
 }
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
+  font-family: var(--main-font);
 }
 
 h2 {

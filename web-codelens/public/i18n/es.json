@@ -106,32 +106,47 @@
       "heading": "Nuestros servicios",
       "intro": "Explora nuestros servicios especializados en desarrollo web, diseño y optimización de sitios. Con CodeLens, tu visión digital está en buenas manos.",
       "services-card-cta": "Ver más",
-      "cards": [{
-        "title": "Desarrollo Web desde Cero",
-        "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
-        "icon": ""
-      },
-      {
-        "title": "Diseño Web",
-        "content": "Diseñamos interfaces modernas, atractivas y fáciles de navegar que captan la atención de los usuarios y comunican los valores de tu marca.",
-        "icon": ""
-      },
-      {
-        "title": "Mejora y Optimización de Sitios Web",
-        "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
-        "icon": "Ayudamos a mejorar sitios web ya existentes, ya sea a través de actualizaciones de diseño, mejoras de rendimiento o la adición de nuevas funciones."
-      },
-      {
-        "title": "Desarrollo de Aplicaciones Web Personalizadas",
-        "content": "Creamos aplicaciones web a medida para optimizar y simplificar los procesos de negocio de nuestros clientes.",
-        "icon": ""
-      },
-      {
-        "title": "Desarrollo de APIS",
-        "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
-        "icon": ""
-      }
-    ]
+      "cards": [
+        {
+          "title": "Desarrollo Web desde Cero",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": ""
+        },
+        {
+          "title": "Diseño Web",
+          "content": "Diseñamos interfaces modernas, atractivas y fáciles de navegar que captan la atención de los usuarios y comunican los valores de tu marca.",
+          "icon": ""
+        },
+        {
+          "title": "Mejora y Optimización de Sitios Web",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": "Ayudamos a mejorar sitios web ya existentes, ya sea a través de actualizaciones de diseño, mejoras de rendimiento o la adición de nuevas funciones."
+        },
+        {
+          "title": "Desarrollo de Aplicaciones Web Personalizadas",
+          "content": "Creamos aplicaciones web a medida para optimizar y simplificar los procesos de negocio de nuestros clientes.",
+          "icon": ""
+        },
+        {
+          "title": "Desarrollo de APIS",
+          "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
+          "icon": ""
+        }
+      ]
+    },
+    "testimonials-section": {
+      "heading": "Referencias",
+      "subheading": "Historias de éxito con Codelens",
+      "intro": "Estos testimonios de nuestros clientes reflejan nuestro compromiso con la calidad, la eficiencia y la creatividad en cada proyecto.",
+      "cards": [
+        {
+          "logo": "",
+          "business-name": "",
+          "person-fullname": "",
+          "content": "",
+          "site-url": ""
+        }
+      ]
     }
   }
 }

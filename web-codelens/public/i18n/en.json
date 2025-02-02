@@ -210,5 +210,10 @@
   ]
 }
 
-  }
+  },
+  "cto-section": {
+    "heading": "Ready to optimize your business with a custom application?",
+    "content": "Let's talk about how CodeLens can develop a tailored solution for you.",
+    "cto-button": "Contact us"
+}
 }

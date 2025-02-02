@@ -7,7 +7,7 @@
     "testimonials": "Referencias",
     "contact": "Contacto",
     "terms": "Términos y condiciones",
-    "privacy": "Polícita de privacidad",
+    "privacy": "Política de privacidad",
     "faqs": "FAQs",
     "blog": "Blog"
   },
@@ -218,5 +218,10 @@
         }
       ]
     }
-  }
+  },
+  "cto-section": {
+    "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
+    "content": "Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida.",
+    "cto-button": "Contactanos"
+}
 }

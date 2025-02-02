@@ -1,5 +1,214 @@
 {
-    "titles": {
-      "language": "en"
+  "titles": {
+    "language": "en",
+    "home": "Home",
+    "about": "Sobre Nosotros",
+    "services": "About us",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "terms": "Terms and conditions",
+    "privacy": "Privacy policy",
+    "faqs": "FAQs",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero-section": {
+      "heading": "Create",
+      "logo-text": "IT solutions",
+      "description": "its what we do"
+    },
+    "about-section": {
+      "heading": "We Are",
+      "subheading": "Your Trusted and Creative Web Development Team",
+      "description": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."
+    },
+    "get-to-know-section": {
+      "heading": "Get to Know Us",
+      "subheading": "Why Choose Us?",
+      "description": "At CodeLens, we take pride in our quality and efficiency in every project. We tailor our solutions to each client's goals and work flexibly to ensure lasting and satisfying results.",
+      "get-to-know-btn": "About us"
+    },
+    "contact-section": {
+      "heading": "Contact Us",
+      "intro-text": "We are here to help you level up. Let's talk about your next project!",
+      "intro-description": "Whether you need a website from scratch, want to improve your current one, or develop a custom application, we are here to assist you. At CodeLens, we are committed to clear and effective tech solutions. Reach out and see how we can collaborate.",
+      "contact-cta": "Get in Touch",
+      "socials-message": "At CodeLens, we love collaborating with passionate people and businesses. We look forward to hearing from you soon!",
+      "chat-text": "Chat with us",
+      "media-text": "Visit our social media",
+      "contact-form": {
+        "inputs": {
+          "fullname": {
+            "label": "Full name",
+            "placeholder": "John Doe",
+            "validation-error": "The field must be between 3 and 30 characters long and contain only letters."
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "example@example.com",
+            "invalid-mail-error": "Please enter a valid email address",
+            "validation-error": "The email must be between 6 and 254 characters long"
+          },
+          "business": {
+            "label": "Business or Company",
+            "placeholder": "Your company name",
+            "validation-error": "The field must be between 2 and 100 characters long."
+          },
+          "content": {
+            "label": "How can we help?",
+            "placeholder": "Tell us a little about your idea",
+            "validation-error": "The field must have at least 3 characters",
+            "size-error": "Maximum size exceeded."
+          },
+          "submit": "Send"
+        },
+        "required-message": "Required field",
+        "modals": {
+          "success": "Message sent! We will contact you soon",
+          "error": "An error occurred while sending the message. Please try again later"
+        }
+      }
+    },
+    "footer-section": {
+      "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
+      "copyright": "- 2025 - Codelens",
+      "lists": [
+        {
+          "title": "Services",
+          "items": [
+            "Web Development",
+            "Web Design",
+            "Improvement and Optimization",
+            "Web Application Development",
+            "API Development"
+          ]
+        },
+        {
+          "title": "Find your way",
+          "items": [
+            "Home",
+            "About Us",
+            "Blog"
+          ]
+        },
+        {
+          "title": "Help",
+          "items": [
+            "FAQs",
+            "Contact",
+            "Terms and Conditions",
+            "Privacy Policy"
+          ]
+        }
+      ]
+    },
+    "services-section": {
+      "heading": "Our Services",
+      "intro": "Explore our specialized services in web development, design, and website optimization. With CodeLens, your digital vision is in good hands.",
+      "services-card-cta": "Learn more",
+      "cards": [
+        {
+          "title": "Custom Web Development",
+          "content": "We create custom websites from scratch, tailored to the unique needs of each client.",
+          "icon": ""
+        },
+        {
+          "title": "Web Design",
+          "content": "We design modern, attractive, and user-friendly interfaces that capture users' attention and communicate your brand's values.",
+          "icon": ""
+        },
+        {
+          "title": "Website Improvement and Optimization",
+          "content": "We create custom websites from scratch, tailored to the unique needs of each client.",
+          "icon": "We help improve existing websites, whether through design updates, performance improvements, or adding new features."
+        },
+        {
+          "title": "Custom Web Application Development",
+          "content": "We build custom web applications to optimize and simplify business processes for our clients.",
+          "icon": ""
+        },
+        {
+          "title": "API Development",
+          "content": "We design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their own users.",
+          "icon": ""
+        }
+      ]
+    },
+    "testimonials-section": {
+      "heading": "Testimonials",
+      "subheading": "Success stories with CodeLens",
+      "intro": "These testimonials from our clients reflect our commitment to quality, efficiency, and creativity in every project."
+    },
+    "faqs-section": {
+  "heading": "Frequently Asked Questions",
+  "intro": "Someone else's question might be yours too. Clear your doubts with us.",
+  "content": [
+    {
+      "question": "What services does CodeLens offer?",
+      "answer": "At CodeLens, we specialize in: Web Development from scratch. Custom Web Design focused on user experience. Enhancement of existing Websites. Web Application Development, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!"
+    },
+    {
+      "question": "What types of businesses or projects do you accept?",
+      "answer": "We focus on working with small and medium-sized businesses, as well as entrepreneurs looking to improve their online presence. Our ideal client is someone who needs a tailored solution to stand out in their industry."
+    },
+    {
+      "question": "How long does it take to complete a project?",
+      "answer": "The duration varies depending on the complexity of the project. A standard website typically takes between 4 to 6 weeks. More complex projects, such as custom applications, may take 2 to 3 months. We always provide an estimated timeline at the beginning."
+    },
+    {
+      "question": "Do you offer maintenance or support after project completion?",
+      "answer": "Yes, we offer maintenance and support plans to ensure your website or application runs smoothly, with regular updates and security optimization. You can choose the plan that best suits your needs."
+    },
+    {
+      "question": "How is the development process structured?",
+      "answer": "Our development process consists of several phases: Initial Consultation: We discuss your goals and requirements. Planning and Design: We create a proposal and initial design. Development: We build the website or application based on the agreed design. Testing and Launch: We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress."
+    },
+    {
+      "question": "How much does a web development project or application cost?",
+      "answer": "The cost depends on the complexity of the project and the specific features you require. We offer personalized quotes after an initial consultation to understand your needs."
+    },
+    {
+      "question": "What technologies do you use for web development?",
+      "answer": "At CodeLens, we work with modern technologies tailored to each project type, such as HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB or MySQL, among others. This allows us to build scalable and efficient solutions."
+    },
+    {
+      "question": "Can I make changes or updates to my site after it's launched?",
+      "answer": "Yes, our websites are designed to be flexible. You can make small content updates, or we can assist you with more complex modifications. We also offer maintenance plans for periodic changes."
+    },
+    {
+      "question": "Do I need technical knowledge to work with CodeLens?",
+      "answer": "No, it's not necessary. We handle the entire technical process, from design to development. Just share your vision and objectives with us, and we'll help bring them to life."
+    },
+    {
+      "question": "Can I see examples of previous projects?",
+      "answer": "Of course! You can visit our 'Portfolio' section to see some of the projects we've completed for other clients. Each one reflects our commitment to quality and customization in every design."
+    },
+    {
+      "question": "What payment options are available?",
+      "answer": "We offer various payment options, including bank transfers, credit cards, and payments through secure platforms like PayPal. We adapt to what is most convenient for you."
+    },
+    {
+      "question": "Is an upfront payment required to start the project?",
+      "answer": "Yes, we usually require a 30% deposit of the total cost before starting development. This allows us to secure the necessary resources and team for your project."
+    },
+    {
+      "question": "Can I pay in installments?",
+      "answer": "Yes, we can set up an installment payment plan, especially for larger projects. We will provide you with a clear and transparent payment schedule."
+    },
+    {
+      "question": "Does the price include updates and support after delivery?",
+      "answer": "Our services include an initial support and adjustment period after delivery. For ongoing updates or support, we offer maintenance plans tailored to your needs."
+    },
+    {
+      "question": "What happens if I want to add new features after the project has started?",
+      "answer": "If you need to include new functionalities, we will evaluate the changes and provide an additional quote to cover the development of the new features."
+    },
+    {
+      "question": "Do you offer refunds if the project is canceled?",
+      "answer": "In case of cancellation, we will assess the project's status to determine the costs for the work completed up to that point. Our team will help you find the best solution in such situations."
     }
+  ]
+}
+
+  }
 }

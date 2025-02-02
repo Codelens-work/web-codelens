@@ -1,5 +1,222 @@
 {
-    "titles": {
-      "language": "es"
+  "titles": {
+    "language": "es",
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "testimonials": "Referencias",
+    "contact": "Contacto",
+    "terms": "Términos y condiciones",
+    "privacy": "Polícita de privacidad",
+    "faqs": "FAQs",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero-section": {
+      "heading": "Crear una",
+      "logo-text": "Soluciones IT",
+      "description": "es lo que sabemos hacer"
+    },
+    "about-section": {
+      "heading": "Nosotros somos",
+      "subheading": "Tu equipo de desarrollo web confiable y creativo",
+      "description": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
+    },
+    "get-to-know-section": {
+      "heading": "Conócenos",
+      "subheading": "¿Por qué elegirnos?",
+      "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios.",
+      "get-to-know-btn": "Sobre nosotros"
+    },
+    "contact-section": {
+      "heading": "Contáctenos",
+      "intro-text": "Estamos aquí para ayudarte a subir de nivel. ¡Hablemos sobre tu próximo proyecto!",
+      "intro-description": "Ya sea que necesites un sitio web desde cero, mejorar el que ya tienes o desarrollar una aplicación personalizada, estamos aquí para ayudarte. En CodeLens, estamos comprometidos con soluciones tecnológicas claras y efectivas. Escríbenos y descubre cómo podemos colaborar.",
+      "contact-cta": "Ponte en contacto con nosotros",
+      "socials-message": "En CodeLens, nos encanta colaborar con personas y empresas apasionadas. ¡Esperamos saber de ti pronto!",
+      "chat-text": "Chatea con nosotros",
+      "media-text": "Visita nuestras redes",
+      "contact-form": {
+        "inputs": {
+          "fullname": {
+            "label": "Nombre y apellido",
+            "placeholder": "John Doe",
+            "validation-error": "El campo debe tener entre 3 y 30 caracteres y contener sólo letras."
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "example@example.com",
+            "invalid-mail-error": "Debe ingresar un email válido",
+            "validation-error": "El email debe tener entre 6 y 254 caracteres"
+          },
+          "business": {
+            "label": "Empresa o negocio",
+            "placeholder": "Nombre de tu empresa",
+            "validation-error": "El campo debe tener entre 2 y 100 caracteres."
+          },
+          "content": {
+            "label": "¿Cómo podemos ayudar?",
+            "placeholder": "Cuéntanos un poco sobre tu idea",
+            "validation-error": "El campo debe tener un mínimo de 3 caracteres",
+            "size-error": "Tamaño máximo superado."
+          },
+          "submit": "Enviar"
+        },
+        "required-message": "Campo obligatorio",
+        "modals": {
+          "success": "¡Mensaje enviado! Pronto nos pondremos en contacto contigo",
+          "error": "Se produjo un error al enviar el mensaje. Intenta luego nuevamente"
+        }
+      }
+    },
+    "footer-section": {
+      "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
+      "copyright": "- 2025 - Codelens",
+      "lists": [
+        {
+          "title": "Servicios",
+          "items": [
+            "Desarrollo Web",
+            "Diseño Web",
+            "Mejora y Optimización",
+            "Desarrollo de Aplicaciones Web",
+            "Desarrollo de APIS"
+          ]
+        },
+        {
+          "title": "Encuentra tu camino",
+          "items": [
+            "Inicio",
+            "Sobre Nosotros",
+            "Blog"
+          ]
+        },
+        {
+          "title": "Ayuda",
+          "items": [
+            "FAQs",
+            "Contacto",
+            "Términos y condiciones",
+            "Política de privacidad"
+          ]
+        }
+      ]
+    },
+    "services-section": {
+      "heading": "Nuestros servicios",
+      "intro": "Explora nuestros servicios especializados en desarrollo web, diseño y optimización de sitios. Con CodeLens, tu visión digital está en buenas manos.",
+      "services-card-cta": "Ver más",
+      "cards": [
+        {
+          "title": "Desarrollo Web desde Cero",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": ""
+        },
+        {
+          "title": "Diseño Web",
+          "content": "Diseñamos interfaces modernas, atractivas y fáciles de navegar que captan la atención de los usuarios y comunican los valores de tu marca.",
+          "icon": ""
+        },
+        {
+          "title": "Mejora y Optimización de Sitios Web",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": "Ayudamos a mejorar sitios web ya existentes, ya sea a través de actualizaciones de diseño, mejoras de rendimiento o la adición de nuevas funciones."
+        },
+        {
+          "title": "Desarrollo de Aplicaciones Web Personalizadas",
+          "content": "Creamos aplicaciones web a medida para optimizar y simplificar los procesos de negocio de nuestros clientes.",
+          "icon": ""
+        },
+        {
+          "title": "Desarrollo de APIS",
+          "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
+          "icon": ""
+        }
+      ]
+    },
+    "testimonials-section": {
+      "heading": "Referencias",
+      "subheading": "Historias de éxito con Codelens",
+      "intro": "Estos testimonios de nuestros clientes reflejan nuestro compromiso con la calidad, la eficiencia y la creatividad en cada proyecto.",
+      "cards": [
+        {
+          "logo": "",
+          "business-name": "",
+          "person-fullname": "",
+          "content": "",
+          "site-url": ""
+        }
+      ]
+    },
+    "faqs-section": {
+      "heading": "Preguntas frecuentes",
+      "intro": "La pregunta de otros, también puede ser la tuya. Sácate las dudas con nosotros",
+      "content": [
+        {
+          "question": "¿Cuáles son los servicios que ofrece CodeLens?",
+          "answer": "En CodeLens, nos especializamos en: Desarrollo Web desde cero. Diseño Web personalizado y enfocado en la experiencia del usuario. Mejora de Sitios Web existentes. Desarrollo de Aplicaciones Web, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!"
+        },
+        {
+          "question": "¿Qué tipo de empresas o proyectos aceptan?",
+          "answer": "Nos enfocamos en trabajar con pequeñas y medianas empresas, así como emprendedores que buscan mejorar su presencia en línea. Nuestro cliente ideal es aquel que necesita una solución personalizada para destacarse en su sector."
+        },
+        {
+          "question": "¿Cuánto tiempo tarda en completarse un proyecto?",
+          "answer": "La duración varía según la complejidad del proyecto. En general, un sitio web estándar puede tardar entre 4 y 6 semanas. Proyectos más complejos, como aplicaciones personalizadas, pueden requerir de 2 a 3 meses. Siempre proporcionamos un cronograma estimado al inicio."
+        },
+        {
+          "question": "¿Ofrecen mantenimiento o soporte después de completar el proyecto?",
+          "answer": "Sí, ofrecemos planes de mantenimiento y soporte para garantizar que tu sitio o aplicación funcione correctamente, con actualizaciones periódicas y optimización de seguridad. Puedes elegir el plan que mejor se adapte a tus necesidades"
+        },
+        {
+          "question": "¿Cómo se estructura el proceso de desarrollo?",
+          "answer": "Nuestro proceso de desarrollo consta de varias fases: Consulta Inicial: Conversamos sobre tus objetivos y requerimientos. Planificación y Diseño: Creamos una propuesta y diseño inicial. Desarrollo: Construimos el sitio o aplicación según el diseño acordado. Pruebas y Lanzamiento: Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso."
+        },
+        {
+          "question": "¿Cuánto cuesta un proyecto de desarrollo web o una aplicación?",
+          "answer": "El costo depende de la complejidad del proyecto y las funcionalidades específicas que requieras. Ofrecemos presupuestos personalizados después de una consulta inicial para entender tus necesidades."
+        },
+        {
+          "question": "¿Qué tecnologías utilizan para el desarrollo web?",
+          "answer": "En CodeLens trabajamos con tecnologías modernas y adaptadas a cada tipo de proyecto, como HTML, CSS, JavaScript, React, Node.js, y bases de datos como MongoDB o MySQL, entre otras. Esto nos permite construir soluciones escalables y eficientes."
+        },
+        {
+          "question": "¿Puedo hacer cambios o actualizaciones en mi sitio después de lanzado?",
+          "answer": "Sí, nuestros sitios están diseñados para ser flexibles. Puedes hacer pequeñas actualizaciones de contenido, o nosotros podemos ayudarte con modificaciones más complejas. También ofrecemos planes de mantenimiento para cambios periódicos."
+        },
+        {
+          "question": "¿Necesito tener algún conocimiento técnico para trabajar con CodeLens?",
+          "answer": "No es necesario. Nos encargamos de todo el proceso técnico, desde el diseño hasta el desarrollo. Simplemente comunícanos tu visión y objetivos, y nosotros te ayudaremos a llevarla a cabo."
+        },
+        {
+          "question": "¿Puedo ver ejemplos de proyectos anteriores?",
+          "answer": "Claro, puedes visitar nuestra sección de 'Portafolio' para ver algunos de los proyectos que hemos realizado para otros clientes. Cada uno refleja nuestro compromiso con la calidad y personalización en cada diseño."
+        },
+        {
+          "question": "¿Cuáles son las opciones de pago disponibles?",
+          "answer": "Ofrecemos diversas opciones de pago, incluyendo transferencias bancarias, tarjetas de crédito y pagos a través de plataformas seguras como PayPal. Nos adaptamos a lo que sea más conveniente para ti."
+        },
+        {
+          "question": "¿Se requiere un anticipo para iniciar el proyecto?",
+          "answer": "Sí, generalmente solicitamos un anticipo del 30% del costo total antes de comenzar el desarrollo. Esto nos permite asegurar los recursos y el equipo necesario para tu proyecto."
+        },
+        {
+          "question": "¿Puedo realizar los pagos en cuotas?",
+          "answer": "Sí, podemos establecer un esquema de pagos en cuotas, especialmente para proyectos de mayor alcance. Te brindaremos un plan de pagos claro y sin sorpresas."
+        },
+        {
+          "question": "¿El precio incluye actualizaciones y soporte después de la entrega?",
+          "answer": "Nuestros servicios incluyen un período inicial de soporte y ajustes tras la entrega. Para actualizaciones o soporte continuo, ofrecemos planes de mantenimiento adaptados a tus necesidades."
+        },
+        {
+          "question": "¿Qué sucede si quiero agregar nuevas funciones después de haber comenzado el proyecto?",
+          "answer": "Si necesitas incluir nuevas funcionalidades, evaluaremos los cambios y te proporcionaremos una cotización adicional para cubrir el desarrollo de las nuevas características."
+        },
+        {
+          "question": "¿Ofrecen reembolsos en caso de cancelación del proyecto?",
+          "answer": "En caso de cancelación, evaluaremos el estado del proyecto para determinar los costos del trabajo realizado hasta el momento. Nuestro equipo te ayudará a encontrar la mejor solución en estas situaciones."
+        }
+      ]
     }
+  }
 }

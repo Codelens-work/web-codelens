@@ -140,317 +140,356 @@
       "intro": "These testimonials from our clients reflect our commitment to quality, efficiency, and creativity in every project."
     },
     "faqs-section": {
-  "heading": "Frequently Asked Questions",
-  "intro": "Someone else's question might be yours too. Clear your doubts with us.",
-  "content": [
-    {
-      "question": "What services does CodeLens offer?",
-      "answer": "At CodeLens, we specialize in: Web Development from scratch. Custom Web Design focused on user experience. Enhancement of existing Websites. Web Application Development, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!"
-    },
-    {
-      "question": "What types of businesses or projects do you accept?",
-      "answer": "We focus on working with small and medium-sized businesses, as well as entrepreneurs looking to improve their online presence. Our ideal client is someone who needs a tailored solution to stand out in their industry."
-    },
-    {
-      "question": "How long does it take to complete a project?",
-      "answer": "The duration varies depending on the complexity of the project. A standard website typically takes between 4 to 6 weeks. More complex projects, such as custom applications, may take 2 to 3 months. We always provide an estimated timeline at the beginning."
-    },
-    {
-      "question": "Do you offer maintenance or support after project completion?",
-      "answer": "Yes, we offer maintenance and support plans to ensure your website or application runs smoothly, with regular updates and security optimization. You can choose the plan that best suits your needs."
-    },
-    {
-      "question": "How is the development process structured?",
-      "answer": "Our development process consists of several phases: Initial Consultation: We discuss your goals and requirements. Planning and Design: We create a proposal and initial design. Development: We build the website or application based on the agreed design. Testing and Launch: We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress."
-    },
-    {
-      "question": "How much does a web development project or application cost?",
-      "answer": "The cost depends on the complexity of the project and the specific features you require. We offer personalized quotes after an initial consultation to understand your needs."
-    },
-    {
-      "question": "What technologies do you use for web development?",
-      "answer": "At CodeLens, we work with modern technologies tailored to each project type, such as HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB or MySQL, among others. This allows us to build scalable and efficient solutions."
-    },
-    {
-      "question": "Can I make changes or updates to my site after it's launched?",
-      "answer": "Yes, our websites are designed to be flexible. You can make small content updates, or we can assist you with more complex modifications. We also offer maintenance plans for periodic changes."
-    },
-    {
-      "question": "Do I need technical knowledge to work with CodeLens?",
-      "answer": "No, it's not necessary. We handle the entire technical process, from design to development. Just share your vision and objectives with us, and we'll help bring them to life."
-    },
-    {
-      "question": "Can I see examples of previous projects?",
-      "answer": "Of course! You can visit our 'Portfolio' section to see some of the projects we've completed for other clients. Each one reflects our commitment to quality and customization in every design."
-    },
-    {
-      "question": "What payment options are available?",
-      "answer": "We offer various payment options, including bank transfers, credit cards, and payments through secure platforms like PayPal. We adapt to what is most convenient for you."
-    },
-    {
-      "question": "Is an upfront payment required to start the project?",
-      "answer": "Yes, we usually require a 30% deposit of the total cost before starting development. This allows us to secure the necessary resources and team for your project."
-    },
-    {
-      "question": "Can I pay in installments?",
-      "answer": "Yes, we can set up an installment payment plan, especially for larger projects. We will provide you with a clear and transparent payment schedule."
-    },
-    {
-      "question": "Does the price include updates and support after delivery?",
-      "answer": "Our services include an initial support and adjustment period after delivery. For ongoing updates or support, we offer maintenance plans tailored to your needs."
-    },
-    {
-      "question": "What happens if I want to add new features after the project has started?",
-      "answer": "If you need to include new functionalities, we will evaluate the changes and provide an additional quote to cover the development of the new features."
-    },
-    {
-      "question": "Do you offer refunds if the project is canceled?",
-      "answer": "In case of cancellation, we will assess the project's status to determine the costs for the work completed up to that point. Our team will help you find the best solution in such situations."
+      "heading": "Frequently Asked Questions",
+      "intro": "Someone else's question might be yours too. Clear your doubts with us.",
+      "content": [
+        {
+          "question": "What services does CodeLens offer?",
+          "answer": "At CodeLens, we specialize in: Web Development from scratch. Custom Web Design focused on user experience. Enhancement of existing Websites. Web Application Development, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!"
+        },
+        {
+          "question": "What types of businesses or projects do you accept?",
+          "answer": "We focus on working with small and medium-sized businesses, as well as entrepreneurs looking to improve their online presence. Our ideal client is someone who needs a tailored solution to stand out in their industry."
+        },
+        {
+          "question": "How long does it take to complete a project?",
+          "answer": "The duration varies depending on the complexity of the project. A standard website typically takes between 4 to 6 weeks. More complex projects, such as custom applications, may take 2 to 3 months. We always provide an estimated timeline at the beginning."
+        },
+        {
+          "question": "Do you offer maintenance or support after project completion?",
+          "answer": "Yes, we offer maintenance and support plans to ensure your website or application runs smoothly, with regular updates and security optimization. You can choose the plan that best suits your needs."
+        },
+        {
+          "question": "How is the development process structured?",
+          "answer": "Our development process consists of several phases: Initial Consultation: We discuss your goals and requirements. Planning and Design: We create a proposal and initial design. Development: We build the website or application based on the agreed design. Testing and Launch: We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress."
+        },
+        {
+          "question": "How much does a web development project or application cost?",
+          "answer": "The cost depends on the complexity of the project and the specific features you require. We offer personalized quotes after an initial consultation to understand your needs."
+        },
+        {
+          "question": "What technologies do you use for web development?",
+          "answer": "At CodeLens, we work with modern technologies tailored to each project type, such as HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB or MySQL, among others. This allows us to build scalable and efficient solutions."
+        },
+        {
+          "question": "Can I make changes or updates to my site after it's launched?",
+          "answer": "Yes, our websites are designed to be flexible. You can make small content updates, or we can assist you with more complex modifications. We also offer maintenance plans for periodic changes."
+        },
+        {
+          "question": "Do I need technical knowledge to work with CodeLens?",
+          "answer": "No, it's not necessary. We handle the entire technical process, from design to development. Just share your vision and objectives with us, and we'll help bring them to life."
+        },
+        {
+          "question": "Can I see examples of previous projects?",
+          "answer": "Of course! You can visit our 'Portfolio' section to see some of the projects we've completed for other clients. Each one reflects our commitment to quality and customization in every design."
+        },
+        {
+          "question": "What payment options are available?",
+          "answer": "We offer various payment options, including bank transfers, credit cards, and payments through secure platforms like PayPal. We adapt to what is most convenient for you."
+        },
+        {
+          "question": "Is an upfront payment required to start the project?",
+          "answer": "Yes, we usually require a 30% deposit of the total cost before starting development. This allows us to secure the necessary resources and team for your project."
+        },
+        {
+          "question": "Can I pay in installments?",
+          "answer": "Yes, we can set up an installment payment plan, especially for larger projects. We will provide you with a clear and transparent payment schedule."
+        },
+        {
+          "question": "Does the price include updates and support after delivery?",
+          "answer": "Our services include an initial support and adjustment period after delivery. For ongoing updates or support, we offer maintenance plans tailored to your needs."
+        },
+        {
+          "question": "What happens if I want to add new features after the project has started?",
+          "answer": "If you need to include new functionalities, we will evaluate the changes and provide an additional quote to cover the development of the new features."
+        },
+        {
+          "question": "Do you offer refunds if the project is canceled?",
+          "answer": "In case of cancellation, we will assess the project's status to determine the costs for the work completed up to that point. Our team will help you find the best solution in such situations."
+        }
+      ]
     }
-  ]
-}
-
   },
   "cto-section": {
     "heading": "Ready to optimize your business with a custom application?",
     "content": "Let's talk about how CodeLens can develop a tailored solution for you.",
     "cto-button": "Contact us"
-},
-"services-pages": {
-  "web-app": {
-  "service-hero": {
-    "background-url": "",
-    "breadcrumb": "Home | Services | Web Application Development",
-    "heading": "Custom Web Application Development to Boost Your Business",
-    "content": "At CodeLens, we develop tailored web applications designed specifically to optimize and enhance your company's processes. Whether it's a management system, an automation tool, or a communication platform, we transform your ideas into functional, secure, and scalable applications."
   },
-  "service-about": {
-    "value-proposal": {
-      "heading": "Why Choose a Custom Web Application",
-      "content": "Custom applications help solve specific problems and optimize unique processes within your company, giving you a competitive advantage by improving efficiency and simplifying complex tasks."
-    },
-    "benefits": {
-      "heading": "Benefits of Choosing Us",
-      "list": [
-        "Business Needs Adaptation: Features developed specifically for your processes.",
-        "Scalability: Growth and adaptability as your business evolves.",
-        "Remote Access and Collaboration: Availability from any device and location.",
-        "Resource Optimization: Task automation and better time management.",
-        "Custom Security: Advanced security protocols to protect sensitive information."
-      ]
-    },
-    "about-img": ""
-  },
-  "service-features": {
-    "heading": "Service Features",
-    "cards": [
-      {
-        "title": "Personalized Analysis and Prototype Design",
-        "content": "We assess your needs and design interactive prototypes so you can visualize the project before development begins."
+  "services-pages": {
+    "web-app": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Home | Services | Web Application Development",
+        "heading": "Custom Web Application Development to Boost Your Business",
+        "content": "At CodeLens, we develop tailored web applications designed specifically to optimize and enhance your company's processes. Whether it's a management system, an automation tool, or a communication platform, we transform your ideas into functional, secure, and scalable applications."
       },
-      {
-        "title": "Internal Management System Development",
-        "content": "We create applications to improve internal management, such as inventory control or order tracking systems."
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Choose a Custom Web Application",
+          "content": "Custom applications help solve specific problems and optimize unique processes within your company, giving you a competitive advantage by improving efficiency and simplifying complex tasks."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "Business Needs Adaptation: Features developed specifically for your processes.",
+            "Scalability: Growth and adaptability as your business evolves.",
+            "Remote Access and Collaboration: Availability from any device and location.",
+            "Resource Optimization: Task automation and better time management.",
+            "Custom Security: Advanced security protocols to protect sensitive information."
+          ]
+        },
+        "about-img": ""
       },
-      {
-        "title": "Integration with External Tools",
-        "content": "We connect your application with other systems or tools you already use, such as CRMs or ERPs, to optimize workflows."
-      },
-      {
-        "title": "Scalability and Technical Support",
-        "content": "We ensure your application can grow alongside your business, providing technical support and updates whenever needed."
-      }
-    ]
-  }
-},
-  "seo": {
-  "service-hero": {
-    "background-url": "",
-    "breadcrumb": "Home | Services | Website Improvement and Optimization",
-    "heading": "Website Improvement and Optimization",
-    "content": "At CodeLens, we transform existing websites to maximize their performance, update their design, and add functionalities that increase their impact. Whether improving loading speed, updating the design, or integrating new features, our team ensures your site meets your goals."
-  },
-  "service-about": {
-    "value-proposal": {
-      "heading": "Why Optimize Your Website",
-      "content": "Optimizing a website helps improve its performance and adapt it to current user expectations and needs, allowing you to compete more effectively in the digital market."
-    },
-    "benefits": {
-      "heading": "Benefits of Choosing Us",
-      "list": [
-        "Performance Enhancement: Faster loading speed and better site responsiveness.",
-        "Increased Security: Updated security measures to protect your users.",
-        "Improved User Experience: Optimized navigation and updated design.",
-        "SEO Boost: SEO improvements to increase your site's visibility in search engines.",
-        "Compatibility with New Technologies: Ensures your site is optimized for the latest browsers and devices."
-      ]
-    },
-    "about-img": ""
-  },
-  "service-features": {
-    "heading": "Service Features",
-    "cards": [
-      {
-        "title": "Redesign of Sections and Content",
-        "content": "We update sections to modernize the aesthetics and make them more functional."
-      },
-      {
-        "title": "Integration of New Functionalities",
-        "content": "We add features that enhance interaction and conversion, such as advanced forms or product search tools."
-      },
-      {
-        "title": "SEO and User Experience Improvement",
-        "content": "We adjust SEO and site structure to enhance visibility and user satisfaction."
-      }
-    ]
-  }
-},
-  "web-design": {
-  "service-hero": {
-    "background-url": "",
-    "breadcrumb": "Home | Services | Web Design",
-    "heading": "Web Design",
-    "content": "At CodeLens, we transform your ideas into visually appealing and effective designs that communicate your values and captivate your users. We specialize in creating intuitive and aesthetically impactful interfaces that make every visit a memorable experience."
-  },
-  "service-about": {
-    "value-proposal": {
-      "heading": "Why Choose a Custom Web Design",
-      "content": "A well-crafted web design not only enhances your site's appearance but also improves its functionality and user experience, helping you better connect with your audience."
-    },
-    "benefits": {
-      "heading": "Benefits of Choosing Us",
-      "list": [
-        "Visual Impact: Attractive design that represents your brand identity.",
-        "Usability and User Experience: Intuitive and easy-to-navigate interface.",
-        "Device-Responsive Design: Fully responsive for all devices.",
-        "Brand Consistency: Aligned and coherent visual identity."
-      ]
-    },
-    "about-img": ""
-  },
-  "service-features": {
-    "heading": "Service Features",
-    "cards": [
-      {
-        "title": "User-Centered UI/UX Design",
-        "content": "We create intuitive and visually appealing interfaces that naturally guide users."
-      },
-      {
-        "title": "Visual Identity Aligned with Your Brand",
-        "content": "We develop a visual identity that captures the essence of your business, from typography to colors and styles."
-      },
-      {
-        "title": "Visual Optimization for All Platforms",
-        "content": "Every design is fully responsive and adapts to all devices, ensuring a seamless experience."
-      },
-      {
-        "title": "Interactive Prototypes and Review",
-        "content": "We create prototypes so you can visualize the structure and design of each section before development."
-      }
-    ]
-  }
-},
-  "web-development": {
-    "service-hero": {
-      "background-url": "",
-      "breadcrumb": "Home | Services | Web Development from Scratch",
-      "heading": "Web Development from Scratch",
-      "content": "At CodeLens, we believe an effective website is more than just a pretty page. From design to functionality, we build tailor-made digital solutions that represent the essence of your brand and connect authentically with your audience."
-    },
-    "service-about": {
-      "value-proposal": {
-        "heading": "Why Choose Custom Development",
-        "content": "Every business is unique, and your website should reflect that. Our team specializes in creating custom websites that align with the specific needs and goals of each client."
-      },
-      "benefits": {
-        "heading": "Benefits of Choosing Us",
-        "list": [
-          "Adaptability: Custom designs that evolve with you.",
-          "Scalability: Ready for your business's growth.",
-          "Full Optimization: Focused on performance, security, and SEO from the start.",
-          "Unique User Experience: Intuitive and user-friendly interfaces for any device."
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "Personalized Analysis and Prototype Design",
+            "content": "We assess your needs and design interactive prototypes so you can visualize the project before development begins."
+          },
+          {
+            "title": "Internal Management System Development",
+            "content": "We create applications to improve internal management, such as inventory control or order tracking systems."
+          },
+          {
+            "title": "Integration with External Tools",
+            "content": "We connect your application with other systems or tools you already use, such as CRMs or ERPs, to optimize workflows."
+          },
+          {
+            "title": "Scalability and Technical Support",
+            "content": "We ensure your application can grow alongside your business, providing technical support and updates whenever needed."
+          }
         ]
-      },
-      "about-img": ""
+      }
     },
-    "service-features": {
-      "heading": "Service Features",
+    "seo": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Home | Services | Website Improvement and Optimization",
+        "heading": "Website Improvement and Optimization",
+        "content": "At CodeLens, we transform existing websites to maximize their performance, update their design, and add functionalities that increase their impact. Whether improving loading speed, updating the design, or integrating new features, our team ensures your site meets your goals."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Optimize Your Website",
+          "content": "Optimizing a website helps improve its performance and adapt it to current user expectations and needs, allowing you to compete more effectively in the digital market."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "Performance Enhancement: Faster loading speed and better site responsiveness.",
+            "Increased Security: Updated security measures to protect your users.",
+            "Improved User Experience: Optimized navigation and updated design.",
+            "SEO Boost: SEO improvements to increase your site's visibility in search engines.",
+            "Compatibility with New Technologies: Ensures your site is optimized for the latest browsers and devices."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "Redesign of Sections and Content",
+            "content": "We update sections to modernize the aesthetics and make them more functional."
+          },
+          {
+            "title": "Integration of New Functionalities",
+            "content": "We add features that enhance interaction and conversion, such as advanced forms or product search tools."
+          },
+          {
+            "title": "SEO and User Experience Improvement",
+            "content": "We adjust SEO and site structure to enhance visibility and user satisfaction."
+          }
+        ]
+      }
+    },
+    "web-design": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Home | Services | Web Design",
+        "heading": "Web Design",
+        "content": "At CodeLens, we transform your ideas into visually appealing and effective designs that communicate your values and captivate your users. We specialize in creating intuitive and aesthetically impactful interfaces that make every visit a memorable experience."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Choose a Custom Web Design",
+          "content": "A well-crafted web design not only enhances your site's appearance but also improves its functionality and user experience, helping you better connect with your audience."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "Visual Impact: Attractive design that represents your brand identity.",
+            "Usability and User Experience: Intuitive and easy-to-navigate interface.",
+            "Device-Responsive Design: Fully responsive for all devices.",
+            "Brand Consistency: Aligned and coherent visual identity."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "User-Centered UI/UX Design",
+            "content": "We create intuitive and visually appealing interfaces that naturally guide users."
+          },
+          {
+            "title": "Visual Identity Aligned with Your Brand",
+            "content": "We develop a visual identity that captures the essence of your business, from typography to colors and styles."
+          },
+          {
+            "title": "Visual Optimization for All Platforms",
+            "content": "Every design is fully responsive and adapts to all devices, ensuring a seamless experience."
+          },
+          {
+            "title": "Interactive Prototypes and Review",
+            "content": "We create prototypes so you can visualize the structure and design of each section before development."
+          }
+        ]
+      }
+    },
+    "web-development": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Home | Services | Web Development from Scratch",
+        "heading": "Web Development from Scratch",
+        "content": "At CodeLens, we believe an effective website is more than just a pretty page. From design to functionality, we build tailor-made digital solutions that represent the essence of your brand and connect authentically with your audience."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Choose Custom Development",
+          "content": "Every business is unique, and your website should reflect that. Our team specializes in creating custom websites that align with the specific needs and goals of each client."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "Adaptability: Custom designs that evolve with you.",
+            "Scalability: Ready for your business's growth.",
+            "Full Optimization: Focused on performance, security, and SEO from the start.",
+            "Unique User Experience: Intuitive and user-friendly interfaces for any device."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "Complete and Custom Development",
+            "content": "We design and build a website that authentically represents your brand."
+          },
+          {
+            "title": "Integration of Specific Functionalities",
+            "content": "From reservation systems to shopping carts, we integrate all the functionalities you need."
+          },
+          {
+            "title": "Optimization for Mobile Devices and SEO",
+            "content": "Our development is fully responsive and optimized to improve your search engine ranking."
+          },
+          {
+            "title": "Consulting for Hosting and Domains",
+            "content": "We help you choose the hosting and domain that best fit your business's needs."
+          }
+        ]
+      }
+    },
+    "api-development": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Home | Services | API Development",
+        "heading": "API Development that Empowers Your Users",
+        "content": "At CodeLens, we design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their users. These APIs are designed to be secure, scalable, and easy to implement, ensuring that your clients can integrate them without complications."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Choose Custom APIs for Your Business",
+          "content": "In a digital world where connectivity and efficiency are key, custom APIs allow you to create tailor-made solutions to meet your business's specific needs."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "APIs ready for mass integrations.",
+            "Guaranteed security to protect data.",
+            "Clear documentation for developers.",
+            "Post-implementation technical support."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "Controller Development",
+            "content": "We create the logic that connects and manages communication between your applications and the database, ensuring precise and efficient functionality."
+          },
+          {
+            "title": "Endpoint Design and Development",
+            "content": "We design clear and well-defined access points so that other applications or systems can interact with your API securely and seamlessly."
+          },
+          {
+            "title": "Database Modeling",
+            "content": "If you don't have your own database, we design and build one from scratch, optimized for your business's structure and ready to scale."
+          },
+          {
+            "title": "Data Entry and Initial Data Load",
+            "content": "We handle the initial data load so that your APIs are fully functional from day one."
+          },
+          {
+            "title": "Complete Documentation",
+            "content": "We include a detailed and professional guide so you and your developers can easily understand and integrate the API."
+          },
+          {
+            "title": "Security and Authentication",
+            "content": "We implement advanced security and authentication measures to protect your users' sensitive information and systems."
+          },
+          {
+            "title": "Optional Support and Maintenance",
+            "content": "We offer support and maintenance packages to ensure your API continues to perform optimally and is updated according to your business's needs."
+          }
+        ]
+      }
+    }
+  },
+  "about-us-page": {
+    "hero": {
+      "background-url": ""
+    },
+    "about-section": {
+      "heading": "About CodeLens",
+      "about-img": "",
+      "content": [
+        "At CodeLens, we specialize in crafting digital solutions with a focus on quality, clarity, and precision. We are a team passionate about web development and design, committed to transforming ideas into memorable digital experiences. From the first line of code to final delivery, we approach each project with a clear goal: delivering solid results that drive our clients' growth.", 
+        "We believe in the importance of clean code, efficient solutions, and innovative design. We adapt to each client's needs, ensuring that every project reflects their vision and makes a real impact on their digital presence. Whether building a website from scratch, redesigning an existing one, or creating custom web applications, we bring our creative and detail-oriented approach to every step of the journey.", 
+        "Our purpose is to be the digital partner our clients can trust to achieve their goals in an ever-changing digital world. With a forward-thinking vision and an unwavering commitment to quality, at CodeLens, we work to build long-term relationships based on tangible and lasting results."
+      ]
+    },
+    "values-section": {
+      "heading": "Our Core Values",
       "cards": [
         {
-          "title": "Complete and Custom Development",
-          "content": "We design and build a website that authentically represents your brand."
+          "icon": "",
+          "content": "Working side by side, every step of the way"
         },
         {
-          "title": "Integration of Specific Functionalities",
-          "content": "From reservation systems to shopping carts, we integrate all the functionalities you need."
+          "icon": "",
+          "content": "We adapt faster than a chameleon at a color festival"
         },
         {
-          "title": "Optimization for Mobile Devices and SEO",
-          "content": "Our development is fully responsive and optimized to improve your search engine ranking."
+          "icon": "",
+          "content": "Where others see problems, we see... future bragging rights"
         },
         {
-          "title": "Consulting for Hosting and Domains",
-          "content": "We help you choose the hosting and domain that best fit your business's needs."
+          "icon": "",
+          "content": "Coffee first, logic later"
+        },
+        {
+          "icon": "",
+          "content": "We fine-tune the aim before firing the cannon"
         }
       ]
     }
-  },
-  "api-development": {
-    "service-hero": {
-      "background-url": "",
-      "breadcrumb": "Home | Services | API Development",
-      "heading": "API Development that Empowers Your Users",
-      "content": "At CodeLens, we design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their users. These APIs are designed to be secure, scalable, and easy to implement, ensuring that your clients can integrate them without complications."
-    },
-    "service-about": {
-      "value-proposal": {
-        "heading": "Why Choose Custom APIs for Your Business",
-        "content": "In a digital world where connectivity and efficiency are key, custom APIs allow you to create tailor-made solutions to meet your business's specific needs."
-      },
-      "benefits": {
-        "heading": "Benefits of Choosing Us",
-        "list": [
-          "APIs ready for mass integrations.",
-          "Guaranteed security to protect data.",
-          "Clear documentation for developers.",
-          "Post-implementation technical support."
-        ]
-      },
-      "about-img": ""
-    },
-    "service-features": {
-      "heading": "Service Features",
-      "cards": [
-        {
-          "title": "Controller Development",
-          "content": "We create the logic that connects and manages communication between your applications and the database, ensuring precise and efficient functionality."
-        },
-        {
-          "title": "Endpoint Design and Development",
-          "content": "We design clear and well-defined access points so that other applications or systems can interact with your API securely and seamlessly."
-        },
-        {
-          "title": "Database Modeling",
-          "content": "If you don't have your own database, we design and build one from scratch, optimized for your business's structure and ready to scale."
-        },
-        {
-          "title": "Data Entry and Initial Data Load",
-          "content": "We handle the initial data load so that your APIs are fully functional from day one."
-        },
-        {
-          "title": "Complete Documentation",
-          "content": "We include a detailed and professional guide so you and your developers can easily understand and integrate the API."
-        },
-        {
-          "title": "Security and Authentication",
-          "content": "We implement advanced security and authentication measures to protect your users' sensitive information and systems."
-        },
-        {
-          "title": "Optional Support and Maintenance",
-          "content": "We offer support and maintenance packages to ensure your API continues to perform optimally and is updated according to your business's needs."
-        }
-      ]
-    }
   }
-}
+
 }

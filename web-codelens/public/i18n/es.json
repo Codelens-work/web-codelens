@@ -226,18 +226,18 @@
   },
   "services-pages": {
     "web-app": {
-      "service-hero": {
+      "hero": {
         "background-url": "",
         "breadcrumb": "Inicio | Servicios |Desarrollo de Aplicaciones Web",
         "heading": "Desarrollo de Aplicaciones Web Personalizadas para Potenciar tu Negocio",
         "content": "En CodeLens, desarrollamos aplicaciones web a medida, diseñadas específicamente para optimizar y mejorar los procesos de tu empresa. Ya sea un sistema de gestión, una herramienta de automatización, o una plataforma de comunicación, transformamos tus ideas en aplicaciones funcionales, seguras y escalables."
       },
-      "service-about": {
+      "about-section": {
         "value-proposal": {
           "heading": "Por Qué Optar por una Aplicación Web Personalizada",
           "content": "Las aplicaciones personalizadas permiten resolver problemas específicos y optimizar procesos únicos de tu empresa, brindándote una ventaja competitiva al mejorar la eficiencia y simplificar tareas complejas."
         },
-        "benefits": {
+        "benefits-section": {
           "heading": "Beneficios de elegirnos",
           "list": [
             "Adaptación a las Necesidades del Negocio: Funcionalidades desarrolladas específicamente para tus procesos.",
@@ -249,7 +249,7 @@
         },
         "about-img": ""
       },
-      "service-features": {
+      "features-section": {
         "heading": "Características del servicio",
         "cards": [
           {
@@ -272,18 +272,18 @@
       }
     },
     "seo": {
-      "service-hero": {
+      "hero": {
         "background-url": "",
         "breadcrumb": "Inicio | Servicios | Mejora y Optimización de Sitios Web",
         "heading": "Mejora y Optimización de Sitios Web",
         "content": "En CodeLens, transformamos sitios web existentes para maximizar su rendimiento, actualizar su diseño, y añadir funcionalidades que aumenten su impacto. Ya sea mejorando la velocidad de carga, actualizando el diseño, o integrando nuevas características, nuestro equipo se asegura de que tu sitio esté a la altura de tus objetivos."
       },
-      "service-about": {
+      "about-section": {
         "value-proposal": {
           "heading": "Por Qué Optimizar tu Sitio Web",
           "content": "La optimización de un sitio web ayuda a mejorar su rendimiento y adaptarlo a las expectativas y necesidades actuales de los usuarios, permitiéndote competir en el mercado digital de manera más eficaz"
         },
-        "benefits": {
+        "benefits-section": {
           "heading": "Beneficios de elegirnos",
           "list": [
             "Mejora del Rendimiento: Velocidad de carga más rápida y mejor respuesta del sitio.",
@@ -295,7 +295,7 @@
         },
         "about-img": ""
       },
-      "service-features": {
+      "features-section": {
         "heading": "Características del servicio",
         "cards": [
           {
@@ -314,18 +314,18 @@
       }
     },
     "web-design": {
-      "service-hero": {
+      "hero": {
         "background-url": "",
         "breadcrumb": "Inicio | Servicios | Diseño Web",
         "heading": "Diseño Web",
         "content": "En CodeLens, transformamos tus ideas en diseños visualmente atractivos y efectivos que comunican tus valores y cautivan a tus usuarios. Nos especializamos en crear interfaces intuitivas y estéticamente impactantes que hacen de cada visita una experiencia memorable."
       },
-      "service-about": {
+      "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir un Diseño Web a medida",
           "content": "Un diseño web bien elaborado no solo mejora la apariencia de tu sitio, sino que también potencia su funcionalidad y mejora la experiencia del usuario, ayudándote a conectar mejor con tu audiencia."
         },
-        "benefits": {
+        "benefits-section": {
           "heading": "Beneficios de elegirnos",
           "list": [
             "Impacto Visual: Diseño atractivo que representa tu identidad de marca.",
@@ -336,7 +336,7 @@
         },
         "about-img": ""
       },
-      "service-features": {
+      "features-section": {
         "heading": "Características del servicio",
         "cards": [
           {
@@ -359,18 +359,18 @@
       }
     },
     "web-development": {
-      "service-hero": {
+      "hero": {
         "background-url": "",
         "breadcrumb": "Inicio | Servicios | Desarrollo Web desde Cero",
         "heading": "Desarrollo Web desde Cero",
         "content": "En CodeLens, creemos que un sitio web efectivo es más que una página bonita. Desde el diseño hasta la funcionalidad, construimos soluciones digitales a medida que representan la esencia de tu marca y conectan de manera auténtica con tu audiencia."
       },
-      "service-about": {
+      "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir Desarrollo a Medida",
           "content": "Cada negocio es único, y tu sitio web debe reflejarlo. Nuestro equipo se especializa en crear sitios web personalizados que se ajustan a las necesidades y objetivos específicos de cada cliente."
         },
-        "benefits": {
+        "benefits-section": {
           "heading": "Beneficios de elegirnos",
           "list": [
             "Adaptabilidad: Diseños a medida que evolucionan contigo.",
@@ -381,7 +381,7 @@
         },
         "about-img": ""
       },
-      "service-features": {
+      "features-section": {
         "heading": "Características del servicio",
         "cards": [
           {
@@ -404,18 +404,18 @@
       }
     },
     "api-development": {
-      "service-hero": {
+      "hero": {
         "background-url": "",
         "breadcrumb": "Inicio | Servicios | Desarrollo de APIS",
         "heading": "Desarrollo de APIS que Potencian a Tus Usuarios",
         "content": "En CodeLens, diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios. Estas APIs están diseñadas para ser seguras, escalables y fáciles de implementar, asegurando que tus clientes puedan integrarlas sin complicaciones."
       },
-      "service-about": {
+      "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir APIs Personalizadas para Tu Negocio",
           "content": "En un mundo digital donde la conectividad y la eficiencia son clave, las APIs personalizadas te permiten crear soluciones hechas a medida para satisfacer las necesidades específicas de tu negocio."
         },
-        "benefits": {
+        "benefits-section": {
           "heading": "Beneficios de elegirnos",
           "list": [
             "APIs listas para integraciones masivas.",
@@ -426,7 +426,7 @@
         },
         "about-img": ""
       },
-      "service-features": {
+      "features-section": {
         "heading": "Características del servicio",
         "cards": [
           {
@@ -459,6 +459,43 @@
           }
         ]
       }
+    }
+  },
+  "about-us-page": {
+    "hero": {
+      "background-url": ""
+    },
+    "about-section": {
+      "heading": "Acerca de Codelens",
+      "about-img": "",
+      "content": ["En CodeLens, nos especializamos en crear soluciones digitales con un enfoque en calidad, claridad y precisión. Somos un equipo apasionado por el desarrollo y diseño web, comprometido en transformar ideas en experiencias digitales memorables. Desde el primer código hasta la entrega final, trabajamos en cada proyecto con un objetivo claro: ofrecer resultados sólidos que impulsen el crecimiento de nuestros clientes.", 
+      "Creemos en la importancia de un código limpio, soluciones eficientes y un diseño innovador. Nos adaptamos a las necesidades de cada cliente, asegurando que cada proyecto refleje su visión y logre un impacto real en su presencia digital. Ya sea desarrollando un sitio web desde cero, rediseñando uno existente, o creando aplicaciones web personalizadas, estamos aquí para aportar nuestro enfoque creativo y detallado en cada paso del camino.", 
+      "Nuestro propósito es ser el aliado digital en el que nuestros clientes pueden confiar para alcanzar sus metas en un mundo digital en constante cambio. Con una visión de futuro y un compromiso inquebrantable con la calidad, en CodeLens trabajamos para construir relaciones de largo plazo basadas en resultados tangibles y duraderos."]
+    },
+    "values-section": {
+      "heading": "Nuestros Valores Fundamentales",
+      "cards": [
+        {
+          "icon": "",
+          "content": "Trabajo hombro con hombro"
+        },
+        {
+          "icon": "",
+          "content": "Nos adaptamos más que un camaleón en feria"
+        },
+        {
+          "icon": "",
+          "content": "Donde otros ven problemas, nosotros vemos...oportunidades de presumir después"
+        },
+        {
+          "icon": "",
+          "content": "Café primero, lógica después"
+        },
+        {
+          "icon": "",
+          "content": "Ajustamos el tiro antes del cañonazo"
+        }
+      ]
     }
   }
 }

@@ -263,7 +263,7 @@
     ]
   }
 },
-"seo": {
+  "seo": {
   "service-hero": {
     "background-url": "",
     "breadcrumb": "Home | Services | Website Improvement and Optimization",
@@ -305,7 +305,7 @@
     ]
   }
 },
-"web-design": {
+  "web-design": {
   "service-hero": {
     "background-url": "",
     "breadcrumb": "Home | Services | Web Design",
@@ -350,7 +350,7 @@
     ]
   }
 },
-"web-development": {
+  "web-development": {
     "service-hero": {
       "background-url": "",
       "breadcrumb": "Home | Services | Web Development from Scratch",
@@ -431,7 +431,7 @@
         },
         {
           "title": "Database Modeling",
-          "content": "If you don’t have your own database, we design and build one from scratch, optimized for your business's structure and ready to scale."
+          "content": "If you don't have your own database, we design and build one from scratch, optimized for your business's structure and ready to scale."
         },
         {
           "title": "Data Entry and Initial Data Load",

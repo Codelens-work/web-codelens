@@ -526,6 +526,58 @@
         }
       ]
     }
+  },
+  "privacy-page": {
+    "hero": {
+      "background-url": "",
+      "heading": "CodeLens Privacy Policy"
+    },
+    "about-section": {
+      "about-img": "",
+      "content": [
+        "At CodeLens, protecting your personal information is our priority. This privacy policy explains how we collect, use, store, and protect your personal data when you use our website or services.",
+        "We take our users' privacy very seriously. By using our site “(https://codelens.com/)”, customers agree to the terms of this Privacy Policy."
+      ]
+    },
+    "privacy-section": [
+      {
+        "title": "Introduction",
+        "content": "At CodeLens, we are committed to respecting your privacy and protecting your personal information in accordance with applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA)."
+      },
+      {
+        "title": "Information We Collect",
+        "content": "We collect different categories of personal information, including: Personally identifiable information: name, email address, phone number, mailing address. Payment data: information related to payments made for our products or services. Browsing data: information automatically collected while browsing our site (IP address, browser type, pages visited, etc.). Usage data: information about how you use our website, services, and products."
+      },
+      {
+        "title": "How We Use Your Information",
+        "content": "We use your personal information for specific purposes, such as: Order processing: managing purchases and transactions. Service improvement: optimizing the user experience on our website. Communication: sending you important information about our services, promotions, or account updates. Legal compliance: ensuring compliance with legal and regulatory requirements."
+      },
+      {
+        "title": "Sharing Your Information",
+        "content": "We are committed to not selling, renting, or sharing your personal information with third parties for commercial purposes without your prior consent, except in the following situations: Service providers: we share your information with third parties who assist us with specific functions, such as payment processing or shipping management. Legal compliance: we may disclose your personal information if required by law or necessary to protect our rights, security, or those of third parties."
+      },
+      {
+        "title": "Protecting Your Information",
+        "content": "We implement appropriate security measures to protect your personal information against unauthorized access, use, or disclosure. This includes the use of encryption technologies and other physical and technical protections."
+      },
+      {
+        "title": "Your Rights Over Your Personal Information",
+        "content": "In accordance with applicable laws, you have the following rights regarding your personal information: Access: You can request to review the information we hold about you. Rectification: You can request corrections to your personal data if it is incorrect. Deletion: You can request the deletion of your personal data, subject to legal or contractual requirements. Objection to processing: You can object to certain data processing activities, such as direct marketing. To exercise your rights, contact us at codelens.ar@gmail.com."
+      },
+      {
+        "title": "Cookies and Similar Technologies",
+        "content": "We use cookies and similar technologies to enhance your experience on our website. These tools allow us to: Identify you when you return to our site. Record preferences and personalize content. Analyze site usage. You can set your browser to reject cookies or notify you each time a cookie is sent. However, this may affect your experience on our site."
+      },
+      {
+        "title": "International Data Transfers",
+        "content": "We do not transfer your personal information except in cases necessary for the provision of our services (e.g., a payment service provider)."
+      },
+      {
+        "title": "Changes to This Privacy Policy",
+        "content": "We reserve the right to modify this privacy policy at any time. Any updates will be posted on this page with the date of the last revision. We recommend checking this page regularly to stay informed about potential changes."
+      }
+    ]
   }
+
 
 }

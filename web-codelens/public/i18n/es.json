@@ -533,5 +533,56 @@
         }
       ]
     }
+  },
+  "privacy-page": {
+    "hero": {
+      "background-url": "",
+      "heading": "Política de Privacidad de CodeLens"
+    },
+    "about-section": {
+      "about-img": "",
+      "content": [
+        "En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
+        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad."
+      ]
+    },
+    "privacy-section": [
+      {
+        "title": "Introducción",
+        "content": "En CodeLens estamos comprometidos con el respeto de su privacidad y con la protección de su información personal de acuerdo con las leyes vigentes sobre privacidad, incluida la Ley de Protección de Información Personal y Documentos Electrónicos (LPRPDE)."
+      },
+      {
+        "title": "Información que recopilamos",
+        "content": "Recopilamos diferentes categorías de información personal incluyendo: Información de identificación personal: nombre, dirección de correo electrónico, número de teléfono, dirección postal. Datos de pago: información relacionada con los pagos realizados por nuestros productos o servicios. Datos de navegación: información recopilada automáticamente mientras navega por nuestro sitio (dirección IP, tipo de navegador, páginas visitadas, etc.). Datos de uso: información sobre cómo utiliza nuestro sitio web, servicios y productos"
+      },
+      {
+        "title": "Cómo utilizamos su información",
+        "content": "Utilizamos su información personal con fines específicos, como: Procesamiento de pedidos: gestionar compras y transacciones. Mejora de los servicios: optimizar la experiencia del usuario en nuestro sitio web. Comunicación: enviarle información importante sobre nuestros servicios, promociones o actualizaciones de su cuenta. Cumplimiento de obligaciones legales: garantizar el cumplimiento de requisitos legales y normativos."
+      },
+      {
+        "title": "Compartir su información",
+        "content": "Nos comprometemos a no vender, alquilar ni compartir su información personal con terceros para fines comerciales sin su consentimiento previo, excepto en las siguientes situaciones: Proveedores de servicios: compartimos su información con terceros que nos asisten en funciones específicas, como el procesamiento de pagos o la gestión de envíos. Cumplimiento legal: podemos divulgar su información personal si es requerida por ley o necesaria para proteger nuestros derechos, seguridad o los de terceros."
+      },
+      {
+        "title": "Protección de su información",
+        "content": "Implementamos medidas de seguridad adecuadas para proteger su información personal contra el acceso, uso o divulgación no autorizados. Esto incluye el uso de tecnologías de encriptación y otras protecciones físicas y técnicas."
+      },
+      {
+        "title": "Sus derechos sobre su información personal",
+        "content": "De acuerdo con las leyes vigentes, usted tiene los siguientes derechos sobre su información personal: Acceso: Puede solicitar consultar la información que tenemos sobre usted. Rectificación: Puede pedir la corrección de sus datos personales si son incorrectos. Eliminación: Puede solicitar la eliminación de sus datos personales, sujeto a requisitos legales o contractuales. Oposición al tratamiento: Puede oponerse a ciertos tratamientos de sus datos, como el marketing directo. Para ejercer sus derechos, contáctenos en codelens.ar@gmail.com."
+      },
+      {
+        "title": "Cookies y tecnologías similares",
+        "content": "Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Estas herramientas nos permiten: Identificarlo cuando regresa a nuestro sitio Registrar preferencias y personalizar contenido. Analizar el uso del sitio. Puede configurar su navegador para rechazar las cookies o ser notificado cada vez que se envíe una cookie. Sin embargo, esto puede afectar su experiencia en nuestro sitio."
+      },
+      {
+        "title": "Transferencia internacional de datos",
+        "content": "No transferimos su información personal, excepto en los casos necesarios para la prestación de nuestros servicios (por ejemplo, un proveedor de servicios de pago)."
+      },
+      {
+        "title": "Modificaciones a esta política de privacidad",
+        "content": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier actualización será publicada en esta página con la fecha de la última revisión. Le recomendamos revisar esta página regularmente para estar informado de posibles cambios."
+      }
+    ]
   }
 }

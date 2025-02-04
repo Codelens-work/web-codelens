@@ -489,6 +489,42 @@
           "content": "We fine-tune the aim before firing the cannon"
         }
       ]
+    },
+    "team-section": {
+        "heading": "Our Core Team",
+        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
+        "cards": [
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Aylen Gil",
+          "role": "Co-Founder & Fullstack Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Florencia Ríos",
+          "role": "Co-Founder, Community Manager & UX/UI Designer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Nicolás Romero",
+          "role": "Co-Founder & Backend Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Carolina Perez",
+          "role": "Commercial Strategist"
+        }
+      ]
     }
   }
 

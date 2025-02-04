@@ -496,6 +496,42 @@
           "content": "Ajustamos el tiro antes del cañonazo"
         }
       ]
+    },
+    "team-section": {
+      "heading": "Nuestro equipo central",
+      "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos 6 apasionados del desarrollo y diseño, listos para transformar tus ideas en realidad.",
+      "cards": [
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Aylen Gil",
+          "role": "Co-Founder & Fullstack Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Florencia Ríos",
+          "role": "Co-Founder, Community Manager & UX/UI Designer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Nicolás Romero",
+          "role": "Co-Founder & Backend Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Carolina Perez",
+          "role": "Commercial Strategist"
+        }
+      ]
     }
   }
 }

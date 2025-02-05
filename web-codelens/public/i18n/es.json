@@ -69,39 +69,6 @@
         }
       }
     },
-    "footer-section": {
-      "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
-      "copyright": "- 2025 - Codelens",
-      "lists": [
-        {
-          "title": "Servicios",
-          "items": [
-            "Desarrollo Web",
-            "Diseño Web",
-            "Mejora y Optimización",
-            "Desarrollo de Aplicaciones Web",
-            "Desarrollo de APIS"
-          ]
-        },
-        {
-          "title": "Encuentra tu camino",
-          "items": [
-            "Inicio",
-            "Sobre Nosotros",
-            "Blog"
-          ]
-        },
-        {
-          "title": "Ayuda",
-          "items": [
-            "FAQs",
-            "Contacto",
-            "Términos y condiciones",
-            "Política de privacidad"
-          ]
-        }
-      ]
-    },
     "services-section": {
       "heading": "Nuestros servicios",
       "intro": "Explora nuestros servicios especializados en desarrollo web, diseño y optimización de sitios. Con CodeLens, tu visión digital está en buenas manos.",
@@ -218,6 +185,39 @@
         }
       ]
     }
+  },
+  "footer-section": {
+    "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
+    "copyright": "- 2025 - Codelens",
+    "lists": [
+      {
+        "title": "Servicios",
+        "items": [
+          {"text": "Desarrollo Web","url": "/servicios/desarrollo-web"},
+          {"text": "Diseño Web","url": "/servicios/diseno-web"},
+          {"text": "Mejora y Optimización","url": "/servicios/seo"},
+          {"text": "Desarrollo de Aplicaciones Web","url": "/servicios/app-web"},
+          {"text": "Desarrollo de APIS","url": "/servicios/desarrollo-api"}
+        ]
+      },
+      {
+        "title": "Encuentra tu camino",
+        "items": [
+          {"text": "Inicio", "url": "/"},
+          {"text": "Sobre Nosotros", "url": "/nosotros"},
+          {"text": "Blog", "url": "/blog"}
+        ]
+      },
+      {
+        "title": "Ayuda",
+        "items": [
+          {"text":"FAQs", "url": "/preguntas-frecuentes"},
+          {"text":"Contacto", "url": "/contacto"},
+          {"text":"Términos y condiciones", "url": "/terminos-y-condiciones"},
+          {"text":"Política de privacidad", "url": "/politica-de-privacidad"}
+        ]
+      }
+    ]
   },
   "cto-section": {
     "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",

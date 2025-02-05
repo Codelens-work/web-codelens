@@ -69,39 +69,6 @@
         }
       }
     },
-    "footer-section": {
-      "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
-      "copyright": "- 2025 - Codelens",
-      "lists": [
-        {
-          "title": "Services",
-          "items": [
-            "Web Development",
-            "Web Design",
-            "Improvement and Optimization",
-            "Web Application Development",
-            "API Development"
-          ]
-        },
-        {
-          "title": "Find your way",
-          "items": [
-            "Home",
-            "About Us",
-            "Blog"
-          ]
-        },
-        {
-          "title": "Help",
-          "items": [
-            "FAQs",
-            "Contact",
-            "Terms and Conditions",
-            "Privacy Policy"
-          ]
-        }
-      ]
-    },
     "services-section": {
       "heading": "Our Services",
       "intro": "Explore our specialized services in web development, design, and website optimization. With CodeLens, your digital vision is in good hands.",
@@ -209,6 +176,39 @@
         }
       ]
     }
+  },
+  "footer-section": {
+    "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
+    "copyright": "- 2025 - Codelens",
+    "lists": [
+      {
+        "title": "Services",
+        "items": [
+          {"text": "Web Development","url": "/servicios/desarrollo-web"},
+          {"text": "Web Design","url": "/servicios/diseno-web"},
+          {"text": "Improvement and Optimization","url": "/servicios/seo"},
+          {"text": "Web Application Development","url": "/servicios/app-web"},
+          {"text": "API Development","url": "/servicios/desarrollo-api"}
+        ]
+      },
+      {
+        "title": "Find your way",
+        "items": [
+          {"text": "Home", "url": "/"},
+          {"text": "About Us", "url": "/nosotros"},
+          {"text": "Blog", "url": "/blog"}
+        ]
+      },
+      {
+        "title": "Help",
+        "items": [
+          {"text":"FAQs", "url": "/preguntas-frecuentes"},
+          {"text":"Contact", "url": "/contacto"},
+          {"text":"Terms and Conditions", "url": "/terminos-y-condiciones"},
+          {"text":"Privacy Policy", "url": "/politica-de-privacidad"}
+        ]
+      }
+    ]
   },
   "cto-section": {
     "heading": "Ready to optimize your business with a custom application?",

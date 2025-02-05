@@ -584,5 +584,78 @@
         "content": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier actualización será publicada en esta página con la fecha de la última revisión. Le recomendamos revisar esta página regularmente para estar informado de posibles cambios."
       }
     ]
+  },
+  "terms-page": {
+    "hero": {
+      "background-url": "",
+      "heading": "Condiciones generales de prestación de servicios"
+    },
+    "about-section": {
+      "about-img": "",
+      "content": [
+        "¡Bienvenido a los términos de uso de CodeLens! Estamos realmente muy contentos de que usted esté a aquí. Gracias por elegir usar nuestros servicios.",
+        "A continuación hemos enumerado términos legales importantes que se aplican a cualquier persona que contrata nuestros servicios. Estos términos son necesarios para la protección tanto de usted como de nosotros y para hacer que nuestros servicios sean posibles y más agradables para todos.",
+        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a comunicarse con nosotros."
+      ]
+    },
+    "terms-section": [
+      {
+        "title": "Acuerdo de Servicios",
+        "content": "Al contratar los servicios de desarrollo de software y diseño web ofrecidos por CodeLens, el cliente acepta todos los términos y condiciones aquí establecidos. Nos comprometemos a prestar nuestros servicios de manera profesional, cumpliendo con los estándares de calidad y plazos acordados con el cliente."
+      },
+      {
+        "title": "Medios de Pago",
+        "content": "Para facilitar el pago de nuestros servicios, CodeLens ofrece las siguientes opciones: Medios de Pago Aceptados: Transferencia bancaria (a través de MercadoPago, Naranja X, Belo u otras billeteras virtuales y métodos de transferencia). Condiciones de Pago: Anticipo: Se requiere un anticipo del 50% del presupuesto total al inicio del proyecto. Pago Final: Una vez completado el proyecto y tras la aprobación del cliente, se deberá realizar el pago final. El proyecto será entregado al cliente únicamente después de recibir el pago completo. Sistema de Referidos: CodeLens ofrece beneficios para clientes que refieran nuevos proyectos. Los detalles del sistema de referidos, incluyendo las recompensas y las condiciones de aplicación, se comunicarán al cliente por separado."
+      },
+      {
+        "title": "Política de Reembolsos",
+        "content": "CodeLens no ofrece reembolsos una vez iniciado el proyecto. En caso de cancelación por parte del cliente, el anticipo no será reembolsable y el proyecto no será entregado. En circunstancias excepcionales, se podrán considerar otros acuerdos, siempre a la discreción de CodeLens."
+      },
+      {
+        "title": "Propiedad Intelectual",
+        "content": "Derechos de Propiedad Intelectual: Todos los proyectos desarrollados por CodeLens serán considerados propiedad intelectual de CodeLens hasta que se haya realizado el pago total del proyecto. Una vez completado el pago final, el cliente obtiene el derecho de uso exclusivo sobre el proyecto entregado. Reconocimiento en el Pie de Página: Aunque el cliente recibe el derecho de uso exclusivo, el pie de página del sitio incluirá una referencia a CodeLens como desarrollador del proyecto. Esta referencia deberá permanecer visible, y no podrá ser eliminada sin el consentimiento previo de CodeLens. Protección Contra Uso Indebido: El cliente no puede utilizar el proyecto entregado en un contexto que infrinja derechos de terceros, que contravenga las leyes o regulaciones vigentes, o que pueda perjudicar la reputación de CodeLens. CodeLens se reserva el derecho de tomar las medidas necesarias si se detecta un uso inadecuado del proyecto o si la referencia en el pie de página es eliminada sin autorización."
+      },
+      {
+        "title": "Productos y servicios",
+        "content": "5.1 Disponibilidad de productos La información sobre productos y servicios, incluidos precios y disponibilidad, se proporciona sólo como referencia y puede cambiar sin previo aviso. Nos reservamos el derecho de interrumpir o modificar ofertas en cualquier momento. 5.2 Información de productos Las descripciones, imágenes e información de productos disponibles en el sitio se proporcionan con fines informativos. Sin embargo, pueden ocurrir errores, y no garantizamos que toda la información sea precisa, completa o libre de errores. 5.3 Devoluciones y reembolsos Nuestra política de devoluciones y reembolsos está definida en nuestra [Política de devoluciones]. Nos comprometemos a proporcionar información clara y a procesar todas las solicitudes de devolución conforme a esta política."
+      },
+      {
+        "title": "Enlaces a sitios de terceros",
+        "content": "El sitio puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan únicamente como una conveniencia. No tenemos control sobre estos sitios y no somos responsables de su contenido, políticas de privacidad ni prácticas. Acceder a estos sitios es bajo tu propio riesgo."
+      },
+      {
+        "title": "Confidencialidad",
+        "content": "CodeLens se compromete a proteger toda información confidencial proporcionada por el cliente durante el desarrollo del proyecto. Esta información será utilizada únicamente para los fines específicos del proyecto y no será divulgada a terceros sin el consentimiento del cliente, excepto en casos necesarios para la realización del servicio. https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas "
+      },
+      {
+        "title": "Modificaciones y Revisiones",
+        "content": "El cliente tiene derecho a solicitar ajustes o revisiones durante el desarrollo del proyecto, siempre que se encuentren dentro del alcance previamente acordado. Cualquier cambio significativo que implique trabajo adicional o fuera del alcance del proyecto original podrá incurrir en costos adicionales, que serán comunicados al cliente antes de su implementación."
+      },
+      {
+        "title": "Exención de responsabilidad",
+        "content": "El sitio se proporciona 'tal como está' y 'según disponibilidad'. CodeLens no ofrece declaraciones ni garantías, expresas o implícitas, sobre el funcionamiento del sitio o la precisión de la información contenida en él. En la medida permitida por la ley, rechazamos toda responsabilidad por cualquier pérdida o daño, incluidos daños directos, indirectos, especiales o incidentales, que resulten del uso o la imposibilidad de usar este sitio."
+      },
+      {
+        "title": "Soporte Técnico y Mantenimiento",
+        "content": "A menos que se acuerde un plan de mantenimiento específico, CodeLens no se hace responsable de ofrecer soporte técnico o actualizaciones después de la entrega del proyecto. Los servicios de soporte o mantenimiento podrán contratarse de manera independiente si el cliente lo solicita."
+      },
+      {
+        "title": "Fuerza mayor",
+        "content": "No seremos responsables de retrasos o incumplimientos debido a eventos imprevisibles, como desastres naturales, guerras, huelgas, actos de terrorismo o fallos tecnológicos, pandemias."
+      },
+      {
+        "title": "Modificaciones a los Términos y Condiciones",
+        "content": "CodeLens se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas a partir de la fecha de publicación en nuestro sitio web o cuando se notifique al cliente directamente. Recomendamos revisar esta sección periódicamente para mantenerse informado sobre los términos actuales. Estos términos y condiciones aseguran la claridad en las responsabilidades, derechos y límites tanto para el cliente como para CodeLens, y ayudan a mantener una relación profesional y transparente."
+      },
+      {
+        "title": "Derechos de desistimiento",
+        "content": "Si eres consumidor, puedes tener derecho a un período de desistimiento según las leyes de protección al consumidor. Consulta nuestra Política de reembolsos para más información."
+      },
+      {
+        "title": "Terminación de servicio",
+        "content": "El Prestador de Servicios se reserva el derecho de rescindir unilateralmente el presente contrato en cualquier momento, en caso de que considere, a su discreción razonable, que existe un motivo extraordinario y justificado. Se considerarán motivos extraordinarios y justificados, entre otros, aquellos que impliquen actividades ilegales, inmorales o que vayan en contra de la ética profesional, como el desarrollo de proyectos que promuevan fraude, estafas, o cualquier actividad ilícita. En tal caso, el Prestador de Servicios notificará al Cliente con antelación y se procederá a la finalización de la relación contractual sin que ello genere derecho a reclamación por parte del Cliente. Asimismo, en caso de terminación por los motivos antes indicados, el Prestador de Servicios se reserva el derecho de no ceder el proyecto o cualquier parte del desarrollo realizado hasta ese momento. Todos los materiales y avances quedarán bajo la propiedad y control del Prestador de Servicios y no podrán ser utilizados, compartidos ni reclamados por el Cliente."
+      }
+    ]
   }
+
 }

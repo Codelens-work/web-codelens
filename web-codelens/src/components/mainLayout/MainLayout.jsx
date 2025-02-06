@@ -1,5 +1,5 @@
 import React from 'react';
-// import Footer from '../footer/Footer';
+import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 import './mainLayout.css';
 const MainLayout = ({ children }) => {
@@ -9,7 +9,7 @@ const MainLayout = ({ children }) => {
             <div className="main-content">
                 {children}
             </div>
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

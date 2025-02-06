@@ -1,5 +1,698 @@
 {
-    "titles": {
-      "language": "es"
+  "titles": {
+    "language": "es",
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "services": "Servicios",
+    "testimonials": "Referencias",
+    "contact": "Contacto",
+    "terms": "Términos y condiciones",
+    "privacy": "Política de privacidad",
+    "faqs": "FAQs",
+    "blog": "Blog"
+  },
+  "home": {
+    "hero-section": {
+      "heading": "Crear una",
+      "logo-text": "Soluciones IT",
+      "description": "es lo que sabemos hacer"
+    },
+    "about-section": {
+      "heading": "Nosotros somos",
+      "subheading": "Tu equipo de desarrollo web confiable y creativo",
+      "description": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
+    },
+    "get-to-know-section": {
+      "heading": "Conócenos",
+      "subheading": "¿Por qué elegirnos?",
+      "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios.",
+      "get-to-know-btn": "Sobre nosotros"
+    },
+    "contact-section": {
+      "heading": "Contáctenos",
+      "intro-text": "Estamos aquí para ayudarte a subir de nivel. ¡Hablemos sobre tu próximo proyecto!",
+      "intro-description": "Ya sea que necesites un sitio web desde cero, mejorar el que ya tienes o desarrollar una aplicación personalizada, estamos aquí para ayudarte. En CodeLens, estamos comprometidos con soluciones tecnológicas claras y efectivas. Escríbenos y descubre cómo podemos colaborar.",
+      "contact-cta": "Ponte en contacto con nosotros",
+      "socials-message": "En CodeLens, nos encanta colaborar con personas y empresas apasionadas. ¡Esperamos saber de ti pronto!",
+      "chat-text": "Chatea con nosotros",
+      "media-text": "Visita nuestras redes",
+      "contact-form": {
+        "inputs": {
+          "fullname": {
+            "label": "Nombre y apellido",
+            "placeholder": "John Doe",
+            "validation-error": "El campo debe tener entre 3 y 30 caracteres y contener sólo letras."
+          },
+          "email": {
+            "label": "Email",
+            "placeholder": "example@example.com",
+            "invalid-mail-error": "Debe ingresar un email válido",
+            "validation-error": "El email debe tener entre 6 y 254 caracteres"
+          },
+          "business": {
+            "label": "Empresa o negocio",
+            "placeholder": "Nombre de tu empresa",
+            "validation-error": "El campo debe tener entre 2 y 100 caracteres."
+          },
+          "content": {
+            "label": "¿Cómo podemos ayudar?",
+            "placeholder": "Cuéntanos un poco sobre tu idea",
+            "validation-error": "El campo debe tener un mínimo de 3 caracteres",
+            "size-error": "Tamaño máximo superado."
+          },
+          "submit": "Enviar"
+        },
+        "required-message": "Campo obligatorio",
+        "modals": {
+          "success": "¡Mensaje enviado! Pronto nos pondremos en contacto contigo",
+          "error": "Se produjo un error al enviar el mensaje. Intenta luego nuevamente"
+        }
+      }
+    },
+    "services-section": {
+      "heading": "Nuestros servicios",
+      "intro": "Explora nuestros servicios especializados en desarrollo web, diseño y optimización de sitios. Con CodeLens, tu visión digital está en buenas manos.",
+      "services-card-cta": "Ver más",
+      "cards": [
+        {
+          "title": "Desarrollo Web desde Cero",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": ""
+        },
+        {
+          "title": "Diseño Web",
+          "content": "Diseñamos interfaces modernas, atractivas y fáciles de navegar que captan la atención de los usuarios y comunican los valores de tu marca.",
+          "icon": ""
+        },
+        {
+          "title": "Mejora y Optimización de Sitios Web",
+          "content": "Creamos sitios web personalizados desde la base, adaptados a las necesidades únicas de cada cliente.",
+          "icon": "Ayudamos a mejorar sitios web ya existentes, ya sea a través de actualizaciones de diseño, mejoras de rendimiento o la adición de nuevas funciones."
+        },
+        {
+          "title": "Desarrollo de Aplicaciones Web Personalizadas",
+          "content": "Creamos aplicaciones web a medida para optimizar y simplificar los procesos de negocio de nuestros clientes.",
+          "icon": ""
+        },
+        {
+          "title": "Desarrollo de APIS",
+          "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
+          "icon": ""
+        }
+      ]
+    },
+    "testimonials-section": {
+      "heading": "Referencias",
+      "subheading": "Historias de éxito con Codelens",
+      "intro": "Estos testimonios de nuestros clientes reflejan nuestro compromiso con la calidad, la eficiencia y la creatividad en cada proyecto.",
+      "cards": [
+        {
+          "logo": "",
+          "business-name": "",
+          "person-fullname": "",
+          "content": "",
+          "site-url": ""
+        }
+      ]
+    },
+    "faqs-section": {
+      "heading": "Preguntas frecuentes",
+      "intro": "La pregunta de otros, también puede ser la tuya. Sácate las dudas con nosotros",
+      "content": [
+        {
+          "question": "¿Cuáles son los servicios que ofrece CodeLens?",
+          "answer": "En CodeLens, nos especializamos en: Desarrollo Web desde cero. Diseño Web personalizado y enfocado en la experiencia del usuario. Mejora de Sitios Web existentes. Desarrollo de Aplicaciones Web, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!"
+        },
+        {
+          "question": "¿Qué tipo de empresas o proyectos aceptan?",
+          "answer": "Nos enfocamos en trabajar con pequeñas y medianas empresas, así como emprendedores que buscan mejorar su presencia en línea. Nuestro cliente ideal es aquel que necesita una solución personalizada para destacarse en su sector."
+        },
+        {
+          "question": "¿Cuánto tiempo tarda en completarse un proyecto?",
+          "answer": "La duración varía según la complejidad del proyecto. En general, un sitio web estándar puede tardar entre 4 y 6 semanas. Proyectos más complejos, como aplicaciones personalizadas, pueden requerir de 2 a 3 meses. Siempre proporcionamos un cronograma estimado al inicio."
+        },
+        {
+          "question": "¿Ofrecen mantenimiento o soporte después de completar el proyecto?",
+          "answer": "Sí, ofrecemos planes de mantenimiento y soporte para garantizar que tu sitio o aplicación funcione correctamente, con actualizaciones periódicas y optimización de seguridad. Puedes elegir el plan que mejor se adapte a tus necesidades"
+        },
+        {
+          "question": "¿Cómo se estructura el proceso de desarrollo?",
+          "answer": "Nuestro proceso de desarrollo consta de varias fases: Consulta Inicial: Conversamos sobre tus objetivos y requerimientos. Planificación y Diseño: Creamos una propuesta y diseño inicial. Desarrollo: Construimos el sitio o aplicación según el diseño acordado. Pruebas y Lanzamiento: Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso."
+        },
+        {
+          "question": "¿Cuánto cuesta un proyecto de desarrollo web o una aplicación?",
+          "answer": "El costo depende de la complejidad del proyecto y las funcionalidades específicas que requieras. Ofrecemos presupuestos personalizados después de una consulta inicial para entender tus necesidades."
+        },
+        {
+          "question": "¿Qué tecnologías utilizan para el desarrollo web?",
+          "answer": "En CodeLens trabajamos con tecnologías modernas y adaptadas a cada tipo de proyecto, como HTML, CSS, JavaScript, React, Node.js, y bases de datos como MongoDB o MySQL, entre otras. Esto nos permite construir soluciones escalables y eficientes."
+        },
+        {
+          "question": "¿Puedo hacer cambios o actualizaciones en mi sitio después de lanzado?",
+          "answer": "Sí, nuestros sitios están diseñados para ser flexibles. Puedes hacer pequeñas actualizaciones de contenido, o nosotros podemos ayudarte con modificaciones más complejas. También ofrecemos planes de mantenimiento para cambios periódicos."
+        },
+        {
+          "question": "¿Necesito tener algún conocimiento técnico para trabajar con CodeLens?",
+          "answer": "No es necesario. Nos encargamos de todo el proceso técnico, desde el diseño hasta el desarrollo. Simplemente comunícanos tu visión y objetivos, y nosotros te ayudaremos a llevarla a cabo."
+        },
+        {
+          "question": "¿Puedo ver ejemplos de proyectos anteriores?",
+          "answer": "Claro, puedes visitar nuestra sección de 'Portafolio' para ver algunos de los proyectos que hemos realizado para otros clientes. Cada uno refleja nuestro compromiso con la calidad y personalización en cada diseño."
+        },
+        {
+          "question": "¿Cuáles son las opciones de pago disponibles?",
+          "answer": "Ofrecemos diversas opciones de pago, incluyendo transferencias bancarias, tarjetas de crédito y pagos a través de plataformas seguras como PayPal. Nos adaptamos a lo que sea más conveniente para ti."
+        },
+        {
+          "question": "¿Se requiere un anticipo para iniciar el proyecto?",
+          "answer": "Sí, generalmente solicitamos un anticipo del 30% del costo total antes de comenzar el desarrollo. Esto nos permite asegurar los recursos y el equipo necesario para tu proyecto."
+        },
+        {
+          "question": "¿Puedo realizar los pagos en cuotas?",
+          "answer": "Sí, podemos establecer un esquema de pagos en cuotas, especialmente para proyectos de mayor alcance. Te brindaremos un plan de pagos claro y sin sorpresas."
+        },
+        {
+          "question": "¿El precio incluye actualizaciones y soporte después de la entrega?",
+          "answer": "Nuestros servicios incluyen un período inicial de soporte y ajustes tras la entrega. Para actualizaciones o soporte continuo, ofrecemos planes de mantenimiento adaptados a tus necesidades."
+        },
+        {
+          "question": "¿Qué sucede si quiero agregar nuevas funciones después de haber comenzado el proyecto?",
+          "answer": "Si necesitas incluir nuevas funcionalidades, evaluaremos los cambios y te proporcionaremos una cotización adicional para cubrir el desarrollo de las nuevas características."
+        },
+        {
+          "question": "¿Ofrecen reembolsos en caso de cancelación del proyecto?",
+          "answer": "En caso de cancelación, evaluaremos el estado del proyecto para determinar los costos del trabajo realizado hasta el momento. Nuestro equipo te ayudará a encontrar la mejor solución en estas situaciones."
+        }
+      ]
     }
+  },
+  "footer-section": {
+    "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
+    "copyright": "- 2025 - Codelens",
+    "lists": {
+      "services-list": {
+        "title": "Servicios",
+        "items": [
+          {
+            "text": "Desarrollo Web",
+            "url": "/servicios/desarrollo-web"
+          },
+          {
+            "text": "Diseño Web",
+            "url": "/servicios/diseno-web"
+          },
+          {
+            "text": "Mejora y Optimización",
+            "url": "/servicios/seo"
+          },
+          {
+            "text": "Desarrollo de Aplicaciones Web",
+            "url": "/servicios/app-web"
+          },
+          {
+            "text": "Desarrollo de APIS",
+            "url": "/servicios/desarrollo-api"
+          }
+        ]
+      },
+      "find-way-list": {
+        "title": "Encuentra tu camino",
+        "items": [
+          {
+            "text": "Inicio",
+            "url": "/"
+          },
+          {
+            "text": "Sobre Nosotros",
+            "url": "/nosotros"
+          },
+          {
+            "text": "Blog",
+            "url": "/blog"
+          }
+        ]
+      },
+      "help-list": {
+        "title": "Ayuda",
+        "items": [
+          {
+            "text": "FAQs",
+            "url": "/preguntas-frecuentes"
+          },
+          {
+            "text": "Contacto",
+            "url": "/contacto"
+          },
+          {
+            "text": "Términos y condiciones",
+            "url": "/terminos-y-condiciones"
+          },
+          {
+            "text": "Política de privacidad",
+            "url": "/politica-de-privacidad"
+          }
+        ]
+      }
+    }
+  },
+  "cto-section": {
+    "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
+    "content": "Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida.",
+    "cto-button": "Contactanos"
+  },
+  "services-pages": {
+    "web-app": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Inicio | Servicios |Desarrollo de Aplicaciones Web",
+        "heading": "Desarrollo de Aplicaciones Web Personalizadas para Potenciar tu Negocio",
+        "content": "En CodeLens, desarrollamos aplicaciones web a medida, diseñadas específicamente para optimizar y mejorar los procesos de tu empresa. Ya sea un sistema de gestión, una herramienta de automatización, o una plataforma de comunicación, transformamos tus ideas en aplicaciones funcionales, seguras y escalables."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Optar por una Aplicación Web Personalizada",
+          "content": "Las aplicaciones personalizadas permiten resolver problemas específicos y optimizar procesos únicos de tu empresa, brindándote una ventaja competitiva al mejorar la eficiencia y simplificar tareas complejas."
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "Adaptación a las Necesidades del Negocio: Funcionalidades desarrolladas específicamente para tus procesos.",
+            "Escalabilidad: Crecimiento y adaptabilidad a medida que tu negocio evoluciona.",
+            "Acceso Remoto y Colaboración: Disponibilidad desde cualquier dispositivo y ubicación.",
+            "Optimización de Recursos: Automatización de tareas y mejor gestión del tiempo.",
+            "Seguridad Personalizada: Protocolos de seguridad avanzados para proteger la información sensible."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Análisis Personalizado y Diseño de Prototipos",
+            "content": "Evaluamos tus necesidades y diseñamos prototipos interactivos para que visualices el proyecto antes de empezar."
+          },
+          {
+            "title": "Desarrollo de Sistemas de Gestión Internos",
+            "content": "Creamos aplicaciones para mejorar la gestión interna, como sistemas de control de inventario o seguimiento de pedidos."
+          },
+          {
+            "title": "Integración con Herramientas Externas",
+            "content": "Conectamos tu aplicación con otros sistemas o herramientas que ya utilizas, como CRMs o ERPs, para optimizar los flujos de trabajo."
+          },
+          {
+            "title": "Escalabilidad y Soporte Técnico",
+            "content": "Nos aseguramos de que tu aplicación pueda crecer junto a tu negocio, brindando soporte técnico y actualizaciones cuando lo necesites."
+          }
+        ]
+      }
+    },
+    "seo": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Inicio | Servicios | Mejora y Optimización de Sitios Web",
+        "heading": "Mejora y Optimización de Sitios Web",
+        "content": "En CodeLens, transformamos sitios web existentes para maximizar su rendimiento, actualizar su diseño, y añadir funcionalidades que aumenten su impacto. Ya sea mejorando la velocidad de carga, actualizando el diseño, o integrando nuevas características, nuestro equipo se asegura de que tu sitio esté a la altura de tus objetivos."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Optimizar tu Sitio Web",
+          "content": "La optimización de un sitio web ayuda a mejorar su rendimiento y adaptarlo a las expectativas y necesidades actuales de los usuarios, permitiéndote competir en el mercado digital de manera más eficaz"
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "Mejora del Rendimiento: Velocidad de carga más rápida y mejor respuesta del sitio.",
+            "Mayor Seguridad: Actualización de medidas de seguridad para proteger a tus usuarios.",
+            "Experiencia de Usuario Mejorada: Navegación optimizada y diseño actualizado.",
+            "Aumento en el SEO: Mejoras en el SEO para que tu sitio tenga mejor visibilidad en motores de búsqueda.",
+            "Compatibilidad con Nuevas Tecnologías: Asegura que tu sitio esté optimizado para los últimos navegadores y dispositivos."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Rediseño de Secciones y Contenido",
+            "content": "Actualizamos las secciones para modernizar la estética y hacerlas más funcionales."
+          },
+          {
+            "title": "Integración de Nuevas Funcionalidades",
+            "content": "Agregamos funcionalidades que mejoran la interacción y la conversión, como formularios avanzados o buscadores de productos."
+          },
+          {
+            "title": "SEO y Mejora de Experiencia de Usuario",
+            "content": "Realizamos ajustes en el SEO y la estructura del sitio para mejorar la visibilidad y la satisfacción del usuario."
+          }
+        ]
+      }
+    },
+    "web-design": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Inicio | Servicios | Diseño Web",
+        "heading": "Diseño Web",
+        "content": "En CodeLens, transformamos tus ideas en diseños visualmente atractivos y efectivos que comunican tus valores y cautivan a tus usuarios. Nos especializamos en crear interfaces intuitivas y estéticamente impactantes que hacen de cada visita una experiencia memorable."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Elegir un Diseño Web a medida",
+          "content": "Un diseño web bien elaborado no solo mejora la apariencia de tu sitio, sino que también potencia su funcionalidad y mejora la experiencia del usuario, ayudándote a conectar mejor con tu audiencia."
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "Impacto Visual: Diseño atractivo que representa tu identidad de marca.",
+            "Usabilidad y Experiencia de Usuario: Interfaz intuitiva y fácil de navegar.",
+            "Diseño Adaptado a Dispositivos: Totalmente responsive para todos los dispositivos.",
+            "Consistencia de Marca: Identidad visual alineada y coherente."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Diseño de UI/UX centrado en el usuario",
+            "content": "Creamos interfaces intuitivas y visualmente atractivas que guían a los usuarios de manera natural."
+          },
+          {
+            "title": "Identidad Visual Alineada con tu Marca",
+            "content": "Desarrollamos una identidad visual que captura la esencia de tu negocio, desde tipografías hasta colores y estilos."
+          },
+          {
+            "title": "Optimización Visual para Todas las Plataformas",
+            "content": "Cada diseño es totalmente responsive y se adapta a todos los dispositivos, asegurando una experiencia perfecta."
+          },
+          {
+            "title": "Prototipos Interactivos y Revisión",
+            "content": "Realizamos prototipos para que puedas visualizar la estructura y diseño de cada sección antes del desarrollo."
+          }
+        ]
+      }
+    },
+    "web-development": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Inicio | Servicios | Desarrollo Web desde Cero",
+        "heading": "Desarrollo Web desde Cero",
+        "content": "En CodeLens, creemos que un sitio web efectivo es más que una página bonita. Desde el diseño hasta la funcionalidad, construimos soluciones digitales a medida que representan la esencia de tu marca y conectan de manera auténtica con tu audiencia."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Elegir Desarrollo a Medida",
+          "content": "Cada negocio es único, y tu sitio web debe reflejarlo. Nuestro equipo se especializa en crear sitios web personalizados que se ajustan a las necesidades y objetivos específicos de cada cliente."
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "Adaptabilidad: Diseños a medida que evolucionan contigo.",
+            "Escalabilidad: Preparados para el crecimiento de tu negocio.",
+            "Optimización Completa: Enfocados en rendimiento, seguridad y SEO desde el inicio.",
+            "Experiencia Única de Usuario: Interfaces intuitivas y amigables para cualquier dispositivo."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Desarrollo Completo y Personalizado",
+            "content": "Diseñamos y construimos un sitio web que representa a tu marca de manera auténtica."
+          },
+          {
+            "title": "Integración de Funcionalidades Específicas",
+            "content": "Desde sistemas de reservas hasta carritos de compra, integramos todas las funcionalidades que necesitas."
+          },
+          {
+            "title": "Optimización para Dispositivos Móviles y SEO",
+            "content": "Nuestro desarrollo es completamente responsivo y optimizado para mejorar tu posicionamiento en motores de búsqueda."
+          },
+          {
+            "title": "Asesoramiento en Hosting y Dominios",
+            "content": "Te ayudamos a elegir el hosting y dominio que mejor se adapten a las necesidades de tu negocio."
+          }
+        ]
+      }
+    },
+    "api-development": {
+      "hero": {
+        "background-url": "",
+        "breadcrumb": "Inicio | Servicios | Desarrollo de APIS",
+        "heading": "Desarrollo de APIS que Potencian a Tus Usuarios",
+        "content": "En CodeLens, diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios. Estas APIs están diseñadas para ser seguras, escalables y fáciles de implementar, asegurando que tus clientes puedan integrarlas sin complicaciones."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Elegir APIs Personalizadas para Tu Negocio",
+          "content": "En un mundo digital donde la conectividad y la eficiencia son clave, las APIs personalizadas te permiten crear soluciones hechas a medida para satisfacer las necesidades específicas de tu negocio."
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "APIs listas para integraciones masivas.",
+            "Seguridad garantizada para proteger datos.",
+            "Documentación clara para desarrolladores.",
+            "Soporte técnico post-implementación."
+          ]
+        },
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Desarrollo de Controladores",
+            "content": "Creamos la lógica que conecta y gestiona la comunicación entre tus aplicaciones y la base de datos, asegurando una funcionalidad precisa y eficiente."
+          },
+          {
+            "title": "Diseño y Desarrollo de Endpoints",
+            "content": "Diseñamos puntos de acceso claros y bien definidos para que otras aplicaciones o sistemas puedan interactuar con tu API de forma segura y fluida."
+          },
+          {
+            "title": "Modelado de Base de Datos",
+            "content": "Si no tienes una base de datos propia, diseñamos y construimos una desde cero, optimizada para la estructura de tu negocio y preparada para escalar."
+          },
+          {
+            "title": "Data Entry y Carga Inicial de Datos",
+            "content": "Nos encargamos de la carga inicial de información para que tus APIs estén completamente funcionales desde el primer día."
+          },
+          {
+            "title": "Documentación Completa",
+            "content": "Incluimos una guía detallada y profesional para que tú y tus desarrolladores puedan entender e integrar fácilmente la API."
+          },
+          {
+            "title": "Seguridad y Autenticación",
+            "content": "Implementamos medidas avanzadas de seguridad y autenticación para proteger la información sensible de tus usuarios y sistemas."
+          },
+          {
+            "title": "Soporte y Mantenimiento Opcionales",
+            "content": "Ofrecemos paquetes de soporte y mantenimiento para garantizar que tu API siga funcionando de manera óptima y se actualice según las necesidades de tu negocio."
+          }
+        ]
+      }
+    }
+  },
+  "about-us-page": {
+    "hero": {
+      "background-url": ""
+    },
+    "about-section": {
+      "heading": "Acerca de Codelens",
+      "about-img": "",
+      "content": [
+        "En CodeLens, nos especializamos en crear soluciones digitales con un enfoque en calidad, claridad y precisión. Somos un equipo apasionado por el desarrollo y diseño web, comprometido en transformar ideas en experiencias digitales memorables. Desde el primer código hasta la entrega final, trabajamos en cada proyecto con un objetivo claro: ofrecer resultados sólidos que impulsen el crecimiento de nuestros clientes.",
+        "Creemos en la importancia de un código limpio, soluciones eficientes y un diseño innovador. Nos adaptamos a las necesidades de cada cliente, asegurando que cada proyecto refleje su visión y logre un impacto real en su presencia digital. Ya sea desarrollando un sitio web desde cero, rediseñando uno existente, o creando aplicaciones web personalizadas, estamos aquí para aportar nuestro enfoque creativo y detallado en cada paso del camino.",
+        "Nuestro propósito es ser el aliado digital en el que nuestros clientes pueden confiar para alcanzar sus metas en un mundo digital en constante cambio. Con una visión de futuro y un compromiso inquebrantable con la calidad, en CodeLens trabajamos para construir relaciones de largo plazo basadas en resultados tangibles y duraderos."
+      ]
+    },
+    "values-section": {
+      "heading": "Nuestros Valores Fundamentales",
+      "cards": [
+        {
+          "icon": "",
+          "content": "Trabajo hombro con hombro"
+        },
+        {
+          "icon": "",
+          "content": "Nos adaptamos más que un camaleón en feria"
+        },
+        {
+          "icon": "",
+          "content": "Donde otros ven problemas, nosotros vemos...oportunidades de presumir después"
+        },
+        {
+          "icon": "",
+          "content": "Café primero, lógica después"
+        },
+        {
+          "icon": "",
+          "content": "Ajustamos el tiro antes del cañonazo"
+        }
+      ]
+    },
+    "team-section": {
+      "heading": "Nuestro equipo central",
+      "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos 6 apasionados del desarrollo y diseño, listos para transformar tus ideas en realidad.",
+      "cards": [
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Aylen Gil",
+          "role": "Co-Founder & Fullstack Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Florencia Ríos",
+          "role": "Co-Founder, Community Manager & UX/UI Designer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Nicolás Romero",
+          "role": "Co-Founder & Backend Developer"
+        },
+        {
+          "img-url": "",
+          "img-hover-url": "",
+          "fullname": "Carolina Perez",
+          "role": "Commercial Strategist"
+        }
+      ]
+    }
+  },
+  "privacy-page": {
+    "hero": {
+      "background-url": "",
+      "heading": "Política de Privacidad de CodeLens"
+    },
+    "about-section": {
+      "about-img": "",
+      "content": [
+        "En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
+        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad."
+      ]
+    },
+    "privacy-section": [
+      {
+        "title": "Introducción",
+        "content": "En CodeLens estamos comprometidos con el respeto de su privacidad y con la protección de su información personal de acuerdo con las leyes vigentes sobre privacidad, incluida la Ley de Protección de Información Personal y Documentos Electrónicos (LPRPDE)."
+      },
+      {
+        "title": "Información que recopilamos",
+        "content": "Recopilamos diferentes categorías de información personal incluyendo: Información de identificación personal: nombre, dirección de correo electrónico, número de teléfono, dirección postal. Datos de pago: información relacionada con los pagos realizados por nuestros productos o servicios. Datos de navegación: información recopilada automáticamente mientras navega por nuestro sitio (dirección IP, tipo de navegador, páginas visitadas, etc.). Datos de uso: información sobre cómo utiliza nuestro sitio web, servicios y productos"
+      },
+      {
+        "title": "Cómo utilizamos su información",
+        "content": "Utilizamos su información personal con fines específicos, como: Procesamiento de pedidos: gestionar compras y transacciones. Mejora de los servicios: optimizar la experiencia del usuario en nuestro sitio web. Comunicación: enviarle información importante sobre nuestros servicios, promociones o actualizaciones de su cuenta. Cumplimiento de obligaciones legales: garantizar el cumplimiento de requisitos legales y normativos."
+      },
+      {
+        "title": "Compartir su información",
+        "content": "Nos comprometemos a no vender, alquilar ni compartir su información personal con terceros para fines comerciales sin su consentimiento previo, excepto en las siguientes situaciones: Proveedores de servicios: compartimos su información con terceros que nos asisten en funciones específicas, como el procesamiento de pagos o la gestión de envíos. Cumplimiento legal: podemos divulgar su información personal si es requerida por ley o necesaria para proteger nuestros derechos, seguridad o los de terceros."
+      },
+      {
+        "title": "Protección de su información",
+        "content": "Implementamos medidas de seguridad adecuadas para proteger su información personal contra el acceso, uso o divulgación no autorizados. Esto incluye el uso de tecnologías de encriptación y otras protecciones físicas y técnicas."
+      },
+      {
+        "title": "Sus derechos sobre su información personal",
+        "content": "De acuerdo con las leyes vigentes, usted tiene los siguientes derechos sobre su información personal: Acceso: Puede solicitar consultar la información que tenemos sobre usted. Rectificación: Puede pedir la corrección de sus datos personales si son incorrectos. Eliminación: Puede solicitar la eliminación de sus datos personales, sujeto a requisitos legales o contractuales. Oposición al tratamiento: Puede oponerse a ciertos tratamientos de sus datos, como el marketing directo. Para ejercer sus derechos, contáctenos en codelens.ar@gmail.com."
+      },
+      {
+        "title": "Cookies y tecnologías similares",
+        "content": "Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Estas herramientas nos permiten: Identificarlo cuando regresa a nuestro sitio Registrar preferencias y personalizar contenido. Analizar el uso del sitio. Puede configurar su navegador para rechazar las cookies o ser notificado cada vez que se envíe una cookie. Sin embargo, esto puede afectar su experiencia en nuestro sitio."
+      },
+      {
+        "title": "Transferencia internacional de datos",
+        "content": "No transferimos su información personal, excepto en los casos necesarios para la prestación de nuestros servicios (por ejemplo, un proveedor de servicios de pago)."
+      },
+      {
+        "title": "Modificaciones a esta política de privacidad",
+        "content": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier actualización será publicada en esta página con la fecha de la última revisión. Le recomendamos revisar esta página regularmente para estar informado de posibles cambios."
+      }
+    ]
+  },
+  "terms-page": {
+    "hero": {
+      "background-url": "",
+      "heading": "Condiciones generales de prestación de servicios"
+    },
+    "about-section": {
+      "about-img": "",
+      "content": [
+        "¡Bienvenido a los términos de uso de CodeLens! Estamos realmente muy contentos de que usted esté a aquí. Gracias por elegir usar nuestros servicios.",
+        "A continuación hemos enumerado términos legales importantes que se aplican a cualquier persona que contrata nuestros servicios. Estos términos son necesarios para la protección tanto de usted como de nosotros y para hacer que nuestros servicios sean posibles y más agradables para todos.",
+        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a comunicarse con nosotros."
+      ]
+    },
+    "terms-section": [
+      {
+        "title": "Acuerdo de Servicios",
+        "content": "Al contratar los servicios de desarrollo de software y diseño web ofrecidos por CodeLens, el cliente acepta todos los términos y condiciones aquí establecidos. Nos comprometemos a prestar nuestros servicios de manera profesional, cumpliendo con los estándares de calidad y plazos acordados con el cliente."
+      },
+      {
+        "title": "Medios de Pago",
+        "content": "Para facilitar el pago de nuestros servicios, CodeLens ofrece las siguientes opciones: Medios de Pago Aceptados: Transferencia bancaria (a través de MercadoPago, Naranja X, Belo u otras billeteras virtuales y métodos de transferencia). Condiciones de Pago: Anticipo: Se requiere un anticipo del 50% del presupuesto total al inicio del proyecto. Pago Final: Una vez completado el proyecto y tras la aprobación del cliente, se deberá realizar el pago final. El proyecto será entregado al cliente únicamente después de recibir el pago completo. Sistema de Referidos: CodeLens ofrece beneficios para clientes que refieran nuevos proyectos. Los detalles del sistema de referidos, incluyendo las recompensas y las condiciones de aplicación, se comunicarán al cliente por separado."
+      },
+      {
+        "title": "Política de Reembolsos",
+        "content": "CodeLens no ofrece reembolsos una vez iniciado el proyecto. En caso de cancelación por parte del cliente, el anticipo no será reembolsable y el proyecto no será entregado. En circunstancias excepcionales, se podrán considerar otros acuerdos, siempre a la discreción de CodeLens."
+      },
+      {
+        "title": "Propiedad Intelectual",
+        "content": "Derechos de Propiedad Intelectual: Todos los proyectos desarrollados por CodeLens serán considerados propiedad intelectual de CodeLens hasta que se haya realizado el pago total del proyecto. Una vez completado el pago final, el cliente obtiene el derecho de uso exclusivo sobre el proyecto entregado. Reconocimiento en el Pie de Página: Aunque el cliente recibe el derecho de uso exclusivo, el pie de página del sitio incluirá una referencia a CodeLens como desarrollador del proyecto. Esta referencia deberá permanecer visible, y no podrá ser eliminada sin el consentimiento previo de CodeLens. Protección Contra Uso Indebido: El cliente no puede utilizar el proyecto entregado en un contexto que infrinja derechos de terceros, que contravenga las leyes o regulaciones vigentes, o que pueda perjudicar la reputación de CodeLens. CodeLens se reserva el derecho de tomar las medidas necesarias si se detecta un uso inadecuado del proyecto o si la referencia en el pie de página es eliminada sin autorización."
+      },
+      {
+        "title": "Productos y servicios",
+        "content": "5.1 Disponibilidad de productos La información sobre productos y servicios, incluidos precios y disponibilidad, se proporciona sólo como referencia y puede cambiar sin previo aviso. Nos reservamos el derecho de interrumpir o modificar ofertas en cualquier momento. 5.2 Información de productos Las descripciones, imágenes e información de productos disponibles en el sitio se proporcionan con fines informativos. Sin embargo, pueden ocurrir errores, y no garantizamos que toda la información sea precisa, completa o libre de errores. 5.3 Devoluciones y reembolsos Nuestra política de devoluciones y reembolsos está definida en nuestra [Política de devoluciones]. Nos comprometemos a proporcionar información clara y a procesar todas las solicitudes de devolución conforme a esta política."
+      },
+      {
+        "title": "Enlaces a sitios de terceros",
+        "content": "El sitio puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan únicamente como una conveniencia. No tenemos control sobre estos sitios y no somos responsables de su contenido, políticas de privacidad ni prácticas. Acceder a estos sitios es bajo tu propio riesgo."
+      },
+      {
+        "title": "Confidencialidad",
+        "content": "CodeLens se compromete a proteger toda información confidencial proporcionada por el cliente durante el desarrollo del proyecto. Esta información será utilizada únicamente para los fines específicos del proyecto y no será divulgada a terceros sin el consentimiento del cliente, excepto en casos necesarios para la realización del servicio. https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas "
+      },
+      {
+        "title": "Modificaciones y Revisiones",
+        "content": "El cliente tiene derecho a solicitar ajustes o revisiones durante el desarrollo del proyecto, siempre que se encuentren dentro del alcance previamente acordado. Cualquier cambio significativo que implique trabajo adicional o fuera del alcance del proyecto original podrá incurrir en costos adicionales, que serán comunicados al cliente antes de su implementación."
+      },
+      {
+        "title": "Exención de responsabilidad",
+        "content": "El sitio se proporciona 'tal como está' y 'según disponibilidad'. CodeLens no ofrece declaraciones ni garantías, expresas o implícitas, sobre el funcionamiento del sitio o la precisión de la información contenida en él. En la medida permitida por la ley, rechazamos toda responsabilidad por cualquier pérdida o daño, incluidos daños directos, indirectos, especiales o incidentales, que resulten del uso o la imposibilidad de usar este sitio."
+      },
+      {
+        "title": "Soporte Técnico y Mantenimiento",
+        "content": "A menos que se acuerde un plan de mantenimiento específico, CodeLens no se hace responsable de ofrecer soporte técnico o actualizaciones después de la entrega del proyecto. Los servicios de soporte o mantenimiento podrán contratarse de manera independiente si el cliente lo solicita."
+      },
+      {
+        "title": "Fuerza mayor",
+        "content": "No seremos responsables de retrasos o incumplimientos debido a eventos imprevisibles, como desastres naturales, guerras, huelgas, actos de terrorismo o fallos tecnológicos, pandemias."
+      },
+      {
+        "title": "Modificaciones a los Términos y Condiciones",
+        "content": "CodeLens se reserva el derecho de modificar estos Términos y Condiciones en cualquier momento. Las modificaciones serán efectivas a partir de la fecha de publicación en nuestro sitio web o cuando se notifique al cliente directamente. Recomendamos revisar esta sección periódicamente para mantenerse informado sobre los términos actuales. Estos términos y condiciones aseguran la claridad en las responsabilidades, derechos y límites tanto para el cliente como para CodeLens, y ayudan a mantener una relación profesional y transparente."
+      },
+      {
+        "title": "Derechos de desistimiento",
+        "content": "Si eres consumidor, puedes tener derecho a un período de desistimiento según las leyes de protección al consumidor. Consulta nuestra Política de reembolsos para más información."
+      },
+      {
+        "title": "Terminación de servicio",
+        "content": "El Prestador de Servicios se reserva el derecho de rescindir unilateralmente el presente contrato en cualquier momento, en caso de que considere, a su discreción razonable, que existe un motivo extraordinario y justificado. Se considerarán motivos extraordinarios y justificados, entre otros, aquellos que impliquen actividades ilegales, inmorales o que vayan en contra de la ética profesional, como el desarrollo de proyectos que promuevan fraude, estafas, o cualquier actividad ilícita. En tal caso, el Prestador de Servicios notificará al Cliente con antelación y se procederá a la finalización de la relación contractual sin que ello genere derecho a reclamación por parte del Cliente. Asimismo, en caso de terminación por los motivos antes indicados, el Prestador de Servicios se reserva el derecho de no ceder el proyecto o cualquier parte del desarrollo realizado hasta ese momento. Todos los materiales y avances quedarán bajo la propiedad y control del Prestador de Servicios y no podrán ser utilizados, compartidos ni reclamados por el Cliente."
+      }
+    ]
+  }
 }

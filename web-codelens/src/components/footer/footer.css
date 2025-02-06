@@ -1,0 +1,111 @@
+footer {
+  padding: 30px;
+  width: 100%;
+}
+.containerTitle {
+  font-size: 20px;
+  color: var(--purple);
+}
+.firstRowContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.firstRowContainer > div {
+height: auto;
+padding: 10px;
+flex: 1;
+min-width: min(100%, 300px);
+}
+
+#footerLogo {
+  height: 158px;
+  width: 242px;
+}
+
+/*Iconos de redes sociales*/
+.mediaContainer a {
+  height: 30px;
+  width: 30px;
+}
+
+.socialLogoContainer {
+  width: 305px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap:5px;
+}
+
+.socialLogoContainer span {
+  color: var(--black);
+  text-align: center;
+  font-size: 18px;
+}
+
+.mediaContainer {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.copyright {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/*Todos los ul*/
+
+.footerList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding:0;
+  }
+  
+
+.footerList li {
+  list-style-type: none;
+  height: 30px;
+  
+}
+
+.footerList li a {
+  height: 100%;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 18px;
+}
+
+.footerList li:hover a {
+  color: #00C4B4;
+}
+
+.footerList a::after {
+  content: "";
+  position: absolute;
+  background-color: #00C4B4;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0.1rem;
+  transition: 0.2s;
+}
+
+a:hover::after {
+  width: 100%;
+}

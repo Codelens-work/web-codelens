@@ -9,8 +9,6 @@ export default function Footer() {
   
   const {"services-list": servicesList, "find-way-list": findWayList, "help-list": helpList} = footer.lists;
   
-  console.log(servicesList)
-
   return (
     <footer>
       <div className='firstRowContainer'>

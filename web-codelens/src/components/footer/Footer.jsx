@@ -1,6 +1,13 @@
 import './footer.css'
+import { useTranslation } from 'react-i18next'
 
-export default function Footer() {
+export function Footer() {
+
+  const { t } = useTranslation()
+
+  const lists = t('footer-section.lists', { returnObjects: true } )
+  
+
   return (
     <footer>
       <div className='firstRowContainer'>

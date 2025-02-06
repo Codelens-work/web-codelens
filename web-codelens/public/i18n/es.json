@@ -189,35 +189,71 @@
   "footer-section": {
     "intro": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos",
     "copyright": "- 2025 - Codelens",
-    "lists": [
-      {
+    "lists": {
+      "services-list": {
         "title": "Servicios",
         "items": [
-          {"text": "Desarrollo Web","url": "/servicios/desarrollo-web"},
-          {"text": "Diseño Web","url": "/servicios/diseno-web"},
-          {"text": "Mejora y Optimización","url": "/servicios/seo"},
-          {"text": "Desarrollo de Aplicaciones Web","url": "/servicios/app-web"},
-          {"text": "Desarrollo de APIS","url": "/servicios/desarrollo-api"}
+          {
+            "text": "Desarrollo Web",
+            "url": "/servicios/desarrollo-web"
+          },
+          {
+            "text": "Diseño Web",
+            "url": "/servicios/diseno-web"
+          },
+          {
+            "text": "Mejora y Optimización",
+            "url": "/servicios/seo"
+          },
+          {
+            "text": "Desarrollo de Aplicaciones Web",
+            "url": "/servicios/app-web"
+          },
+          {
+            "text": "Desarrollo de APIS",
+            "url": "/servicios/desarrollo-api"
+          }
         ]
       },
-      {
+      "find-way-list": {
         "title": "Encuentra tu camino",
         "items": [
-          {"text": "Inicio", "url": "/"},
-          {"text": "Sobre Nosotros", "url": "/nosotros"},
-          {"text": "Blog", "url": "/blog"}
+          {
+            "text": "Inicio",
+            "url": "/"
+          },
+          {
+            "text": "Sobre Nosotros",
+            "url": "/nosotros"
+          },
+          {
+            "text": "Blog",
+            "url": "/blog"
+          }
         ]
       },
-      {
+      "help-list": {
         "title": "Ayuda",
         "items": [
-          {"text":"FAQs", "url": "/preguntas-frecuentes"},
-          {"text":"Contacto", "url": "/contacto"},
-          {"text":"Términos y condiciones", "url": "/terminos-y-condiciones"},
-          {"text":"Política de privacidad", "url": "/politica-de-privacidad"}
+          {
+            "text": "FAQs",
+            "url": "/preguntas-frecuentes"
+          },
+          {
+            "text": "Contacto",
+            "url": "/contacto"
+          },
+          {
+            "text": "Términos y condiciones",
+            "url": "/terminos-y-condiciones"
+          },
+          {
+            "text": "Política de privacidad",
+            "url": "/politica-de-privacidad"
+          }
         ]
       }
-    ]
+    }
   },
   "cto-section": {
     "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
@@ -468,9 +504,11 @@
     "about-section": {
       "heading": "Acerca de Codelens",
       "about-img": "",
-      "content": ["En CodeLens, nos especializamos en crear soluciones digitales con un enfoque en calidad, claridad y precisión. Somos un equipo apasionado por el desarrollo y diseño web, comprometido en transformar ideas en experiencias digitales memorables. Desde el primer código hasta la entrega final, trabajamos en cada proyecto con un objetivo claro: ofrecer resultados sólidos que impulsen el crecimiento de nuestros clientes.", 
-      "Creemos en la importancia de un código limpio, soluciones eficientes y un diseño innovador. Nos adaptamos a las necesidades de cada cliente, asegurando que cada proyecto refleje su visión y logre un impacto real en su presencia digital. Ya sea desarrollando un sitio web desde cero, rediseñando uno existente, o creando aplicaciones web personalizadas, estamos aquí para aportar nuestro enfoque creativo y detallado en cada paso del camino.", 
-      "Nuestro propósito es ser el aliado digital en el que nuestros clientes pueden confiar para alcanzar sus metas en un mundo digital en constante cambio. Con una visión de futuro y un compromiso inquebrantable con la calidad, en CodeLens trabajamos para construir relaciones de largo plazo basadas en resultados tangibles y duraderos."]
+      "content": [
+        "En CodeLens, nos especializamos en crear soluciones digitales con un enfoque en calidad, claridad y precisión. Somos un equipo apasionado por el desarrollo y diseño web, comprometido en transformar ideas en experiencias digitales memorables. Desde el primer código hasta la entrega final, trabajamos en cada proyecto con un objetivo claro: ofrecer resultados sólidos que impulsen el crecimiento de nuestros clientes.",
+        "Creemos en la importancia de un código limpio, soluciones eficientes y un diseño innovador. Nos adaptamos a las necesidades de cada cliente, asegurando que cada proyecto refleje su visión y logre un impacto real en su presencia digital. Ya sea desarrollando un sitio web desde cero, rediseñando uno existente, o creando aplicaciones web personalizadas, estamos aquí para aportar nuestro enfoque creativo y detallado en cada paso del camino.",
+        "Nuestro propósito es ser el aliado digital en el que nuestros clientes pueden confiar para alcanzar sus metas en un mundo digital en constante cambio. Con una visión de futuro y un compromiso inquebrantable con la calidad, en CodeLens trabajamos para construir relaciones de largo plazo basadas en resultados tangibles y duraderos."
+      ]
     },
     "values-section": {
       "heading": "Nuestros Valores Fundamentales",
@@ -657,5 +695,4 @@
       }
     ]
   }
-
 }

@@ -180,8 +180,8 @@
   "footer-section": {
     "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
     "copyright": "- 2025 - Codelens",
-    "lists": [
-      {
+    "lists": {
+    "services-list": {
         "title": "Services",
         "items": [
           {"text": "Web Development","url": "/servicios/desarrollo-web"},
@@ -191,7 +191,7 @@
           {"text": "API Development","url": "/servicios/desarrollo-api"}
         ]
       },
-      {
+      "find-way-list": {
         "title": "Find your way",
         "items": [
           {"text": "Home", "url": "/"},
@@ -199,7 +199,7 @@
           {"text": "Blog", "url": "/blog"}
         ]
       },
-      {
+      "help-list":{
         "title": "Help",
         "items": [
           {"text":"FAQs", "url": "/preguntas-frecuentes"},
@@ -208,7 +208,7 @@
           {"text":"Privacy Policy", "url": "/politica-de-privacidad"}
         ]
       }
-    ]
+    }
   },
   "cto-section": {
     "heading": "Ready to optimize your business with a custom application?",

@@ -16,8 +16,6 @@ i18n
     backend: {
       loadPath: `${getCurrentHost}/i18n/{{lng}}.json`
     }
-  })
-
-
+})
 
 export default i18n;

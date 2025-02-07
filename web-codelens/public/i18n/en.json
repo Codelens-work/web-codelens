@@ -1,6 +1,6 @@
 {
   "titles": {
-    "language": "en",
+    "language": "EN",
     "home": "Home",
     "about": "Sobre Nosotros",
     "services": "About us",
@@ -15,7 +15,14 @@
     "hero-section": {
       "heading": "Create",
       "logo-text": "IT solutions",
-      "description": "its what we do"
+      "description": "its what we do",
+      "services": [
+        "Website",
+        "Web Application",
+        "Custom API",
+        "SEO Strategy",
+        "Modern Interface"
+      ]
     },
     "about-section": {
       "heading": "We Are",
@@ -454,7 +461,10 @@
   },
   "about-us-page": {
     "hero": {
-      "background-url": ""
+      "background-url": "",
+      "heading": "Get to Know Us",
+      "sub-heading": "We Innovate to Transform Your Business",
+      "content": "Turn ideas into online excellence with our innovative solutions and strategic digital services."
     },
     "about-section": {
       "heading": "About CodeLens",
@@ -525,6 +535,13 @@
           "role": "Commercial Strategist"
         }
       ]
+    }
+  },
+  "blog": {
+    "hero-section": {
+      "heading": "Welcome to Our Blog",
+      "sub-heading": "Your source for information on technology and web development",
+      "description": "Discover the latest news, trends, and tips on technological innovation, web development, and how to boost your business with digital solutions."
     }
   },
   "privacy-page": {

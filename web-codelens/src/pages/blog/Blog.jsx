@@ -1,8 +1,11 @@
-import React from 'react';
 import './blog.css';
 import { Hero } from '../../components/hero/Hero';
+import { useTranslation } from 'react-i18next'
 
 const Blog = () => {
+
+  const { t } = useTranslation()
+
   return (
     <Hero 
       media={{
@@ -12,11 +15,13 @@ const Blog = () => {
     >
       <div className="blog-hero-content">
         <h1 className="blog-title">
-          Bienvenido a Nuestro Blog
+          {t('blog.hero-section.heading')}
         </h1>
-        <h2 className="blog-subtitle">Tu fuente de información en tecnología y desarrollo web</h2>
+        <h2 className="blog-subtitle">
+          {t('blog.hero-section.sub-heading')}
+          </h2>
         <p className="blog-description">
-          Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales.
+          {t('blog.hero-section.description')}
         </p>
       </div>
     </Hero>

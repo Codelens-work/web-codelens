@@ -9,16 +9,17 @@ import {
 import { useNavigate } from "react-router-dom";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-//import { useLanguage } from "../../costantsLanguage/LanguageContext.jsx";
+import { useTranslation } from 'react-i18next'
+import i18n from 'i18next'
 
 
 
 const NavBar = () => {
-/*   const { t, i18n } = useTranslation();
-  const handleLanguage = () => {
+  const { t } = useTranslation();
+  const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
-  }; */
+  };
 
   const [navActive, setNavActive] = useState(false);
   const [expanded, setExpanded] = useState(false); // Estado del menú
@@ -79,7 +80,7 @@ const NavBar = () => {
               }}
               className="link-navbar-custom mx-2 btn btn-outline-light"
             >
-              Inicio
+              {t('titles.home')}
             </a>
             <a
               onClick={() => {
@@ -88,7 +89,7 @@ const NavBar = () => {
               }}
               className="link-navbar-custom mx-2 btn btn-outline-light"
             >
-              ¿Quiénes Somos?
+              {t('titles.about')}
             </a>
             <Dropdown
               show={dropdown}
@@ -97,7 +98,7 @@ const NavBar = () => {
               className="dropdown-mobile mx-2"
             >
               <DropdownToggle className="dropdown-title">
-                Servicios
+              {t('titles.services')}
               </DropdownToggle>
               <DropdownMenu className="dropdown-custom">
                 <Dropdown.Item
@@ -139,7 +140,7 @@ const NavBar = () => {
               }}
               className="link-navbar-custom mx-2 btn btn-outline-light"
             >
-              Contacto
+              {t('titles.contact')}
             </a>
             <a
               onClick={() => {
@@ -148,7 +149,7 @@ const NavBar = () => {
               }}
               className="link-navbar-custom mx-2 btn btn-outline-light"
             >
-              Blog
+              {t('titles.blog')}
             </a>
             <div className="navbar-language">
               <picture className="icon-language-container">
@@ -158,7 +159,9 @@ const NavBar = () => {
                   alt="icono de mundo"
                 />
               </picture>
-              <button className="language">ES</button>
+              <button className="language" onClick={handleLanguageToggle}>
+                {i18n.language.toUpperCase()}
+                </button>
             </div>
           </Nav>
           </div>

@@ -17,9 +17,9 @@ header{
   width: 910px;
   top: 63px;
   left: 0;
-  transition: background-color 0.3s ease-in-out, padding 0.3s ease-in-out; /* agrega padding a la transicion */
+  transition: background-color 0.3s ease-in-out, 
+              padding 0.3s ease-in-out; 
   padding: 1rem 0; 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 
@@ -56,10 +56,16 @@ header{
 
 .navbar-custom.active {
   position: fixed;
-  background: rgba(155, 93, 229, 0.7); /* purple con opacidad */
-  padding: 0.5rem 0; /* saca relleno al hacer scroll */
-  z-index: 100;
-}
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 0;
+  border: none;
+  backdrop-filter: blur(4px); /* Aumenta un poco el desenfoque */
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(154, 93, 229, 0.493); /* Sombra más pronunciada para mayor contraste */
+  border-radius: 10px; /* Bordes redondeados para un diseño más moderno */
+} 
+
 
 .navbar-custom .btn-light {
   background-color: var(--white);
@@ -215,6 +221,13 @@ header{
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
+
+  .navbar-custom.active {
+    box-shadow: none;
+    top: 0;
+    background: rgba(155, 93, 229, 0.7);
+    border-radius: 0;
   }
 
   .navbar-collapse.show {

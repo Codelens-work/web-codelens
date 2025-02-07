@@ -1,8 +1,24 @@
-import React from "react";
 import LegalSection from "../../components/lagalSection/LegalSection";
+import { Hero } from "../../components/hero/Hero";
+import "./privacityPolicy.css";
+import { useTranslation } from 'react-i18next'
 
 const PrivacyPolicy = () => {
+
+  const { t } = useTranslation()
+
   return (
+    <>
+    <Hero
+      media={{
+        type: 'image',
+        src: '/hero/hero-terms-privacity.webp',
+      }}
+    >
+      <div className="terms-hero-content">
+        <h1 className="terms-title-hero">{t('privacy-page.hero.heading')}</h1>
+      </div>
+    </Hero>
     <LegalSection
       title={"Política de Privacidad de CodeLens"}
       paragraph={
@@ -16,7 +32,8 @@ const PrivacyPolicy = () => {
       description={["En CodeLens estamos comprometidos con el respeto de su privacidad y con la protección de su información personal de acuerdo con las leyes vigentes sobre privacidad, incluida la Ley de Protección de Información Personal y Documentos Electrónicos (LPRPDE).","texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2texto2","Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3Texto3","Texto4","Texxto5","Texto6","texto7","texto8","texto9","texto10"]}
    
     />
-  );
-};
+    </>
+    );
+  };
 
 export default PrivacyPolicy;

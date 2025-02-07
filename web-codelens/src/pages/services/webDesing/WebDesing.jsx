@@ -1,11 +1,13 @@
-import React from "react";
 import { Hero } from "../../../components/hero/Hero";
-
 import "./webdesing.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
+import { useTranslation } from 'react-i18next'
 
 export function WebDesing() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
@@ -15,13 +17,11 @@ export function WebDesing() {
         }}
       >
         <div className="hero__title-container">
-          <h1 className="title-service">Diseño Web</h1>
+          <h1 className="title-service">
+            {t('services-pages.web-design.hero.heading')}
+          </h1>
           <p className="paragraph-service">
-            En CodeLens, transformamos tus ideas en diseños visualmente
-            atractivos y efectivos que comunican tus valores y cautivan a tus
-            usuarios. Nos especializamos en crear interfaces intuitivas y
-            estéticamente impactantes que hacen de cada visita una experiencia
-            memorable.
+            {t('services-pages.web-design.hero.content')}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>

@@ -1,10 +1,12 @@
-import React from 'react';
-
 import './about.css';
 import { Hero } from '../../components/hero/Hero';
 import LinkButton from '../../components/linkButton/LinkButton';
+import { useTranslation } from 'react-i18next'
 
 const  About = () => {
+  
+  const { t } = useTranslation()
+
   return (
     <Hero 
       media={{
@@ -14,11 +16,13 @@ const  About = () => {
     >
       <div className="about-hero-content">
         <h1 className="about-title">
-          Conócenos
+        {t('about-us-page.hero.heading')}
         </h1>
-        <h2 className='about-subtitle'>Innovamos para transformar tu negocio</h2>
+        <h2 className='about-subtitle'>
+        {t('about-us-page.hero.sub-heading')}
+        </h2>
         <p className="about-description">
-          Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos.
+        {t('about-us-page.hero.content')}
         </p>
         <div className="hero-button">
           <LinkButton 

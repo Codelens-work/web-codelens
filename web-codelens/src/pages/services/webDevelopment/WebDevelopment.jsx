@@ -1,11 +1,13 @@
-import React from "react";
 import { Hero } from "../../../components/hero/Hero";
-
 import "./WebDevelopment.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
+import { useTranslation } from 'react-i18next'
 
 export function WebDevelopment() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
@@ -15,12 +17,11 @@ export function WebDevelopment() {
         }}
       >
         <div className="hero__title-container">
-          <h1 className="title-service">Desarrollo Web desde Cero</h1>
+          <h1 className="title-service">
+            {t('services-pages.web-development.hero.heading')}
+          </h1>
           <p className="paragraph-service">
-            En CodeLens, creemos que un sitio web efectivo es más que una página
-            bonita. Desde el diseño hasta la funcionalidad, construimos
-            soluciones digitales a medida que representan la esencia de tu marca
-            y conectan de manera auténtica con tu audiencia.
+            {t('services-pages.web-development.hero.content')}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>

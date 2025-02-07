@@ -1,11 +1,13 @@
-import React from "react";
 import { Hero } from "../../../components/hero/Hero";
-
 import "./appweb.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
+import { useTranslation } from 'react-i18next'
 
 export function AppWeb() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
@@ -16,15 +18,10 @@ export function AppWeb() {
       >
         <div className="hero__title-container">
           <h1 className="title-service">
-            Desarrollo de Aplicaciones Web Personalizadas para Potenciar tu
-            Negocio
+          {t('services-pages.web-app.hero.heading')}
           </h1>
           <p className="paragraph-service">
-            En CodeLens, desarrollamos aplicaciones web a medida, diseñadas
-            específicamente para optimizar y mejorar los procesos de tu empresa.
-            Ya sea un sistema de gestión, una herramienta de automatización, o
-            una plataforma de comunicación, transformamos tus ideas en
-            aplicaciones funcionales, seguras y escalables.
+          {t('services-pages.web-app.hero.content')}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>

@@ -1,12 +1,14 @@
-import React from "react";
 import { Hero } from "../../../components/hero/Hero";
-
-import "./appiservice.css";
+import "./apiservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
-
 import Services from "../../../components/services/Services.jsx";
+import { useTranslation } from 'react-i18next'
 
-export function AppiService() {
+
+export function ApiService() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
@@ -17,14 +19,10 @@ export function AppiService() {
       >
         <div className="hero__title-container">
           <h1 className="title-service">
-            Desarrollo de APIS que Potencian a tus Usuarios
+            {t('services-pages.api-development.hero.heading')}
           </h1>
           <p className="paragraph-service">
-            En CodeLens, diseñamos y desarrollamos APIs que no solo conectan
-            sistemas, sino que también permiten a nuestros clientes ofrecer
-            servicios innovadores a sus propios usuarios. Estas APIs están
-            diseñadas para ser seguras, escalables y fáciles de implementar,
-            asegurando que tus clientes puedan integrarlas sin complicaciones.
+            {t('services-pages.api-development.hero.content')}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>

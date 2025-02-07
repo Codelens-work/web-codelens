@@ -7,9 +7,28 @@
     border: none;
     background-color: var(--purple);
     color: var(--white);
-    border-radius: 10px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.link-btn:hover {
+    letter-spacing: 3px;
+    background-color: hsl(273, 89%, 36%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(273, 89%, 36%) 0px 7px 29px 0px;
+}
+  
+.link-btn:active {
+    letter-spacing: 3px;
+    background-color: hsl(273, 89%, 36%);;
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(273, 89%, 36%) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
 }
 
 /* Tamaños */
@@ -23,11 +42,10 @@
 }
 
 
-
+/* 
 .link-btn:hover{
     background-color: #b780fa;
     color: var(--black);
     box-shadow: 0 0 20px #6fc5ff50;
     transform: scale(1.1);
-
-}
+} */

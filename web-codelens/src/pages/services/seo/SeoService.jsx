@@ -1,11 +1,13 @@
-import React from "react";
 import { Hero } from "../../../components/hero/Hero";
-
 import "./seoservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
+import { useTranslation } from 'react-i18next'
 
 export function SeoService() {
+
+  const { t } = useTranslation();
+
   return (
     <>
       <Hero
@@ -15,13 +17,11 @@ export function SeoService() {
         }}
       >
         <div className="hero__title-container">
-          <h1 className="title-service">Mejora y Optimización de Sitios Web</h1>
+          <h1 className="title-service">
+            {t('services-pages.seo.hero.heading')}
+          </h1>
           <p className="paragraph-service">
-            En CodeLens, transformamos sitios web existentes para maximizar su
-            rendimiento, actualizar su diseño, y añadir funcionalidades que
-            aumenten su impacto. Ya sea mejorando la velocidad de carga,
-            actualizando el diseño, o integrando nuevas características, nuestro
-            equipo se asegura de que tu sitio esté a la altura de tus objetivos.
+            {t('services-pages.seo.hero.content')}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>

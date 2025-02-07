@@ -9,12 +9,13 @@ import { SeoService } from "./pages/services/seo/SeoService";
 import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import Contact from "./components/contact/Contact";
+import Faqs from "./components/faqs/Faqs";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <MainLayout><Contact/></MainLayout>,
+      element: <MainLayout><Faqs/><Contact/></MainLayout>,
     },
     {
       path: "/nosotros",

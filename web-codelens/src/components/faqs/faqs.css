@@ -1,0 +1,32 @@
+.faqs-section {
+  padding: 60px 30px;
+  background-color: var(--light-blue);
+}
+
+.faqs-text-container {
+  text-align: center;
+}
+
+.faqs-text-container p {
+  font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+
+.accordion-item {
+  background-color: transparent;
+  border: unset;
+}
+
+.accordion .accordion-item:first-child .accordion-button {
+  border-top: 0.1rem solid var(--black);
+  border-radius: unset;
+}
+
+.accordion-button {
+  background-color: transparent;
+  border-bottom: 0.1em solid var(--black);
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}

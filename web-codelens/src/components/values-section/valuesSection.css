@@ -1,0 +1,41 @@
+.value-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(155, 93, 229, 0.46) 0%, rgba(211, 231, 249, 0.95) 100%);
+  padding: 80px 10px;
+}
+
+.value-section h2 {
+ color: var(--black);
+ font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+ text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+
+/* Para pantallas de 1024px o más: 3 tarjetas por fila */
+@media (min-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Para pantallas entre 768px y 1023px: 2 tarjetas por fila */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+

@@ -479,24 +479,28 @@
       "heading": "Our Core Values",
       "cards": [
         {
-          "icon": "",
+          "icon": "/cards-values/card1.svg",
           "content": "Working side by side, every step of the way"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card2.svg",
           "content": "We adapt faster than a chameleon at a color festival"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card3.svg",
           "content": "Where others see problems, we see... future bragging rights"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card4.svg",
           "content": "Coffee first, logic later"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card5.svg",
           "content": "We fine-tune the aim before firing the cannon"
+        },
+        {
+          "icon": "/cards-values/card6.svg",
+          "content": "We accept challenges, we create solutions"
         }
       ]
     },

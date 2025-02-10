@@ -524,24 +524,28 @@
       "heading": "Nuestros Valores Fundamentales",
       "cards": [
         {
-          "icon": "",
+          "icon": "/cards-values/card1.svg",
           "content": "Trabajo hombro con hombro"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card2.svg",
           "content": "Nos adaptamos más que un camaleón en feria"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card3.svg",
           "content": "Donde otros ven problemas, nosotros vemos...oportunidades de presumir después"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card4.svg",
           "content": "Café primero, lógica después"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card5.svg",
           "content": "Ajustamos el tiro antes del cañonazo"
+        },
+        {
+          "icon": "/cards-values/card6.svg",
+          "content": "Aceptamos retos, creamos soluciones"
         }
       ]
     },

@@ -8,27 +8,40 @@
 
 .about-title{
     text-align: center;
-    font-size: 40px;
+    font-size: 3rem;
     color: var(--white);
+}
+
+.about-subtitle{
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .about-description{
     text-align: center;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
     color: var(--black);
     margin-top: 10px;
-    max-width: 520px;
+    max-width: 590px;
 }
 
 
 .hero-button{
-    margin-top: 40px;
+    margin-top: 3rem;
     text-align: center;
 }
 
 @media(min-width: 1024px){
     .about-title{
-        font-size: 70px;
+        font-size: 4.375rem;
     }
+
+    .about-subtitle{
+        font-size: 2.6rem;
+    }
+
+    .about-description{
+        font-size: 1.4rem;
+    } 
 }

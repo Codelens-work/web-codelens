@@ -1,6 +1,6 @@
 {
   "titles": {
-    "language": "es",
+    "language": "ES",
     "home": "Inicio",
     "about": "Sobre Nosotros",
     "services": "Servicios",
@@ -15,7 +15,14 @@
     "hero-section": {
       "heading": "Crear una",
       "logo-text": "Soluciones IT",
-      "description": "es lo que sabemos hacer"
+      "description": "es lo que sabemos hacer",
+      "services": [
+        "Página Web",
+        "Aplicación Web",
+        "API Personalizada",
+        "Estrategia SEO",
+        "Interfaz Moderna"
+      ]
     },
     "about-section": {
       "heading": "Nosotros somos",
@@ -499,7 +506,10 @@
   },
   "about-us-page": {
     "hero": {
-      "background-url": ""
+      "background-url": "",
+      "heading":"Conócenos",
+      "sub-heading": "Innovamos para transformar tu negocio",
+      "content": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos."
     },
     "about-section": {
       "heading": "Acerca de Codelens",
@@ -570,6 +580,13 @@
           "role": "Commercial Strategist"
         }
       ]
+    }
+  },
+  "blog": {
+    "hero-section": {
+      "heading": "Bienvenido a Nuestro Blog",
+      "sub-heading": "Tu fuente de información en tecnología y desarrollo web",
+      "description": "Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales."   
     }
   },
   "privacy-page": {

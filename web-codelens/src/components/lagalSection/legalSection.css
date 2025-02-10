@@ -50,38 +50,6 @@
 
 }
 
-
-/* ---header--- */
-
-.legal-header {
-    display            : flex;
-    justify-content    : center;
-    align-items        : center;
-    width              : 1440px;
-    height             : 668px;
-    background-image   : url('public/imgs/deskAndLenses.svg');
-    background-size    : cover;
-    background-repeat  : no-repeat;
-    background-position: center;
-    color              : var(--purple);
-    text-shadow        : 3px 3px 3px rgba(0, 0, 0, 0.5);
-
-    position: relative;
-}
-
-.legal-header h2 {
-    position   : absolute;
-    width      : 840px;
-    height     : 140px;
-    top        : 20%;
-    left       : 50%;
-    transform  : translate(-50%, -50%);
-    margin     : 0;
-    font-size  : 4rem;
-    line-height: 140px;
-    text-align : center;
-}
-
 /*3ra Section*/
 .section-display-container {
     padding-top        : 64px;

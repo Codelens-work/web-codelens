@@ -1,10 +1,11 @@
 .hero {
     position: relative;
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 5rem 1rem;
+    padding: 4rem 1rem;
+    margin: 0;
   }
   
   .hero-content {
@@ -15,6 +16,6 @@
   
   @media(min-width: 1024px) {
     .hero{
-      height: 900px;
+      height: 890px;
     }
   }

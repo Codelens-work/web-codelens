@@ -64,14 +64,16 @@
           "content": {
             "label": "How can we help?",
             "placeholder": "Tell us a little about your idea",
-            "validation-error": "The field must have at least 3 characters",
+            "validation-error": "The message must have at least 10 characters.",
             "size-error": "Maximum size exceeded."
           },
           "submit": "Send"
         },
         "required-message": "Required field",
         "modals": {
-          "success": "Message sent! We will contact you soon",
+          "titlesuccess": "Successful submission!",
+          "titleerror": "Submission error!",
+          "success": "We will contact you soon",
           "error": "An error occurred while sending the message. Please try again later"
         }
       }
@@ -188,40 +190,39 @@
     "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
     "copyright": "- 2025 - Codelens",
     "lists": {
-    "services-list": {
+      "services-list": {
         "title": "Services",
         "items": [
-          {"text": "Web Development","url": "/servicios/desarrollo-web"},
-          {"text": "Web Design","url": "/servicios/diseno-web"},
-          {"text": "Improvement and Optimization","url": "/servicios/seo"},
-          {"text": "Web Application Development","url": "/servicios/app-web"},
-          {"text": "API Development","url": "/servicios/desarrollo-api"}
+          { "text": "Web Development", "url": "/servicios/desarrollo-web" },
+          { "text": "Web Design", "url": "/servicios/diseno-web" },
+          { "text": "Improvement and Optimization", "url": "/servicios/seo" },
+          {
+            "text": "Web Application Development",
+            "url": "/servicios/app-web"
+          },
+          { "text": "API Development", "url": "/servicios/desarrollo-api" }
         ]
       },
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          {"text": "Home", "url": "/"},
-          {"text": "About Us", "url": "/nosotros"},
-          {"text": "Blog", "url": "/blog"}
+          { "text": "Home", "url": "/" },
+          { "text": "About Us", "url": "/nosotros" },
+          { "text": "Blog", "url": "/blog" }
         ]
       },
-      "help-list":{
+      "help-list": {
         "title": "Help",
         "items": [
-          {"text":"FAQs", "url": "/preguntas-frecuentes"},
-          {"text":"Contact", "url": "/contacto"},
-          {"text":"Terms and Conditions", "url": "/terminos-y-condiciones"},
-          {"text":"Privacy Policy", "url": "/politica-de-privacidad"}
+          { "text": "FAQs", "url": "/preguntas-frecuentes" },
+          { "text": "Contact", "url": "/contacto" },
+          { "text": "Terms and Conditions", "url": "/terminos-y-condiciones" },
+          { "text": "Privacy Policy", "url": "/politica-de-privacidad" }
         ]
       }
     }
   },
-  "cto-section": {
-    "heading": "Ready to optimize your business with a custom application?",
-    "content": "Let's talk about how CodeLens can develop a tailored solution for you.",
-    "cto-button": "Contact us"
-  },
+
   "services-pages": {
     "web-app": {
       "hero": {
@@ -267,6 +268,10 @@
             "content": "We ensure your application can grow alongside your business, providing technical support and updates whenever needed."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to optimize your business with a custom application?",
+        "content": "Let's talk about how CodeLens can develop a tailored solution for you."
       }
     },
     "seo": {
@@ -309,6 +314,10 @@
             "content": "We adjust SEO and site structure to enhance visibility and user satisfaction."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to take your website to the next level?",
+        "content": "Let's talk about how CodeLens can optimize and improve your website to meet today's demands."
       }
     },
     "web-design": {
@@ -354,6 +363,10 @@
             "content": "We create prototypes so you can visualize the structure and design of each section before development."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to give your website a professional and memorable look?",
+        "content": "Let's talk about how CodeLens can help you transform your vision into an effective design."
       }
     },
     "web-development": {
@@ -399,6 +412,10 @@
             "content": "We help you choose the hosting and domain that best fit your business's needs."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to build a website that represents your brand?",
+        "content": "Let's talk about how we can help you create an effective and personalized digital presence."
       }
     },
     "api-development": {
@@ -456,6 +473,10 @@
             "content": "We offer support and maintenance packages to ensure your API continues to perform optimally and is updated according to your business's needs."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Do you need an API that connects your systems securely and efficiently?",
+        "content": "Let's talk about your project!"
       }
     }
   },
@@ -470,8 +491,8 @@
       "heading": "About CodeLens",
       "about-img": "",
       "content": [
-        "At CodeLens, we specialize in crafting digital solutions with a focus on quality, clarity, and precision. We are a team passionate about web development and design, committed to transforming ideas into memorable digital experiences. From the first line of code to final delivery, we approach each project with a clear goal: delivering solid results that drive our clients' growth.", 
-        "We believe in the importance of clean code, efficient solutions, and innovative design. We adapt to each client's needs, ensuring that every project reflects their vision and makes a real impact on their digital presence. Whether building a website from scratch, redesigning an existing one, or creating custom web applications, we bring our creative and detail-oriented approach to every step of the journey.", 
+        "At CodeLens, we specialize in crafting digital solutions with a focus on quality, clarity, and precision. We are a team passionate about web development and design, committed to transforming ideas into memorable digital experiences. From the first line of code to final delivery, we approach each project with a clear goal: delivering solid results that drive our clients' growth.",
+        "We believe in the importance of clean code, efficient solutions, and innovative design. We adapt to each client's needs, ensuring that every project reflects their vision and makes a real impact on their digital presence. Whether building a website from scratch, redesigning an existing one, or creating custom web applications, we bring our creative and detail-oriented approach to every step of the journey.",
         "Our purpose is to be the digital partner our clients can trust to achieve their goals in an ever-changing digital world. With a forward-thinking vision and an unwavering commitment to quality, at CodeLens, we work to build long-term relationships based on tangible and lasting results."
       ]
     },
@@ -501,9 +522,9 @@
       ]
     },
     "team-section": {
-        "heading": "Our Core Team",
-        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
-        "cards": [
+      "heading": "Our Core Team",
+      "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
+      "cards": [
         {
           "img-url": "",
           "img-hover-url": "",
@@ -605,7 +626,8 @@
       "content": [
         "Welcome to CodeLens' Terms of Use! We are really happy to have you here. Thank you for choosing our services.",
         "Below, we have listed important legal terms that apply to anyone who hires our services. These terms are necessary to protect both you and us and to make our services possible and more enjoyable for everyone.",
-        "We know that reading legal terms can be exhausting. That’s why we try to make it a more pleasant experience. If you have any questions, we invite you to contact us."
+        "We know that reading legal terms can be exhausting. That’s why we try to make it a more pleasant experience. If you have any questions,",
+        "we invite you to contact us."
       ]
     },
     "terms-section": [

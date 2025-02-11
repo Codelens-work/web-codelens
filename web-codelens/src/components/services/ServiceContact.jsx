@@ -1,18 +1,23 @@
 import React from "react";
 import "../services/service.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next'
+
 
 import PropTypes from "prop-types";
 import "/src/components/linkButton/linkbutton.css"
+
 const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
+  const { t } = useTranslation()
+  
   const navigate = useNavigate();
 
   return (
     <div className="service-contact">
-      <h2>¿Listo para optimizar tu negocio con una aplicación personalizada?</h2>
-      <p>Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida.</p>
+      <h2>{titleServiceContact}</h2>
+      <p>{paragraphServiceContact}</p>
       <a className={`link-btn link-btn-small`} onClick={()=>navigate("/#Contact")}>
-      CONTACTANOS
+      {t('home.contact-section.heading')}
       </a>
     </div>
   );

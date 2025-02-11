@@ -12,6 +12,8 @@ const Services = ({
   items,
   titleCarts,
   descriptionCart,
+  titleServiceContact,
+  paragraphServiceContact,
 }) => {
   return (
     <div>
@@ -26,7 +28,9 @@ const Services = ({
         titleCarts={titleCarts}
         descriptionCart={descriptionCart}
       />
-      <ServiceContact/>
+      <ServiceContact 
+      titleServiceContact={titleServiceContact}
+      paragraphServiceContact={paragraphServiceContact}/>
     </div>
   );
 };
@@ -40,5 +44,8 @@ Services.propTypes = {
 
   titleCarts: PropTypes.arrayOf(PropTypes.string).isRequired,
   descriptionCart: PropTypes.arrayOf(PropTypes.string).isRequired,
+
+  titleServiceContact: PropTypes.string.isRequired,
+  paragraphServiceContact: PropTypes.string.isRequired,
 };
 export default Services;

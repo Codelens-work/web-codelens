@@ -11,7 +11,6 @@ import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
-import Faqs from "./components/faqs/Faqs";
 
 function App() {
   const router = createBrowserRouter([

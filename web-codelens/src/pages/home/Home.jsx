@@ -5,6 +5,7 @@ import LinkButton from '../../components/linkButton/LinkButton';
 import { SpanTitleHome } from '../../components/span-title-home/SpanTitleHome';
 import Contact from "../../components/contact/Contact";
 import { useTranslation } from 'react-i18next'
+import Faqs from '../../components/faqs/Faqs'
 
 const Home = () => {
 
@@ -34,6 +35,7 @@ const Home = () => {
       </div>
     </Hero>
     <Contact />
+    <Faqs/>
     </>
   );
 }

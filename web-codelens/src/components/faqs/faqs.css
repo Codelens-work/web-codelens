@@ -1,6 +1,11 @@
 .faqs-section {
   padding: 60px 30px;
   background-color: var(--light-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .faqs-text-container {
@@ -10,6 +15,7 @@
 .faqs-text-container p {
   font-size: clamp(0.5rem, 3vw, 1rem);
 }
+
 
 .accordion-item {
   background-color: transparent;
@@ -41,3 +47,9 @@
   background-color: transparent;
   font-weight: 700;
 }
+
+@media(width>1000px) {
+  .accordion {
+    width: 80%;
+  }
+  }

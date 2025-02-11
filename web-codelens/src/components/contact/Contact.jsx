@@ -1,23 +1,23 @@
 import React from "react";
 import ContactForm from "./ContactForm";
 import "../contact/contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+ const { t, i18n } = useTranslation();
+  const tContact = t("home.contact-section", { returnObjects: true });
+
+
   return (
-    <div className="contact-container">
+    <div id="Contact" className="contact-container">
       <div className="left-c">
         <div className="text-container">
-          <h2 className="h2-invitation-one">Contáctenos</h2>
+          <h2 className="h2-invitation-one">{tContact.heading}</h2>
           <h3 className="h3-invitation">
-            Estamos aquí para ayudarte a subir de nivel. ¡Hablemos sobre tu
-            próximo proyecto!
+            {t("home.contact-section.intro-text")}
           </h3>
           <p className="invitation-one">
-            Ya sea que necesites un sitio web desde cero, mejorar el que ya
-            tienes o desarrollar una aplicación personalizada, estamos aquí para
-            ayudarte. En CodeLens, estamos comprometidos con soluciones
-            tecnológicas claras y efectivas. Escríbenos y descubre cómo podemos
-            colaborar.
+          {t("home.contact-section.intro-description")}
           </p>
           <img
             className="logo-codelens"
@@ -25,17 +25,16 @@ const Contact = () => {
             alt="Logo Codelens"
           />
           <h2 className="h2-invitation-two">
-            Ponte en contacto <br />
-            con nosotros
+          {t("home.contact-section.contact-cta")}
           </h2>
           <p className="invitation-two">
-            En CodeLens, nos encanta colaborar con personas y empresas
-            apasionadas. ¡Esperamos saber de ti pronto!
+          {t("home.contact-section.socials-message")}
           </p>
 
-          <p className="invitation-three"> <span><img src="..\icons\Message-contact.svg"/></span>Chatea con Nosotros</p>
+          <p className="invitation-three"> <span><img src="..\icons\Message-contact.svg"/></span>
+          {t("home.contact-section.chat-text")}</p>
           <p className="email">codelens@gmail.com</p>
-          <p className="invitation-three"> <span><img src="..\icons\Chat-contact.svg"/></span>Visita nuestras redes</p>
+          <p className="invitation-three"> <span><img src="..\icons\Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
           <div>
             <img
               className="logo-social"

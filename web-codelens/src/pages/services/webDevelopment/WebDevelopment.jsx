@@ -7,6 +7,16 @@ import { useTranslation } from 'react-i18next'
 export function WebDevelopment() {
 
   const { t } = useTranslation();
+  const tBenefits = t(
+    "services-pages.web-development.about-section.benefits-section.list",
+    { returnObjects: true }
+  );
+  const tFeatures = t("services-pages.web-development.features-section.cards", {
+    returnObjects: true,
+  });
+
+  const tCartsTitle = tFeatures.map((item) => item.title);
+  const tCartsContent = tFeatures.map((item) => item.content);
 
   return (
     <>
@@ -29,29 +39,15 @@ export function WebDevelopment() {
 
       <Services
         img="../service/webDevelopment.svg"
-        titleOne="Por Qué Elegir Desarrollo a Medida"
-        paragraphOne="Cada negocio es único, y tu sitio web debe reflejarlo. Nuestro equipo se especializa en crear sitios web personalizados que se ajustan a las necesidades y objetivos específicos de cada cliente."
-        titleTwo="Beneficios de elegirnos"
-        items={[
-          "Adaptabilidad: Diseños a medida que evolucionan contigo.",
-          "Escalabilidad: Preparados para el crecimiento de tu negocio.",
-          "Optimización Completa: Enfocados en rendimiento, seguridad y SEO desde el inicio.",
-          "Experiencia Única de Usuario: Interfaces intuitivas y amigables para cualquier dispositivo.",
-        ]}
-
-        
-        titleCarts={[
-          "Desarrollo Completo y Personalizado",
-          "Integración de Funcionalidades Específicas",
-          "Optimización para Dispositivos Móviles y SEO",
-          "Asesoramiento en Hosting y Dominios",
-        ]}
-        descriptionCart={[
-          "Diseñamos y construimos un sitio web que representa a tu marca de manera auténtica.",
-          "Desde sistemas de reservas hasta carritos de compra, integramos todas las funcionalidades que necesitas.",
-          "Nuestro desarrollo es completamente responsivo y optimizado para mejorar tu posicionamiento en motores de búsqueda.",
-          "Te ayudamos a elegir el hosting y dominio que mejor se adapten a las necesidades de tu negocio.",
-        ]}
+        titleOne={t('services-pages.web-development.about-section.value-proposal.heading')}
+        paragraphOne={t('services-pages.web-development.about-section.value-proposal.content')}
+        titleTwo={t('services-pages.web-development.about-section.benefits-section.heading')}
+        items={tBenefits}
+        titleCarts={tCartsTitle}
+        descriptionCart={tCartsContent}
+        titleServiceContact={t("services-pages.web-development.cto-section.heading")}
+      paragraphServiceContact={t("services-pages.web-development.cto-section.content")}
+      
       />
     </>
   );

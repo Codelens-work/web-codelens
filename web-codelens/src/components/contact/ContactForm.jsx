@@ -3,15 +3,15 @@ import { Form, Button } from "react-bootstrap";
 import { useState, useRef } from "react";
 import Modal from "./Modal";
 import { useTranslation } from "react-i18next";
-import '../contact/contact.css'
-
+import "../contact/contact.css";
 
 const ContactForm = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const businessRef = useRef(null);
   const messageRef = useRef(null);
-//   const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const tForm = t("home.contact-section.contact-form", { returnObjects: true });
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [msjApi, setMsjApi] = useState({
@@ -24,10 +24,9 @@ const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    business:"",
+    business: "",
     message: "",
   });
-
 
   const [errors, setErrors] = useState({
     name: false,
@@ -37,7 +36,7 @@ const ContactForm = () => {
     shortMessage: false,
   });
 
-  const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{1,33}$/;
+  const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,33}$/;
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleChange = (event) => {
@@ -101,34 +100,35 @@ const ContactForm = () => {
       setFormData({
         name: "",
         email: "",
-        business:"",
+        business: "",
         message: "",
       });
     }
   };
 
+  const modalSuccessTitle = tForm.modals.titlesuccess;
+  const modalSuccessText= tForm.modals.success;
 
-  const modalSuccessful = "¡Envio exitoso!"
-  const modalSuccessfulText1 = `${formData.name} tu mensaje ha sido enviado correctamente desde el email ${formData.email} ` 
-  const modalSuccessfulText2 = ". Muchas gracias por escribirme. Nos pondermos en contacto contigo a la brevedad."
+  const modalErrorTitle = tForm.modals.titleerror;
+  const modalErrorText = tForm.modals.error;
 
-  const modalError = "¡Error en el envío!"
-  const modalErrorText1 = `${formData.name}, no se pudo enviar tu mensaje a desde el email ${formData.email}.` 
-  const modalErrorText2 =  `. Por favor, inténtalo nuevamente más tarde o contáctame a través de otro medio. Lamentamos las molestias.`
-
+  const sendEmail = () => {
+    // aca llamar a la api
+    setModalIsOpen(!modalIsOpen);
+  };
 
   return (
     <>
       <div className="container-form-section">
         <Form className="form-container" onSubmit={handlerSubmit}>
           <Form.Group className="form-group">
-            <Form.Label>Nombre y Apellido</Form.Label>
+            <Form.Label>{tForm.inputs.fullname.label}</Form.Label>
             <div>
               <Form.Control
                 ref={nameRef}
                 name="name"
                 type="text"
-                placeholder="Jonh Doe"
+                placeholder={tForm.inputs.fullname.placeholder}
                 value={formData.name}
                 onChange={handleChange}
                 className={errors.name ? "input-error" : ""}
@@ -136,19 +136,21 @@ const ContactForm = () => {
             </div>
             {errors.name && (
               <div className="alert alert-warning">
-                "El nombre debe contener solo letras."
+                {t(
+                  "home.contact-section.contact-form.inputs.fullname.validation-error"
+                )}
               </div>
             )}
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>Email</Form.Label>
+            <Form.Label>{tForm.inputs.email.label}</Form.Label>
             <div>
               <Form.Control
                 ref={emailRef}
                 name="email"
                 type="email"
-                placeholder="example@example.com"
+                placeholder={tForm.inputs.email.placeholder}
                 value={formData.email}
                 onChange={handleChange}
                 className={errors.email ? "input-error" : ""}
@@ -156,19 +158,21 @@ const ContactForm = () => {
             </div>
             {errors.email && (
               <div className="alert alert-warning">
-                "El cambo es obligatorio y debe tener formato de Email."
+                {t(
+                  "home.contact-section.contact-form.inputs.email.validation-error"
+                )}
               </div>
             )}
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>Empresa o Negocio</Form.Label>
-            <div >
+            <Form.Label>{tForm.inputs.business.lable}</Form.Label>
+            <div>
               <Form.Control
                 ref={businessRef}
                 name="business"
                 type="business"
-                placeholder="Nombre de tu empresa"
+                placeholder={tForm.inputs.business.placeholder}
                 value={formData.business}
                 onChange={handleChange}
               />
@@ -176,12 +180,12 @@ const ContactForm = () => {
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>¿Como podemos ayudarte?</Form.Label>
+            <Form.Label>{tForm.inputs.content.lable}</Form.Label>
             <Form.Control
               ref={messageRef}
               name="message"
               as="textarea"
-              placeholder="Cuéntanos un poco de tu idea."
+              placeholder={tForm.inputs.content.placeholder}
               value={formData.message}
               onChange={handleChange}
               className={errors.message ? "input-error" : ""}
@@ -189,17 +193,19 @@ const ContactForm = () => {
             />
             {errors.message && (
               <div className="alert alert-warning">
-                'El mensaje debe tener como minimo 10 caracteres.'
+               {t(
+                  "home.contact-section.contact-form.inputs.content.validation-error"
+                )}
               </div>
             )}
           </Form.Group>
           <Button type="submit" variant="primary" className="contact-button">
-            ENVIAR
+            {tForm.inputs.submit}
           </Button>
           {modalIsOpen && (
             <Modal
-            title={modalSuccessful}
-              text={modalSuccessfulText1 + modalSuccessfulText2}
+              title={modalSuccessTitle}
+              text={modalSuccessText}
               onClose={modalIsOpen}
               onCloseModal={closeModal}
             />

@@ -2,11 +2,20 @@ import { Hero } from "../../../components/hero/Hero";
 import "./appweb.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 export function AppWeb() {
-
   const { t } = useTranslation();
+  const tBenefits = t(
+    "services-pages.web-app.about-section.benefits-section.list",
+    { returnObjects: true }
+  );
+  const tFeatures = t("services-pages.web-app.features-section.cards", {
+    returnObjects: true,
+  });
+
+  const tCartsTitle = tFeatures.map((item) => item.title);
+  const tCartsContent = tFeatures.map((item) => item.content);
 
   return (
     <>
@@ -18,10 +27,10 @@ export function AppWeb() {
       >
         <div className="hero__title-container">
           <h1 className="title-service">
-          {t('services-pages.web-app.hero.heading')}
+            {t("services-pages.web-app.hero.heading")}
           </h1>
           <p className="paragraph-service">
-          {t('services-pages.web-app.hero.content')}
+            {t("services-pages.web-app.hero.content")}
           </p>
           <LinkButton label="CONTACTANOS" href="#" size="small" />
         </div>
@@ -29,25 +38,15 @@ export function AppWeb() {
 
       <Services
         img="../service/appWeb.svg"
-        titleOne="Por Qué Optar por una Aplicación Web Personalizada"
-        paragraphOne="Las aplicaciones personalizadas permiten resolver problemas específicos y optimizar procesos únicos de tu empresa, brindándote una ventaja competitiva al mejorar la eficiencia y simplificar tareas complejas."
-        titleTwo="Beneficios de elegirnos"
-        items={[
-          "Adaptación a las Necesidades del Negocio: Funcionalidades desarrolladas específicamente para tus procesos.",
-          "Escalabilidad: Crecimiento y adaptabilidad a medida que tu negocio evoluciona.",
-          "Acceso Remoto y Colaboración: Disponibilidad desde cualquier dispositivo y ubicación.",
-          "Optimización de Recursos: Automatización de tareas y mejor gestión del tiempo.",
-          "Seguridad Personalizada: Protocolos de seguridad avanzados para proteger la información sensible.",
-        ]}
-
-        
-        titleCarts={[
-          "Análisis Personalizado y Diseño de Prototipos",
-          "Desarrollo de Sistemas de Gestión Internos",
-          "Integración con Herramientas Externas",
-          "Escalabilidad y Soporte Técnico",
-         ]}
-        descriptionCart={["Evaluamos tus necesidades y diseñamos prototipos interactivos para que visualices el proyecto antes de empezar.", "Creamos aplicaciones para mejorar la gestión interna, como sistemas de control de inventario o seguimiento de pedidos.", "Conectamos tu aplicación con otros sistemas o herramientas que ya utilizas, como CRMs o ERPs, para optimizar los flujos de trabajo.", "Nos aseguramos de que tu aplicación pueda crecer junto a tu negocio, brindando soporte técnico y actualizaciones cuando lo necesites."]}
+        titleOne={t("services-pages.web-app.about-section.heading")}
+        paragraphOne={t("services-pages.web-app.about-section.content")}
+        titleTwo={t("services-pages.web-app.benefits-section.heading")}
+        items={tBenefits}
+        titleCarts={tCartsTitle}
+        descriptionCart={tCartsContent}
+        titleServiceContact={t("services-pages.web-app.cto-section.heading")}
+      paragraphServiceContact={t("services-pages.web-app.cto-section.content")}
+      
       />
     </>
   );

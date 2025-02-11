@@ -11,7 +11,6 @@
   font-size: clamp(0.5rem, 3vw, 1rem);
 }
 
-
 .accordion-item {
   background-color: transparent;
   border: unset;
@@ -22,12 +21,11 @@
   border-radius: unset;
 }
 
-
-
 .accordion-header .accordion-button.collapsed {
   background-color: transparent;
   border-bottom: 0.1em solid var(--black);
   border-radius: unset;
+  font-weight: 700;
 }
 
 .accordion-button:focus {
@@ -35,7 +33,7 @@
 }
 
 .accordion-button:not(.collapsed) {
-  background-color: var(--purple);
-  opacity: 0.7;
-  color: var(--white);
+  color: var(--purple);
+  background-color: transparent;
+  font-weight: 700;
 }

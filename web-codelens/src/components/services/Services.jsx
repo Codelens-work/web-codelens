@@ -2,6 +2,7 @@ import React from "react";
 import Service from "./Service";
 import PropTypes from "prop-types";
 import ServiceCardSection from "./ServiceCardSection";
+import ServiceContact from "./ServiceContact";
 
 const Services = ({
   img,
@@ -25,6 +26,7 @@ const Services = ({
         titleCarts={titleCarts}
         descriptionCart={descriptionCart}
       />
+      <ServiceContact/>
     </div>
   );
 };

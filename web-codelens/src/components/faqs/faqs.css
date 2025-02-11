@@ -21,6 +21,10 @@
   border-radius: unset;
 }
 
+.accordion-item:last-of-type>.accordion-header .accordion-button.collapsed{
+  border-radius: unset;
+}
+
 .accordion-header .accordion-button.collapsed {
   background-color: transparent;
   border-bottom: 0.1em solid var(--black);

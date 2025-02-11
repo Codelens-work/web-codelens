@@ -1,6 +1,5 @@
 import './valuesSection.css';
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CardValue from '../cardValueSection/cardValue';
 

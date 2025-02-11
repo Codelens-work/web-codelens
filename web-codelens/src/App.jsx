@@ -12,7 +12,6 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
 
-
 function App() {
   const router = createBrowserRouter([
     {

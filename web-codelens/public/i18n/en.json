@@ -121,7 +121,7 @@
       "content": [
         {
           "question": "What services does CodeLens offer?",
-          "answer": "At CodeLens, we specialize in: Web Development from scratch. Custom Web Design focused on user experience. Enhancement of existing Websites. Web Application Development, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!"
+          "answer": "At CodeLens, we specialize in:<ul><li><strong>Web Development</strong> from scratch.</li><li>Custom <strong> Web Design</strong> focused on user experience.</li><li><strong>Enhancement</strong> of existing Websites.</li><li><strong>Web Application Development </strong>, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!</li></ul>"
         },
         {
           "question": "What types of businesses or projects do you accept?",
@@ -137,7 +137,7 @@
         },
         {
           "question": "How is the development process structured?",
-          "answer": "Our development process consists of several phases: Initial Consultation: We discuss your goals and requirements. Planning and Design: We create a proposal and initial design. Development: We build the website or application based on the agreed design. Testing and Launch: We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress."
+          "answer": "Our development process consists of several phases: <ul><li><strong>Initial Consultation:</strong> We discuss your goals and requirements.</li><li><strong>Planning and Design:</strong> We create a proposal and initial design.</li><li><strong>Development:</strong> We build the website or application based on the agreed design.</li><li><strong>Testing and Launch:</strong> We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress.</li></ul>"
         },
         {
           "question": "How much does a web development project or application cost?",

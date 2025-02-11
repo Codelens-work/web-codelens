@@ -130,7 +130,7 @@
       "content": [
         {
           "question": "¿Cuáles son los servicios que ofrece CodeLens?",
-          "answer": "En CodeLens, nos especializamos en: Desarrollo Web desde cero. Diseño Web personalizado y enfocado en la experiencia del usuario. Mejora de Sitios Web existentes. Desarrollo de Aplicaciones Web, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!"
+          "answer": "En CodeLens, nos especializamos en: <ul><li><strong>Desarrollo Web</strong> desde cero.</li><li><strong>Diseño Web</strong> personalizado y enfocado en la experiencia del usuario.</li><li><strong>Mejora de Sitios Web</strong> existentes</li><li><strong>Desarrollo de Aplicaciones Web</strong>, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!</li></ul>"
         },
         {
           "question": "¿Qué tipo de empresas o proyectos aceptan?",
@@ -146,7 +146,7 @@
         },
         {
           "question": "¿Cómo se estructura el proceso de desarrollo?",
-          "answer": "Nuestro proceso de desarrollo consta de varias fases: Consulta Inicial: Conversamos sobre tus objetivos y requerimientos. Planificación y Diseño: Creamos una propuesta y diseño inicial. Desarrollo: Construimos el sitio o aplicación según el diseño acordado. Pruebas y Lanzamiento: Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso."
+          "answer": "Nuestro proceso de desarrollo consta de varias fases:<ul><li><strong>Consulta Inicial:</strong> Conversamos sobre tus objetivos y requerimientos.</li><li><strong>Planificación y Diseño:</strong> Creamos una propuesta y diseño inicial.</li><li><strong>Desarrollo:</strong> Construimos el sitio o aplicación según el diseño acordado.</li><li><strong>Pruebas y Lanzamiento:</strong> Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso.</li></ul>"
         },
         {
           "question": "¿Cuánto cuesta un proyecto de desarrollo web o una aplicación?",

@@ -12,7 +12,7 @@ const Contact = () => {
     <div id="Contact" className="contact-container">
       <div className="left-c">
         <div className="text-container">
-          <h2 className="h2-invitation-one">{tContact.heading}</h2>
+          <h2 className="h2-invitation-one h2-line">{tContact.heading}</h2>
           <h3 className="h3-invitation">
             {t("home.contact-section.intro-text")}
           </h3>

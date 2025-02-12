@@ -17,10 +17,10 @@
   font-family: var(--main-font);
 }
 
-h2 {
+.h2-line {
   position: relative;
 }
-h2::before {
+.h2-line::before {
   content: "";
   display: block;
   position: relative;

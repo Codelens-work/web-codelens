@@ -4,6 +4,7 @@
   --white: #FFFFFF;
   --black: #2E2E2E;
   --marine-green: #00C4B4;
+  --light-blue: #D3E7F9;
 
   /* Fuentes */
   --main-font: "Roboto", serif;
@@ -29,3 +30,4 @@ h2::before {
   height: 3px;
   background-color: var(--marine-green);
 }
+

@@ -1,0 +1,65 @@
+.about-Codelens-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0;
+    background: var(--white);
+    gap: 40px;
+}
+
+.about-Codelens-section h2{
+    font-size: clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
+    color: var(--purple);
+}
+
+.about-Codelens-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-Codelens-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-Codelens-logo picture{
+    display: block;
+    max-width: 400px;
+    max-height: 310px;
+    margin: 0 auto;
+}
+
+.about-Codelens-logo picture img{
+    width: 100%
+}
+
+.about-paragraph{
+    font-size: clamp(1rem, 1rem + 0.1786vw, 1.25rem);
+}
+
+.about-paragraph{
+    max-width: 900px;
+    text-align: center;
+}
+
+
+@media(min-width: 800px){
+    .about-Codelens-content{
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .about-Codelens-logo,
+    .about-Codelens-content > div {
+        flex: 1; 
+        min-width: 300px;
+    }
+
+    .about-paragraph{
+        text-align: left;
+    }
+}

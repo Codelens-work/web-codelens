@@ -1,30 +1,40 @@
 import "./App.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import MainLayout from "./components/mainLayout/MainLayout";
-import { AppiService } from "./pages/services/appi/AppiService";
-import { AppWeb } from "./pages/services/appWeb/AppWeb";
+import { ApiService } from "./pages/services/apiservices/ApiService.jsx";
+import{ AppWeb } from "./pages/services/appWeb/AppWeb";
 import { WebDesing } from "./pages/services/webDesing/WebDesing";
 import { WebDevelopment } from "./pages/services/webDevelopment/WebDevelopment";
 import { SeoService } from "./pages/services/seo/SeoService";
 import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
-import Contact from "./components/contact/Contact";
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Blog from './pages/blog/Blog';
 
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
-      element: <MainLayout><Contact/></MainLayout>,
+      path:"/",
+      element:(
+        <MainLayout>
+          <Home/>
+        </MainLayout>
+      ),
     },
     {
       path: "/nosotros",
-      element: <MainLayout>{/* <About /> */}</MainLayout>,
+      element: (
+      <MainLayout>
+        <About/>
+      </MainLayout>
+      ),
     },
     {
       path: "/servicios/desarrollo-api",
       element: (
         <MainLayout>
-          <AppiService />
+          <ApiService />
         </MainLayout>
       ),
     },
@@ -61,7 +71,7 @@ function App() {
       ),
     },
     {
-      path: "/terminos-y-condiciones",
+      path: "/terminos",
       element: (
         <MainLayout>
           <TermsAndConditions/>
@@ -69,7 +79,7 @@ function App() {
       ),
     },
     {
-      path: "/politica-de-privacidad",
+      path: "/privacidad",
       element: (
         <MainLayout>
           <PrivacyPolicy/>
@@ -78,7 +88,11 @@ function App() {
     },
     {
       path: "/blog",
-      element: <MainLayout>{/* </> */}</MainLayout>,
+      element: (
+      <MainLayout>
+        <Blog />
+      </MainLayout>
+      ),
     },
     {
       path: "/*", //Con el * cualquier ruta que no sea las indicadas tira notfound

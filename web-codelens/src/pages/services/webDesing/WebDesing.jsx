@@ -25,14 +25,14 @@ export function WebDesing() {
           src: "/hero/hero-desing.webp",
         }}
       >
-        <div className="hero__title-container">
+        <div className="hero__title-container-desing">
           <h1 className="title-service">
             {t("services-pages.web-design.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.web-design.hero.content")}
           </p>
-          <LinkButton label="CONTACTANOS" href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
         </div>
       </Hero>
       <Services

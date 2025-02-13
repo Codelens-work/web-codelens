@@ -11,6 +11,8 @@
 .about-Codelens-section h2{
     font-size: clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
     color: var(--purple);
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .about-Codelens-content{

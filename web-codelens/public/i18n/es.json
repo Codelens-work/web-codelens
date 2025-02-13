@@ -11,6 +11,9 @@
     "faqs": "FAQs",
     "blog": "Blog"
   },
+  "btn-contact":{
+    "text": "CONTACTANOS"
+  },
   "home": {
     "hero-section": {
       "heading": "Crear una",

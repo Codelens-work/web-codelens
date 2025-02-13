@@ -2,7 +2,6 @@ import './about.css';
 import { Hero } from '../../components/hero/Hero';
 import LinkButton from '../../components/linkButton/LinkButton';
 import AboutCodeLens from '../../components/about-codelens/AboutCodeLens';
-import Section from '../../components/section/Section';
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/valuesSection';
@@ -39,7 +38,7 @@ const  About = () => {
           </p>
           <div className="hero-button">
             <LinkButton 
-              label="CONTACTANOS"
+              label={t('btn-contact.text')}
               href="#"
               size="normal"
             />
@@ -47,13 +46,9 @@ const  About = () => {
         </div>
       </motion.div>
     </Hero>
-      <Section>
-        <AboutCodeLens />
-      </Section>
+      <AboutCodeLens />
       <ValueSection />
-      <Section>
-        <TeamSection />
-      </Section>
+      <TeamSection />
     </>
   );
 }

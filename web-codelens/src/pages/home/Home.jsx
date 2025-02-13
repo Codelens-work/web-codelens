@@ -40,7 +40,7 @@ const Home = () => {
           <RotatingTitle />
           <div className="hero-button">
             <LinkButton
-              label={t('cto-section.cto-button')}
+              label={t('btn-contact.text')}
               href="#"
               size="normal" />
           </div>

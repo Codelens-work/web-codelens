@@ -41,7 +41,7 @@ const Home = () => {
           <div className="hero-button">
             <LinkButton
               label={t('btn-contact.text')}
-              href="#"
+              href="/#Contact"
               size="normal" />
           </div>
         </div>

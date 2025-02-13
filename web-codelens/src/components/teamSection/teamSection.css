@@ -1,0 +1,99 @@
+.team-section-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding: 60px 0;
+}
+
+.team-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-intro{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--black);
+}
+
+.team-section-cards {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 1rem;
+    margin: 0 -1rem; /* Compensate for the padding */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .team-section-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Center the cards container */
+  .team-section-cards::before,
+  .team-section-cards::after {
+    content: '';
+    min-width: calc(50% - 150px); /* Half of viewport minus half of card width */
+  }
+  
+  /* Ensure each card snaps */
+  .team-section-cards > * {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+  }
+
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team-section-content span {
+        text-align: left;
+        width: 95%;
+    }
+
+    .team-section-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        overflow-x: visible;
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .team-section-cards::before,
+    .team-section-cards::after {
+        display: none;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+    .team-section-content span {
+        text-align: left;
+        width: 95%;
+    }
+
+    .team-section-cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        overflow-x: visible;
+        padding: 2rem;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .team-section-cards::before,
+    .team-section-cards::after {
+        display: none;
+    }
+}
+  

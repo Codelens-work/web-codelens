@@ -26,10 +26,25 @@ const NavBar = () => {
   const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
+  const handleDropdownItemClick = (path) => {
+    navigate(path);
+    setDropdown(false);
+    setExpanded(false);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setNavActive(window.scrollY > 50);
     };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Toggle body scroll when menu is open
+    if (expanded) {
+      document.body.classList.add('menu-open');
+    } else {
+      document.body.classList.remove('menu-open');
+    }
 
     window.addEventListener("scroll", handleScroll);
 
@@ -45,7 +60,8 @@ const NavBar = () => {
         className={`navbar-custom ${navActive ? "active" : ""}`}
         variant="light"
       >
-        <Navbar.Brand>
+      <div className="navbar-container-custom">
+      <Navbar.Brand>
           <img
             className="logo"
             src="/icons/logo_nombre.svg"
@@ -103,31 +119,31 @@ const NavBar = () => {
               <DropdownMenu className="dropdown-custom">
                 <Dropdown.Item
                   className="dropdown-item"
-                  onClick={() => navigate("/servicios/desarrollo-web")}
+                  onClick={() => handleDropdownItemClick("/servicios/desarrollo-web")}
                 >
                   Desarrollo Web
                 </Dropdown.Item>
                 <Dropdown.Item
                   className="dropdown-item"
-                  onClick={() => navigate("/servicios/seo")}
+                  onClick={() => handleDropdownItemClick("/servicios/seo")}
                 >
                   SEO
                 </Dropdown.Item>
                 <Dropdown.Item
                   className="dropdown-item"
-                  onClick={() => navigate("/servicios/diseno-web")}
+                  onClick={() => handleDropdownItemClick("/servicios/diseno-web")}
                 >
                   Diseño Web
                 </Dropdown.Item>
                 <Dropdown.Item
                   className="dropdown-item"
-                  onClick={() => navigate("/servicios/app-web")}
+                  onClick={() => handleDropdownItemClick("/servicios/app-web")}
                 >
                   App Web
                 </Dropdown.Item>
                 <Dropdown.Item
                   className="dropdown-item"
-                  onClick={() => navigate("/servicios/desarrollo-api")}
+                  onClick={() => handleDropdownItemClick("/servicios/desarrollo-api")}
                 >
                   Desarrollo API
                 </Dropdown.Item>
@@ -165,6 +181,7 @@ const NavBar = () => {
             </div>
           </Nav>
           </div>
+      </div>
       </Navbar>
     </header>
   );

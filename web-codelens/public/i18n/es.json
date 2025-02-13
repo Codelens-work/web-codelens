@@ -550,34 +550,34 @@
     },
     "team-section": {
       "heading": "Nuestro equipo central",
-      "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos 6 apasionados del desarrollo y diseño, listos para transformar tus ideas en realidad.",
+      "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos cuatro apasionados del desarrollo y diseño, unidos para transformar tus ideas en realidad.",
       "cards": [
         {
-          "img-url": "",
-          "img-hover-url": "",
-          "fullname": "Yanina Unrein",
-          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
-        },
-        {
-          "img-url": "",
+          "img-url": "/team/aylen.webp",
           "img-hover-url": "",
           "fullname": "Aylen Gil",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/flor.webp",
           "img-hover-url": "",
           "fullname": "Florencia Ríos",
           "role": "Co-Founder, Community Manager & UX/UI Designer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/nico.webp",
           "img-hover-url": "",
           "fullname": "Nicolás Romero",
           "role": "Co-Founder & Backend Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/yani.webp",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"

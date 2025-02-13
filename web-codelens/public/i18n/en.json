@@ -505,34 +505,34 @@
     },
     "team-section": {
         "heading": "Our Core Team",
-        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
+        "intro": "Behind every line of code, there's a creative and persevering mind. We are four passionate developers and designers, united to turn your ideas into reality.",
         "cards": [
         {
-          "img-url": "",
-          "img-hover-url": "",
-          "fullname": "Yanina Unrein",
-          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
-        },
-        {
-          "img-url": "",
+          "img-url": "/team/aylen.webp",
           "img-hover-url": "",
           "fullname": "Aylen Gil",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/flor.webp",
           "img-hover-url": "",
           "fullname": "Florencia Ríos",
           "role": "Co-Founder, Community Manager & UX/UI Designer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/nico.webp",
           "img-hover-url": "",
           "fullname": "Nicolás Romero",
           "role": "Co-Founder & Backend Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/yani.webp",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"

@@ -6,6 +6,7 @@ import Section from '../../components/section/Section';
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/valuesSection';
+import TeamSection from '../../components/teamSection/TeamSection';
 
 
 const  About = () => {
@@ -50,6 +51,9 @@ const  About = () => {
         <AboutCodeLens />
       </Section>
       <ValueSection />
+      <Section>
+        <TeamSection />
+      </Section>
     </>
   );
 }

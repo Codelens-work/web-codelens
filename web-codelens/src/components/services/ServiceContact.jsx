@@ -5,20 +5,16 @@ import { useTranslation } from 'react-i18next'
 
 
 import PropTypes from "prop-types";
-import "/src/components/linkButton/linkbutton.css"
+import LinkButton from "../linkButton/LinkButton";
 
 const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
   const { t } = useTranslation()
   
-  const navigate = useNavigate();
-
   return (
     <div className="service-contact">
       <h2>{titleServiceContact}</h2>
       <p>{paragraphServiceContact}</p>
-      <a className={`link-btn link-btn-small`} onClick={()=>navigate("/#Contact")}>
-      {t('home.contact-section.heading')}
-      </a>
+      <LinkButton href="/#Contact" label={t('home.contact-section.heading')} size="small"/>
     </div>
   );
 };

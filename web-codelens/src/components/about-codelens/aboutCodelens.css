@@ -11,6 +11,8 @@
 .about-Codelens-section h2{
     font-size: clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
     color: var(--purple);
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .about-Codelens-content{
@@ -28,7 +30,7 @@
 
 .about-Codelens-logo picture{
     display: block;
-    max-width: 400px;
+    max-width: 360px;
     max-height: 310px;
     margin: 0 auto;
 }
@@ -44,6 +46,7 @@
 .about-paragraph{
     max-width: 900px;
     text-align: center;
+    padding: 0 30px;
 }
 
 

@@ -6,10 +6,12 @@ import { useTranslation } from "react-i18next";
 
 export function AppWeb() {
   const { t } = useTranslation();
+
   const tBenefits = t(
     "services-pages.web-app.about-section.benefits-section.list",
     { returnObjects: true }
   );
+  
   const tFeatures = t("services-pages.web-app.features-section.cards", {
     returnObjects: true,
   });
@@ -25,14 +27,14 @@ export function AppWeb() {
           src: "/hero/hero-apps.webp",
         }}
       >
-        <div className="hero__title-container">
-          <h1 className="title-service">
+        <div className="hero__title-container-appWeb">
+          <h1 className="title-service-appWeb">
             {t("services-pages.web-app.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.web-app.hero.content")}
           </p>
-          <LinkButton label="CONTACTANOS" href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
         </div>
       </Hero>
 

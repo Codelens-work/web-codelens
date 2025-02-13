@@ -26,14 +26,14 @@ export function WebDevelopment() {
           src: "/hero/hero-web.webp",
         }}
       >
-        <div className="hero__title-container">
+        <div className="hero__title-container-webdevelopment">
           <h1 className="title-service">
             {t('services-pages.web-development.hero.heading')}
           </h1>
           <p className="paragraph-service">
             {t('services-pages.web-development.hero.content')}
           </p>
-          <LinkButton label="CONTACTANOS" href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
         </div>
       </Hero>
 

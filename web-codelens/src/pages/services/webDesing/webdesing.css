@@ -1,4 +1,4 @@
-.hero__title-container{
+.hero__title-container-desing{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -6,10 +6,11 @@
     max-width: 700px;
     color: var(--black);
     padding-left: 30px;
+    padding-top: 60px;
 }
 
 .title-service{
-    font-size: 40px;
+    font-size: clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
     font-weight: 800;
 }
 
@@ -23,7 +24,7 @@
         font-size: 22px;
     }
 
-    .hero__title-container{
+    .hero__title-container-desing{
         padding-left: 50px;
         max-width: 950px;
     }
@@ -31,11 +32,7 @@
 
 
 @media(min-width: 1440px){
-    .title-service{
-        font-size: 70px;
-    }
-
-    .hero__title-container{
+    .hero__title-container-desing{
         padding-left: 82px;
         max-width: 1024px;
     }

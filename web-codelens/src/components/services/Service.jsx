@@ -3,7 +3,6 @@ import "../services/service.css";
 import PropTypes from "prop-types"
 
 const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
-  console.log(img)
   return (
     <div className="service-container">
       <div className="right-column">

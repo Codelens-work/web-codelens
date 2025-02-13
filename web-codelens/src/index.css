@@ -4,12 +4,30 @@
   --white: #FFFFFF;
   --black: #2E2E2E;
   --marine-green: #00C4B4;
+  --light-blue: #D3E7F9;
+
+  /* Fuentes */
+  --main-font: "Roboto", serif;
 }
 
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
+  font-family: var(--main-font);
+}
+
+.h2-line {
+  position: relative;
+}
+.h2-line::before {
+  content: "";
+  display: block;
+  position: relative;
+  top:53%;
+  left: -1.5em;
+  width: 50px;
+  height: 3px;
+  background-color: var(--marine-green);
 }
 

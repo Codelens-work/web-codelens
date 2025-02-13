@@ -64,14 +64,16 @@
           "content": {
             "label": "How can we help?",
             "placeholder": "Tell us a little about your idea",
-            "validation-error": "The field must have at least 3 characters",
+            "validation-error": "The message must have at least 10 characters.",
             "size-error": "Maximum size exceeded."
           },
           "submit": "Send"
         },
         "required-message": "Required field",
         "modals": {
-          "success": "Message sent! We will contact you soon",
+          "titlesuccess": "Successful submission!",
+          "titleerror": "Submission error!",
+          "success": "We will contact you soon",
           "error": "An error occurred while sending the message. Please try again later"
         }
       }
@@ -119,7 +121,7 @@
       "content": [
         {
           "question": "What services does CodeLens offer?",
-          "answer": "At CodeLens, we specialize in: Web Development from scratch. Custom Web Design focused on user experience. Enhancement of existing Websites. Web Application Development, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!"
+          "answer": "At CodeLens, we specialize in:<ul><li><strong>Web Development</strong> from scratch.</li><li>Custom <strong> Web Design</strong> focused on user experience.</li><li><strong>Enhancement</strong> of existing Websites.</li><li><strong>Web Application Development </strong>, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!</li></ul>"
         },
         {
           "question": "What types of businesses or projects do you accept?",
@@ -135,7 +137,7 @@
         },
         {
           "question": "How is the development process structured?",
-          "answer": "Our development process consists of several phases: Initial Consultation: We discuss your goals and requirements. Planning and Design: We create a proposal and initial design. Development: We build the website or application based on the agreed design. Testing and Launch: We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress."
+          "answer": "Our development process consists of several phases: <ul><li><strong>Initial Consultation:</strong> We discuss your goals and requirements.</li><li><strong>Planning and Design:</strong> We create a proposal and initial design.</li><li><strong>Development:</strong> We build the website or application based on the agreed design.</li><li><strong>Testing and Launch:</strong> We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress.</li></ul>"
         },
         {
           "question": "How much does a web development project or application cost?",
@@ -188,40 +190,39 @@
     "intro": "Turn ideas into online excellence with our innovative solutions and strategic digital services",
     "copyright": "- 2025 - Codelens",
     "lists": {
-    "services-list": {
+      "services-list": {
         "title": "Services",
         "items": [
-          {"text": "Web Development","url": "/servicios/desarrollo-web"},
-          {"text": "Web Design","url": "/servicios/diseno-web"},
-          {"text": "Improvement and Optimization","url": "/servicios/seo"},
-          {"text": "Web Application Development","url": "/servicios/app-web"},
-          {"text": "API Development","url": "/servicios/desarrollo-api"}
+          { "text": "Web Development", "url": "/servicios/desarrollo-web" },
+          { "text": "Web Design", "url": "/servicios/diseno-web" },
+          { "text": "Improvement and Optimization", "url": "/servicios/seo" },
+          {
+            "text": "Web Application Development",
+            "url": "/servicios/app-web"
+          },
+          { "text": "API Development", "url": "/servicios/desarrollo-api" }
         ]
       },
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          {"text": "Home", "url": "/"},
-          {"text": "About Us", "url": "/nosotros"},
-          {"text": "Blog", "url": "/blog"}
+          { "text": "Home", "url": "/" },
+          { "text": "About Us", "url": "/nosotros" },
+          { "text": "Blog", "url": "/blog" }
         ]
       },
-      "help-list":{
+      "help-list": {
         "title": "Help",
         "items": [
-          {"text":"FAQs", "url": "/preguntas-frecuentes"},
-          {"text":"Contact", "url": "/contacto"},
-          {"text":"Terms and Conditions", "url": "/terminos-y-condiciones"},
-          {"text":"Privacy Policy", "url": "/politica-de-privacidad"}
+          { "text": "FAQs", "url": "/preguntas-frecuentes" },
+          { "text": "Contact", "url": "/contacto" },
+          { "text": "Terms and Conditions", "url": "/terminos-y-condiciones" },
+          { "text": "Privacy Policy", "url": "/politica-de-privacidad" }
         ]
       }
     }
   },
-  "cto-section": {
-    "heading": "Ready to optimize your business with a custom application?",
-    "content": "Let's talk about how CodeLens can develop a tailored solution for you.",
-    "cto-button": "Contact us"
-  },
+
   "services-pages": {
     "web-app": {
       "hero": {
@@ -267,6 +268,10 @@
             "content": "We ensure your application can grow alongside your business, providing technical support and updates whenever needed."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to optimize your business with a custom application?",
+        "content": "Let's talk about how CodeLens can develop a tailored solution for you."
       }
     },
     "seo": {
@@ -309,6 +314,10 @@
             "content": "We adjust SEO and site structure to enhance visibility and user satisfaction."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to take your website to the next level?",
+        "content": "Let's talk about how CodeLens can optimize and improve your website to meet today's demands."
       }
     },
     "web-design": {
@@ -354,6 +363,10 @@
             "content": "We create prototypes so you can visualize the structure and design of each section before development."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to give your website a professional and memorable look?",
+        "content": "Let's talk about how CodeLens can help you transform your vision into an effective design."
       }
     },
     "web-development": {
@@ -399,6 +412,10 @@
             "content": "We help you choose the hosting and domain that best fit your business's needs."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Ready to build a website that represents your brand?",
+        "content": "Let's talk about how we can help you create an effective and personalized digital presence."
       }
     },
     "api-development": {
@@ -456,6 +473,10 @@
             "content": "We offer support and maintenance packages to ensure your API continues to perform optimally and is updated according to your business's needs."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "Do you need an API that connects your systems securely and efficiently?",
+        "content": "Let's talk about your project!"
       }
     }
   },
@@ -505,7 +526,7 @@
     },
     "team-section": {
         "heading": "Our Core Team",
-        "intro": "Behind every line of code, there's a creative and persevering mind. We are four passionate developers and designers, united to turn your ideas into reality.",
+        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
         "cards": [
         {
           "img-url": "/team/aylen.webp",
@@ -608,7 +629,8 @@
       "content": [
         "Welcome to CodeLens' Terms of Use! We are really happy to have you here. Thank you for choosing our services.",
         "Below, we have listed important legal terms that apply to anyone who hires our services. These terms are necessary to protect both you and us and to make our services possible and more enjoyable for everyone.",
-        "We know that reading legal terms can be exhausting. That’s why we try to make it a more pleasant experience. If you have any questions, we invite you to contact us."
+        "We know that reading legal terms can be exhausting. That’s why we try to make it a more pleasant experience. If you have any questions,",
+        "we invite you to contact us."
       ]
     },
     "terms-section": [

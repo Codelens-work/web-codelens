@@ -64,14 +64,16 @@
           "content": {
             "label": "¿Cómo podemos ayudar?",
             "placeholder": "Cuéntanos un poco sobre tu idea",
-            "validation-error": "El campo debe tener un mínimo de 3 caracteres",
+            "validation-error": "El mensaje debe tener como minimo 10 caracteres.",
             "size-error": "Tamaño máximo superado."
           },
           "submit": "Enviar"
         },
         "required-message": "Campo obligatorio",
         "modals": {
-          "success": "¡Mensaje enviado! Pronto nos pondremos en contacto contigo",
+          "titlesuccess":"¡Envio exitoso!",
+          "titleerror":"¡Error en el envío!",
+          "success": "Pronto nos pondremos en contacto contigo",
           "error": "Se produjo un error al enviar el mensaje. Intenta luego nuevamente"
         }
       }
@@ -128,7 +130,7 @@
       "content": [
         {
           "question": "¿Cuáles son los servicios que ofrece CodeLens?",
-          "answer": "En CodeLens, nos especializamos en: Desarrollo Web desde cero. Diseño Web personalizado y enfocado en la experiencia del usuario. Mejora de Sitios Web existentes. Desarrollo de Aplicaciones Web, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!"
+          "answer": "En CodeLens, nos especializamos en: <ul><li><strong>Desarrollo Web</strong> desde cero.</li><li><strong>Diseño Web</strong> personalizado y enfocado en la experiencia del usuario.</li><li><strong>Mejora de Sitios Web</strong> existentes</li><li><strong>Desarrollo de Aplicaciones Web</strong>, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!</li></ul>"
         },
         {
           "question": "¿Qué tipo de empresas o proyectos aceptan?",
@@ -144,7 +146,7 @@
         },
         {
           "question": "¿Cómo se estructura el proceso de desarrollo?",
-          "answer": "Nuestro proceso de desarrollo consta de varias fases: Consulta Inicial: Conversamos sobre tus objetivos y requerimientos. Planificación y Diseño: Creamos una propuesta y diseño inicial. Desarrollo: Construimos el sitio o aplicación según el diseño acordado. Pruebas y Lanzamiento: Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso."
+          "answer": "Nuestro proceso de desarrollo consta de varias fases:<ul><li><strong>Consulta Inicial:</strong> Conversamos sobre tus objetivos y requerimientos.</li><li><strong>Planificación y Diseño:</strong> Creamos una propuesta y diseño inicial.</li><li><strong>Desarrollo:</strong> Construimos el sitio o aplicación según el diseño acordado.</li><li><strong>Pruebas y Lanzamiento:</strong> Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso.</li></ul>"
         },
         {
           "question": "¿Cuánto cuesta un proyecto de desarrollo web o una aplicación?",
@@ -262,11 +264,6 @@
       }
     }
   },
-  "cto-section": {
-    "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
-    "content": "Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida.",
-    "cto-button": "Contactanos"
-  },
   "services-pages": {
     "web-app": {
       "hero": {
@@ -312,6 +309,11 @@
             "content": "Nos aseguramos de que tu aplicación pueda crecer junto a tu negocio, brindando soporte técnico y actualizaciones cuando lo necesites."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
+        "content": "Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida."
+        
       }
     },
     "seo": {
@@ -354,6 +356,10 @@
             "content": "Realizamos ajustes en el SEO y la estructura del sitio para mejorar la visibilidad y la satisfacción del usuario."
           }
         ]
+      },
+      "cto-section": {
+        "heading": "¿Listo para llevar tu sitio al siguiente nivel?",
+        "content": "Hablemos sobre cómo CodeLens puede optimizar y mejorar tu sitio web para satisfacer las demandas de hoy."
       }
     },
     "web-design": {
@@ -399,6 +405,11 @@
             "content": "Realizamos prototipos para que puedas visualizar la estructura y diseño de cada sección antes del desarrollo."
           }
         ]
+      },
+      
+      "cto-section": {
+        "heading": "¿Listo para darle a tu sitio web una imagen profesional y memorable?",
+        "content": "Hablemos sobre cómo CodeLens puede ayudarte a transformar tu visión en un diseño efectivo."
       }
     },
     "web-development": {
@@ -444,6 +455,11 @@
             "content": "Te ayudamos a elegir el hosting y dominio que mejor se adapten a las necesidades de tu negocio."
           }
         ]
+      },
+
+      "cto-section": {
+        "heading": "¿Listo para construir un sitio web que represente a tu marca?",
+        "content": " Hablemos sobre cómo podemos ayudarte a crear una presencia digital efectiva y personalizada."
       }
     },
     "api-development": {
@@ -501,6 +517,11 @@
             "content": "Ofrecemos paquetes de soporte y mantenimiento para garantizar que tu API siga funcionando de manera óptima y se actualice según las necesidades de tu negocio."
           }
         ]
+      },
+
+      "cto-section": {
+        "heading": "¿Necesitas una API que conecte tus sistemas de forma segura y eficiente?",
+        "content": "¡Hablemos de tu proyecto!"
       }
     }
   },
@@ -653,7 +674,8 @@
       "content": [
         "¡Bienvenido a los términos de uso de CodeLens! Estamos realmente muy contentos de que usted esté a aquí. Gracias por elegir usar nuestros servicios.",
         "A continuación hemos enumerado términos legales importantes que se aplican a cualquier persona que contrata nuestros servicios. Estos términos son necesarios para la protección tanto de usted como de nosotros y para hacer que nuestros servicios sean posibles y más agradables para todos.",
-        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a comunicarse con nosotros."
+        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a", 
+        " comunicarse con nosotros."
       ]
     },
     "terms-section": [

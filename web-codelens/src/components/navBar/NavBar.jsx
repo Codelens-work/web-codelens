@@ -151,7 +151,7 @@ const NavBar = () => {
             </Dropdown>
             <a
               onClick={() => {
-                navigate("/contacto");
+                navigate("/#Contact");
                 setExpanded(false);
               }}
               className="link-navbar-custom mx-2 btn btn-outline-light"

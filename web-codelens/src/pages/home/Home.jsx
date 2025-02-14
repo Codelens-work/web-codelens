@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next'
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Faqs from '../../components/faqs/Faqs'
+import HomeAbout from './HomeAbout';
 
 const Home = () => {
 
@@ -47,6 +48,7 @@ const Home = () => {
         </div>
       </div>
     </Hero>
+    <HomeAbout t={t('home.about-section', {returnObjects: true})}/>
     <Contact />
     <Faqs/>
     </>

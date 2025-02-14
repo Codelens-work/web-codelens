@@ -11,6 +11,9 @@
     "faqs": "FAQs",
     "blog": "Blog"
   },
+  "btn-contact":{
+    "text": "CONTACT US"
+  },
   "home": {
     "hero-section": {
       "heading": "Create",
@@ -491,66 +494,69 @@
       "heading": "About CodeLens",
       "about-img": "",
       "content": [
-        "At CodeLens, we specialize in crafting digital solutions with a focus on quality, clarity, and precision. We are a team passionate about web development and design, committed to transforming ideas into memorable digital experiences. From the first line of code to final delivery, we approach each project with a clear goal: delivering solid results that drive our clients' growth.",
-        "We believe in the importance of clean code, efficient solutions, and innovative design. We adapt to each client's needs, ensuring that every project reflects their vision and makes a real impact on their digital presence. Whether building a website from scratch, redesigning an existing one, or creating custom web applications, we bring our creative and detail-oriented approach to every step of the journey.",
-        "Our purpose is to be the digital partner our clients can trust to achieve their goals in an ever-changing digital world. With a forward-thinking vision and an unwavering commitment to quality, at CodeLens, we work to build long-term relationships based on tangible and lasting results."
+        "At CodeLens, we turn ideas into memorable digital experiences. We are a team passionate about web development and design, committed to quality, clarity, and precision in every project. We believe in the power of clean code, efficient solutions, and innovative design to drive our clients’ growth.", 
+        "We adapt to each need, whether it's creating websites from scratch, redesigning existing platforms, or developing custom applications. Our goal is to be a trusted digital partner, delivering solid results and building lasting relationships in an ever-evolving world."
       ]
     },
     "values-section": {
       "heading": "Our Core Values",
       "cards": [
         {
-          "icon": "",
+          "icon": "/cards-values/card1.svg",
           "content": "Working side by side, every step of the way"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card2.svg",
           "content": "We adapt faster than a chameleon at a color festival"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card3.svg",
           "content": "Where others see problems, we see... future bragging rights"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card4.svg",
           "content": "Coffee first, logic later"
         },
         {
-          "icon": "",
+          "icon": "/cards-values/card5.svg",
           "content": "We fine-tune the aim before firing the cannon"
+        },
+        {
+          "icon": "/cards-values/card6.svg",
+          "content": "We accept challenges, we create solutions"
         }
       ]
     },
     "team-section": {
-      "heading": "Our Core Team",
-      "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
-      "cards": [
+        "heading": "Our Core Team",
+        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
+        "cards": [
         {
-          "img-url": "",
-          "img-hover-url": "",
-          "fullname": "Yanina Unrein",
-          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
-        },
-        {
-          "img-url": "",
+          "img-url": "/team/aylen.webp",
           "img-hover-url": "",
           "fullname": "Aylen Gil",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/flor.webp",
           "img-hover-url": "",
           "fullname": "Florencia Ríos",
           "role": "Co-Founder, Community Manager & UX/UI Designer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/nico.webp",
           "img-hover-url": "",
           "fullname": "Nicolás Romero",
           "role": "Co-Founder & Backend Developer"
         },
         {
-          "img-url": "",
+          "img-url": "/team/yani.webp",
+          "img-hover-url": "",
+          "fullname": "Yanina Unrein",
+          "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"

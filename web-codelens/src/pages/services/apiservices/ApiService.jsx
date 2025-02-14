@@ -26,14 +26,14 @@ export function ApiService() {
           src: "/hero/hero-api.webp",
         }}
       >
-        <div className="hero__title-container">
+        <div className="hero__title-container-api">
           <h1 className="title-service">
             {t("services-pages.api-development.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.api-development.hero.content")}
           </p>
-          <LinkButton label="CONTACTANOS" href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
         </div>
       </Hero>
 

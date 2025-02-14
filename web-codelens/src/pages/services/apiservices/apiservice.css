@@ -1,0 +1,30 @@
+.hero__title-container-api{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    max-width: 700px;
+    color: var(--black);
+    padding-left: 30px;
+    padding-top: 70px;
+}
+
+.hero__title-container-api h1{
+    font-size: clamp(1.875rem, 1.3393rem + 2.6786vw, 3.75rem);
+}
+
+@media(min-width: 1024px){
+    .hero__title-container-api{
+        padding-left: 50px;
+        max-width: 950px;
+    }
+}
+
+
+@media(min-width: 1440px){
+    .hero__title-container-api{
+        padding-left: 82px;
+        max-width: 1024px;
+    }
+
+}

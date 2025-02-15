@@ -10,19 +10,40 @@ align-items: center;
   min-width: 50%;
 }
 
+/*Imagen de la izquierda*/
+
 .home-about-img {
-  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-about-img img {
-  width: 100%;
+  width: clamp(320px, 100%, 600px);
   height: auto;
   object-fit: contain;
+}
+
+/*Contenido de la derecha*/
+
+.home-about-content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.home-about-logo {
+  width: clamp(9.375rem, 1.1538rem + 17.3077vw, 15rem);
 }
 
 @media (width <= 760px){
   .home-about-section {
     flex-wrap: wrap;
     gap: 30px;
+  }
+
+  .home-about-logo {
+    display: none;
   }
 }

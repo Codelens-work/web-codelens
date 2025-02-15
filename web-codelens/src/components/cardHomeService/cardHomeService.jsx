@@ -8,7 +8,7 @@ const cardHomeService = ({title, content, icon, cta, serviceUrl}) => {
       <img src={"/logos/" + icon + ".webp"} alt={title + "logo"} />
       <h3>{title}</h3>
       <p>{content}</p>
-      <LinkButton label={cta} href={serviceUrl}/>
+      <LinkButton label={cta} href={"/servicios/" + serviceUrl}/>
     </div>
   )
 }

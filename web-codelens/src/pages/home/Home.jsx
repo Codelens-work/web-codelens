@@ -9,6 +9,7 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Faqs from '../../components/faqs/Faqs'
 import HomeAbout from '../../components/homeAbout/HomeAbout';
+import HomeServices from '../../components/homeServices/HomeServices';
 
 const Home = () => {
 
@@ -50,6 +51,7 @@ const Home = () => {
     </Hero>
     <HomeAbout t={t('home.about-section', {returnObjects: true})}
     btn={t("btn-contact.text")}/>
+    <HomeServices t={t('home.services-section', {returnObjects: true})} />
     <Contact />
     <Faqs/>
     </>

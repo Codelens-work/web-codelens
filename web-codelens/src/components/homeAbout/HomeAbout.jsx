@@ -1,5 +1,7 @@
 import LinkButton from "../linkButton/LinkButton"
 import Section from "../section/Section"
+import './homeAbout.css'
+
 const HomeAbout = ({ t, btn }) => {
   return(
     <Section className="home-about-section">

@@ -1,0 +1,28 @@
+.home-about-section {
+display: flex;
+width: 100%;
+column-gap: 10px;
+justify-content: space-between;
+align-items: center;
+}
+
+.home-about-section > div {
+  min-width: 50%;
+}
+
+.home-about-img {
+  height: auto;
+}
+
+.home-about-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (width <= 760px){
+  .home-about-section {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}

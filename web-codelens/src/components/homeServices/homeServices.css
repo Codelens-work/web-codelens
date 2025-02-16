@@ -1,0 +1,20 @@
+.home-services-section {
+  background: var(--purple);
+  background: radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*
+- Agregar estilo al fondo del componente
+- Agregar clamp al texto
+- Cards:
+	- Darle estilo a las cards
+	- Darle estilo y responsive al contenedor de las cards
+	- Convertir en carousel
+
+
+- ARREGLAR RESPONSIVE DEL BEFORE
+
+
+*/

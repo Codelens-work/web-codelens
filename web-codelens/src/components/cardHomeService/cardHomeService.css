@@ -1,11 +1,11 @@
 .home-service-card {
-  height: 325px;
+  height: 360px;
   width: 300px;
   background-color: var(--white);
   padding: 10px 15px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   border-radius: 5%;
   gap: 5px;
@@ -29,4 +29,5 @@
 
 .home-service-card a {
   align-self: center;
+  margin-top: auto;
 }

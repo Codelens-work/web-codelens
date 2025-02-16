@@ -14,8 +14,12 @@
 }
 
 .home-services-cards {
+  padding-top: 30px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  row-gap: 35px;
 }
 
 /*

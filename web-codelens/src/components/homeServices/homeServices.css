@@ -13,8 +13,14 @@
   font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
 }
 
-.home-services-cards {
+.home-services-carousel {
   padding-top: 30px;
+  width: 100%;
+  height: auto;
+}
+
+.home-carousel-cards {
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

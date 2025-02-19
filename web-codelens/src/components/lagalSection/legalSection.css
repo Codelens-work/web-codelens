@@ -6,13 +6,19 @@
     gap            : 25px;
     justify-content: center;
     padding-top    : 5px;
+    max-width: 4400px;
+    margin: auto;
+    height: auto;
+
 }
 
 .left-column,
 .right-column {
-    flex   : 1;
+    /* flex   : 1; */
     /* columnas proporciones iguales */
     padding: 0;
+    /* width: 100%; */
+    min-width: 360px; /* Se apilan cuando el contenedor */
 }
 
 .right-column {
@@ -20,13 +26,19 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
+    padding: 0%;
+    margin: 0%;
 }
 
 .right-column img {
-    height: 568px;
-    width : 568px;
-    top   : 755px;
+    height: auto;
+    max-width: 100%;
+    /* top   : 755px; */
     left  : 128px;
+
+    margin: 0;
+    background-position: center center;
+    
 }
 
 .left-column {
@@ -38,11 +50,14 @@
     align-items    : center;
     gap            : 1rem;
     padding        : 20px;
+    
+    height: auto;
 }
 
 .left-column p {
-    font-size  : 1rem;
+    font-size  : clamp(16px, 2vw, 24px); /*16px celular */ 
     line-height: 1.5rem;
+    height: auto;
 }
 
 .textColor {
@@ -52,23 +67,34 @@
 
 /*3ra Section*/
 .section-display-container {
-    padding-top        : 64px;
+    padding-top        : .5rem;
     display            : flex;
     flex-wrap          : wrap;
     gap                : 25px;
     justify-content    : center;
     /* padding-bottom  : 30px; */
     background-color   : #D3E7F9F2;
+
+    
+    max-width: 4400px;
+    margin: auto;
+    height: auto;
+}
+
+.titles-for-display{
+    height: auto;
 }
 
 .titles-for-display p {
     font-family             : Roboto;
-    font-size               : 24px;
-    font-weight             : 300;
+    font-size               : clamp(16px, 2vw, 24px);
+    font-weight             : 300vh;
     line-height             : 28.13px;
-    text-align              : left;
+    text-align              : center;
     text-underline-position : from-font;
     text-decoration-skip-ink: none;
+    height: auto;
+       
 }
 
 .active {
@@ -85,11 +111,14 @@
 
 .p-for-display p {
     font-family  : Roboto;
-    font-size    : 18px;
+    font-size    : clamp(16px, 2vw, 24px);
     font-weight  : 300px;
-    line-height  : 21.09px;
     text-align   : left;
     max-width    : 33.7rem;
     overflow-wrap: break-word;
     word-wrap    : break-word;
+    
+    line-height             : 2rem; /*32px;*/
+
+
 }

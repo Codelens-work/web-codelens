@@ -13,7 +13,7 @@ const ContactForm = () => {
   const { t, i18n } = useTranslation();
   const tForm = t("home.contact-section.contact-form", { returnObjects: true });
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(true);
   const [msjApi, setMsjApi] = useState({
     title: "",
     text: "",
@@ -166,7 +166,7 @@ const ContactForm = () => {
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>{tForm.inputs.business.lable}</Form.Label>
+            <Form.Label>{tForm.inputs.business.label}</Form.Label>
             <div>
               <Form.Control
                 ref={businessRef}
@@ -180,7 +180,7 @@ const ContactForm = () => {
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>{tForm.inputs.content.lable}</Form.Label>
+            <Form.Label>{tForm.inputs.content.label}</Form.Label>
             <Form.Control
               ref={messageRef}
               name="message"

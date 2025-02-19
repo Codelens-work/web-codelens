@@ -36,11 +36,11 @@ const Contact = () => {
           <p className="email">codelens@gmail.com</p>
           <p className="invitation-three"> <span><img src="..\icons\Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
           <div>
-            <img
+            {/* <img
               className="logo-social"
               src="public/social/facebook.svg"
               alt="facebook"
-            />
+            /> */}
             <img
               className="logo-social"
               src="public/social/instagram.svg"

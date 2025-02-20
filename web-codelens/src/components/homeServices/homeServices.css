@@ -17,15 +17,42 @@
   padding-top: 30px;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
-.home-carousel-cards {
+.home-carousel-slides {
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 35px;
   row-gap: 35px;
+}
+
+@media (width <= 828px) {
+  .home-carousel-slides{
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .home-carousel-slides > div{
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    scroll-padding-inline: 30px;
+    position: relative;
+    transition: transform 0.5s;
+  }
+}
+
+@media (width <= 380px) {
+  .home-services-section {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 /*

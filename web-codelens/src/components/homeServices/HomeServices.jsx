@@ -12,7 +12,7 @@ return(
     <h2 className='home-services-h2 h2-line'>{t.heading}</h2>
     <span>{t.intro}</span>
     <div className='home-services-carousel'>
-    <div className='home-carousel-cards'>
+    <div className='home-carousel-slides'>
     {services.map((service, i) => {
       return <CardHomeService
       activeClass={activeSlide === i ? "activeSlide" : ""}

@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 import Faqs from '../../components/faqs/Faqs'
 import HomeAbout from '../../components/homeAbout/HomeAbout';
 import HomeServices from '../../components/homeServices/HomeServices';
+import GetToKnow from '../../components/getToKnow/getToKnow';
 
 const Home = () => {
 
@@ -52,6 +53,7 @@ const Home = () => {
     <HomeAbout t={t('home.about-section', {returnObjects: true})}
     btn={t("btn-contact.text")}/>
    { /* <HomeServices t={t('home.services-section', {returnObjects: true})} /> */}
+    <GetToKnow t={t('home.get-to-know-section', {returnObjects: true})}/>
     <Contact />
     <Faqs/>
     </>

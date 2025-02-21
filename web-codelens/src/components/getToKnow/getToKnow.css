@@ -1,0 +1,29 @@
+.get-to-know-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.get-to-know-section > div {
+  width: 100%;
+  max-width: 500px;
+}
+
+.get-to-know-content {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.get-to-know-content h2 {
+  margin-bottom: 5px;
+}
+
+.get-to-know-content span {
+  font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
+  color: var(--purple)
+}

@@ -4,6 +4,7 @@ import { useState, useRef } from "react";
 import Modal from "./Modal";
 import { useTranslation } from "react-i18next";
 import "../contact/contact.css";
+import { text } from "framer-motion/client";
 
 const ContactForm = () => {
   const nameRef = useRef(null);
@@ -62,7 +63,7 @@ const ContactForm = () => {
     });
   };
 
-  const handlerSubmit = (event) => {
+  const handlerSubmit = async (event) => {
     event.preventDefault();
 
     const { name, email, message } = formData;
@@ -93,7 +94,7 @@ const ContactForm = () => {
     }
 
     if (formIsValid) {
-      sendEmail(event);
+      await sendEmail(event);
       console.log(formData);
 
       // Reinicia los campos
@@ -107,14 +108,39 @@ const ContactForm = () => {
   };
 
   const modalSuccessTitle = tForm.modals.titlesuccess;
-  const modalSuccessText= tForm.modals.success;
+  const modalSuccessText = tForm.modals.success;
 
   const modalErrorTitle = tForm.modals.titleerror;
   const modalErrorText = tForm.modals.error;
 
-  const sendEmail = () => {
+  const sendEmail = async() => {
     // aca llamar a la api
-    setModalIsOpen(!modalIsOpen);
+    const formDataToSend = new FormData();
+    formDataToSend.append("name", formData.name);
+    formDataToSend.append("email", formData.email);
+    formDataToSend.append("business", formData.business);
+    formDataToSend.append("message", formData.message);
+    formDataToSend.append("_gotcha", ""); // Honeypot anti-spam
+    try{
+      const response = await fetch("https://getform.io/f/aroyylnb", {
+      method: "POST",
+      body: formDataToSend,
+    });
+    if (response.ok){
+      setMsjApi({title: modalSuccessTitle, text: modalSuccessText});
+      setModalIsOpen(!modalIsOpen);
+    
+    } else {
+      setMsjApi({title:modalErrorTitle,text:modalErrorText});
+      setModalIsOpen(!modalIsOpen);
+    
+    }
+  } catch(error){
+      console.log(error);
+      setMsjApi({title:modalErrorTitle, text:modalErrorText});
+      setModalIsOpen(!modalIsOpen);
+    
+    }
   };
 
   return (
@@ -166,7 +192,7 @@ const ContactForm = () => {
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>{tForm.inputs.business.lable}</Form.Label>
+            <Form.Label>{tForm.inputs.business.label}</Form.Label>
             <div>
               <Form.Control
                 ref={businessRef}
@@ -180,7 +206,7 @@ const ContactForm = () => {
           </Form.Group>
 
           <Form.Group className="form-group">
-            <Form.Label>{tForm.inputs.content.lable}</Form.Label>
+            <Form.Label>{tForm.inputs.content.label}</Form.Label>
             <Form.Control
               ref={messageRef}
               name="message"
@@ -193,7 +219,7 @@ const ContactForm = () => {
             />
             {errors.message && (
               <div className="alert alert-warning">
-               {t(
+                {t(
                   "home.contact-section.contact-form.inputs.content.validation-error"
                 )}
               </div>
@@ -204,8 +230,8 @@ const ContactForm = () => {
           </Button>
           {modalIsOpen && (
             <Modal
-              title={modalSuccessTitle}
-              text={modalSuccessText}
+              title={msjApi.title}
+              text={msjApi.text}
               onClose={modalIsOpen}
               onCloseModal={closeModal}
             />

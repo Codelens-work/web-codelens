@@ -23,7 +23,17 @@
   margin-bottom: 5px;
 }
 
+.get-to-know-content p {
+  font-size: clamp(1.125rem, 1.0536rem + 0.3571vw, 1.375rem);
+}
+
+
 .get-to-know-content span {
   font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
   color: var(--purple)
+}
+
+.get-to-know-img img {
+  width: 100%;
+  object-fit: contain;
 }

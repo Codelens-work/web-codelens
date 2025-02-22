@@ -1,22 +1,27 @@
 .contact-container {
     display        : flex;
     flex-wrap      : wrap;
-    gap            : 25px;
+    gap            : 1px;
     justify-content: center;
-    padding-top    : 5px;
+    min-width      : 360px;
+    max-width      : 4400px;
+    width          : auto;
+    height         : auto;
+
 }
 
 .left-c,
 .right-c {
     flex   : 1;
     padding: 0;
+    width  : auto;
 }
 
 .right-c {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    margin         : 5rem 2rem 6rem 0rem;
+    margin         : 0.1rem;
 }
 
 .left-c {
@@ -49,6 +54,8 @@
     flex-direction : column;
     justify-content: center;
     align-items    : center;
+    width          : 100%;
+    height         : auto;
 }
 
 .h2-invitation-one {
@@ -120,8 +127,8 @@
 /*CONTACTO FORM*/
 
 .container-form-section {
-    width           : 686px;
-    height          : 762px;
+    width           : auto;
+    height          : auto;
     margin          : 0 auto;
     border-radius   : 10px;
     border          : 2px solid var(--purple);
@@ -137,7 +144,8 @@
 
 
 .form-container {
-    width: 100%;
+    width: auto;
+
 
 }
 
@@ -151,13 +159,15 @@
     color         : var(--purple);
     margin-top    : 2.3rem;
 
+    width: auto;
+
 }
 
 
 /*Caja del Input */
 input,
 textarea {
-    max-width : 619px;
+    max-width : 4400px;
     box-sizing: border-box;
     padding   : 0.7em;
     font-size : 1rem;
@@ -219,6 +229,31 @@ textarea:focus {
 
 
 @media (max-width: 800px) {
+
+    .invitation-one{
+        width: auto;
+height:auto;
+padding: 10px;
+
+    }
+    .contact-container {
+        width : auto;
+        height: auto;
+    }
+
+    .right-c {
+        width : auto;
+        height: auto;
+    }
+
+    .left-c {
+        margin : 0;
+        padding: 0;
+        width  : auto;
+        height : auto;
+
+    }
+
     .contact-container {
         display        : flex;
         flex-direction : column;
@@ -246,17 +281,25 @@ textarea:focus {
         justify-content: center;
         align-items    : center;
         gap            : 40px;
-        padding        : 0;
+        padding        : 8px;
         margin         : 0;
-        max-width      : 750px;
+        width          : 100%;
+        max-width      : 600px;
+    }
+
+    .form-group {
+        width    : 90%;
+        max-width: 600px;
     }
 
     /*Caja del Input */
     input,
     textarea {
         /* width: 30rem; */
-        width : 280px;
-        border: none;
+        width     : 100%;
+        max-width : 100%;
+        box-sizing: border-box;
+        border    : none;
     }
 
 
@@ -274,6 +317,12 @@ textarea:focus {
         margin : 0;
     }
 
+    .alert{
+        width: auto
+    }
+    .alert-warning{
+        width: auto;
+    }
 }
 
 /* MODAL */
@@ -288,7 +337,7 @@ textarea:focus {
     display         : none;
     justify-content : center;
     align-items     : center;
-    color           : #ffffff;
+    color           : var(--black);
 }
 
 .modal.is-open {
@@ -309,7 +358,7 @@ textarea:focus {
     overflow-y      : auto;
     border-radius   : 20px;
     padding         : 1.9rem;
-    background-color: var(--marine-green);
+    background-color: var(--light-blue);
 }
 
 .logo-container-modal {
@@ -333,5 +382,39 @@ textarea:focus {
     position: absolute;
     top     : 1rem;
     right   : 1rem;
-    color   : var(--purple);
+    background-color   : var(--purple);
+    color:#ffffff;
+
+
+    display: inline-block;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none;  
+    border: none;
+    background-color: var(--purple);
+    color: var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+padding: 2px;
+}
+
+
+.modal-cloes:hover {
+    letter-spacing: 3px;
+    background-color: hsl(273, 89%, 36%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(273, 89%, 36%) 0px 7px 29px 0px;
+}
+  
+.modal-cloes:active {
+    letter-spacing: 3px;
+    background-color: hsl(273, 89%, 36%);;
+    color: hsl(0, 0%, 100%);
+    box-shadow: hsl(273, 89%, 36%) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
 }

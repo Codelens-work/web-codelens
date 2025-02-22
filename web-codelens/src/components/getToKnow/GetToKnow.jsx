@@ -10,7 +10,7 @@ const GetToKnow = ({ t }) => {
         <h2 className='h2-line'>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>
-        <LinkButton label={t['get-to-know-btn']} href={'/about'} size="normal" />
+        <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={'/about'} size="normal" />
       </div>
       <div className="get-to-know-img">
         <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />

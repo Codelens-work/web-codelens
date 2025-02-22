@@ -37,3 +37,14 @@
   width: 100%;
   object-fit: contain;
 }
+
+@media (width < 822px) {
+  .get-to-know-content {
+    align-items: center;
+    max-width: 300px;
+  }
+
+  .get-to-know-btn {
+    display: none;
+  }
+}

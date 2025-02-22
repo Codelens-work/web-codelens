@@ -39,9 +39,7 @@ align-items: center;
   align-self: center;
 }
 
-.home-about-content h2{
-  font-size: clamp(2rem, 1.4167rem + 2.9167vw, 3.75rem);
-}
+
 
 .home-about-content span{
   font-size: clamp(1.25rem, 1.0417rem + 1.0417vw, 1.875rem);

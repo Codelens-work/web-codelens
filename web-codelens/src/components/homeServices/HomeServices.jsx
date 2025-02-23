@@ -9,6 +9,7 @@ const HomeServices = ({ t }) => {
   const [isTouching, setIsTouching] = useState(false)
   const [prevItemX, setPrevItemX] = useState(undefined)
   const [prevScrollLeft, setPrevScrollLeft] = useState(undefined)
+  const [diff, setDiff] = useState(undefined)
   const carouselRef = useRef(null)
 
   // Guarda valores iniciales de cuando el usuario tocó el carousel
@@ -23,9 +24,13 @@ const HomeServices = ({ t }) => {
   const scrolling = (e) => {
     if(!isTouching) return;
     let pageX = e.touches[0].pageX;
-    let diff = pageX - prevItemX;
+    setDiff(pageX - prevItemX);
     carouselRef.current.scrollLeft = prevScrollLeft - diff;
     return
+  }
+
+  const autoScroll = () => {
+    let cardWidth = 30
   }
 
   return (
@@ -67,3 +72,15 @@ const HomeServices = ({ t }) => {
 }
 
 export default HomeServices;
+
+/*
+- hacer autoScroll
+    -obtener width de la card dinámicamente
+    - hacer globales los valores
+
+
+- Si el usuario scrollea para la izquierda, restar el width de la card y el gap 
+- sino, añadirlo
+
+
+*/

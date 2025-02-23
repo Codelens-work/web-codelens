@@ -52,7 +52,7 @@ const Home = () => {
     </Hero>
     <HomeAbout t={t('home.about-section', {returnObjects: true})}
     btn={t("btn-contact.text")}/>
-   { /* <HomeServices t={t('home.services-section', {returnObjects: true})} /> */}
+    <HomeServices t={t('home.services-section', {returnObjects: true})} />
     <GetToKnow t={t('home.get-to-know-section', {returnObjects: true})}/>
     <Contact />
     <Faqs/>
@@ -61,3 +61,13 @@ const Home = () => {
 }
 
 export default Home;
+
+/*
+- Arreglar li -> poner iconos
+	- cambiar lógica de active
+- arreglar contenedor de cards para que no tenga padding
+- Arreglar contenido
+- Agregar controles
+
+
+*/

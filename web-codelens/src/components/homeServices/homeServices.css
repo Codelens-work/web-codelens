@@ -31,11 +31,7 @@
 }
 
 .home-carousel-bullets {
-  margin-top: 10px;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  padding: 0;
+  display: none;
 }
 
 .home-carousel-bullets li{
@@ -64,7 +60,15 @@ background-color: var(--marine-green);
     -webkit-overflow-scrolling: touch; */
   }
 
-  .home-carousel-slides > div{
+  .home-carousel-bullets {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .home-carousel-slides > div {
     flex-shrink: 0;
     scroll-snap-align: start;
     scroll-padding-inline: 30px;

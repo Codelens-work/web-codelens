@@ -57,7 +57,7 @@ const HomeServices = ({ t }) => {
         </div>
         <ul className="home-carousel-bullets">
           {services.map((s, i) => {
-            return <li key={s + i} className={activeSlide === i ? "activeSlide" : ""} onClick={() => { setActiveSlide(i) }}></li>
+            return <li key={s + i} className={activeSlide === i ? "activeSlide" : ""}></li>
           })}
         </ul>
       </div>

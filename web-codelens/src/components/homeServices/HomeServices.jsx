@@ -29,10 +29,6 @@ const HomeServices = ({ t }) => {
     return
   }
 
-  const autoScroll = () => {
-    let cardWidth = 30
-  }
-
   return (
     <Section className='home-services-section'>
       <div className="home-services-content">
@@ -45,7 +41,10 @@ const HomeServices = ({ t }) => {
           ref={carouselRef} 
           onTouchStart={(e) => scrollStart(e)} 
           onTouchMove={(e) => scrolling(e)}
-          onTouchEnd={() => setIsTouching(false)}
+          onTouchEnd={() => {
+              setIsTouching(false)
+              autoScroll()
+            }}
         >
           {services.map((service, i) => {
             return <CardHomeService

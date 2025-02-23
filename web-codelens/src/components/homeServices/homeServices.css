@@ -55,10 +55,11 @@ background-color: var(--marine-green);
   .home-carousel-slides{
     flex-wrap: nowrap;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior-inline: contain;
     scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+    /* scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain;
+    
+    -webkit-overflow-scrolling: touch; */
   }
 
   .home-carousel-slides > div{

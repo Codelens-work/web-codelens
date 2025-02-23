@@ -11,15 +11,21 @@ const HomeServices = ({ t }) => {
   const [prevScrollLeft, setPrevScrollLeft] = useState(undefined)
   const carouselRef = useRef(null)
 
+  // Guarda valores iniciales de cuando el usuario tocó el carousel
   const scrollStart = (e) => {
     setIsTouching(true);
-    setPrevItemX(e.touches[0].pageX)
-    setPrevScrollLeft(carouselRef.current.scrollLeft) 
+    setPrevItemX(e.touches[0].pageX);
+    setPrevScrollLeft(carouselRef.current.scrollLeft); 
+    return
   }
 
+  // Usa los valores de la función ScrollStart para calcular cuánto mover el slider
   const scrolling = (e) => {
     if(!isTouching) return;
-    carouselRef.current.scrollLeft = e.touches[0].pageX
+    let pageX = e.touches[0].pageX;
+    let diff = pageX - prevItemX;
+    carouselRef.current.scrollLeft = prevScrollLeft - diff;
+    return
   }
 
   return (

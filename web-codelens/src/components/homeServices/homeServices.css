@@ -63,7 +63,7 @@ background-color: var(--marine-green);
   }
 }
 
-@media (width <= 500px) {
+@media (width <= 376px) {
   .home-carousel-slides{
     flex-wrap: nowrap;
     overflow-x: auto;

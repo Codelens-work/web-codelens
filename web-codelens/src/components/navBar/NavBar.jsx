@@ -9,10 +9,8 @@ import {
 import { useNavigate } from "react-router-dom";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useTranslation } from 'react-i18next'
-import i18n from 'i18next'
-
-
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 const NavBar = () => {
   const { t } = useTranslation();
@@ -32,6 +30,38 @@ const NavBar = () => {
     setExpanded(false);
   };
 
+  const services = t("footer-section.lists.services-list.items", {
+    returnObjects: true,
+  });
+  const route = t("footer-section.lists.find-way-list.items", {
+    returnObjects: true,
+  });
+  const routeHelp = t("footer-section.lists.help-list.items", {
+    returnObjects: true,
+  });
+
+  const webDevelopmentUrl = services[0]?.url;
+  const webDevelopmentText = services[0]?.text;
+  const webDesignUrl = services[1]?.url;
+  const webDesignText = services[1]?.text;
+  const seoUrl = services[2]?.url;
+  const appWebUrl = services[3]?.url;
+  const appWebText = services[3]?.text;
+  const apiUrl = services[4]?.url;
+  const apiText = services[4]?.text;
+
+  const homeText = route[0].text;
+  const aboutUrl = route[1].url;
+  const aboutText = route[1].text;
+  const blogUrl = route[2].url;
+
+  const faqsUrl = routeHelp[0].url;
+  const faqsText = routeHelp[0].text;
+  const termsAndConditionsUrl = routeHelp[2].url;
+  const termsAndConditionsText = routeHelp[2].text;
+  const privacyPolicyUrl = routeHelp[3].url;
+  const privacyPolicyText = routeHelp[3].text;
+
   useEffect(() => {
     const handleScroll = () => {
       setNavActive(window.scrollY > 50);
@@ -41,9 +71,9 @@ const NavBar = () => {
 
     // Toggle body scroll when menu is open
     if (expanded) {
-      document.body.classList.add('menu-open');
+      document.body.classList.add("menu-open");
     } else {
-      document.body.classList.remove('menu-open');
+      document.body.classList.remove("menu-open");
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -60,128 +90,124 @@ const NavBar = () => {
         className={`navbar-custom ${navActive ? "active" : ""}`}
         variant="light"
       >
-      <div className="navbar-container-custom">
-      <Navbar.Brand>
-          <img
-            className="logo"
-            src="/icons/logo_nombre.svg"
-            alt="Logo"
-            onClick={() => navigate("/")}
-            style={{ cursor: "pointer" }}
-          />
-        </Navbar.Brand>
-        {/* Botón hamburguesa */}
-        <Navbar.Toggle
-          aria-controls="navbar-nav"
-          className="hamburger-menu"
-          onClick={() => setExpanded(!expanded)}
-        >
-          <img
-            src={
-              expanded
-                ? "/icons/icon_close.svg"
-                : "/icons/icon_menu.svg"
-            }
-            alt="menu"
-            className="menu-icon"
-          />
-        </Navbar.Toggle>
-        {/* Menú colapsable personalizado */}
-        <div className={`navbar-collapse ${expanded ? "show" : ""}`}>
-          <Nav className="navbar-links-custom d-flex align-items-center">
-            <a
-              onClick={() => {
-                navigate("/");
-                setExpanded(false); // Cierra el menú al navegar
-              }}
-              className="link-navbar-custom mx-2 btn btn-outline-light"
-            >
-              {t('titles.home')}
-            </a>
-            <a
-              onClick={() => {
-                navigate("/nosotros");
-                setExpanded(false);
-              }}
-              className="link-navbar-custom mx-2 btn btn-outline-light"
-            >
-              {t('titles.about')}
-            </a>
-            <Dropdown
-              show={dropdown}
-              onToggle={() => setDropdown(!dropdown)}
-              id="dropdown-services"
-              className="dropdown-mobile mx-2"
-            >
-              <DropdownToggle className="dropdown-title">
-              {t('titles.services')}
-              </DropdownToggle>
-              <DropdownMenu className="dropdown-custom">
-                <Dropdown.Item
-                  className="dropdown-item"
-                  onClick={() => handleDropdownItemClick("/servicios/desarrollo-web")}
-                >
-                  Desarrollo Web
-                </Dropdown.Item>
-                <Dropdown.Item
-                  className="dropdown-item"
-                  onClick={() => handleDropdownItemClick("/servicios/seo")}
-                >
-                  SEO
-                </Dropdown.Item>
-                <Dropdown.Item
-                  className="dropdown-item"
-                  onClick={() => handleDropdownItemClick("/servicios/diseno-web")}
-                >
-                  Diseño Web
-                </Dropdown.Item>
-                <Dropdown.Item
-                  className="dropdown-item"
-                  onClick={() => handleDropdownItemClick("/servicios/app-web")}
-                >
-                  App Web
-                </Dropdown.Item>
-                <Dropdown.Item
-                  className="dropdown-item"
-                  onClick={() => handleDropdownItemClick("/servicios/desarrollo-api")}
-                >
-                  Desarrollo API
-                </Dropdown.Item>
-              </DropdownMenu>
-            </Dropdown>
-            <a
-              onClick={() => {
-                navigate("/#Contact");
-                setExpanded(false);
-              }}
-              className="link-navbar-custom mx-2 btn btn-outline-light"
-            >
-              {t('titles.contact')}
-            </a>
-            <a
-              onClick={() => {
-                navigate("/blog");
-                setExpanded(false);
-              }}
-              className="link-navbar-custom mx-2 btn btn-outline-light"
-            >
-              {t('titles.blog')}
-            </a>
-            <div className="navbar-language">
-              <picture className="icon-language-container">
-                <img
-                  className="icon-language"
-                  src="/icons/icon-language.svg"
-                  alt="icono de mundo"
-                />
-              </picture>
-              <button className="language" onClick={handleLanguageToggle}>
-                {i18n.language.toUpperCase()}
+        <div className="navbar-container-custom">
+          <Navbar.Brand>
+            <img
+              className="logo"
+              src="/icons/logo_nombre.svg"
+              alt="Logo"
+              onClick={() => navigate("/")}
+              style={{ cursor: "pointer" }}
+            />
+          </Navbar.Brand>
+          {/* Botón hamburguesa */}
+          <Navbar.Toggle
+            aria-controls="navbar-nav"
+            className="hamburger-menu"
+            onClick={() => setExpanded(!expanded)}
+          >
+            <img
+              src={expanded ? "/icons/icon_close.svg" : "/icons/icon_menu.svg"}
+              alt="menu"
+              className="menu-icon"
+            />
+          </Navbar.Toggle>
+          {/* Menú colapsable personalizado */}
+          <div className={`navbar-collapse ${expanded ? "show" : ""}`}>
+            <Nav className="navbar-links-custom d-flex align-items-center">
+              <a
+                onClick={() => {
+                  navigate("/");
+                  setExpanded(false); // Cierra el menú al navegar
+                }}
+                className="link-navbar-custom mx-2 btn btn-outline-light"
+              >
+                {t("titles.home")}
+              </a>
+              <a
+                onClick={() => {
+                  navigate(aboutUrl);
+                  setExpanded(false);
+                }}
+                className="link-navbar-custom mx-2 btn btn-outline-light"
+              >
+                {t(aboutText)}
+              </a>
+              <Dropdown
+                show={dropdown}
+                onToggle={() => setDropdown(!dropdown)}
+                id="dropdown-services"
+                className="dropdown-mobile mx-2"
+              >
+                <DropdownToggle className="dropdown-title">
+                  {t("titles.services")}
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-custom">
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(webDevelopmentUrl)}
+                  >
+                    {webDevelopmentText}
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(seoUrl)}
+                  >
+                    SEO
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(webDesignUrl)}
+                  >
+                    {webDesignText}
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(appWebUrl)}
+                  >
+                    {appWebText}
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(apiUrl)}
+                  >
+                    {apiText}
+                  </Dropdown.Item>
+                </DropdownMenu>
+              </Dropdown>
+              <a
+                onClick={() => {
+                  navigate("/#Contact");
+                  setExpanded(false);
+                }}
+                className="link-navbar-custom mx-2 btn btn-outline-light"
+              >
+                {t("titles.contact")}
+              </a>
+              <a
+                onClick={() => {
+                  navigate(blogUrl);
+                  setExpanded(false);
+                }}
+                className="link-navbar-custom mx-2 btn btn-outline-light"
+              >
+                {t("titles.blog")}
+              </a>
+              <div className="navbar-language">
+                <picture className="icon-language-container">
+                  <img
+                    className="icon-language"
+                    src="/icons/icon-language.svg"
+                    alt="icono de mundo"
+                  />
+                </picture>
+                <button className="language" onClick={handleLanguageToggle}>
+                  {i18n.language.toUpperCase()}
                 </button>
-            </div>
-          </Nav>
+              </div>
+            </Nav>
           </div>
-      </div>
+        </div>
       </Navbar>
     </header>
   );

@@ -14,8 +14,9 @@ const HomeServices = ({ t }) => {
 
   // Guarda valores iniciales de cuando el usuario tocó el carousel
   const scrollStart = (e) => {
+    console.log(isTouching)
     setIsTouching(true);
-    setPrevItemX(e.touches[0].pageX);
+    setPrevItemX(e.touches[0]?.pageX);
     setPrevScrollLeft(carouselRef.current.scrollLeft); 
     return
   }
@@ -39,11 +40,11 @@ const HomeServices = ({ t }) => {
         <div 
           className='home-carousel-slides' 
           ref={carouselRef} 
+          // Eventos touch
           onTouchStart={(e) => scrollStart(e)} 
           onTouchMove={(e) => scrolling(e)}
           onTouchEnd={() => {
               setIsTouching(false)
-              autoScroll()
             }}
         >
           {services.map((service, i) => {

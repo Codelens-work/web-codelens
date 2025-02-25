@@ -1,13 +1,18 @@
+:root {
+  --padding: 2rem;
+}
+
 .home-services-section {
   background: var(--purple);
   background: radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: var(--padding);
+  padding-right:var(--padding);
 }
 
 .home-services-content {
   display: flex;
   flex-direction: column;
+  padding: 0 30px;
 }
 
 .home-services-section span {
@@ -47,7 +52,18 @@
 background-color: var(--marine-green);
 }
 
-@media (width <= 828px) {
+@media (width <= 768px) {
+  .home-services-section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .home-services-content {
+    align-items: center;
+  }
+}
+
+@media (width <= 500px) {
   .home-carousel-slides{
     flex-wrap: nowrap;
     overflow-x: auto;
@@ -55,12 +71,6 @@ background-color: var(--marine-green);
     scroll-behavior: smooth;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
-  
-    /* scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    overscroll-behavior-inline: contain;
-    
-    -webkit-overflow-scrolling: touch; */
   }
 
   .home-carousel-slides::-webkit-scrollbar { 
@@ -77,21 +87,7 @@ background-color: var(--marine-green);
 
   .home-carousel-slides > div {
     flex-shrink: 0;
-    /* scroll-snap-align: start;
-    scroll-padding-inline: 30px; */
     position: relative;
     transition: transform 0.5s;
-  }
-}
-
-@media (width <= 820px) {
-  .home-services-section {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .home-services-content {
-    padding: 0 12%;
-    align-items: center;
   }
 }

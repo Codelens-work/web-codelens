@@ -76,14 +76,13 @@ const Contact = () => {
       </Section>
       </motion.div>
       <motion.div 
+        className="right-c "
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }} // Se activa cuando el 20% del componente es visible
         variants={slideInRight}
       >
-      <div className="right-c ">
         <ContactForm />
-      </div>
       </motion.div>
     </div>
   );

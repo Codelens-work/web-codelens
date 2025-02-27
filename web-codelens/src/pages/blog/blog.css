@@ -32,3 +32,19 @@
         font-size: 4.375rem;
     }
 }
+
+
+
+.card-container-blog{
+    width : 100vw;
+    height: 100vh;
+  
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    
+}

@@ -1,0 +1,153 @@
+.medium-container,
+.large-container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3sease, box-shadow 0.3 sease;
+    background: var(--white);
+    overflow: hidden;
+    
+    padding: 0;
+    margin: 0;
+}
+
+.medium-container:hover,
+.large-container:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    transform : scale(1.04);
+}
+
+
+/*linck al blog*/
+.view-more {
+    text-decoration: none;
+    color          : var(--purple);
+}
+
+.view-more:hover {
+    font-weight: bold;
+
+}
+
+/*!! Card Mediano*/
+.medium-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    width          : 25vw;
+    height         : auto;
+    margin         : 2vw;
+
+    border-top-left-radius    : 20px;
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius : 20px;
+
+}
+
+.medium-container .img-container img {
+    width                  : 26vw;
+    height: auto;
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
+}
+
+.medium-content {
+    margin: .8vw;
+}
+
+.medium-container h2 {
+    /* font-size: 1.5vw; */
+    font-size: clamp(1vw, 5vw, 1.5vw);
+    margin   : 4vh;
+}
+
+/*!! contenedor Fecha y link al blog */
+.date-more-container {
+    justify-content: center;
+    justify-self   : center;
+    align-items    : center;
+    flex-direction : row;
+    gap            : 7vw;
+
+    display    : inline-flex;
+    width      : auto;
+    min-width  : fit-content;
+    white-space: nowrap;
+
+}
+
+.date,
+.view-more {
+    padding: 0;
+    margin : 0;
+}
+
+
+
+
+
+/*!! Card Grande*/
+.large-container {
+    display        : flex;
+    flex-direction : row-reverse;
+    justify-content: center;
+    align-items    : center;
+    width          : 1074px;
+    height         : 340px;
+    padding        : 0;
+    margin         : 0;
+
+    border-top-left-radius       : 20px;
+
+    border-top-right-radius         : 20px;
+    border-bottom-right-radius      : 20px;
+
+    border-bottom-left-radius    : 20px; 
+}
+
+.large-content {
+    margin         : 2vw;
+    display        : flex;
+    flex-direction : column;
+    justify-content: left;
+    align-items    : flex-start;
+    gap            : 3vh;
+
+
+}
+
+.large-content p {
+    width: auto;
+    height: auto;
+}
+
+
+.large-container h2 {
+    /* font-size: 1.5vw; */
+    font-size: clamp(1vw, 5vw, 3vw);
+    margin   : 4vh;
+    margin   : 0;
+    padding  : 0;
+}
+
+.large-container p {
+    /* font-size: 1.5vw; */
+    font-size: clamp(0.6vw, 5vw, 1vw);
+    
+    margin   : 0;
+    padding  : 0;
+}
+
+
+.large-container .date-more-container {
+    gap: 300px;
+}
+
+
+.large-container .img-container img {
+    width                  : 33vw;
+    height: auto;
+
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+}

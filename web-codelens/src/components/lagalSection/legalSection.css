@@ -1,15 +1,17 @@
 @import url('/src/index.css');
 
-.legal-description-container {
-    display        : flex;
-    flex-wrap      : wrap;
+.legal-description-container {    
+  display        : flex;
+  justify-content: center;
+  justify-self   : center;
+  align-items    : center;
+  flex-direction : row;
     gap            : 25px;
     justify-content: center;
     padding-top    : 5px;
     max-width: 4400px;
     margin: auto;
     height: auto;
-
 }
 
 .left-column,

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "../lagalSection/legalSection.css";
+
 
 const SectionDisplay = ({ titles, description }) => {
   //deberia recibir un array de ambos y mapearlo

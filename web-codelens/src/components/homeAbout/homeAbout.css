@@ -34,13 +34,13 @@ align-items: center;
   
 }
 
+.home-about-content h2 {
+font-size: clamp(2rem, 1.4167rem + 2.9167vw, 2.5rem);
+}
+
 .home-about-logo {
   width: clamp(9.375rem, 1.1538rem + 17.3077vw, 15rem);
   align-self: center;
-}
-
-.home-about-content h2{
-  font-size: clamp(2rem, 1.4167rem + 2.9167vw, 3.75rem);
 }
 
 .home-about-content span{

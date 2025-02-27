@@ -9,6 +9,8 @@ import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Faqs from '../../components/faqs/Faqs'
 import HomeAbout from '../../components/homeAbout/HomeAbout';
+import HomeServices from '../../components/homeServices/HomeServices';
+import GetToKnow from '../../components/getToKnow/getToKnow';
 
 const Home = () => {
 
@@ -50,6 +52,8 @@ const Home = () => {
     </Hero>
     <HomeAbout t={t('home.about-section', {returnObjects: true})}
     btn={t("btn-contact.text")}/>
+    <HomeServices t={t('home.services-section', {returnObjects: true})} />
+    <GetToKnow t={t('home.get-to-know-section', {returnObjects: true})}/>
     <Contact />
     <Faqs/>
     </>
@@ -57,3 +61,13 @@ const Home = () => {
 }
 
 export default Home;
+
+/*
+- Arreglar li -> poner iconos
+	- cambiar lógica de active
+- arreglar contenedor de cards para que no tenga padding
+- Arreglar contenido
+- Agregar controles
+
+
+*/

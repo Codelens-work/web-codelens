@@ -3,7 +3,7 @@
     "language": "EN",
     "home": "Home",
     "about": "Sobre Nosotros",
-    "services": "About us",
+    "services": "Services",
     "testimonials": "Testimonials",
     "contact": "Contact",
     "terms": "Terms and conditions",
@@ -89,27 +89,32 @@
         {
           "title": "Custom Web Development",
           "content": "We create custom websites from scratch, tailored to the unique needs of each client.",
-          "icon": ""
+          "icon": "webDevLogo",
+          "url": "desarrollo-web"
         },
         {
           "title": "Web Design",
           "content": "We design modern, attractive, and user-friendly interfaces that capture users' attention and communicate your brand's values.",
-          "icon": ""
+          "icon": "webDesignLogo",
+          "url": "diseno-web"
         },
         {
           "title": "Website Improvement and Optimization",
-          "content": "We create custom websites from scratch, tailored to the unique needs of each client.",
-          "icon": "We help improve existing websites, whether through design updates, performance improvements, or adding new features."
+          "content": "We help improve existing websites, whether through design updates, performance improvements, or adding new features.",
+          "icon": "seoLogo",
+          "url": "seo"
         },
         {
           "title": "Custom Web Application Development",
           "content": "We build custom web applications to optimize and simplify business processes for our clients.",
-          "icon": ""
+          "icon": "webAppLogo",
+          "url": "app-web"
         },
         {
           "title": "API Development",
           "content": "We design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their own users.",
-          "icon": ""
+          "icon": "apiDevLogo",
+          "url": "/servicios/desarrollo-api"
         }
       ]
     },

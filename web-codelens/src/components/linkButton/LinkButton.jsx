@@ -28,7 +28,7 @@ const LinkButton = ({ label, href, size = "normal, small" }) => {
 LinkButton.propTypes = {
   label: PropTypes.string.isRequired,
   href: PropTypes.string.isRequired,
-  size: PropTypes.oneOf(["normal", "card"]),
+  size: PropTypes.oneOf(["normal", "small"]),
 };
 
 export default LinkButton;

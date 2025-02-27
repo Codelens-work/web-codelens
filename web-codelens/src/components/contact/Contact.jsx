@@ -2,14 +2,33 @@ import React from "react";
 import ContactForm from "./ContactForm";
 import "../contact/contact.css";
 import { useTranslation } from "react-i18next";
+import Section from "../section/Section";
+import { motion } from 'framer-motion';
 
 const Contact = () => {
- const { t, i18n } = useTranslation();
+ const { t } = useTranslation();
   const tContact = t("home.contact-section", { returnObjects: true });
 
+  // Variants para las animaciones
+  const slideInLeft = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
+  const slideInRight = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
 
   return (
     <div id="Contact" className="contact-container">
+        <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }} // Se activa cuando el 20% del componente es visible
+        variants={slideInLeft}
+      >
+      <Section>
       <div className="left-c">
         <div className="text-container">
           <h2 className="h2-invitation-one h2-line">{tContact.heading}</h2>
@@ -30,28 +49,42 @@ const Contact = () => {
           <p className="invitation-two">
           {t("home.contact-section.socials-message")}
           </p>
-
           <p className="invitation-three"> <span><img src="..\icons\Message-contact.svg"/></span>
           {t("home.contact-section.chat-text")}</p>
-          <p className="email">codelens@gmail.com</p>
+          <a className="email" href="mailto:contacto@codelenstech.com">contacto@codelenstech.com</a>
           <p className="invitation-three"> <span><img src="..\icons\Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
-          <div>
+          <div className="social-logo-container">
             {/* <img
               className="logo-social"
               src="public/social/facebook.svg"
               alt="facebook"
             /> */}
-            <img
-              className="logo-social"
-              src="public/social/instagram.svg"
-              alt="instagram"
-            />
+            <a href="https://www.instagram.com/codelens.tech/" 
+              target="_blank"
+              rel="noopener noreferrer" 
+              className="social-link">
+              <img
+                className="logo-social"
+                src="public/social/instagram.svg"
+                alt="instagram"
+              />
+               <span className="tooltip">Codelens.tech</span>
+            </a>
           </div>
         </div>
       </div>
+      </Section>
+      </motion.div>
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }} // Se activa cuando el 20% del componente es visible
+        variants={slideInRight}
+      >
       <div className="right-c ">
         <ContactForm />
       </div>
+      </motion.div>
     </div>
   );
 };

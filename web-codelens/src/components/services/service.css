@@ -1,43 +1,43 @@
+.service-section-container{
+    background     : linear-gradient(180deg, rgba(155, 93, 229, 0.4) 0%, #D3E7F9 100%);
+}
 .service-container {
     display        : flex;
     flex-wrap      : wrap;
-    gap            : 35px;
+    gap            : 20px;
     justify-content: center;
-    padding-top    : 0;
-    padding-bottom : 0;
-    background     : linear-gradient(180deg, rgba(155, 93, 229, 0.4) 0%, #D3E7F9 100%);
+    align-items: center;
     max-width: 4400px;
-    margin: auto;
-    height: auto;
+    padding: 15px;
 }
 
-.left-column,
-.right-column {
+.left-column-service,
+.right-column-service {
     flex   : 1;
     padding: 0;
-    min-width: 360px;
+    min-width: 300px;
     
 }
 
-.left-column {
-    border         : 1px solid black;
+.left-column-service {
     display        : flex;
     justify-content: center;
     align-items    : center;
-    padding        : 0px;
-    margin: 0%;
+    padding        : 0;
+    margin: 0;
 
 }
 
-.left-column img {
+.left-column-service img {
     height: auto;
-    max-width: 100%;
+    width: clamp(15.625rem, 10.4821rem + 25.7143vw, 33.625rem);;
     /* top   : 855px; */
     /* left  : 128px; */
+    padding: 0;
+    margin: 0;
 }
 
-.right-column {
-    border         : 1px solid black;
+.right-column-service {
     display        : flex;
     flex-direction : column;
     justify-content: center;
@@ -49,82 +49,98 @@
 }
 
 .paragraphOne{
-    
     margin: 10px;
-    min-width: 360px;
+    min-width: 300px;
 }
 
 .paragraphOne p {
-    font-size    : clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
     line-height  : 1.5rem;
     margin-bottom: 2rem;
-    
-
 }
 
 .items{
-    
-    min-width: 360px;
+    min-width: 300px;
 } 
 
 .items p, ul {
-    font-size  : clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
     line-height: 1.5rem;
+}
+
+.right-column-service h2 {
+    position: relative;
+    font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+    padding-left: clamp(38px, 8vw, 60px); /* Asegura espacio para el before */
+}
+
+.right-column-service h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0; /* Se mantiene alineado con el padding del h2 */
+    width: clamp(30px, 5vw, 50px);
+    height: 3px;
+    background-color: var(--marine-green);
+    transform: translateY(-50%);
+}
+
+
     
-
-}
-
-.right-column h2 {
-    margin-top : .1rem;
-    font-size  : clamp(1.5rem, 3vw, 2.5rem);
-    line-height: 1.5rem;
-    width      : 100%;
-    text-align: center;
-    line-height: 2.5rem;
-}
-
 /* Seccion Cartas! */
+
+.service-card-section-container{
+    background     : var(--white);
+}
 
 .secion-card-container {
     display        : flex;
     flex-direction : column;
     justify-content: center;
     gap            : 35px;
-    background     : #ffffff;
     padding-top    : 0;
     padding-bottom : 0;
     padding        : 1rem;
-    padding-bottom : 6.6rem;
-    min-width: 360px;
+    padding-bottom : 4rem;
+    min-width: 300px;
     max-width: 4400px;
 }
 
 .secion-card-container h2 {
-    font-family: Roboto;
     font-size  : clamp(2rem, 3vw, 2.5rem);
-    font-weight: 500;
-    line-height: 46.88px;
-    text-align : left;
+    position: relative;
+    font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+    padding-left: clamp(38px, 8vw, 60px); /* Asegura espacio para el before */
+}
 
+.secion-card-container h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0; /* Se mantiene alineado con el padding del h2 */
+    width: clamp(30px, 5vw, 50px);
+    height: 3px;
+    background-color: var(--marine-green);
+    transform: translateY(-50%);
 }
 
 .card-group {
     display        : flex;
     flex-wrap      : wrap;
     gap            : 35px;
-    justify-content: left;
+    justify-content: center;
+    align-items: center;
 }
-
-@media (max-width: 1300px) {
-    .card-group {
-        justify-content: center;
-    }
-}
-
 
 .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width          : 18.563rem;
-    height         : 12rem;
+    height         : 14rem;
     gap            : 0px;
     border-radius  : 10px;
     border         : 1px solid var(--marine-green);
@@ -176,6 +192,7 @@
     /* padding: 5.313rem ; */
     font-family: Roboto;
     font-weight: 500;
+    padding: 50px 20px;
 }
 
 .service-contact h2 {

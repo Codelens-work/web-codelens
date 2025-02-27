@@ -1,6 +1,8 @@
 import LegalDescription from "./LegalDescription";
 import PropTypes from "prop-types";
 import SectionDisplay from "./SectionDisplay";
+import "../lagalSection/legalSection.css";
+
 
 const LegalSection = ({
   paragraph,

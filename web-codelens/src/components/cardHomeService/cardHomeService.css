@@ -1,0 +1,33 @@
+.home-service-card {
+  height: 360px;
+  width: 300px;
+  background-color: var(--white);
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-radius: 5%;
+  gap: 5px;
+  filter: drop-shadow(1px 4px 5px var(--black));
+}
+
+.home-service-card img {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 5px;
+}
+
+.home-service-card h3 {
+  font-size: 1.1rem;
+  color: var(--purple)
+} 
+
+.home-service-card p {
+  font-size: 1rem;
+} 
+
+.home-service-card a {
+  align-self: center;
+  margin-top: auto;
+}

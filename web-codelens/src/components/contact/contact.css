@@ -3,10 +3,11 @@
     flex-wrap      : wrap;
     gap            : 1px;
     justify-content: center;
-    min-width      : 360px;
-    max-width      : 4400px;
-    width          : auto;
-    height         : auto;
+    align-items: center;
+    min-width      : 320px;
+    width: 100%;
+    background-color: var(--white);
+    padding: 3rem 0; 
 
 }
 
@@ -21,19 +22,18 @@
     display        : flex;
     justify-content: center;
     align-items    : center;
-    margin         : 0.1rem;
+    margin         : 0.1rem 0;
+    padding: 40px 0 70px 0;
+    max-width: 750px;
 }
 
 .left-c {
-
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
     gap            : 1rem;
-    padding        : 20px;
-    margin         : 0.5rem 0rem 7rem 2rem;
-
+    width: 100%;
 }
 
 /*parte de texto*/
@@ -42,87 +42,139 @@
     max-height: 84px;
 }
 
-.logo-social {
-    max-width : 40px;
-    max-height: 40px;
-    margin    : .5rem;
-
-}
-
 .text-container {
     display        : flex;
     flex-direction : column;
     justify-content: center;
     align-items    : center;
     width          : 100%;
-    height         : auto;
 }
 
 .h2-invitation-one {
-    font-family: Roboto;
-    font-size  : 40px;
+    font-size: clamp(1.875rem, 1.7434rem + 0.6579vw, 2.8125rem);
     font-weight: 500;
     line-height: 46.88px;
     text-align : left;
-
 }
 
 .h2-invitation-two {
-    font-family: Roboto;
-    font-size  : 48px;
-    font-weight: 500;
-    line-height: 56.25px;
+    font-size: clamp(1.25rem, 1.0044rem + 1.2281vw, 3rem);
     text-align : center;
+    padding: 20px 0;
 }
 
 .h3-invitation {
-    font-family: Roboto;
-    font-size  : 24px;
-    font-weight: 500;
+    font-size: clamp(1.25rem, 1.2149rem + 0.1754vw, 1.5rem);
     line-height: 28.13px;
-    text-align : left;
     color      : var(--purple);
+    text-align: center;
+    max-width: 500px;
 
 }
 
 .invitation-one {
-    width : 479px;
-    height: 120px;
-    top   : 4077px;
-    left  : 110px;
+    max-width : 478px;
+    text-align: center;
+    font-size: clamp(1.06rem, 0.9649rem + 0.1754vw, 1.25rem);
 
 }
 
 .invitation-two {
-    font-family: Roboto;
-    font-size  : 18px;
+    font-size  : 1.125rem;
     font-weight: 300;
     line-height: 21.09px;
     text-align : center;
+    padding-bottom: 1.5rem;
+    max-width: 500px;
 
 }
 
 .invitation-three {
-    font-family: Roboto;
-    font-size  : 20px;
+    font-size  : 1.25rem;
     font-weight: 300;
     line-height: 23.44px;
-    text-align : left;
-
+    text-align : center;
 }
 
 
 .email {
-    font-family: Roboto;
-    font-size  : 16px;
-    font-weight: 300;
+    font-size  : 1.125rem;
     line-height: 18.75px;
-    text-align : left;
+    text-align: center;
+    text-decoration: none;
+    color: var(--purple);
+    cursor: pointer;
+    padding-bottom: 2.5rem;
+    position: relative;
 }
 
+.email::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 28px;
+    width: 0;
+    height: 2px;
+    background-color: var(--purple); /* Color del subrayado */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .email:hover {
+    color:  var(--purple); /* Color más oscuro al pasar el mouse */
+  }
+  
+  .email:hover::after {
+    width: 100%; /* Expande el subrayado al 100% */
+  }
 
+.social-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.social-logo-container .social-link {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+}
 
+.logo-social {
+    max-width : 38px;
+    max-height: 40px; 
+    transition: transform 0.2s ease-in-out;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 130%; /* Lo eleva sobre el ícono */
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro */
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+    pointer-events: none; /* Evita interferencias con el hover */
+    z-index: 10;
+  }
+
+.social-link:hover .tooltip {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+  }
+
+.social-link:hover .logo-social {
+    transform: scale(1.25);
+}
+  
 
 /*CONTACTO FORM*/
 
@@ -139,14 +191,11 @@
     flex-direction  : column;
     justify-content : center;
     align-items     : center;
-
 }
 
 
 .form-container {
     width: auto;
-
-
 }
 
 
@@ -158,16 +207,14 @@
     font-size     : 1rem;
     color         : var(--purple);
     margin-top    : 2.3rem;
-
     width: auto;
-
 }
 
 
 /*Caja del Input */
 input,
 textarea {
-    max-width : 4400px;
+    max-width : 2600px;
     box-sizing: border-box;
     padding   : 0.7em;
     font-size : 1rem;
@@ -201,7 +248,7 @@ textarea:focus {
     margin-top      : 3.4rem;
     border-radius   : 10px;
     background-color: var(--purple);
-
+    border: none;
 }
 
 .contact-button:hover {
@@ -232,18 +279,21 @@ textarea:focus {
 
     .invitation-one{
         width: auto;
-height:auto;
-padding: 10px;
+        height:auto;
+        padding: 10px;
 
     }
     .contact-container {
-        width : auto;
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 70px 20px;
     }
 
     .right-c {
-        width : auto;
-        height: auto;
+       width: 100%;
+       padding: 20px 0 50px 0;
     }
 
     .left-c {
@@ -272,7 +322,8 @@ padding: 10px;
         align-items    : center;
         padding        : 0;
         margin         : 0;
-        width          : 100%;
+        width: 100%;
+        max-width: 600px;
     }
 
     .form-container {
@@ -280,11 +331,11 @@ padding: 10px;
         flex-direction : column;
         justify-content: center;
         align-items    : center;
-        gap            : 40px;
+        gap            : 10px;
         padding        : 8px;
         margin         : 0;
         width          : 100%;
-        max-width      : 600px;
+        max-width      : 500px;
     }
 
     .form-group {
@@ -399,7 +450,7 @@ padding: 10px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.5s ease;
-padding: 2px;
+    padding: 2px;
 }
 
 

@@ -1,19 +1,20 @@
 import Section from '../section/Section';
 import CardHomeService from '../cardHomeService/cardHomeService';
 import './homeServices.css'
-import { useState, useRef , useEffect} from 'react'
+import { useState, useRef, useEffect } from "react";
 
 const HomeServices = ({ t }) => {
-  const services = t.cards
-  const [activeSlide, setActiveSlide] = useState(0)
-  const [isTouching, setIsTouching] = useState(false) // isMousedown
-  const [startX, setStartX] = useState(0)
-  const [scrollLeft, setScrollLeft] = useState(0)
-  const carouselRef = useRef(null)
-  const cardRefs = useRef([])
-  const length = services.length
-  const cardWidth = 320
+  const services = t.cards;
+  const [activeSlide, setActiveSlide] = useState(0);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [offsetX, setOffsetX] = useState(0);
+  const carouselRef = useRef(null);
+  const cardRefs = useRef([]);
+  const length = services.length;
+  const cardWidth = 320;
 
+  // Centrar automáticamente la card activa
   useEffect(() => {
     if (cardRefs.current[activeSlide]) {
       cardRefs.current[activeSlide].scrollIntoView({
@@ -24,89 +25,81 @@ const HomeServices = ({ t }) => {
     }
   }, [activeSlide]);
 
-  // Guarda valores iniciales de cuando el usuario tocó el carousel
-  const handleMouseDown = (e) => {
-    e.preventDefault()
-    setIsTouching(true);
-    setStartX(e.pageX); 
-    console.log("click", isTouching)
-    return
-  }
+  const handleDragStart = (e) => {
+    setIsDragging(true);
+    setStartX(e.touches ? e.touches[0].clientX : e.clientX);
+    setOffsetX(0);
+  };
 
-  const handleMouseUp = () =>{
-    setIsTouching(false)
-    console.log('Dejó de hacer click', isTouching)
-    return 
-  }
-  // Usa los valores de la función ScrollStart para calcular cuánto mover el slider
-  const scrolling = (e) => {
-    if(!isTouching || !carouselRef.current) return;
-    const deltaX = e.clientX - startX;
-    carouselRef.current.scrollLeft = scrollLeft - deltaX;
-    return
-  }
+  const handleDragMove = (e) => {
+    if (!isDragging) return;
+    const currentX = e.touches ? e.touches[0].clientX : e.clientX;
+    const deltaX = currentX - startX;
+    setOffsetX(deltaX);
+  };
 
-  const prevSlide = () => {
-      setActiveSlide(activeSlide === 0 ? length - 1 : activeSlide - 1 )
-  }
-
-  const nextSlide = () => {
-    setActiveSlide(activeSlide === length - 1 ? 0 : activeSlide + 1 )
-}
+  const handleDragEnd = () => {
+    setIsDragging(false);
+    if (Math.abs(offsetX) > cardWidth / 2) {
+      setActiveSlide((prev) =>
+        offsetX < 0 ? Math.min(prev + 1, length - 1) : Math.max(prev - 1, 0)
+      );
+    }
+    setOffsetX(0);
+  };
 
   return (
-    <Section className='home-services-section'>
+    <Section className="home-services-section">
       <div className="home-services-content">
-        <h2 className='h2-line'>{t.heading}</h2>
+        <h2 className="h2-line">{t.heading}</h2>
         <span>{t.intro}</span>
       </div>
-      <div className='home-services-carousel'>
-        <div className="izq" onClick={prevSlide}>
-        {"<--"}
-        </div>
-        <div className="der" onClick={nextSlide}>
-        {"-->"}
-        </div>
-        <div 
-          className='home-carousel-slides' 
-          ref={carouselRef} 
-          style={{ transform: `translateX(-${activeSlide * cardWidth}px)` }}
-          // Eventos touch
-          // onTouchStart={(e) => scrollStart(e)} 
-          // onTouchMove={(e) => scrolling(e)}
-          // onTouchEnd={() => {
-          //     setIsTouching(false)
-          //   }}
-
-          // Eventos mouse
-          // onMouseDown={(e) => {handleMouseDown(e)}}
-          // onMouseMove={(e) => {scrolling(e)}}
-          // onMouseUp={() => {handleMouseUp()}}
+      <div className="home-services-carousel">
+        {/* <div className="izq" onClick={() => setActiveSlide(Math.max(0, activeSlide - 1))}>{"<--"}</div>
+        <div className="der" onClick={() => setActiveSlide(Math.min(length - 1, activeSlide + 1))}>{"-->"}</div> */}
+        <div
+          className="home-carousel-slides"
+          ref={carouselRef}
+          style={{
+            transform: `translateX(calc(-${activeSlide * cardWidth}px + ${offsetX}px))`,
+            transition: isDragging ? "none" : "transform 0.3s ease-out",
+          }}
+          onMouseDown={handleDragStart}
+          onMouseMove={handleDragMove}
+          onMouseUp={handleDragEnd}
+          onMouseLeave={handleDragEnd}
+          onTouchStart={handleDragStart}
+          onTouchMove={handleDragMove}
+          onTouchEnd={handleDragEnd}
         >
-          {services.map((service, i) => {
-            return <CardHomeService
+          {services.map((service, i) => (
+            <div
+              key={service.url}
               ref={(el) => (cardRefs.current[i] = el)}
-              key={i + service.url}
-              title={service.title}
-              content={service.content}
-              icon={service.icon}
-              serviceUrl={service.url}
-              cta={t['services-card-cta']}
-              
-            />
-          }
-          )}
+            >
+              <CardHomeService
+                title={service.title}
+                content={service.content}
+                icon={service.icon}
+                serviceUrl={service.url}
+                cta={t["services-card-cta"]}
+              />
+            </div>
+          ))}
         </div>
         <ul className="home-carousel-bullets">
-          {services.map((s, i) => {
-            return <li key={s + i} className={activeSlide === i ? "activeSlide" : ""} onClick={() => setActiveSlide(i)}></li>
-          })}
+          {services.map((_, i) => (
+            <li
+              key={i}
+              className={activeSlide === i ? "activeSlide" : ""}
+              onClick={() => setActiveSlide(i)}
+            ></li>
+          ))}
         </ul>
       </div>
-
     </Section>
-  )
-}
+  );
+};
 
 export default HomeServices;
 

@@ -12,6 +12,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import { useTranslation } from "react-i18next";
+import NotFound from "./pages/notFound/NotFound.jsx";
 
 function App() {
   const { t } = useTranslation();
@@ -119,7 +120,7 @@ function App() {
     },
     {
       path: "/*", //Con el * cualquier ruta que no sea las indicadas tira notfound
-      element: <MainLayout>{/* <NotFound/> */}</MainLayout>,
+      element:( <NotFound/>),
     },
   ]);
   return <RouterProvider router={router} />;

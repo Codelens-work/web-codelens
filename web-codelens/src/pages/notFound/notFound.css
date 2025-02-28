@@ -1,0 +1,14 @@
+.error-container {
+    width              : 100vw;
+    height             : 100vh;
+    background-image   : url('/imgs/error.svg');
+    background-size    : cover;
+    background-position: center;
+    background-repeat  : no-repeat;
+}
+
+.button-container{
+    position: absolute;
+    left    : 590px;
+    top     : 560px;
+}

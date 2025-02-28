@@ -2,6 +2,7 @@ import "./blog.css";
 import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
 import BlogCard from "../../components/blogCard/BlogCard";
+import LastArticles from "../../components/blogCard/lastArticles";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -24,10 +25,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <div className="card-container-blog">
-
-      <BlogCard />
-      </div>
+      <LastArticles/>
     </>
   );
 };

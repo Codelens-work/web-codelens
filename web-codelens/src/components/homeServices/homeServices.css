@@ -52,6 +52,12 @@
 background-color: var(--marine-green);
 }
 
+.izq, .der {
+  border: 1px solid red;
+  height: 50px;
+  width: 50px;
+}
+
 @media (width <= 768px) {
   .home-services-section {
     padding-left: 0;
@@ -63,7 +69,7 @@ background-color: var(--marine-green);
   }
 }
 
-@media (width <= 376px) {
+@media (width <= 500px) {
   .home-carousel-slides{
     flex-wrap: nowrap;
     overflow-x: auto;

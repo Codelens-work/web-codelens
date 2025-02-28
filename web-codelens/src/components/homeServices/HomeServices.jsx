@@ -1,7 +1,7 @@
 import Section from '../section/Section';
 import CardHomeService from '../cardHomeService/cardHomeService';
 import './homeServices.css'
-import { useState, useRef } from 'react'
+import { useState, useRef , useEffect} from 'react'
 
 const HomeServices = ({ t }) => {
   const services = t.cards
@@ -10,7 +10,19 @@ const HomeServices = ({ t }) => {
   const [startX, setStartX] = useState(0)
   const [scrollLeft, setScrollLeft] = useState(0)
   const carouselRef = useRef(null)
+  const cardRefs = useRef([])
   const length = services.length
+  const cardWidth = 320
+
+  useEffect(() => {
+    if (cardRefs.current[activeSlide]) {
+      cardRefs.current[activeSlide].scrollIntoView({
+        behavior: "smooth",
+        block: "nearest",
+        inline: "center",
+      });
+    }
+  }, [activeSlide]);
 
   // Guarda valores iniciales de cuando el usuario tocó el carousel
   const handleMouseDown = (e) => {
@@ -58,7 +70,7 @@ const HomeServices = ({ t }) => {
         <div 
           className='home-carousel-slides' 
           ref={carouselRef} 
-          style={{ transform: `translateX(${activeSlide * 300}px)` }}
+          style={{ transform: `translateX(-${activeSlide * cardWidth}px)` }}
           // Eventos touch
           // onTouchStart={(e) => scrollStart(e)} 
           // onTouchMove={(e) => scrolling(e)}
@@ -73,6 +85,7 @@ const HomeServices = ({ t }) => {
         >
           {services.map((service, i) => {
             return <CardHomeService
+              ref={(el) => (cardRefs.current[i] = el)}
               key={i + service.url}
               title={service.title}
               content={service.content}
@@ -86,7 +99,7 @@ const HomeServices = ({ t }) => {
         </div>
         <ul className="home-carousel-bullets">
           {services.map((s, i) => {
-            return <li key={s + i} className={activeSlide === i ? "activeSlide" : ""}></li>
+            return <li key={s + i} className={activeSlide === i ? "activeSlide" : ""} onClick={() => setActiveSlide(i)}></li>
           })}
         </ul>
       </div>

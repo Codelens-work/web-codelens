@@ -69,6 +69,10 @@ background-color: var(--marine-green);
   }
 }
 
+.wrapper{
+  height: auto;
+}
+
 @media (width <= 500px) {
   .home-carousel-slides{
     flex-wrap: nowrap;
@@ -98,4 +102,10 @@ background-color: var(--marine-green);
     position: relative;
     transition: transform 0.5s;
   }
+
+  .wrapper {
+    padding-left: 20%;
+    height: 80px;
+  }
+
 }

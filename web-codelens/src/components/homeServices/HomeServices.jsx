@@ -51,7 +51,9 @@ const HomeServices = ({ t }) => {
   return (
     <Section className="home-services-section">
       <div className="home-services-content">
+        <div className="wrapper">
         <h2 className="h2-line">{t.heading}</h2>
+        </div>
         <span>{t.intro}</span>
       </div>
       <div className="home-services-carousel">

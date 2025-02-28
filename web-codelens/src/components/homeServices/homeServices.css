@@ -52,6 +52,12 @@
 background-color: var(--marine-green);
 }
 
+.izq, .der {
+  border: 1px solid red;
+  height: 50px;
+  width: 50px;
+}
+
 @media (width <= 768px) {
   .home-services-section {
     padding-left: 0;
@@ -63,14 +69,20 @@ background-color: var(--marine-green);
   }
 }
 
-@media (width <= 376px) {
+.wrapper{
+  height: auto;
+}
+
+@media (width <= 500px) {
   .home-carousel-slides{
     flex-wrap: nowrap;
-    overflow-x: auto;
     justify-content: flex-start;
     scroll-behavior: smooth;
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;  /* Firefox */
+    scroll-snap-type: x mandatory;
+    scroll-snap-align: center;
+    gap: 10px;
   }
 
   .home-carousel-slides::-webkit-scrollbar { 
@@ -90,4 +102,10 @@ background-color: var(--marine-green);
     position: relative;
     transition: transform 0.5s;
   }
+
+  .wrapper {
+    padding-left: 20%;
+    height: 80px;
+  }
+
 }

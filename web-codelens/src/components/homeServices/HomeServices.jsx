@@ -7,43 +7,45 @@ const HomeServices = ({ t }) => {
   const services = t.cards;
   const [activeSlide, setActiveSlide] = useState(0);
   const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [offsetX, setOffsetX] = useState(0);
+  const [startX, setStartX] = useState(0); //Guarda posicion inicial del mouse
+  const [offsetX, setOffsetX] = useState(0); // Guarda distancia q se arrastro
   const carouselRef = useRef(null);
-  const cardRefs = useRef([]);
   const length = services.length;
-  const cardWidth = 320;
+  const cardWidth = 320; //tamaños de las cards
+  const gap = 35;
 
-  // Centrar automáticamente la card activa
+  // Centrar automáticamente la card en el carrusel
   useEffect(() => {
-    if (cardRefs.current[activeSlide]) {
-      cardRefs.current[activeSlide].scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
+    if (carouselRef.current) {
+      //se  calcula el desplazamiento horizontal
+      //newScrollLeft es la cantidad de pixeles que se desplaza
+      const newScrollLeft = activeSlide * (cardWidth + gap); 
+      carouselRef.current.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
   }, [activeSlide]);
 
+  
+  //marca que se empezo a arrastrar y la pocicion inicial
   const handleDragStart = (e) => {
     setIsDragging(true);
     setStartX(e.touches ? e.touches[0].clientX : e.clientX);
     setOffsetX(0);
   };
 
+
+  //calcula el cuanto se movio el arrastre
   const handleDragMove = (e) => {
     if (!isDragging) return;
     const currentX = e.touches ? e.touches[0].clientX : e.clientX;
-    const deltaX = currentX - startX;
-    setOffsetX(deltaX);
+    setOffsetX(currentX - startX);
   };
 
+
+  //calcula cuando dejo de arrastrase
   const handleDragEnd = () => {
     setIsDragging(false);
     if (Math.abs(offsetX) > cardWidth / 4) {
-      setActiveSlide((prev) =>
-        offsetX < 0 ? Math.min(prev + 1, length - 1) : Math.max(prev - 1, 0)
-      );
+      setActiveSlide((prev) => (offsetX < 0 ? Math.min(prev + 1, length - 1) : Math.max(prev - 1, 0)));
     }
     setOffsetX(0);
   };
@@ -57,15 +59,11 @@ const HomeServices = ({ t }) => {
         <span>{t.intro}</span>
       </div>
       <div className="home-services-carousel">
-        {/* <div className="izq" onClick={() => setActiveSlide(Math.max(0, activeSlide - 1))}>{"<--"}</div>
-        <div className="der" onClick={() => setActiveSlide(Math.min(length - 1, activeSlide + 1))}>{"-->"}</div> */}
         <div
           className="home-carousel-slides"
           ref={carouselRef}
           style={{
-            transform: `translateX(calc(-${
-              activeSlide * cardWidth
-            }px + ${offsetX}px))`,
+            transform: `translateX(calc(-${activeSlide * cardWidth}px + ${offsetX}px))`,
             transition: isDragging ? "none" : "transform 0.3s ease-out",
           }}
           onMouseDown={handleDragStart}
@@ -77,7 +75,7 @@ const HomeServices = ({ t }) => {
           onTouchEnd={handleDragEnd}
         >
           {services.map((service, i) => (
-            <div key={service.url} ref={(el) => (cardRefs.current[i] = el)}>
+            <div key={service.url}>
               <CardHomeService
                 title={service.title}
                 content={service.content}
@@ -90,11 +88,7 @@ const HomeServices = ({ t }) => {
         </div>
         <ul className="home-carousel-bullets">
           {services.map((_, i) => (
-            <li
-              key={i}
-              className={activeSlide === i ? "activeSlide" : ""}
-              onClick={() => setActiveSlide(i)}
-            ></li>
+            <li key={i} className={activeSlide === i ? "activeSlide" : ""} onClick={() => setActiveSlide(i)}></li>
           ))}
         </ul>
       </div>
@@ -103,12 +97,3 @@ const HomeServices = ({ t }) => {
 };
 
 export default HomeServices;
-
-/*
-
-- Si el usuario scrollea para la izquierda, restar el width de la card y el gap 
-- sino, añadirlo
-
-- Hacer andar botones
-
-*/

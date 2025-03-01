@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./linkbutton.css";
 import { useNavigate } from "react-router-dom";
 
-const LinkButton = ({ label, href, size = "normal, small" }) => {
+const LinkButton = ({ label, href, size = "normal, small, error" }) => {
   const navigate = useNavigate();
 
   // const handleClick = (e) => {

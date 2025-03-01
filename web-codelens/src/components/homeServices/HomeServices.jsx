@@ -1,6 +1,6 @@
-import Section from '../section/Section';
-import CardHomeService from '../cardHomeService/cardHomeService';
-import './homeServices.css'
+import Section from "../section/Section";
+import CardHomeService from "../cardHomeService/cardHomeService";
+import "./homeServices.css";
 import { useState, useRef, useEffect } from "react";
 
 const HomeServices = ({ t }) => {
@@ -40,7 +40,7 @@ const HomeServices = ({ t }) => {
 
   const handleDragEnd = () => {
     setIsDragging(false);
-    if (Math.abs(offsetX) > cardWidth / 2) {
+    if (Math.abs(offsetX) > cardWidth / 4) {
       setActiveSlide((prev) =>
         offsetX < 0 ? Math.min(prev + 1, length - 1) : Math.max(prev - 1, 0)
       );
@@ -52,7 +52,7 @@ const HomeServices = ({ t }) => {
     <Section className="home-services-section">
       <div className="home-services-content">
         <div className="wrapper">
-        <h2 className="h2-line">{t.heading}</h2>
+          <h2 className="h2-line">{t.heading}</h2>
         </div>
         <span>{t.intro}</span>
       </div>
@@ -63,7 +63,9 @@ const HomeServices = ({ t }) => {
           className="home-carousel-slides"
           ref={carouselRef}
           style={{
-            transform: `translateX(calc(-${activeSlide * cardWidth}px + ${offsetX}px))`,
+            transform: `translateX(calc(-${
+              activeSlide * cardWidth
+            }px + ${offsetX}px))`,
             transition: isDragging ? "none" : "transform 0.3s ease-out",
           }}
           onMouseDown={handleDragStart}
@@ -75,10 +77,7 @@ const HomeServices = ({ t }) => {
           onTouchEnd={handleDragEnd}
         >
           {services.map((service, i) => (
-            <div
-              key={service.url}
-              ref={(el) => (cardRefs.current[i] = el)}
-            >
+            <div key={service.url} ref={(el) => (cardRefs.current[i] = el)}>
               <CardHomeService
                 title={service.title}
                 content={service.content}

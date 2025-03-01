@@ -1,14 +1,36 @@
 .error-container {
+    display            : flex;
+    justify-content    : center;
+    align-self         : center;
     width              : 100vw;
     height             : 100vh;
     background-image   : url('/imgs/error.svg');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
+    position           : relative;
+    overflow: hidden;
+    /*para usar este contenedor como referencia*/
 }
 
-.button-container{
-    position: absolute;
-    left    : 590px;
-    top     : 560px;
+.content-container {
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin: 0;
+    padding-top: 20px;
+    width: clamp(18rem, 18vw + 18rem, 38rem); /* Ancho responsivo */
+    height: auto;
+    gap: 20rem; /* Espaciado entre los elementos dentro del contenedor */
+    text-align: center;
+}
+
+.content-container p{
+    color: var(--white);
+    font-weight: bold;
+    font-size: clamp(0.5rem, 1vw + 2rem, 1rem);
 }

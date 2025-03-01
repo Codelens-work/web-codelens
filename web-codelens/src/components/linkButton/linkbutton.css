@@ -41,6 +41,17 @@
     width: 166px;
 }
 
+.link-btn-error{
+    padding: 0.9rem 0.2rem;
+    width: 220px;
+    
+}
+.link-btn.link-btn-error{
+    border: 1px solid var(--purple);
+    border-radius: 4px;
+    background-color:  hsl(273, 89%, 36%) ;
+}
+
 
 /* 
 .link-btn:hover{

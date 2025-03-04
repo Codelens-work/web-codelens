@@ -3,6 +3,7 @@ import "./seoservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from 'react-i18next'
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 export function SeoService() {
 
@@ -28,13 +29,14 @@ export function SeoService() {
         }}
       >
         <div className="hero__title-container-seo">
+        <Breadcrumb currentService={t('breadcrumbs.seo')} />
           <h1 className="title-service">
             {t('services-pages.seo.hero.heading')}
           </h1>
           <p className="paragraph-service">
             {t('services-pages.seo.hero.content')}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
       </Hero>
 

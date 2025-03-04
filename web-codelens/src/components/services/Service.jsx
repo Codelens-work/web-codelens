@@ -1,4 +1,3 @@
-import React from "react";
 import "../services/service.css";
 import PropTypes from "prop-types"
 import Section  from "../section/Section";
@@ -10,11 +9,11 @@ const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
         <div className="service-container">
           <div className="right-column-service">
               <div className="paragraphOne">
-                <h2>{titleOne}</h2>
+                <h2 className="h2-line">{titleOne}</h2>
                 <p>{paragraphOne}</p>
               </div>
               <div className="items">
-                <h2>{titleTwo}</h2>
+                <h2 className="h2-line">{titleTwo}</h2>
                 <ul>
                   {items.map((item, index) => (
                     <li key={index}>{item}</li>

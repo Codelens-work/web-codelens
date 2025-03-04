@@ -3,6 +3,7 @@ import "./apiservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 export function ApiService() {
   const { t } = useTranslation();
@@ -27,13 +28,14 @@ export function ApiService() {
         }}
       >
         <div className="hero__title-container-api">
+        <Breadcrumb currentService={t('breadcrumbs.api')} />
           <h1 className="title-service">
             {t("services-pages.api-development.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.api-development.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
       </Hero>
 

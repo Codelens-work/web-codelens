@@ -3,6 +3,7 @@ import "./webdesing.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 export function WebDesing() {
   const { t } = useTranslation();
@@ -26,13 +27,14 @@ export function WebDesing() {
         }}
       >
         <div className="hero__title-container-desing">
+        <Breadcrumb currentService={t('breadcrumbs.diseno')} />
           <h1 className="title-service">
             {t("services-pages.web-design.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.web-design.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
       </Hero>
       <Services

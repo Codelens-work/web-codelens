@@ -3,6 +3,7 @@ import "./appweb.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 export function AppWeb() {
   const { t } = useTranslation();
@@ -28,13 +29,14 @@ export function AppWeb() {
         }}
       >
         <div className="hero__title-container-appWeb">
+          <Breadcrumb currentService={t('breadcrumbs.aplicaciones-web')} />
           <h1 className="title-service-appWeb">
             {t("services-pages.web-app.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.web-app.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
       </Hero>
 

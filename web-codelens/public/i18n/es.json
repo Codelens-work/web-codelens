@@ -14,6 +14,15 @@
   "btn-contact":{
     "text": "CONTACTANOS"
   },
+  "breadcrumbs": {
+      "home": "Inicio",
+      "servicios": "Servicios",
+      "desarrollo-web": "Desarrollo Web",
+      "aplicaciones-web": "Desarrollo de Aplicaciones Web",
+      "diseno": "Diseño Web",
+      "api": "Desarrollo de APIS",
+      "seo": "Servicio SEO"
+  },
   "home": {
     "hero-section": {
       "heading": "Crear una",

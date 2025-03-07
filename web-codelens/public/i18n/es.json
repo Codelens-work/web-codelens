@@ -1,4 +1,30 @@
 {
+  "metadescription": {
+    "home": "En CodeLens creamos soluciones digitales a medida. Desarrollo web, diseño web, SEO y aplicaciones web para potenciar tu negocio en el mundo digital.",
+    "web-development": "Desarrollamos sitios web modernos, optimizados y escalables. Creamos soluciones a medida para potenciar tu presencia online.",
+    "web-design": "Transformamos ideas en experiencias digitales impactantes. Diseño web creativo, responsive y optimizado para atraer más clientes.",
+    "web-app": "Creamos aplicaciones web personalizadas, seguras y escalables para mejorar la experiencia de tus usuarios y optimizar procesos.",
+    "api-development": "Conectamos sistemas y mejoramos la eficiencia con APIs robustas y seguras. Integraciones personalizadas para tu negocio.",
+    "seo": "Mejoramos tu posicionamiento en Google con estrategias SEO efectivas. Más tráfico, más clientes y mayor visibilidad online.",
+    "about-us": "En CodeLens, unimos creatividad y tecnología para desarrollar soluciones digitales innovadoras. Conoce nuestro equipo y nuestra misión.",
+    "blog": "Descubre tendencias, consejos y novedades sobre desarrollo web, diseño y SEO en nuestro blog. Aprende y optimiza tu negocio digital.",
+    "terms-and-conditions": "Consulta nuestros términos y condiciones para conocer las reglas de uso, derechos y responsabilidades al utilizar los servicios de CodeLens.",
+    "privacy-policy": "En CodeLens, protegemos tu privacidad. Conoce cómo recopilamos, usamos y protegemos tu información en nuestra política de privacidad.",
+    "404": "Parece que te has perdido en el camino. La página que buscas no existe o ha sido movida. ¡Vuelve a la página de inicio y sigue explorando!"
+  },
+  "keywords": {
+    "home": ["desarrollo web", "diseño web", "estrategias SEO", "aplicaciones web", "desarrollo de APIs", "soluciones digitales", "CodeLens"],
+    "web-development": ["desarrollo web", "páginas web a medida", "sitios web responsivos", "desarrollo frontend", "desarrollo backend", "optimización web"],
+    "web-design": ["diseño web", "experiencia de usuario", "diseño responsivo", "diseño UX/UI", "identidad visual", "branding digital", "diseño moderno"],
+    "web-app": ["aplicaciones web", "desarrollo de apps", "software a medida", "aplicaciones interactivas", "apps responsivas"],
+    "api-development": ["desarrollo de APIs", "integración de sistemas", "APIs REST", "APIs seguras", "desarrollo backend", "conectividad web"],
+    "seo": ["SEO", "posicionamiento web", "estrategias SEO", "optimización en buscadores", "tráfico orgánico", "SEO técnico"],
+    "about-us": ["sobre nosotros", "quiénes somos", "equipo CodeLens", "misión", "visión", "desarrollo digital", "innovación tecnológica", "soluciones web"],
+    "blog": ["blog de tecnología", "desarrollo web", "diseño digital", "SEO", "tendencias web", "estrategias digitales", "consejos de desarrollo"],
+    "terms-and-conditions": ["términos y condiciones", "uso de servicios", "derechos de usuario", "responsabilidades", "política de uso", "CodeLens"],
+    "privacy-policy": ["política de privacidad", "protección de datos", "seguridad de información", "datos personales", "confidencialidad", "privacidad en línea"],
+    "404": ["error 404", "página no encontrada", "contenido no disponible", "enlace roto", "recurso no encontrado", "CodeLens"]
+  },
   "titles": {
     "language": "ES",
     "home": "Inicio",
@@ -13,6 +39,15 @@
   },
   "btn-contact":{
     "text": "CONTACTANOS"
+  },
+  "breadcrumbs": {
+      "home": "Inicio",
+      "servicios": "Servicios",
+      "desarrollo-web": "Desarrollo Web",
+      "aplicaciones-web": "Desarrollo de Aplicaciones Web",
+      "diseno": "Diseño Web",
+      "api": "Desarrollo de APIS",
+      "seo": "Servicio SEO"
   },
   "home": {
     "hero-section": {
@@ -619,6 +654,10 @@
       "heading": "Bienvenido a Nuestro Blog",
       "sub-heading": "Tu fuente de información en tecnología y desarrollo web",
       "description": "Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales."   
+    },
+    "navigation":{
+      "previous":"Anterior",
+      "next":"Siguiente"
     }
   },
   "privacy-page": {

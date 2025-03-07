@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Hero } from "../../components/hero/Hero";
 import "./home.css";
 import { RotatingTitle } from "../../components/rotatingTitle/RotatingTiltle";
@@ -29,6 +30,18 @@ const Home = () => {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.home")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.home", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
       <Hero
         media={{
           type: "video",

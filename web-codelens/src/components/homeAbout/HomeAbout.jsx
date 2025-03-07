@@ -13,7 +13,7 @@ const HomeAbout = ({ t, btn }) => {
         <h2>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>
-        <LinkButton label={btn} size="normal" href="/Contacto" />
+        <LinkButton label={btn} size="normal" href="/#Contact" />
       </div>
     </Section>
   )

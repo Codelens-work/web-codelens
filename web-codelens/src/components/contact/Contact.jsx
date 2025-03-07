@@ -1,4 +1,3 @@
-import React from "react";
 import ContactForm from "./ContactForm";
 import "../contact/contact.css";
 import { useTranslation } from "react-i18next";
@@ -11,12 +10,12 @@ const Contact = () => {
 
   // Variants para las animaciones
   const slideInLeft = {
-    hidden: { opacity: 0, x: -100 },
+    hidden: { opacity: 0, x: -50 }, // Antes -100
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
-
+  
   const slideInRight = {
-    hidden: { opacity: 0, x: 100 },
+    hidden: { opacity: 0, x: 50 }, // Antes 100
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
 
@@ -25,7 +24,7 @@ const Contact = () => {
         <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }} // Se activa cuando el 20% del componente es visible
+        viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
         variants={slideInLeft}
       >
       <Section>
@@ -79,7 +78,7 @@ const Contact = () => {
         className="right-c "
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }} // Se activa cuando el 20% del componente es visible
+        viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
         variants={slideInRight}
       >
         <ContactForm />

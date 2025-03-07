@@ -27,13 +27,15 @@
 .h2-line::before {
   content: "";
   display: block;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: -56px;
+  transform: translateY(-50%);
   width: 50px;
   height: 3px;
   background-color: var(--marine-green);
 }
+
 
 @media (width < 822px) {
   .h2-line::before {

@@ -17,7 +17,9 @@ const  ValueSection = () => {
     return (
         <>
         <div className='value-section' ref={ref}>
-           <h2>{t('about-us-page.values-section.heading')}</h2>
+           <div className='team-section-content'>
+                <h2>{t('about-us-page.values-section.heading')}</h2>
+           </div>
            <div className='cards-container'>
                 {values.map((value, index) => (
                     <CardValue key={index} icon={value.icon} content={value.content} index={index} />

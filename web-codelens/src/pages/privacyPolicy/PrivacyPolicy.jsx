@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "../../components/hero/Hero";
 import "./privacityPolicy.css";
@@ -14,6 +15,18 @@ const PrivacyPolicy = () => {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.privacy-policy")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.privacy-policy", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
     <Hero
       media={{
         type: 'image',

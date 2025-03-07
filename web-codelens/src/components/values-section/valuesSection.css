@@ -6,10 +6,22 @@
   padding: 80px 10px;
 }
 
-.value-section h2 {
- color: var(--black);
- font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
- text-align: center;
+.team-section-content h2 {
+  position: relative;
+  font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+  padding-left: clamp(38px, 8vw, 60px); /* Asegura espacio para el before */
+}
+
+.team-section-content h2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0; /* Se mantiene alineado con el padding del h2 */
+  width: clamp(30px, 5vw, 50px);
+  height: 3px;
+  background-color: var(--marine-green);
+  transform: translateY(-50%);
 }
 
 .cards-container {
@@ -26,6 +38,10 @@
 
 /* Para pantallas de 1024px o más: 3 tarjetas por fila */
 @media (min-width: 1024px) {
+  .value-section{
+    padding: 80px 70px;
+  }
+
   .cards-container {
     grid-template-columns: repeat(3, 1fr);
   }

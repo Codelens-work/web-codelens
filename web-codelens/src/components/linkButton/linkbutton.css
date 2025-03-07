@@ -47,7 +47,6 @@
     
 }
 .link-btn.link-btn-error{
-    border: 1px solid var(--purple);
     border-radius: 4px;
     background-color:  hsl(273, 89%, 36%) ;
 }

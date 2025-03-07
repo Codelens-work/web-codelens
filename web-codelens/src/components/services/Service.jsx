@@ -1,30 +1,53 @@
-import React from "react";
 import "../services/service.css";
 import PropTypes from "prop-types"
 import Section  from "../section/Section";
+import { motion } from 'framer-motion';
 
 const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
+  // Variants para las animaciones
+  const slideInLeft = {
+    hidden: { opacity: 0, x: -50 }, // Antes -100
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+  
+  const slideInRight = {
+    hidden: { opacity: 0, x: 50 }, // Antes 100
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  };
+
   return (
     <div className="service-section-container">
       <Section>
         <div className="service-container">
-          <div className="right-column-service">
-              <div className="paragraphOne">
-                <h2>{titleOne}</h2>
+        <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+        variants={slideInLeft}
+        className="right-column-service"
+      >
+              <div className="paragraphOne title-padding">
+                <h2 className="h2-line">{titleOne}</h2>
                 <p>{paragraphOne}</p>
               </div>
-              <div className="items">
-                <h2>{titleTwo}</h2>
+              <div className="items title-padding">
+                <h2 className="h2-line">{titleTwo}</h2>
                 <ul>
                   {items.map((item, index) => (
                     <li key={index}>{item}</li>
                   ))}
                 </ul>
               </div>
-            </div>
-            <div className="left-column-service">
+            </motion.div>
+            <motion.div 
+              className="left-column-service"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+              variants={slideInRight}
+            > 
               <img src={img}alt={`imgService`} />
-            </div>
+              </motion.div>
         </div>
       </Section>
     </div>

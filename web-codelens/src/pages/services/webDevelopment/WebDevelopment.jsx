@@ -1,8 +1,10 @@
+import { Helmet } from "react-helmet";
 import { Hero } from "../../../components/hero/Hero";
 import "./WebDevelopment.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from 'react-i18next'
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 export function WebDevelopment() {
 
@@ -20,6 +22,18 @@ export function WebDevelopment() {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.web-development")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.web-development", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
       <Hero
         media={{
           type: "image",
@@ -27,13 +41,14 @@ export function WebDevelopment() {
         }}
       >
         <div className="hero__title-container-webdevelopment">
+          <Breadcrumb currentService={t('breadcrumbs.desarrollo-web')} />
           <h1 className="title-service">
             {t('services-pages.web-development.hero.heading')}
           </h1>
           <p className="paragraph-service">
             {t('services-pages.web-development.hero.content')}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
       </Hero>
 

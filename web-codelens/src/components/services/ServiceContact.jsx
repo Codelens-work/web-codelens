@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import "../services/service.css";
 import { useNavigate } from "react-router-dom";
+import { motion, useInView } from "framer-motion";
 import { useTranslation } from 'react-i18next'
 
 
@@ -9,12 +10,31 @@ import LinkButton from "../linkButton/LinkButton";
 
 const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
   const { t } = useTranslation()
+  const ref = useRef(null);
+  const isInView = useInView(ref, { triggerOnce: false, threshold: 0.1 });
+
+  useEffect(() => {
+    console.log("Elemento referenciado:", ref.current);
+    console.log("isInView:", isInView);
+  }, [isInView]);
   
   return (
-    <div className="service-contact">
-      <h2>{titleServiceContact}</h2>
-      <p>{paragraphServiceContact}</p>
-      <LinkButton href="/#Contact" label={t('home.contact-section.heading')} size="small"/>
+    <div ref={ref} className="service-contact">
+      <motion.h2
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
+        {titleServiceContact}
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+      >
+        {paragraphServiceContact}
+      </motion.p>
+      <LinkButton href="/#Contact" label={t("home.contact-section.heading")} size="small" />
     </div>
   );
 };

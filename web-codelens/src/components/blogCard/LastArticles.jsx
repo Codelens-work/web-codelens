@@ -126,7 +126,7 @@ const LastArticles = () => {
       noviembre: 11,
       diciembre: 12,
     };
-    console.log(month, year);
+    //console.log(month, year);
     return new Date(`${year}-${months[month]}-${day}`);
   };
   // Ordenar por fecha

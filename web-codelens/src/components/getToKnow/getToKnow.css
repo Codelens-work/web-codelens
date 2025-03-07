@@ -15,12 +15,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 15px;
+  padding: 20px 10px;
   gap: 10px;
 }
 
 .get-to-know-content p {
-  font-size: clamp(1.125rem, 1.0536rem + 0.3571vw, 1.375rem);
+  font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
 }
 
 
@@ -36,11 +36,11 @@
 
 @media (width < 822px) {
   .get-to-know-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     max-width: 300px;
-  }
-
-  .get-to-know-btn {
-    display: none;
+    text-align: center;
   }
 }

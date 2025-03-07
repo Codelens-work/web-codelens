@@ -12,8 +12,6 @@ html, body {
   background   : radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
   padding-left : var(--padding);
   padding-right: var(--padding);
-
-
 }
 
 .home-services-content {
@@ -130,4 +128,10 @@ html, body {
     
   }
 
+}
+
+@media(min-width: 770px){
+  .home-services-content{
+    padding: 0 80px;
+  }
 }

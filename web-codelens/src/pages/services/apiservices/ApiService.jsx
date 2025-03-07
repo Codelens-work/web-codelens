@@ -1,8 +1,11 @@
+import { Helmet } from "react-helmet";
 import { Hero } from "../../../components/hero/Hero";
 import "./apiservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
+import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
+import { motion } from 'framer-motion';
 
 export function ApiService() {
   const { t } = useTranslation();
@@ -20,21 +23,41 @@ export function ApiService() {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.api-development")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.api-development", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
       <Hero
         media={{
           type: "image",
           src: "/hero/hero-api.webp",
         }}
       >
+         <motion.div 
+        className="hero__title-container-api"
+        initial={{ opacity: 0, y: 50 }} // Empieza oculto y desplazado hacia abajo
+        animate={{ opacity: 1, y: 0 }} // Se muestra y sube a su posición normal
+        transition={{ duration: 0.8, ease: "easeOut" }} // Duración y efecto suave
+      >
         <div className="hero__title-container-api">
+        <Breadcrumb currentService={t('breadcrumbs.api')} />
           <h1 className="title-service">
             {t("services-pages.api-development.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.api-development.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="#" size="small" />
+          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </div>
+        </motion.div>
       </Hero>
 
       <Services

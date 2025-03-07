@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Hero } from "../../../components/hero/Hero";
 import "./seoservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
@@ -22,6 +23,18 @@ export function SeoService() {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.seo")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.seo", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
       <Hero
         media={{
           type: "image",

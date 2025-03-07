@@ -67,8 +67,6 @@ const NavBar = () => {
       setNavActive(window.scrollY > 50);
     };
 
-    window.addEventListener("scroll", handleScroll);
-
     // Toggle body scroll when menu is open
     if (expanded) {
       document.body.classList.add("menu-open");
@@ -80,8 +78,10 @@ const NavBar = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      // Make sure to remove the class when component unmounts
+      document.body.classList.remove("menu-open");
     };
-  }, []);
+  }, [expanded]); // Add expanded as a dependency
 
   return (
     <header>

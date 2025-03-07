@@ -1,4 +1,30 @@
-{
+{  
+  "metadescription": {
+    "home": "At CodeLens, we create custom digital solutions. Web development, web design, SEO, and web applications to boost your business in the digital world.",
+    "web-development": "We develop modern, optimized, and scalable websites. Custom solutions to enhance your online presence.",
+    "web-design": "We turn ideas into impactful digital experiences. Creative, responsive, and optimized web design to attract more customers.",
+    "web-app": "We develop custom, secure, and scalable web applications to enhance user experience and optimize processes.",
+    "api-development": "We connect systems and enhance efficiency with robust and secure APIs. Custom integrations for your business.",
+    "seo": "We improve your Google ranking with effective SEO strategies. More traffic, more customers, and greater online visibility.",
+    "about-us": "At CodeLens, we combine creativity and technology to develop innovative digital solutions. Meet our team and our mission.",
+    "blog": "Discover trends, tips, and news on web development, design, and SEO in our blog. Learn and optimize your digital business.",
+    "terms-and-conditions": "Check our terms and conditions to understand the rules, rights, and responsibilities when using CodeLens services.",
+    "privacy-policy": "At CodeLens, we protect your privacy. Learn how we collect, use, and safeguard your information in our privacy policy.",
+    "404": "It looks like you’re lost. The page you’re looking for doesn’t exist or has been moved. Go back to the homepage and keep exploring!"
+  },
+  "keywords": {
+    "home": ["web development", "web design", "SEO strategies", "web applications", "API development", "digital solutions", "CodeLens"],
+    "web-development": ["web development", "custom websites", "responsive websites", "frontend development", "backend development", "web optimization"],
+    "web-design": ["web design", "user experience", "responsive design", "UX/UI design", "visual identity", "digital branding", "modern design"],
+    "web-app": ["web applications", "app development", "custom software", "interactive applications", "responsive apps"],
+    "api-development": ["API development", "system integration", "REST APIs", "secure APIs", "backend development", "web connectivity"],
+    "seo": ["SEO", "web positioning", "SEO strategies", "search engine optimization", "organic traffic", "technical SEO"],
+    "about-us": ["about us", "who we are", "CodeLens team", "mission", "vision", "digital development", "technological innovation", "web solutions"],
+    "blog": ["technology blog", "web development", "digital design", "SEO", "web trends", "digital strategies", "development tips"],
+    "terms-and-conditions": ["terms and conditions", "service use", "user rights", "responsibilities", "usage policy", "CodeLens"],
+    "privacy-policy": ["privacy policy", "data protection", "information security", "personal data", "confidentiality", "online privacy"],
+    "404": ["error 404", "page not found", "content unavailable", "broken link", "resource not found", "CodeLens"]
+  },
   "titles": {
     "language": "EN",
     "home": "Home",
@@ -583,6 +609,10 @@
       "heading": "Welcome to Our Blog",
       "sub-heading": "Your source for information on technology and web development",
       "description": "Discover the latest news, trends, and tips on technological innovation, web development, and how to boost your business with digital solutions."
+    },
+    "navigation":{
+      "previous":"Previous",
+      "next":"Next"
     }
   },
   "privacy-page": {

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import './about.css';
 import { Hero } from '../../components/hero/Hero';
 import LinkButton from '../../components/linkButton/LinkButton';
@@ -14,6 +15,18 @@ const  About = () => {
 
   return (
     <>
+     <Helmet>
+        <meta
+          name="description"
+          content={t("metadescription.about-us")}
+        />
+        <meta
+          name="keywords"
+          content={t("keywords.about-us", { returnObjects: true }).join(", ")}
+          />
+        <meta name="author" content="CodeLens" />
+        <link rel="canonical" href="https://codelenstech.com/" />
+      </Helmet>
     <Hero 
       media={{
         type: 'image',

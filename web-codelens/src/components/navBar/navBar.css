@@ -429,6 +429,7 @@ border: none;
     left: 0;
     width: 100vw;
     height: 100vh;
+    -webkit-overflow-scrolling: touch;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;

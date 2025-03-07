@@ -36,6 +36,7 @@
   background-color: var(--marine-green);
 }
 
+
 @media (width < 822px) {
   .h2-line::before {
     top: 45%;

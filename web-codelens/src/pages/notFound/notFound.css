@@ -4,33 +4,60 @@
     align-self         : center;
     width              : 100vw;
     height             : 100vh;
-    background-image   : url('/imgs/error.svg');
+    background-image   : url('/imgs/404.webp');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;
-    position           : relative;
     overflow: hidden;
-    /*para usar este contenedor como referencia*/
+}
+
+.error-section {
+    display: flex;
+    justify-content: center;
 }
 
 .content-container {
-    border: 1px solid black;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    margin: 0;
-    padding-top: 20px;
-    width: clamp(18rem, 18vw + 18rem, 38rem); /* Ancho responsivo */
-    height: auto;
-    gap: 20rem; /* Espaciado entre los elementos dentro del contenedor */
+    text-align: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.418);
+    padding: 30px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+.content-container h2{
+    font-weight: 700;
+    font-size: clamp(1.3rem, 1vw + 2rem, 1rem);
+}
+
+.content-container h1{
+    font-size: clamp(3rem, 1.4309rem + 0.6579vw, 2.5rem);
+    font-weight: 900;
+}
+
+.error-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
     text-align: center;
 }
 
-.content-container p{
+.error-message span{
     color: var(--white);
-    font-weight: bold;
+    font-weight: 700;
     font-size: clamp(0.5rem, 1vw + 2rem, 1rem);
+}
+
+@media(min-width: 425px){
+    .content-container{
+        justify-content: space-between;
+        background-color: transparent;
+        color: var(--black);
+    }
 }

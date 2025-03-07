@@ -88,6 +88,10 @@
     max-width: 4400px;
 }
 
+.title-container-cardService{
+    padding: 30px 0 30px 60px;
+}
+
 .card-group {
     display        : flex;
     flex-wrap      : wrap;
@@ -155,6 +159,7 @@
     padding: 60px 20px;
 }
 
+
 .service-contact h2 {
     font-size  : clamp(1.5rem, 2vw, 2rem);
     line-height: 2rem;
@@ -165,6 +170,16 @@
     font-size  : lamp(1.5rem, 2vw, 1.5rem);
     line-height: 1.758rem;
     padding: 20px 5px;
+}
+
+@media(width < 450px){
+    .title-padding {
+        padding-left: 30%;
+    }   
+
+    .title-container-cardService{
+        padding: 30px 0 30px 18%;
+    }
 }
 
 @media(max-width: 800px){

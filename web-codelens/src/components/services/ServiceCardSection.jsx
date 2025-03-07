@@ -11,7 +11,9 @@ const ServiceCardSection = ({ titleCarts, descriptionCart }) => {
    <div className="service-card-section-container">
       <Section>
         <div className="secion-card-container">
+         <div className="title-container-cardService">
           <h2 className="h2-line">{t("services-pages.api-development.features-section.heading")}</h2>
+         </div>
           <div className="card-group">
             {titleCarts.map((title, index) => (
               <ServiceCard

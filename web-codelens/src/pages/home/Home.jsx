@@ -15,19 +15,19 @@ import GetToKnow from "../../components/getToKnow/getToKnow";
 
 const Home = () => {
   const { t } = useTranslation();
-
   const location = useLocation();
 
   useEffect(() => {
-    //Para que el boton de contacto lleve a la seccion directamente. (hay un id=contact en el div principal de la seccion)
-    if (location.hash === "#Contact") {
-      const targetSection = document.querySelector("#Contact");
+    const hash = location.hash;
+    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
+    if (hash) {
+      const targetSection = document.querySelector(hash);
       if (targetSection) {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     }
   }, [location]);
-
+ 
   return (
     <>
      <Helmet>
@@ -46,9 +46,10 @@ const Home = () => {
         media={{
           type: "video",
           src: "/hero/Hero.mp4",
+          
         }}
       >
-        <div className="hero-content-container">
+        <div id="Home" className="hero-content-container">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>

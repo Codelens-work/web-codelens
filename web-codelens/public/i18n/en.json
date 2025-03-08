@@ -1,4 +1,4 @@
-{  
+{
   "metadescription": {
     "home": "At CodeLens, we create custom digital solutions. Web development, web design, SEO, and web applications to boost your business in the digital world.",
     "web-development": "We develop modern, optimized, and scalable websites. Custom solutions to enhance your online presence.",
@@ -13,17 +13,98 @@
     "404": "It looks like you’re lost. The page you’re looking for doesn’t exist or has been moved. Go back to the homepage and keep exploring!"
   },
   "keywords": {
-    "home": ["web development", "web design", "SEO strategies", "web applications", "API development", "digital solutions", "CodeLens"],
-    "web-development": ["web development", "custom websites", "responsive websites", "frontend development", "backend development", "web optimization"],
-    "web-design": ["web design", "user experience", "responsive design", "UX/UI design", "visual identity", "digital branding", "modern design"],
-    "web-app": ["web applications", "app development", "custom software", "interactive applications", "responsive apps"],
-    "api-development": ["API development", "system integration", "REST APIs", "secure APIs", "backend development", "web connectivity"],
-    "seo": ["SEO", "web positioning", "SEO strategies", "search engine optimization", "organic traffic", "technical SEO"],
-    "about-us": ["about us", "who we are", "CodeLens team", "mission", "vision", "digital development", "technological innovation", "web solutions"],
-    "blog": ["technology blog", "web development", "digital design", "SEO", "web trends", "digital strategies", "development tips"],
-    "terms-and-conditions": ["terms and conditions", "service use", "user rights", "responsibilities", "usage policy", "CodeLens"],
-    "privacy-policy": ["privacy policy", "data protection", "information security", "personal data", "confidentiality", "online privacy"],
-    "404": ["error 404", "page not found", "content unavailable", "broken link", "resource not found", "CodeLens"]
+    "home": [
+      "web development",
+      "web design",
+      "SEO strategies",
+      "web applications",
+      "API development",
+      "digital solutions",
+      "CodeLens"
+    ],
+    "web-development": [
+      "web development",
+      "custom websites",
+      "responsive websites",
+      "frontend development",
+      "backend development",
+      "web optimization"
+    ],
+    "web-design": [
+      "web design",
+      "user experience",
+      "responsive design",
+      "UX/UI design",
+      "visual identity",
+      "digital branding",
+      "modern design"
+    ],
+    "web-app": [
+      "web applications",
+      "app development",
+      "custom software",
+      "interactive applications",
+      "responsive apps"
+    ],
+    "api-development": [
+      "API development",
+      "system integration",
+      "REST APIs",
+      "secure APIs",
+      "backend development",
+      "web connectivity"
+    ],
+    "seo": [
+      "SEO",
+      "web positioning",
+      "SEO strategies",
+      "search engine optimization",
+      "organic traffic",
+      "technical SEO"
+    ],
+    "about-us": [
+      "about us",
+      "who we are",
+      "CodeLens team",
+      "mission",
+      "vision",
+      "digital development",
+      "technological innovation",
+      "web solutions"
+    ],
+    "blog": [
+      "technology blog",
+      "web development",
+      "digital design",
+      "SEO",
+      "web trends",
+      "digital strategies",
+      "development tips"
+    ],
+    "terms-and-conditions": [
+      "terms and conditions",
+      "service use",
+      "user rights",
+      "responsibilities",
+      "usage policy",
+      "CodeLens"
+    ],
+    "privacy-policy": [
+      "privacy policy",
+      "data protection",
+      "information security",
+      "personal data",
+      "confidentiality",
+      "online privacy"
+    ],
+    "404": [
+      "error 404",
+      "page not found",
+      "content unavailable",
+      "broken link",
+      "resource not found",
+      "CodeLens"
+    ]
   },
   "titles": {
     "language": "EN",
@@ -37,7 +118,7 @@
     "faqs": "FAQs",
     "blog": "Blog"
   },
-  "btn-contact":{
+  "btn-contact": {
     "text": "CONTACT US"
   },
   "breadcrumbs": {
@@ -236,31 +317,31 @@
       "services-list": {
         "title": "Services",
         "items": [
-          { "text": "Web Development", "url": "/servicios/desarrollo-web" },
-          { "text": "Web Design", "url": "/servicios/diseno-web" },
-          { "text": "Improvement and Optimization", "url": "/servicios/seo" },
+          { "text": "Web Development", "url": "/en/services/web-development" },
+          { "text": "Web Design", "url": "/en/services/web-design" },
+          { "text": "Improvement and Optimization", "url": "/en/services/seo" },
           {
             "text": "Web Application Development",
-            "url": "/servicios/app-web"
+            "url": "en/services/app-web"
           },
-          { "text": "API Development", "url": "/servicios/desarrollo-api" }
+          { "text": "API Development", "url": "/en/services/development-api" }
         ]
       },
       "find-way-list": {
         "title": "Find your way",
         "items": [
           { "text": "Home", "url": "/" },
-          { "text": "About Us", "url": "/nosotros" },
-          { "text": "Blog", "url": "/blog" }
+          { "text": "About Us", "url": "/en/About-Us" },
+          { "text": "Blog", "url": "/en/blog" }
         ]
       },
       "help-list": {
         "title": "Help",
         "items": [
-          { "text": "FAQs", "url": "/preguntas-frecuentes" },
-          { "text": "Contact", "url": "/contacto" },
-          { "text": "Terms and Conditions", "url": "/terminos-y-condiciones" },
-          { "text": "Privacy Policy", "url": "/politica-de-privacidad" }
+          { "text": "FAQs", "url": "/en/FAQs" },
+          { "text": "Contact", "url": "/en/Contact" },
+          { "text": "Terms and Conditions", "url": "/en/Terms-and-Conditions" },
+          { "text": "Privacy Policy", "url": "/en/Privacy-Policy" }
         ]
       }
     }
@@ -534,7 +615,7 @@
       "heading": "About CodeLens",
       "about-img": "",
       "content": [
-        "At CodeLens, we turn ideas into memorable digital experiences. We are a team passionate about web development and design, committed to quality, clarity, and precision in every project. We believe in the power of clean code, efficient solutions, and innovative design to drive our clients’ growth.", 
+        "At CodeLens, we turn ideas into memorable digital experiences. We are a team passionate about web development and design, committed to quality, clarity, and precision in every project. We believe in the power of clean code, efficient solutions, and innovative design to drive our clients’ growth.",
         "We adapt to each need, whether it's creating websites from scratch, redesigning existing platforms, or developing custom applications. Our goal is to be a trusted digital partner, delivering solid results and building lasting relationships in an ever-evolving world."
       ]
     },
@@ -568,9 +649,9 @@
       ]
     },
     "team-section": {
-        "heading": "Our Core Team",
-        "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
-        "cards": [
+      "heading": "Our Core Team",
+      "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
+      "cards": [
         {
           "img-url": "/team/aylen.webp",
           "img-hover-url": "",
@@ -610,9 +691,9 @@
       "sub-heading": "Your source for information on technology and web development",
       "description": "Discover the latest news, trends, and tips on technological innovation, web development, and how to boost your business with digital solutions."
     },
-    "navigation":{
-      "previous":"Previous",
-      "next":"Next"
+    "navigation": {
+      "previous": "Previous",
+      "next": "Next"
     }
   },
   "privacy-page": {

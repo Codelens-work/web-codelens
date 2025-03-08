@@ -5,6 +5,8 @@ import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
+import { useEffect } from "react";
+
 
 export function WebDesing() {
   const { t } = useTranslation();
@@ -19,17 +21,18 @@ export function WebDesing() {
   const tCartsTitle = tFeatures.map((item) => item.title);
   const tCartsContent = tFeatures.map((item) => item.content);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
-     <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.web-design")}
-        />
+      <Helmet>
+        <meta name="description" content={t("metadescription.web-design")} />
         <meta
           name="keywords"
           content={t("keywords.web-design", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -40,14 +43,18 @@ export function WebDesing() {
         }}
       >
         <div className="hero__title-container-desing">
-        <Breadcrumb currentService={t('breadcrumbs.diseno')} />
+          <Breadcrumb currentService={t("breadcrumbs.diseno")} />
           <h1 className="title-service">
             {t("services-pages.web-design.hero.heading")}
           </h1>
           <p className="paragraph-service">
             {t("services-pages.web-design.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
+          <LinkButton
+            label={t("btn-contact.text")}
+            href="/#Contact"
+            size="small"
+          />
         </div>
       </Hero>
       <Services

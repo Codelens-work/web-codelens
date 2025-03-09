@@ -27,10 +27,10 @@ const Home = () => {
       }
     }
   }, [location]);
- 
+
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.home")}
@@ -38,7 +38,7 @@ const Home = () => {
         <meta
           name="keywords"
           content={t("keywords.home", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -46,7 +46,7 @@ const Home = () => {
         media={{
           type: "video",
           src: "/hero/Hero.mp4",
-          
+
         }}
       >
         <div id="Home" className="hero-content-container">

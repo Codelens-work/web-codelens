@@ -34,6 +34,7 @@ min-width: min(100%, 300px);
   display: flex;
   justify-content: flex-end;
   flex: 1;
+  flex-wrap: wrap;
 }
 
 /*Iconos de redes sociales*/
@@ -117,4 +118,19 @@ min-width: min(100%, 300px);
 
 a:hover::after {
   width: 100%;
+}
+
+@media  (width <= 1024px) {
+.firstRowContainer {
+  flex-direction: column;
+}
+
+.socialLogoContainer{
+  align-self: center;
+}
+
+.urlContainer {
+  justify-content: space-evenly;
+}
+
 }

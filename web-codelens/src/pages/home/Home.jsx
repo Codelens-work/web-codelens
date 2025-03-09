@@ -80,11 +80,9 @@ const Home = () => {
 export default Home;
 
 /*
-- Arreglar li -> poner iconos
-	- cambiar lógica de active
-- arreglar contenedor de cards para que no tenga padding
-- Arreglar contenido
-- Agregar controles
+- Alinear contenido
+- Arreglar footer
+- Arreglar before
 
 
 */

@@ -1,11 +1,14 @@
 footer {
   padding: 30px;
+  padding-top: 50px;
   width: 100%;
 }
 .containerTitle {
   font-size: 20px;
   color: var(--purple);
 }
+
+/*Todo lo que no es el copyright*/
 .firstRowContainer {
   width: 100%;
   height: auto;
@@ -15,16 +18,22 @@ footer {
   gap: 30px;
 }
 
-.firstRowContainer > div {
+.urlContainer > div {
 height: auto;
 padding: 10px;
-flex: 1;
 min-width: min(100%, 300px);
 }
 
 #footerLogo {
   height: 158px;
   width: 242px;
+}
+
+/*Contenedor de todos los bloques de links*/
+.urlContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
 }
 
 /*Iconos de redes sociales*/

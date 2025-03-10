@@ -12,6 +12,7 @@ import Faqs from "../../components/faqs/Faqs";
 import HomeAbout from "../../components/homeAbout/HomeAbout";
 import HomeServices from "../../components/homeServices/HomeServices";
 import GetToKnow from "../../components/getToKnow/getToKnow";
+import SectionReference from "../../components/references/SectionReferences";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -70,6 +71,7 @@ const Home = () => {
       />
       <HomeServices t={t("home.services-section", { returnObjects: true })} />
       <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} />
+      <SectionReference /> 
       <Contact />
       <Faqs />
     </>

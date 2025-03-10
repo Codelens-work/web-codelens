@@ -1,10 +1,14 @@
+.contact-container-section{
+    background-color: var(--white);
+}
+
 .contact-container {
     overflow-x: hidden; 
     position: relative;
     display        : flex;
     flex-wrap      : wrap;
     gap            : 1px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     min-width      : 320px;
     width: 100%;

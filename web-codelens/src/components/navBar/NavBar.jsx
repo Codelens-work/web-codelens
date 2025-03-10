@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   Navbar,
   Nav,
@@ -83,6 +84,22 @@ const NavBar = () => {
     };
   }, [expanded]); // Add expanded as a dependency
 
+
+  const location = useLocation();
+
+  useEffect(() => {
+    const hash = location.hash;
+    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
+    if (hash) {
+      const targetSection = document.querySelector(hash);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+
+
+
   return (
     <header>
       <Navbar
@@ -96,7 +113,7 @@ const NavBar = () => {
               className="logo"
               src="/icons/logo_nombre.svg"
               alt="Logo"
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/#Home")}
               style={{ cursor: "pointer" }}
             />
           </Navbar.Brand>
@@ -117,7 +134,7 @@ const NavBar = () => {
             <Nav className="navbar-links-custom d-flex align-items-center">
               <a
                 onClick={() => {
-                  navigate("/");
+                  navigate("/#Home");
                   setExpanded(false); // Cierra el menú al navegar
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"

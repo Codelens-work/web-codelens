@@ -28,11 +28,12 @@ function App() {
 
   const webDevelopmentUrl = services[0]?.url;
   const webDesignUrl = services[1]?.url;
+  const seoUrl = services[2]?.url;
   const appWebUrl = services[3]?.url;
   const apiUrl = services[4]?.url;
 
   const aboutUrl = route[1].url;
-
+const blogUrl = route[2].url
   const faqsUrl = routeHelp[0].url;
   const termsAndConditionsUrl = routeHelp[2].url;
   const privacyPolicyUrl = routeHelp[3].url;
@@ -87,7 +88,7 @@ function App() {
       ),
     },
     {
-      path: "/servicios/seo",
+      path: seoUrl,
       element: (
         <MainLayout>
           <SeoService />
@@ -111,7 +112,7 @@ function App() {
       ),
     },
     {
-      path: "/blog",
+      path: blogUrl,
       element: (
         <MainLayout>
           <Blog />

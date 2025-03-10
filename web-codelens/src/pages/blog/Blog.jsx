@@ -4,7 +4,7 @@ import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
 import LastArticles from "../../components/blogCard/lastArticles";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
-
+import { useEffect } from "react";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -18,17 +18,18 @@ const Blog = () => {
     description: "Descripción del siguiente artículo",
   };
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <>
-     <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.blog")}
-        />
+      <Helmet>
+        <meta name="description" content={t("metadescription.blog")} />
         <meta
           name="keywords"
           content={t("keywords.blog", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -48,7 +49,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles/>
+      <LastArticles />
       <ArticleNavigation prevArticle={prevArticle} nextArticle={nextArticle} />
     </>
   );

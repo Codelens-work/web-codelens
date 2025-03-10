@@ -14,12 +14,55 @@
     "404": "Parece que te has perdido en el camino. La página que buscas no existe o ha sido movida. ¡Vuelve a la página de inicio y sigue explorando!"
   },
   "keywords": {
-    "home": ["desarrollo web", "diseño web", "estrategias SEO", "aplicaciones web", "desarrollo de APIs", "soluciones digitales", "CodeLens"],
-    "web-development": ["desarrollo web", "páginas web a medida", "sitios web responsivos", "desarrollo frontend", "desarrollo backend", "optimización web"],
-    "web-design": ["diseño web", "experiencia de usuario", "diseño responsivo", "diseño UX/UI", "identidad visual", "branding digital", "diseño moderno"],
-    "web-app": ["aplicaciones web", "desarrollo de apps", "software a medida", "aplicaciones interactivas", "apps responsivas"],
-    "api-development": ["desarrollo de APIs", "integración de sistemas", "APIs REST", "APIs seguras", "desarrollo backend", "conectividad web"],
-    "seo": ["SEO", "posicionamiento web", "estrategias SEO", "optimización en buscadores", "tráfico orgánico", "SEO técnico"],
+    "home": [
+      "desarrollo web",
+      "diseño web",
+      "estrategias SEO",
+      "aplicaciones web",
+      "desarrollo de APIs",
+      "soluciones digitales",
+      "CodeLens"
+    ],
+    "web-development": [
+      "desarrollo web",
+      "páginas web a medida",
+      "sitios web responsivos",
+      "desarrollo frontend",
+      "desarrollo backend",
+      "optimización web"
+    ],
+    "web-design": [
+      "diseño web",
+      "experiencia de usuario",
+      "diseño responsivo",
+      "diseño UX/UI",
+      "identidad visual",
+      "branding digital",
+      "diseño moderno"
+    ],
+    "web-app": [
+      "aplicaciones web",
+      "desarrollo de apps",
+      "software a medida",
+      "aplicaciones interactivas",
+      "apps responsivas"
+    ],
+    "api-development": [
+      "desarrollo de APIs",
+      "integración de sistemas",
+      "APIs REST",
+      "APIs seguras",
+      "desarrollo backend",
+      "conectividad web"
+    ],
+    "seo": [
+      "SEO",
+      "posicionamiento web",
+      "estrategias SEO",
+      "optimización en buscadores",
+      "tráfico orgánico",
+      "SEO técnico"
+    ],
     "community-management":["Community Management",
     "gestión de redes sociales",
     "contenido estratégico",
@@ -29,11 +72,49 @@
     "marketing digital",
     "estrategia en redes sociales",
     "social media manager"],
-    "about-us": ["sobre nosotros", "quiénes somos", "equipo CodeLens", "misión", "visión", "desarrollo digital", "innovación tecnológica", "soluciones web"],
-    "blog": ["blog de tecnología", "desarrollo web", "diseño digital", "SEO", "tendencias web", "estrategias digitales", "consejos de desarrollo"],
-    "terms-and-conditions": ["términos y condiciones", "uso de servicios", "derechos de usuario", "responsabilidades", "política de uso", "CodeLens"],
-    "privacy-policy": ["política de privacidad", "protección de datos", "seguridad de información", "datos personales", "confidencialidad", "privacidad en línea"],
-    "404": ["error 404", "página no encontrada", "contenido no disponible", "enlace roto", "recurso no encontrado", "CodeLens"]
+    "about-us": [
+      "sobre nosotros",
+      "quiénes somos",
+      "equipo CodeLens",
+      "misión",
+      "visión",
+      "desarrollo digital",
+      "innovación tecnológica",
+      "soluciones web"
+    ],
+    "blog": [
+      "blog de tecnología",
+      "desarrollo web",
+      "diseño digital",
+      "SEO",
+      "tendencias web",
+      "estrategias digitales",
+      "consejos de desarrollo"
+    ],
+    "terms-and-conditions": [
+      "términos y condiciones",
+      "uso de servicios",
+      "derechos de usuario",
+      "responsabilidades",
+      "política de uso",
+      "CodeLens"
+    ],
+    "privacy-policy": [
+      "política de privacidad",
+      "protección de datos",
+      "seguridad de información",
+      "datos personales",
+      "confidencialidad",
+      "privacidad en línea"
+    ],
+    "404": [
+      "error 404",
+      "página no encontrada",
+      "contenido no disponible",
+      "enlace roto",
+      "recurso no encontrado",
+      "CodeLens"
+    ]
   },
   "titles": {
     "language": "ES",
@@ -47,7 +128,7 @@
     "faqs": "FAQs",
     "blog": "Blog"
   },
-  "btn-contact":{
+  "btn-contact": {
     "text": "CONTACTANOS"
   },
   "breadcrumbs": {
@@ -120,8 +201,8 @@
         },
         "required-message": "Campo obligatorio",
         "modals": {
-          "titlesuccess":"¡Envio exitoso!",
-          "titleerror":"¡Error en el envío!",
+          "titlesuccess": "¡Envio exitoso!",
+          "titleerror": "¡Error en el envío!",
           "success": "Pronto nos pondremos en contacto contigo",
           "error": "Se produjo un error al enviar el mensaje. Intenta luego nuevamente"
         }
@@ -366,7 +447,6 @@
       "cto-section": {
         "heading": "¿Listo para optimizar tu negocio con una aplicación personalizada?",
         "content": "Hablemos sobre cómo CodeLens puede desarrollar una solución a tu medida."
-        
       }
     },
     "seo": {
@@ -457,7 +537,7 @@
           }
         ]
       },
-      
+
       "cto-section": {
         "heading": "¿Listo para darle a tu sitio web una imagen profesional y memorable?",
         "content": "Hablemos sobre cómo CodeLens puede ayudarte a transformar tu visión en un diseño efectivo."
@@ -633,7 +713,7 @@
   "about-us-page": {
     "hero": {
       "background-url": "",
-      "heading":"Conócenos",
+      "heading": "Conócenos",
       "sub-heading": "Innovamos para transformar tu negocio",
       "content": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos."
     },
@@ -715,11 +795,11 @@
     "hero-section": {
       "heading": "Bienvenido a Nuestro Blog",
       "sub-heading": "Tu fuente de información en tecnología y desarrollo web",
-      "description": "Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales."   
+      "description": "Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales."
     },
-    "navigation":{
-      "previous":"Anterior",
-      "next":"Siguiente"
+    "navigation": {
+      "previous": "Anterior",
+      "next": "Siguiente"
     }
   },
   "privacy-page": {
@@ -783,7 +863,7 @@
       "content": [
         "¡Bienvenido a los términos de uso de CodeLens! Estamos realmente muy contentos de que usted esté a aquí. Gracias por elegir usar nuestros servicios.",
         "A continuación hemos enumerado términos legales importantes que se aplican a cualquier persona que contrata nuestros servicios. Estos términos son necesarios para la protección tanto de usted como de nosotros y para hacer que nuestros servicios sean posibles y más agradables para todos.",
-        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a", 
+        "Sabemos que leer términos legales puede ser agotador. Por eso, intentamos hacer que sea una experiencia más agradable. Si tiene alguna duda lo invitamos a",
         " comunicarse con nosotros."
       ]
     },

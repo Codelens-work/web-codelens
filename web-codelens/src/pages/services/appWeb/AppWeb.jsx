@@ -5,6 +5,9 @@ import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
+import { useEffect } from "react";
+
+
 import { motion } from 'framer-motion';
 
 export function AppWeb() {
@@ -21,6 +24,12 @@ export function AppWeb() {
 
   const tCartsTitle = tFeatures.map((item) => item.title);
   const tCartsContent = tFeatures.map((item) => item.content);
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
 
   return (
     <>

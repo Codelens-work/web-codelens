@@ -7,11 +7,16 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/valuesSection';
 import TeamSection from '../../components/teamSection/TeamSection';
-
+import { useEffect } from "react";
 
 const  About = () => {
   
   const { t } = useTranslation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
 
   return (
     <>

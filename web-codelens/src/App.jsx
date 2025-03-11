@@ -13,30 +13,29 @@ import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import { useTranslation } from "react-i18next";
 import NotFound from "./pages/notFound/NotFound.jsx";
-import { CommunityManagement } from "./pages/services/communityManagement/CommunityManagement.jsx";
 
 function App() {
   const { t } = useTranslation();
-  const services = t("footer-section.lists.services-list.items", {
-    returnObjects: true,
-  });
-  const route = t("footer-section.lists.find-way-list.items", {
-    returnObjects: true,
-  });
-  const routeHelp = t("footer-section.lists.help-list.items", {
-    returnObjects: true,
-  });
+  // const services = t("footer-section.lists.services-list.items", {
+  //   returnObjects: true,
+  // });
+  // const route = t("footer-section.lists.find-way-list.items", {
+  //   returnObjects: true,
+  // });
+  // const routeHelp = t("footer-section.lists.help-list.items", {
+  //   returnObjects: true,
+  // });
 
-  const webDevelopmentUrl = services[0]?.url;
-  const webDesignUrl = services[1]?.url;
-  const seoUrl = services[2]?.url;
-  const appWebUrl = services[3]?.url;
-  const apiUrl = services[4]?.url;
+  // const webDevelopmentUrl = services[0]?.url;
+  // const webDesignUrl = services[1]?.url;
+  // const seoUrl = services[2]?.url;
+  // const appWebUrl = services[3]?.url;
+  // const apiUrl = services[4]?.url;
   const communityUrl = services[5]?.url;
 
   const aboutUrl = route[1].url;
-  const blogUrl = route[2].url
-  //const faqsUrl = routeHelp[0].url;
+const blogUrl = route[2].url
+  const faqsUrl = routeHelp[0].url;
   const termsAndConditionsUrl = routeHelp[2].url;
   const privacyPolicyUrl = routeHelp[3].url;
 
@@ -50,7 +49,7 @@ function App() {
       ),
     },
     {
-      path: aboutUrl,
+      path: '/nosotros',
       element: (
         <MainLayout>
           <About />
@@ -58,7 +57,15 @@ function App() {
       ),
     },
     {
-      path: apiUrl,
+      path: "/en/About-Us",
+      element: (
+        <MainLayout>
+          <About />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/servicios/desarrollo-api",
       element: (
         <MainLayout>
           <ApiService />
@@ -66,7 +73,15 @@ function App() {
       ),
     },
     {
-      path: appWebUrl,
+      path: "/en/services/development-api" ,
+      element: (
+        <MainLayout>
+          <ApiService />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/servicios/app-web",
       element: (
         <MainLayout>
           <AppWeb />
@@ -74,7 +89,15 @@ function App() {
       ),
     },
     {
-      path: webDesignUrl,
+      path: "/en/services/app-web",
+      element: (
+        <MainLayout>
+          <AppWeb />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/servicios/diseno-web",
       element: (
         <MainLayout>
           <WebDesing />
@@ -82,7 +105,15 @@ function App() {
       ),
     },
     {
-      path: webDevelopmentUrl,
+      path: "/en/services/web-design",
+      element: (
+        <MainLayout>
+          <WebDesing />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/servicios/desarrollo-web",
       element: (
         <MainLayout>
           <WebDevelopment />
@@ -90,7 +121,23 @@ function App() {
       ),
     },
     {
-      path: seoUrl,
+      path:  "/en/services/web-development",
+      element: (
+        <MainLayout>
+          <WebDevelopment />
+        </MainLayout>
+      ),
+    },
+    {
+      path:  "/servicios/seo",
+      element: (
+        <MainLayout>
+          <SeoService />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/en/services/seo" ,
       element: (
         <MainLayout>
           <SeoService />
@@ -106,7 +153,15 @@ function App() {
       ),
     },
     {
-      path: termsAndConditionsUrl,
+      path: communityUrl,
+      element: (
+        <MainLayout>
+          <CommunityManagement />
+        </MainLayout>
+      ),
+    },
+    {
+      path:  "/terminos-y-condiciones",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -114,7 +169,15 @@ function App() {
       ),
     },
     {
-      path: privacyPolicyUrl,
+      path: "/en/Terms-and-Conditions",
+      element: (
+        <MainLayout>
+          <TermsAndConditions />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/politica-de-privacidad",
       element: (
         <MainLayout>
           <PrivacyPolicy />
@@ -122,7 +185,23 @@ function App() {
       ),
     },
     {
-      path: blogUrl,
+      path: "/en/Privacy-Policy",
+      element: (
+        <MainLayout>
+          <PrivacyPolicy />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/blog",
+      element: (
+        <MainLayout>
+          <Blog />
+        </MainLayout>
+      ),
+    },
+    {
+      path: "/en/blog",
       element: (
         <MainLayout>
           <Blog />
@@ -131,7 +210,7 @@ function App() {
     },
     {
       path: "/*", //Con el * cualquier ruta que no sea las indicadas tira notfound
-      element:( <NotFound/>),
+      element: <NotFound />,
     },
   ]);
   return <RouterProvider router={router} />;

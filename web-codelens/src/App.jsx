@@ -96,7 +96,7 @@ function App() {
       ),
     },
     {
-      path: "en/services/app-web",
+      path: "/en/services/app-web",
       element: (
         <MainLayout>
           <AppWeb />

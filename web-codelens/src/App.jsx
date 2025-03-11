@@ -1,18 +1,21 @@
 import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import MainLayout from "./components/mainLayout/MainLayout";
-import { ApiService } from "./pages/services/apiservices/ApiService.jsx";
-import { AppWeb } from "./pages/services/appWeb/AppWeb";
-import { WebDesing } from "./pages/services/webDesing/WebDesing";
-import { WebDevelopment } from "./pages/services/webDevelopment/WebDevelopment";
-import { SeoService } from "./pages/services/seo/SeoService";
-import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
-import Home from "./pages/home/Home";
-import About from "./pages/about/About";
-import Blog from "./pages/blog/Blog";
-import { useTranslation } from "react-i18next";
-import NotFound from "./pages/notFound/NotFound.jsx";
+ import { RouterProvider, createBrowserRouter } from "react-router-dom";
+ import MainLayout from "./components/mainLayout/MainLayout";
+ import { ApiService } from "./pages/services/apiservices/ApiService.jsx";
+ import { AppWeb } from "./pages/services/appWeb/AppWeb";
+ import { WebDesing } from "./pages/services/webDesing/WebDesing";
+ import { WebDevelopment } from "./pages/services/webDevelopment/WebDevelopment";
+ import { SeoService } from "./pages/services/seo/SeoService";
+ import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions";
+ import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+ import Home from "./pages/home/Home";
+ import About from "./pages/about/About";
+ import Blog from "./pages/blog/Blog";
+ import { useTranslation } from "react-i18next";
+ import NotFound from "./pages/notFound/NotFound.jsx";
+ import { useEffect } from "react";
+ import i18n from "i18next";
+import { CommunityManagement } from "./pages/services/communityManagement/CommunityManagement";
 
 function App() {
   const { t } = useTranslation();
@@ -31,13 +34,18 @@ function App() {
   // const seoUrl = services[2]?.url;
   // const appWebUrl = services[3]?.url;
   // const apiUrl = services[4]?.url;
-  const communityUrl = services[5]?.url;
+  //const communityUrl = services[5]?.url;
 
-  const aboutUrl = route[1].url;
-const blogUrl = route[2].url
+ /*  const aboutUrl = route[1].url;
+  const blogUrl = route[2].url
   const faqsUrl = routeHelp[0].url;
   const termsAndConditionsUrl = routeHelp[2].url;
-  const privacyPolicyUrl = routeHelp[3].url;
+  const privacyPolicyUrl = routeHelp[3].url; */
+
+  useEffect(() => {
+    const savedLanguage = localStorage.getItem("language") || "es";
+    i18n.changeLanguage(savedLanguage);
+  }, []);
 
   const router = createBrowserRouter([
     {
@@ -145,15 +153,7 @@ const blogUrl = route[2].url
       ),
     },
     {
-      path: communityUrl,
-      element: (
-        <MainLayout>
-          <CommunityManagement />
-        </MainLayout>
-      ),
-    },
-    {
-      path: communityUrl,
+      path: "/servicios/community-management",
       element: (
         <MainLayout>
           <CommunityManagement />

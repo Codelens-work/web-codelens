@@ -13,6 +13,7 @@ import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import { useTranslation } from "react-i18next";
 import NotFound from "./pages/notFound/NotFound.jsx";
+import { CommunityManagement } from "./pages/services/communityManagement/CommunityManagement.jsx";
 
 function App() {
   const { t } = useTranslation();
@@ -31,10 +32,11 @@ function App() {
   const seoUrl = services[2]?.url;
   const appWebUrl = services[3]?.url;
   const apiUrl = services[4]?.url;
+  const communityUrl = services[5]?.url;
 
   const aboutUrl = route[1].url;
-const blogUrl = route[2].url
-  const faqsUrl = routeHelp[0].url;
+  const blogUrl = route[2].url
+  //const faqsUrl = routeHelp[0].url;
   const termsAndConditionsUrl = routeHelp[2].url;
   const privacyPolicyUrl = routeHelp[3].url;
 
@@ -92,6 +94,14 @@ const blogUrl = route[2].url
       element: (
         <MainLayout>
           <SeoService />
+        </MainLayout>
+      ),
+    },
+    {
+      path: communityUrl,
+      element: (
+        <MainLayout>
+          <CommunityManagement />
         </MainLayout>
       ),
     },

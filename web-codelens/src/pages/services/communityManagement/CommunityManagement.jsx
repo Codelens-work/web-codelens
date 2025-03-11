@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Hero } from "../../../components/hero/Hero";
-import "./apiservice.css";
+import "./communityManagement.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";

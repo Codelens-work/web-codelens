@@ -153,7 +153,8 @@
         "Web Application",
         "Custom API",
         "SEO Strategy",
-        "Modern Interface"
+        "Modern Interface",
+        "Social Media Strategy"
       ]
     },
     "about-section": {
@@ -346,7 +347,11 @@
             "text": "Web Application Development",
             "url": "en/services/app-web"
           },
-          { "text": "API Development", "url": "/en/services/development-api" }
+          { "text": "API Development", "url": "/en/services/development-api" },
+          {
+            "text": "Community Management",
+            "url": "/en/services/community-management"
+          }
         ]
       },
       "find-way-list": {
@@ -751,6 +756,12 @@
           "role": "Co-Founder, UX/UI Designer & Frontend Developer "
         },
         {
+          "img-url": "/team/tania.webp",
+          "img-hover-url": "",
+          "fullname": "Tania Yanina Balbuena Casanova",
+          "role": "Community Manager"
+        },
+        {
           "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
@@ -893,5 +904,12 @@
         "content": "The Service Provider reserves the right to unilaterally terminate this contract at any time if it reasonably considers that there is an extraordinary and justified reason. Extraordinary and justified reasons include, among others, activities that are illegal, immoral, or against professional ethics, such as developing projects that promote fraud, scams, or any illicit activity. In such cases, the Service Provider will notify the Client in advance and proceed with the termination of the contractual relationship without entitling the Client to any claims. Additionally, in case of termination for the reasons mentioned above, the Service Provider reserves the right not to transfer the project or any part of the development completed up to that point. All materials and progress will remain the property and under the control of the Service Provider and may not be used, shared, or claimed by the Client."
       }
     ]
+  },
+  "404": {
+    "title": "Error 404",
+    "subtitle": "Oops! Page not found, but the code keeps floating...",
+    "paragraph": "It looks like you got lost along the way...",
+    "second-paragraph": "But don't worry, you can always go back to the homepage.",
+    "button": "Home"
   }
 }

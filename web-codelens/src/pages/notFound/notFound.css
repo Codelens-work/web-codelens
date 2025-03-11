@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     text-align: center;
 }
 
@@ -53,6 +53,7 @@
     font-weight: 700;
     font-size: clamp(0.5rem, 1vw + 2rem, 1rem);
 }
+
 
 @media(min-width: 425px){
     .content-container{

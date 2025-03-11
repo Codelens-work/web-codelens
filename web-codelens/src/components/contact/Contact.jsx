@@ -5,19 +5,32 @@ import Section from "../section/Section";
 import { motion } from 'framer-motion';
 
 const Contact = () => {
- const { t } = useTranslation();
-  const tContact = t("home.contact-section", { returnObjects: true });
+    const { t } = useTranslation();
+    const tContact = t("home.contact-section", { returnObjects: true });
 
-  // Variants para las animaciones
-  const slideInLeft = {
-    hidden: { opacity: 0, x: -50 }, // Antes -100
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
+    const slideInLeft = {
+        hidden: { opacity: 0, x: -30 },
+        visible: { 
+            opacity: 1, 
+            x: 0, 
+            transition: { 
+                duration: 0.8, 
+                ease: "easeOut" 
+            } 
+        },
+    };
   
-  const slideInRight = {
-    hidden: { opacity: 0, x: 50 }, // Antes 100
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
+    const slideInRight = {
+        hidden: { opacity: 0, x: 30 },
+        visible: { 
+            opacity: 1, 
+            x: 0, 
+            transition: { 
+                duration: 0.8, 
+                ease: "easeOut" 
+            } 
+        },
+    };
 
   return (
    <Section className="contact-container-section">
@@ -25,7 +38,7 @@ const Contact = () => {
         <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+        viewport={{ once: true, amount:  0.2 }} // Se activa cuando el 20% del componente es visible
         variants={slideInLeft}
         className="left-c text-container"
       >
@@ -74,7 +87,7 @@ const Contact = () => {
           className="right-c "
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+          viewport={{ once: true, amount:  0.2 }} // Se activa cuando el 20% del componente es visible
           variants={slideInRight}
         >
           <ContactForm />

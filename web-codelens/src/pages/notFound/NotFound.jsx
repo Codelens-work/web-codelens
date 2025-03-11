@@ -23,12 +23,14 @@ const NotFound = () => {
       <div className="error-container">
         <Section className="error-section">
           <div className="content-container">
-            <h1>Error 404</h1>
-            <h2>Oops! Página no encontrada, pero el código sigue corriendo...</h2>
+          <div className="title-error-container">
+            <h1>{t("404.title")}</h1>
+            <h2>{t("404.subtitle")}</h2>
+          </div>
             <div className="error-message">
-              <span>Parece que te perdiste en el camino...</span>
-              <span>Pero no te preocupes, siempre puedes regresar al inicio</span>
-              <LinkButton label="Home" href="/" size="error" />
+              <span>{t("404.paragraph")}</span>
+              <span>{t("404.second-paragraph")}</span>
+              <LinkButton label={t("404.button")} href="/" size="error"/>
             </div>
           </div>
         </Section>

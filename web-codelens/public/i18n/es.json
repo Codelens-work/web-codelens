@@ -63,7 +63,8 @@
       "tráfico orgánico",
       "SEO técnico"
     ],
-    "community-management":["Community Management",
+    "community-management":[
+    "Community Management",
     "gestión de redes sociales",
     "contenido estratégico",
     "branding digital",
@@ -71,7 +72,8 @@
     "engagement en redes",
     "marketing digital",
     "estrategia en redes sociales",
-    "social media manager"],
+    "social media manager"
+    ],
     "about-us": [
       "sobre nosotros",
       "quiénes somos",
@@ -151,7 +153,8 @@
         "Aplicación Web",
         "API Personalizada",
         "Estrategia SEO",
-        "Interfaz Moderna"
+        "Interfaz Moderna",
+        "Gestión de Redes"
       ]
     },
     "about-section": {
@@ -356,6 +359,10 @@
           {
             "text": "Desarrollo de APIS",
             "url": "/servicios/desarrollo-api"
+          },
+          {
+            "text": "Community Management",
+            "url": "/servicios/community-management"
           }
         ]
       },
@@ -783,11 +790,17 @@
           "role": "Co-Founder, UX/UI Designer & Frontend Developer "
         },
         {
+          "img-url": "/team/tania.webp",
+          "img-hover-url": "",
+          "fullname": "Tania Yanina Balbuena Casanova",
+          "role": "Community Manager"
+        },
+        {
           "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"
-        }
+        }     
       ]
     }
   },
@@ -925,5 +938,12 @@
         "content": "El Prestador de Servicios se reserva el derecho de rescindir unilateralmente el presente contrato en cualquier momento, en caso de que considere, a su discreción razonable, que existe un motivo extraordinario y justificado. Se considerarán motivos extraordinarios y justificados, entre otros, aquellos que impliquen actividades ilegales, inmorales o que vayan en contra de la ética profesional, como el desarrollo de proyectos que promuevan fraude, estafas, o cualquier actividad ilícita. En tal caso, el Prestador de Servicios notificará al Cliente con antelación y se procederá a la finalización de la relación contractual sin que ello genere derecho a reclamación por parte del Cliente. Asimismo, en caso de terminación por los motivos antes indicados, el Prestador de Servicios se reserva el derecho de no ceder el proyecto o cualquier parte del desarrollo realizado hasta ese momento. Todos los materiales y avances quedarán bajo la propiedad y control del Prestador de Servicios y no podrán ser utilizados, compartidos ni reclamados por el Cliente."
       }
     ]
+  },
+  "404":{
+    "title":"Error 404",
+    "subtitle":"Oops! Página no encontrada, pero el código sigue flotando...",
+    "paragraph":"Parece que te perdiste en el camino...",
+    "second-paragraph":"Pero no te preocupes, siempre puedes regresar al inicio",
+    "button":"Inicio"
   }
 }

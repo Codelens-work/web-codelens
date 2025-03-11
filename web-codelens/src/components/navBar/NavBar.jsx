@@ -13,12 +13,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
+
 const NavBar = () => {
+
   const { t } = useTranslation();
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+    
   };
+
+  
 
   const [navActive, setNavActive] = useState(false);
   const [expanded, setExpanded] = useState(false); // Estado del menú
@@ -84,7 +90,6 @@ const NavBar = () => {
     };
   }, [expanded]); // Add expanded as a dependency
 
-
   const location = useLocation();
 
   useEffect(() => {
@@ -97,8 +102,6 @@ const NavBar = () => {
       }
     }
   }, [location]);
-
-
 
   return (
     <header>

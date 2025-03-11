@@ -1,0 +1,147 @@
+.card-reference {
+    position: relative;
+    background: white;
+    padding: 2rem;
+    border-radius: 35px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+    overflow: visible; 
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+  /* Línea en el lado derecho */
+.card-reference::before {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: -10px;
+    width: 2px;
+    height: 80%;
+    background: var(--white);
+    border-radius: 2px;
+}
+
+/* Línea en la parte inferior */
+.card-reference::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 10%;
+    width: 80%;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+}
+
+  .card-reference-header {
+    position: relative;
+    padding-top: 40px; 
+  }
+  
+  .logo-container {
+    position: absolute;
+    top: -70px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    width: 120px;
+    height: 120px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+    0 4px 8px rgba(0, 0, 0, 0.2), /* Sombra general */
+    0 10px 15px rgba(185, 67, 185, 0.5); /* Sombra inferior en color púrpura */
+}
+  
+  .client-logo {
+    width: 100px;
+    height: auto;
+  }
+  
+  .client-info {
+    margin-top: 20px; 
+  }
+  
+  .business-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--purple);
+  }
+  
+  .person-name {
+    font-size: 1rem;
+    color: rgb(100, 98, 98);
+  }
+  
+  .card-reference-content {
+    position: relative;
+    margin: 1.8rem 0;
+  }
+
+  .quote-container{
+    position: absolute;
+    width: 30px;
+    height: auto;
+  }
+
+  .quote-img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+  }
+
+  .quote-left{
+    left: -120px;
+    top: -25px; 
+    transform: rotate(180deg); 
+  }
+
+  .quote-rigth {
+    right: -80px; 
+    top: -20px;
+}
+
+.testimonial-text {
+    position: relative;
+    font-size: 1rem;
+    color: var(--black);
+    text-align: center;
+}
+  
+  .card-reference-footer {
+    margin-top: 1rem;
+  }
+  
+  .client-site-link {
+    text-decoration: none;
+    color: var(--purple);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card-reference:hover {
+    transform: rotateY(10deg) scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Sombra más difusa */
+}
+
+@media(width >= 409px){
+    .quote-container{
+        width: 35px;
+    }
+
+    .quote-left{
+        left: -155px;
+    }
+
+    .quote-rigth{
+        right: -128px; 
+        top: -10px;
+    }
+}
+  

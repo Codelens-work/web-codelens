@@ -1,43 +1,36 @@
 import { Helmet } from "react-helmet";
 import { Hero } from "../../../components/hero/Hero";
-import "./apiservice.css";
+import "./communityManagement.css";
 import LinkButton from "../../../components/linkButton/LinkButton";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
 
-
-
-export function ApiService() {
+export function CommunityManagement() {
   const { t } = useTranslation();
 
   const tApiBenedit = t(
-    "services-pages.api-development.about-section.benefits-section.list",
+    "services-pages.community-management.about-section.benefits-section.list",
     { returnObjects: true }
   );
   const tApiFeatures = t(
-    "services-pages.api-development.features-section.cards",
+    "services-pages.community-management.features-section.cards",
     { returnObjects: true }
   );
   const tApiCartsTitle = tApiFeatures.map((item) => item.title);
   const tApiCartsContent = tApiFeatures.map((item) => item.content);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
 
   return (
     <>
      <Helmet>
         <meta
           name="description"
-          content={t("metadescription.api-development")}
+          content={t("metadescription.community-management")}
         />
         <meta
           name="keywords"
-          content={t("keywords.api-development", { returnObjects: true }).join(", ")}
+          content={t("keywords.community-management", { returnObjects: true }).join(", ")}
           />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
@@ -45,7 +38,7 @@ export function ApiService() {
       <Hero
         media={{
           type: "image",
-          src: "/hero/hero-api.webp",
+          src: "/hero/community-hero.webp",
         }}
       >
         <motion.div 
@@ -54,36 +47,36 @@ export function ApiService() {
         animate={{ opacity: 1, y: 0 }} 
         transition={{ duration: 0.8, ease: "easeOut" }} 
       >
-        <Breadcrumb currentService={t('breadcrumbs.api')} />
+        <Breadcrumb currentService={t('breadcrumbs.community-management')} />
           <h1 className="title-service">
-            {t("services-pages.api-development.hero.heading")}
+            {t("services-pages.community-management.hero.heading")}
           </h1>
           <p className="paragraph-service">
-            {t("services-pages.api-development.hero.content")}
+            {t("services-pages.community-management.hero.content")}
           </p>
           <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
         </motion.div>
       </Hero>
 
       <Services
-        img="../service/api.svg"
+        img="../service/community-manager.svg"
         titleOne={t(
-          "services-pages.api-development.about-section.value-proposal.heading"
+          "services-pages.community-management.about-section.value-proposal.heading"
         )}
         paragraphOne={t(
-          "services-pages.api-development.about-section.value-proposal.content"
+          "services-pages.community-management.about-section.value-proposal.content"
         )}
         titleTwo={t(
-          "services-pages.api-development.about-section.benefits-section.heading"
+          "services-pages.community-management.about-section.benefits-section.heading"
         )}
         items={tApiBenedit}
         titleCarts={tApiCartsTitle}
         descriptionCart={tApiCartsContent}
         titleServiceContact={t(
-          "services-pages.api-development.cto-section.heading"
+          "services-pages.community-management.cto-section.heading"
         )}
         paragraphServiceContact={t(
-          "services-pages.api-development.cto-section.content"
+          "services-pages.community-management.cto-section.content"
         )}
       />
     </>

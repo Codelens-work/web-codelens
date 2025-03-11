@@ -14,7 +14,7 @@ const ContactForm = () => {
   const { t, i18n } = useTranslation();
   const tForm = t("home.contact-section.contact-form", { returnObjects: true });
 
-  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalIsOpen, setModalIsOpen] = useState(true);
   const [msjApi, setMsjApi] = useState({
     title: "",
     text: "",

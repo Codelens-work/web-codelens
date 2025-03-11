@@ -13,9 +13,6 @@ import About from "./pages/about/About";
 import Blog from "./pages/blog/Blog";
 import { useTranslation } from "react-i18next";
 import NotFound from "./pages/notFound/NotFound.jsx";
-import { useEffect } from "react";
-import i18n from "i18next";
-
 
 function App() {
   const { t } = useTranslation();
@@ -34,17 +31,13 @@ function App() {
   // const seoUrl = services[2]?.url;
   // const appWebUrl = services[3]?.url;
   // const apiUrl = services[4]?.url;
+  const communityUrl = services[5]?.url;
 
-  // const aboutUrl = route[1].url;
-  // const blogUrl = route[2].url;
-  // const faqsUrl = routeHelp[0].url;
-  // const termsAndConditionsUrl = routeHelp[2].url;
-  // const privacyPolicyUrl = routeHelp[3].url;
-
-  useEffect(() => {
-    const savedLanguage = localStorage.getItem("language") || "es";
-    i18n.changeLanguage(savedLanguage);
-  }, []);
+  const aboutUrl = route[1].url;
+const blogUrl = route[2].url
+  const faqsUrl = routeHelp[0].url;
+  const termsAndConditionsUrl = routeHelp[2].url;
+  const privacyPolicyUrl = routeHelp[3].url;
 
   const router = createBrowserRouter([
     {
@@ -148,6 +141,22 @@ function App() {
       element: (
         <MainLayout>
           <SeoService />
+        </MainLayout>
+      ),
+    },
+    {
+      path: communityUrl,
+      element: (
+        <MainLayout>
+          <CommunityManagement />
+        </MainLayout>
+      ),
+    },
+    {
+      path: communityUrl,
+      element: (
+        <MainLayout>
+          <CommunityManagement />
         </MainLayout>
       ),
     },

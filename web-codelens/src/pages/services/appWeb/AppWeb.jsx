@@ -8,6 +8,7 @@ import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 import { useEffect } from "react";
 
 
+import { motion } from 'framer-motion';
 
 export function AppWeb() {
   const { t } = useTranslation();
@@ -49,8 +50,13 @@ export function AppWeb() {
           type: "image",
           src: "/hero/hero-apps.webp",
         }}
+      > 
+      <motion.div 
+        className="hero__title-container-appWeb"
+        initial={{ opacity: 0, y: 50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8, ease: "easeOut" }} 
       >
-        <div className="hero__title-container-appWeb">
           <Breadcrumb currentService={t('breadcrumbs.aplicaciones-web')} />
           <h1 className="title-service-appWeb">
             {t("services-pages.web-app.hero.heading")}
@@ -59,7 +65,7 @@ export function AppWeb() {
             {t("services-pages.web-app.hero.content")}
           </p>
           <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
-        </div>
+        </motion.div>
       </Hero>
 
       <Services

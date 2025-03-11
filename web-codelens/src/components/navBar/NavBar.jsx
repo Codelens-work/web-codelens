@@ -56,6 +56,8 @@ const NavBar = () => {
   const appWebText = services[3]?.text;
   const apiUrl = services[4]?.url;
   const apiText = services[4]?.text;
+  const communityUrl = services[5]?.url;
+  const communityText = services[5]?.text;
 
   const homeText = route[0].text;
   const aboutUrl = route[1].url;
@@ -192,6 +194,12 @@ const NavBar = () => {
                     onClick={() => handleDropdownItemClick(apiUrl)}
                   >
                     {apiText}
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(communityUrl)}
+                  >
+                    {communityText}
                   </Dropdown.Item>
                 </DropdownMenu>
               </Dropdown>

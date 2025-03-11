@@ -8,6 +8,7 @@ import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 import { useEffect } from "react";
 
 
+import { motion } from 'framer-motion';
 
 export function SeoService() {
 
@@ -49,7 +50,12 @@ export function SeoService() {
           src: "/hero/hero-seo.webp",
         }}
       >
-        <div className="hero__title-container-seo">
+      <motion.div 
+        className="hero__title-container-seo"
+        initial={{ opacity: 0, y: 50 }} 
+        animate={{ opacity: 1, y: 0 }} 
+        transition={{ duration: 0.8, ease: "easeOut" }} 
+      >
         <Breadcrumb currentService={t('breadcrumbs.seo')} />
           <h1 className="title-service">
             {t('services-pages.seo.hero.heading')}
@@ -58,8 +64,8 @@ export function SeoService() {
             {t('services-pages.seo.hero.content')}
           </p>
           <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
-        </div>
-      </Hero>
+      </motion.div>
+    </Hero>
 
       <Services
         img="../service/seo.svg"

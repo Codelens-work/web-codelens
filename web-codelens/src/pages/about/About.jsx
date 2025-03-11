@@ -9,6 +9,7 @@ import ValueSection from '../../components/values-section/valuesSection';
 import TeamSection from '../../components/teamSection/TeamSection';
 import { useEffect } from "react";
 
+
 const  About = () => {
   
   const { t } = useTranslation()

@@ -80,7 +80,6 @@ const Home = () => {
 export default Home;
 
 /*
-- Alinear contenido
 - Arreglar footer
 - Arreglar before
 

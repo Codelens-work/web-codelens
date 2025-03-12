@@ -17,7 +17,6 @@ export default function Footer() {
           <span>{footer.intro}</span>
           <div className="mediaContainer">
             <a href="https://www.instagram.com/codelens.tech/" target='_blank'><img src="/icons/icon_instagram.svg" alt="Instagram" /></a>
-            <a href="#" target='_blank'><img src="/icons/icon_facebook.svg" alt="Facebook" /></a>
           </div>
         </div>
         <div className="urlContainer">

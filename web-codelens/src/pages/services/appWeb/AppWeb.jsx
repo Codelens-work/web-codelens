@@ -32,7 +32,6 @@ export function AppWeb() {
 
   const test = t("services-pages", {returnObjects: true })
 
- console.log(test['web-app']['about-section']['value-proposal'])
   return (
     <>
      <Helmet>

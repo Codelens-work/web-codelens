@@ -245,6 +245,12 @@
           "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
           "icon": "apiDevLogo",
           "url": "/servicios/desarrollo-api"
+        },
+        {
+          "title": "Community Management",
+          "content": "Gestionamos tu presencia online y las interacciones con tu comunidad, enfocándonos en construir relaciones auténticas y duraderas entre tu marca y tu público objetivo.",
+          "icon": "communityManagementLogo",
+          "url": "/servicios/community-management"
         }
       ]
     },

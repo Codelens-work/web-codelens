@@ -286,7 +286,8 @@ textarea:focus {
     overflow-y      : auto;
     border-radius   : 20px;
     padding         : 1.9rem;
-    background-color: var(--light-blue);
+    background: var(--light-blue);
+    margin: 10px 5px;
 }
 
 .logo-container-modal {
@@ -300,23 +301,31 @@ textarea:focus {
     padding: 0;
 }
 
+.modal h2 {
+    text-align: center;
+}
+
 .modal p {
     color      : var(--purple);
     text-align : center;
     line-height: 25px;
+    line-height: clamp(1.125rem, 4vw, 1.5625rem); /* Ajusta el line-height entre 18px y 25px */
+    font-size: clamp(0.90rem, 3vw, 1rem); /* Ajusta el tamaño de la fuente entre 12px y 16px */
+    overflow-wrap: break-word; /* Asegura que el texto se ajuste en pantallas pequeñas */
+    word-wrap: break-word; /* Hace que las palabras largas se ajusten */
 }
+
 
 .modal-cloes {
     position: absolute;
-    top     : 1rem;
+    top     : 1.2rem;
     right   : 1rem;
     color:#ffffff;
     display: inline-block;
     text-align: center;
-    font-weight: 500;
     text-decoration: none;  
     border: none;
-    background-color: var(--purple);
+    background: none;
     color: var(--white);
     border-radius: 50px;
     cursor: pointer;
@@ -324,7 +333,7 @@ textarea:focus {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     transition: all 0.5s ease;
-    padding: 2px;
+    padding: 3px;
 }
 
 .modal-cloes:hover {
@@ -338,8 +347,21 @@ textarea:focus {
 }
 
 .icon-close{
-    width: 40px;
+    width: 30px;
     height: auto;
+}
+
+.logo-modal{
+    width: 250px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.logo-icon{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 

@@ -2,7 +2,7 @@ import Section from '../section/Section'
 import LinkButton from '../linkButton/LinkButton'
 import './getToKnow.css'
 
-const GetToKnow = ({ t }) => {
+const GetToKnow = ({ t, url }) => {
 
   return(
     <Section className='get-to-know-section'>
@@ -10,7 +10,7 @@ const GetToKnow = ({ t }) => {
         <h2 className='h2-line'>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>
-        <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={'/about'} size="normal" />
+        <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={url} size="normal" />
       </div>
       <div className="get-to-know-img">
         <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />

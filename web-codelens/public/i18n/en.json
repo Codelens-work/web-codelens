@@ -187,12 +187,12 @@
             "label": "Email",
             "placeholder": "example@example.com",
             "invalid-mail-error": "Please enter a valid email address",
-            "validation-error": "The email must be between 6 and 254 characters long"
+            "validation-error": "The email must be between 6 and 25 characters long"
           },
           "business": {
             "label": "Business or Company",
             "placeholder": "Your company name",
-            "validation-error": "The field must be between 2 and 100 characters long."
+            "validation-error": "The field must be between 2 and 25 characters long."
           },
           "content": {
             "label": "How can we help?",

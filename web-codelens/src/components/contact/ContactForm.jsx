@@ -14,7 +14,7 @@ const ContactForm = () => {
   const { t, i18n } = useTranslation();
   const tForm = t("home.contact-section.contact-form", { returnObjects: true });
 
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
   const [msjApi, setMsjApi] = useState({
     title: "",
     text: "",
@@ -30,11 +30,10 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({
-    name: false,
-    email: false,
-    emailMismatch: false,
-    message: false,
-    shortMessage: false,
+    name: [],
+    email: [],
+    message: [],
+    business: [],
   });
 
   const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]{3,33}$/;
@@ -52,11 +51,31 @@ const ContactForm = () => {
       let newErrors = { ...prevErrors };
 
       if (name === "name") {
-        newErrors.name = !nameRegex.test(value);
-      } else if (name === "email") {
-        newErrors.email = !emailRegex.test(value);
-      } else if (name === "message") {
-        newErrors.message = value.trim().length < 10;
+        newErrors.name = [];
+        if (!nameRegex.test(value))
+          newErrors.name.push(tForm.inputs.fullname["validation-error"]);
+      }
+
+      if (name === "email") {
+        newErrors.email = [];
+        if (value.length < 6 || value.length > 25)
+          newErrors.email.push(tForm.inputs.email["validation-error"]);
+        if (!emailRegex.test(value))
+          newErrors.email.push(tForm.inputs.email["invalid-mail-error"]);
+      }
+
+      if (name === "business") {
+        newErrors.business = [];
+        if (value.length < 2 || value.length > 25)
+          newErrors.business.push(tForm.inputs.business["validation-error"]);
+      }
+
+      if (name === "message") {
+        newErrors.message = [];
+        if (value.trim().length < 10)
+          newErrors.message.push(tForm.inputs.content["validation-error"]);
+        if (value.trim().length > 200)
+          newErrors.message.push(tForm.inputs.content["size-error"]);
       }
 
       return newErrors;
@@ -66,38 +85,54 @@ const ContactForm = () => {
   const handlerSubmit = async (event) => {
     event.preventDefault();
 
-    const { name, email, message } = formData;
+    let newErrors = { name: [], email: [], message: [], business: []};
     let formIsValid = true;
 
-    if (!name.trim() || !nameRegex.test(name)) {
-      setErrors((prevErrors) => ({ ...prevErrors, name: true }));
+    if (!formData.name.trim() || !nameRegex.test(formData.name)) {
+      newErrors.name.push(tForm.inputs.fullname["validation-error"]);
       nameRef.current.focus();
       formIsValid = false;
     }
 
-    if (!email.trim() || !emailRegex.test(email)) {
-      setErrors((prevErrors) => ({ ...prevErrors, email: true }));
+    if (!formData.email.trim() || !emailRegex.test(formData.email)) {
+      if (formData.email.length < 6 || formData.email.length > 254) {
+        newErrors.email.push(tForm.inputs.email["validation-error"]);
+      }
+      if (!emailRegex.test(formData.email)) {
+        newErrors.email.push(tForm.inputs.email["invalid-mail-error"]);
+      }
       if (formIsValid) emailRef.current.focus();
       formIsValid = false;
     }
 
-    if (!message.trim() || message.length < 10) {
-      setErrors((prevErrors) => ({ ...prevErrors, message: true }));
+    if (!formData.business.trim() || formData.business.length < 10) {
+      newErrors.business.push(tForm.inputs.content["validation-error"]);
+      if (formIsValid) messageRef.current.focus();
+      formIsValid = false;
+    }
+    if (formData.business.length > 25) {
+      newErrors.business.push(tForm.inputs.content["size-error"]);
       if (formIsValid) messageRef.current.focus();
       formIsValid = false;
     }
 
-    if (message.length < 10) {
-      setErrors((prevErrors) => ({ ...prevErrors, shortMessage: true }));
+
+    if (!formData.message.trim() || formData.message.length < 10) {
+      newErrors.message.push(tForm.inputs.content["validation-error"]);
       if (formIsValid) messageRef.current.focus();
       formIsValid = false;
     }
+    if (formData.message.length > 200) {
+      newErrors.message.push(tForm.inputs.content["size-error"]);
+      if (formIsValid) messageRef.current.focus();
+      formIsValid = false;
+    }
+
+    setErrors(newErrors);
 
     if (formIsValid) {
       await sendEmail(event);
       console.log(formData);
-
-      // Reinicia los campos
       setFormData({
         name: "",
         email: "",
@@ -113,7 +148,7 @@ const ContactForm = () => {
   const modalErrorTitle = tForm.modals.titleerror;
   const modalErrorText = tForm.modals.error;
 
-  const sendEmail = async() => {
+  const sendEmail = async () => {
     // aca llamar a la api
     const formDataToSend = new FormData();
     formDataToSend.append("name", formData.name);
@@ -121,25 +156,22 @@ const ContactForm = () => {
     formDataToSend.append("business", formData.business);
     formDataToSend.append("message", formData.message);
     formDataToSend.append("_gotcha", ""); // Honeypot anti-spam
-    try{
+    try {
       const response = await fetch("https://getform.io/f/aroyylnb", {
-      method: "POST",
-      body: formDataToSend,
-    });
-    if (response.ok){
-      setMsjApi({title: modalSuccessTitle, text: modalSuccessText});
-      setModalIsOpen(!modalIsOpen);
-    
-    } else {
-      setMsjApi({title:modalErrorTitle,text:modalErrorText});
-      setModalIsOpen(!modalIsOpen);
-    
-    }
-  } catch(error){
+        method: "POST",
+        body: formDataToSend,
+      });
+      if (response.ok) {
+        setMsjApi({ title: modalSuccessTitle, text: modalSuccessText });
+        setModalIsOpen(!modalIsOpen);
+      } else {
+        setMsjApi({ title: modalErrorTitle, text: modalErrorText });
+        setModalIsOpen(!modalIsOpen);
+      }
+    } catch (error) {
       console.log(error);
-      setMsjApi({title:modalErrorTitle, text:modalErrorText});
+      setMsjApi({ title: modalErrorTitle, text: modalErrorText });
       setModalIsOpen(!modalIsOpen);
-    
     }
   };
 
@@ -157,14 +189,14 @@ const ContactForm = () => {
                 placeholder={tForm.inputs.fullname.placeholder}
                 value={formData.name}
                 onChange={handleChange}
-                className={errors.name ? "input-error" : ""}
+                className={errors.name.length > 0 ? "input-error" : ""}
               />
             </div>
-            {errors.name && (
+            {errors.name.length > 0 && (
               <div className="alert alert-warning">
-                {t(
-                  "home.contact-section.contact-form.inputs.fullname.validation-error"
-                )}
+                {errors.name.map((err, index) => (
+                  <div key={index}>{err}</div>
+                ))}
               </div>
             )}
           </Form.Group>
@@ -179,14 +211,14 @@ const ContactForm = () => {
                 placeholder={tForm.inputs.email.placeholder}
                 value={formData.email}
                 onChange={handleChange}
-                className={errors.email ? "input-error" : ""}
+                className={errors.email.length > 0 ? "input-error" : ""}
               />
             </div>
-            {errors.email && (
+            {errors.email.length > 0 && (
               <div className="alert alert-warning">
-                {t(
-                  "home.contact-section.contact-form.inputs.email.validation-error"
-                )}
+                {errors.email.map((err, index) => (
+                  <div key={index}>{err}</div>
+                ))}
               </div>
             )}
           </Form.Group>
@@ -201,7 +233,17 @@ const ContactForm = () => {
                 placeholder={tForm.inputs.business.placeholder}
                 value={formData.business}
                 onChange={handleChange}
+                className={errors.business.length > 0 ? "input-error" : ""}
+                // minLength={2}
+                // maxLength={25}
               />
+              {errors.business.length > 0 && (
+              <div className="alert alert-warning">
+                {errors.business.map((err, index) => (
+                  <div key={index}>{err}</div>
+                ))}
+              </div>
+            )}
             </div>
           </Form.Group>
 
@@ -214,14 +256,14 @@ const ContactForm = () => {
               placeholder={tForm.inputs.content.placeholder}
               value={formData.message}
               onChange={handleChange}
-              className={errors.message ? "input-error" : ""}
+              className={errors.message.length > 0 ? "input-error" : ""}
               maxLength={200}
             />
-            {errors.message && (
+            {errors.message.length > 0 && (
               <div className="alert alert-warning">
-                {t(
-                  "home.contact-section.contact-form.inputs.content.validation-error"
-                )}
+                {errors.message.map((err, index) => (
+                  <div key={index}>{err}</div>
+                ))}
               </div>
             )}
           </Form.Group>

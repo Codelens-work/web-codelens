@@ -30,7 +30,9 @@ export function AppWeb() {
     window.scrollTo(0, 0);
   }, [location]);
 
+  const test = t("services-pages", {returnObjects: true })
 
+ console.log(test['web-app']['about-section']['value-proposal'])
   return (
     <>
      <Helmet>
@@ -70,9 +72,9 @@ export function AppWeb() {
 
       <Services
         img="../service/appWeb.svg"
-        titleOne={t("services-pages.web-app.about-section.heading")}
-        paragraphOne={t("services-pages.web-app.about-section.content")}
-        titleTwo={t("services-pages.web-app.benefits-section.heading")}
+        titleOne={t("services-pages.web-app.about-section.value-proposal.heading")}
+        paragraphOne={t("services-pages.web-app.about-section.value-proposal.content")}
+        titleTwo={t("services-pages.web-app.about-section.benefits-section.heading")}
         items={tBenefits}
         titleCarts={tCartsTitle}
         descriptionCart={tCartsContent}

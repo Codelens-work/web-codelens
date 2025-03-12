@@ -10,14 +10,12 @@ html, body {
 .home-services-section {
   background   : var(--purple);
   background   : radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
-  /* padding-left : var(--padding);
-  padding-right: var(--padding); */
 }
 
 .home-services-content {
   display       : flex;
   flex-direction: column;
-  padding       : 0 30px;
+  padding       : 0 60px;
 
 }
 
@@ -128,10 +126,4 @@ html, body {
     
   }
 
-}
-
-@media(min-width: 770px){
-  .home-services-content{
-    padding: 0 80px;
-  }
 }

@@ -13,12 +13,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
+
 const NavBar = () => {
+
   const { t } = useTranslation();
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage);
+    
   };
+
+  
 
   const [navActive, setNavActive] = useState(false);
   const [expanded, setExpanded] = useState(false); // Estado del menú
@@ -50,6 +56,8 @@ const NavBar = () => {
   const appWebText = services[3]?.text;
   const apiUrl = services[4]?.url;
   const apiText = services[4]?.text;
+  const communityUrl = services[5]?.url;
+  const communityText = services[5]?.text;
 
   const homeText = route[0].text;
   const aboutUrl = route[1].url;
@@ -84,7 +92,6 @@ const NavBar = () => {
     };
   }, [expanded]); // Add expanded as a dependency
 
-
   const location = useLocation();
 
   useEffect(() => {
@@ -97,8 +104,6 @@ const NavBar = () => {
       }
     }
   }, [location]);
-
-
 
   return (
     <header>
@@ -189,6 +194,12 @@ const NavBar = () => {
                     onClick={() => handleDropdownItemClick(apiUrl)}
                   >
                     {apiText}
+                  </Dropdown.Item>
+                  <Dropdown.Item
+                    className="dropdown-item"
+                    onClick={() => handleDropdownItemClick(communityUrl)}
+                  >
+                    {communityText}
                   </Dropdown.Item>
                 </DropdownMenu>
               </Dropdown>

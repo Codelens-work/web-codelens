@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 
 import { useEffect } from "react";
+import { motion } from 'framer-motion';
 
 export function WebDevelopment() {
   const { t } = useTranslation();
@@ -47,7 +48,12 @@ export function WebDevelopment() {
           src: "/hero/hero-web.webp",
         }}
       >
-        <div className="hero__title-container-webdevelopment">
+        <motion.div 
+          className="hero__title-container-webdevelopment"
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }} 
+          transition={{ duration: 0.8, ease: "easeOut" }} 
+        >
           <Breadcrumb currentService={t("breadcrumbs.desarrollo-web")} />
           <h1 id="Web-development" className="title-service">
             {t("services-pages.web-development.hero.heading")}
@@ -60,7 +66,7 @@ export function WebDevelopment() {
             href="/#Contact"
             size="small"
           />
-        </div>
+        </motion.div>
       </Hero>
 
       <Services

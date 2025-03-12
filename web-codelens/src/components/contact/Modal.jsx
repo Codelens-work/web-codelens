@@ -10,7 +10,7 @@ const Modal = ({ text, title, onClose, onCloseModal }) => {
         <h2>{title}</h2>
         <p>{text}</p>
         <button className="modal-cloes" onClick={onCloseModal}>
-          Cerrar
+          <img className="icon-close" src="/icons/close.svg" alt="icon close" />
         </button>
       </div>
     </div>

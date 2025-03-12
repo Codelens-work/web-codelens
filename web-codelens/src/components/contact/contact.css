@@ -1,44 +1,44 @@
+.contact-container-section{
+    background-color: var(--white);
+}
+
 .contact-container {
     overflow-x: hidden; 
     position: relative;
-    display        : flex;
-    flex-wrap      : wrap;
-    gap            : 1px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
     align-items: center;
-    min-width      : 320px;
+    min-width: 300px;
     width: 100%;
     background-color: var(--white);
-    padding: 3rem 0; 
-
+    padding: 2rem; 
 }
 
 .left-c,
 .right-c {
-    flex   : 1;
-    padding: 0;
-    width  : auto;
-}
-
-.right-c {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-    margin         : 0.1rem 0;
-    padding: 40px 0 70px 0;
-    max-width: 750px;
+    flex: 1;
+    min-width: 300px;
+    padding: 1rem;
 }
 
 .left-c {
-    display        : flex;
-    flex-direction : column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    gap            : 1rem;
-    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
 }
 
-/*parte de texto*/
+.right-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+}
+
 .logo-codelens {
     max-width : 140px;
     max-height: 84px;
@@ -70,15 +70,11 @@
     line-height: 28.13px;
     color      : var(--purple);
     text-align: center;
-    max-width: 500px;
-
 }
 
 .invitation-one {
-    max-width : 478px;
     text-align: center;
     font-size: clamp(1.06rem, 0.9649rem + 0.1754vw, 1.25rem);
-
 }
 
 .invitation-two {
@@ -87,8 +83,6 @@
     line-height: 21.09px;
     text-align : center;
     padding-bottom: 1.5rem;
-    max-width: 500px;
-
 }
 
 .invitation-three {
@@ -106,7 +100,7 @@
     text-decoration: none;
     color: var(--purple);
     cursor: pointer;
-    padding-bottom: 2.5rem;
+    padding-bottom: 2rem;
     position: relative;
 }
 
@@ -181,53 +175,40 @@
 /*CONTACTO FORM*/
 
 .container-form-section {
-    width           : auto;
-    height          : auto;
-    margin          : 0 auto;
-    border-radius   : 10px;
-    border          : 2px solid var(--purple);
-    padding         : 1.5rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 2px solid var(--purple);
+    padding: 1.5rem;
     background-color: #ffffff;
-    box-shadow      : 0px 4px 10px rgba(0, 0, 0, 0.1);
-    display         : flex;
-    flex-direction  : column;
-    justify-content : center;
-    align-items     : center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-
-.form-container {
-    width: auto;
-}
-
 
 .form-group {
-    display       : flex;
+    display: flex;
     flex-direction: column;
-    gap           : 0.5rem;
-    text-align    : left;
-    font-size     : 1rem;
-    color         : var(--purple);
-    margin-top    : 2.3rem;
-    width: auto;
+    gap: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    color: var(--purple);
+    margin-top: 1.5rem;
+    width: 100%;
 }
 
-
-/*Caja del Input */
 input,
 textarea {
-    max-width : 2600px;
+    max-width: 2600px;
     box-sizing: border-box;
-    padding   : 0.7em;
-    font-size : 1rem;
-    color     : var(--purple);
-    border    : 1px solid var(--purple);
+    padding: 0.7em;
+    font-size: 1rem;
+    color: var(--purple);
+    border: 1px solid var(--purple);
 }
 
 textarea {
     height: 226px;
 }
-
 
 input::placeholder,
 textarea::placeholder {
@@ -236,32 +217,29 @@ textarea::placeholder {
 
 input:focus,
 textarea:focus {
-    outline   : none;
+    outline: none;
     box-shadow: none;
-
 }
 
-
-/*Boton del form*/
-
 .contact-button {
-    width           : 39rem;
-    height          : 2.9rem;
-    margin-top      : 3.4rem;
-    border-radius   : 10px;
+    width: 39rem;
+    height: 2.9rem;
+    margin-top: 3.4rem;
+    border-radius: 10px;
     background-color: var(--purple);
     border: none;
+    color: var(--white);
 }
 
 .contact-button:hover {
     background-color: var(--black);
 }
 
-
-/*Error-Alerta*/
 .alert {
-    width: 38rem;
-
+    padding-top: 5px;
+    background: none;
+    border: none;
+    margin: 0;
 }
 
 .input-error {
@@ -269,114 +247,11 @@ textarea:focus {
 }
 
 .alert-warning {
-    color    : var(--black);
+    color: red;
     font-size: 0.875rem;
-    margin   : 1px;
-    position : relative;
-
+    position: relative;
 }
 
-
-@media (max-width: 800px) {
-
-    .invitation-one{
-        width: auto;
-        height:auto;
-        padding: 10px;
-
-    }
-    .contact-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 70px 20px;
-    }
-
-    .right-c {
-       width: 100%;
-       padding: 20px 0 50px 0;
-    }
-
-    .left-c {
-        margin : 0;
-        padding: 0;
-        width  : auto;
-        height : auto;
-
-    }
-
-    .contact-container {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        width          : 100%;
-    }
-
-    .contact-form-container {
-        padding: 10px 0;
-    }
-
-    .container-form-section {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        align-items    : center;
-        padding        : 0;
-        margin         : 0;
-        width: 100%;
-        max-width: 600px;
-    }
-
-    .form-container {
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        align-items    : center;
-        gap            : 10px;
-        padding        : 8px;
-        margin         : 0;
-        width          : 100%;
-        max-width      : 500px;
-    }
-
-    .form-group {
-        width    : 90%;
-        max-width: 600px;
-    }
-
-    /*Caja del Input */
-    input,
-    textarea {
-        /* width: 30rem; */
-        width     : 100%;
-        max-width : 100%;
-        box-sizing: border-box;
-        border    : none;
-    }
-
-
-    .contact-button {
-        width     : 200px;
-        margin    : 0;
-        height    : 50px;
-        text-align: center;
-        font-size : 18px;
-    }
-
-    .alert {
-        width  : 280px;
-        padding: 10px;
-        margin : 0;
-    }
-
-    .alert{
-        width: auto
-    }
-    .alert-warning{
-        width: auto;
-    }
-}
 
 /* MODAL */
 .modal {
@@ -435,10 +310,7 @@ textarea:focus {
     position: absolute;
     top     : 1rem;
     right   : 1rem;
-    background-color   : var(--purple);
     color:#ffffff;
-
-
     display: inline-block;
     text-align: center;
     font-weight: 500;
@@ -455,19 +327,236 @@ textarea:focus {
     padding: 2px;
 }
 
-
 .modal-cloes:hover {
-    letter-spacing: 3px;
-    background-color: hsl(273, 89%, 36%);
-    color: hsl(0, 0%, 100%);
     box-shadow: hsl(273, 89%, 36%) 0px 7px 29px 0px;
 }
   
 .modal-cloes:active {
-    letter-spacing: 3px;
-    background-color: hsl(273, 89%, 36%);;
-    color: hsl(0, 0%, 100%);
     box-shadow: hsl(273, 89%, 36%) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
+}
+
+.icon-close{
+    width: 40px;
+    height: auto;
+}
+
+
+/* Update the responsive styles for the form */
+@media (max-width: 800px) {
+
+    .invitation-one{
+        width: auto;
+        height:auto;
+        padding: 10px;
+
+    }
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .right-c {
+       width: 100%;
+       padding: 20px 0;
+    }
+
+    .left-c {
+        margin : 0;
+        padding: 0;
+        width  : auto;
+        height : auto;
+
+    }
+
+    .contact-container {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        width          : 100%;
+        padding: 1rem;
+    }
+
+    .contact-form-container {
+        padding: 10px 0;
+    }
+
+    .container-form-section {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        margin         : 0;
+        width: 100%;
+        max-width: 600px;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .form-container {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        gap            : 10px;
+        padding        : 8px;
+        margin         : 0;
+        width          : 100%;
+        max-width      : 500px;
+    }
+
+    .form-group {
+        width    : 90%;
+        max-width: 600px;
+    }
+
+    /*Caja del Input */
+    input,
+    textarea {
+        /* width: 30rem; */
+        width     : 100%;
+        max-width : 100%;
+        box-sizing: border-box;
+        border    : none;
+    }
+
+
+    .contact-button {
+        width     : 200px;
+        margin    : 0;
+        height    : 50px;
+        text-align: center;
+        font-size : 18px;
+    }
+
+    .alert {
+        width  : 280px;
+        padding: 10px;
+        margin : 0;
+    }
+
+    .alert{
+        width: 100%;
+    }
+    .alert-warning{
+        width: 100%;
+    }
+}
+
+/* Responsive breakpoints */
+@media (min-width: 950px) {
+    .contact-container {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 4rem;
+    }
+
+    .left-c,
+    .right-c {
+        flex: 1;
+    }
+
+    .left-c, .text-container {
+        align-items: flex-start;
+        padding-left: min(10px + (70 - 10) * ((100vw - 950px) / (1024 - 950)), 70px);
+    }
+
+    .h2-invitation-one,
+    .h3-invitation,
+    .invitation-one,
+    .invitation-two,
+    .invitation-three {
+        text-align: left;
+    }
+
+    .logo-codelens{
+        margin: 0 auto;
+    }
+
+    .container-form-section{
+        min-width: 450px;
+        max-width: 700px;
+    }
+
+    .form-container{
+        display: flex;
+        min-width: 400px;
+        max-width: 650px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    .form-group{
+        min-width: 300px;
+        max-width: 650px;
+    }
+
+    .contact-button{
+        width: 300px;
+    }
+}
+
+@media (max-width: 949px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .left-c,
+    .right-c {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .container-form-section {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .contact-button {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .alert {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+
+/* Update existing mobile styles */
+@media (max-width: 480px) {
+    .contact-container {
+        padding: 1rem 0;
+    }
+
+    .left-c, .text-container {
+        padding-left: 0;
+    }
+
+    .h2-invitation-one {
+        font-size: clamp(1.5rem, 1.3rem + 1vw, 1.875rem);
+    }
+
+    .h2-invitation-two {
+        font-size: clamp(1.125rem, 1rem + 1vw, 1.25rem);
+    }
+
+    .container-form-section{ 
+        min-width: 300px;
+    }
+
+    .invitation-one,
+    .invitation-two,
+    .invitation-three {
+        font-size: 1rem;
+    }
 }

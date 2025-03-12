@@ -6,6 +6,7 @@
     "web-app": "Creamos aplicaciones web personalizadas, seguras y escalables para mejorar la experiencia de tus usuarios y optimizar procesos.",
     "api-development": "Conectamos sistemas y mejoramos la eficiencia con APIs robustas y seguras. Integraciones personalizadas para tu negocio.",
     "seo": "Mejoramos tu posicionamiento en Google con estrategias SEO efectivas. Más tráfico, más clientes y mayor visibilidad online.",
+    "community-management":"Potencia tu marca con nuestro servicio de Community Management. Gestionamos redes sociales, creamos contenido estratégico y fortalecemos la identidad digital de tu negocio. Conecta con tu audiencia y aumenta tu engagement con CodeLens.",
     "about-us": "En CodeLens, unimos creatividad y tecnología para desarrollar soluciones digitales innovadoras. Conoce nuestro equipo y nuestra misión.",
     "blog": "Descubre tendencias, consejos y novedades sobre desarrollo web, diseño y SEO en nuestro blog. Aprende y optimiza tu negocio digital.",
     "terms-and-conditions": "Consulta nuestros términos y condiciones para conocer las reglas de uso, derechos y responsabilidades al utilizar los servicios de CodeLens.",
@@ -61,6 +62,17 @@
       "optimización en buscadores",
       "tráfico orgánico",
       "SEO técnico"
+    ],
+    "community-management":[
+    "Community Management",
+    "gestión de redes sociales",
+    "contenido estratégico",
+    "branding digital",
+    "gestión de comunidad",
+    "engagement en redes",
+    "marketing digital",
+    "estrategia en redes sociales",
+    "social media manager"
     ],
     "about-us": [
       "sobre nosotros",
@@ -122,13 +134,14 @@
     "text": "CONTACTANOS"
   },
   "breadcrumbs": {
-    "home": "Inicio",
-    "servicios": "Servicios",
-    "desarrollo-web": "Desarrollo Web",
-    "aplicaciones-web": "Desarrollo de Aplicaciones Web",
-    "diseno": "Diseño Web",
-    "api": "Desarrollo de APIS",
-    "seo": "Servicio SEO"
+      "home": "Inicio",
+      "servicios": "Servicios",
+      "desarrollo-web": "Desarrollo Web",
+      "aplicaciones-web": "Desarrollo de Aplicaciones Web",
+      "diseno": "Diseño Web",
+      "api": "Desarrollo de APIS",
+      "seo": "Servicio SEO",
+      "community-management": "Community Management"
   },
   "home": {
     "hero-section": {
@@ -140,7 +153,8 @@
         "Aplicación Web",
         "API Personalizada",
         "Estrategia SEO",
-        "Interfaz Moderna"
+        "Interfaz Moderna",
+        "Gestión de Redes"
       ]
     },
     "about-section": {
@@ -240,11 +254,11 @@
       "intro": "Estos testimonios de nuestros clientes reflejan nuestro compromiso con la calidad, la eficiencia y la creatividad en cada proyecto.",
       "cards": [
         {
-          "logo": "",
-          "business-name": "",
-          "person-fullname": "",
-          "content": "",
-          "site-url": ""
+          "logo": "/logo-clients/logo-SC.svg",
+          "business-name": "Samuel Carranza Fotógrafo- Editor de videos",
+          "person-fullname": "Samuel Carranza",
+          "content": "Quedé más que satisfecho con la calidad del servicio, la profesionalidad y los tiempos de entrega. Además la atención al detalle y al nivel de los servicios. Quedé completamente sorprendido con lo fácil que era solicitar cambios y el como eran capaces de plasmar mivisión del proyecto. Definitivamente trabajaría con ellos otra vez y los recomiendo a todo el mundo. ",
+          "site-url": "https://samuel-carranza.vercel.app/"
         }
       ]
     },
@@ -345,6 +359,10 @@
           {
             "text": "Desarrollo de APIS",
             "url": "/servicios/desarrollo-api"
+          },
+          {
+            "text": "Community Management",
+            "url": "/servicios/community-management"
           }
         ]
       },
@@ -392,7 +410,6 @@
     "web-app": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Inicio | Servicios |Desarrollo de Aplicaciones Web",
         "heading": "Desarrollo de Aplicaciones Web Personalizadas para Potenciar tu Negocio",
         "content": "En CodeLens, desarrollamos aplicaciones web a medida, diseñadas específicamente para optimizar y mejorar los procesos de tu empresa. Ya sea un sistema de gestión, una herramienta de automatización, o una plataforma de comunicación, transformamos tus ideas en aplicaciones funcionales, seguras y escalables."
       },
@@ -442,7 +459,6 @@
     "seo": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Inicio | Servicios | Mejora y Optimización de Sitios Web",
         "heading": "Mejora y Optimización de Sitios Web",
         "content": "En CodeLens, transformamos sitios web existentes para maximizar su rendimiento, actualizar su diseño, y añadir funcionalidades que aumenten su impacto. Ya sea mejorando la velocidad de carga, actualizando el diseño, o integrando nuevas características, nuestro equipo se asegura de que tu sitio esté a la altura de tus objetivos."
       },
@@ -488,7 +504,6 @@
     "web-design": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Inicio | Servicios | Diseño Web",
         "heading": "Diseño Web",
         "content": "En CodeLens, transformamos tus ideas en diseños visualmente atractivos y efectivos que comunican tus valores y cautivan a tus usuarios. Nos especializamos en crear interfaces intuitivas y estéticamente impactantes que hacen de cada visita una experiencia memorable."
       },
@@ -538,7 +553,6 @@
     "web-development": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Inicio | Servicios | Desarrollo Web desde Cero",
         "heading": "Desarrollo Web desde Cero",
         "content": "En CodeLens, creemos que un sitio web efectivo es más que una página bonita. Desde el diseño hasta la funcionalidad, construimos soluciones digitales a medida que representan la esencia de tu marca y conectan de manera auténtica con tu audiencia."
       },
@@ -588,7 +602,6 @@
     "api-development": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Inicio | Servicios | Desarrollo de APIS",
         "heading": "Desarrollo de APIS que Potencian a Tus Usuarios",
         "content": "En CodeLens, diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios. Estas APIs están diseñadas para ser seguras, escalables y fáciles de implementar, asegurando que tus clientes puedan integrarlas sin complicaciones."
       },
@@ -641,10 +654,66 @@
           }
         ]
       },
-
       "cto-section": {
         "heading": "¿Necesitas una API que conecte tus sistemas de forma segura y eficiente?",
         "content": "¡Hablemos de tu proyecto!"
+      }
+    },
+    "community-management": {
+      "hero": {
+        "background-url": "",
+        "heading": "Potencia tu Marca con una Estrategia de Community Management Profesional",
+        "content": "En CodeLens, ayudamos a marcas y negocios a construir una presencia sólida en redes sociales a través de estrategias efectivas de Community Management. Desde la planificación de contenido hasta la gestión de interacciones y branding, nos aseguramos de que tu negocio crezca en el entorno digital."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Por Qué Invertir en Community Management",
+          "content": "Las redes sociales son una herramienta clave para conectar con tu audiencia y fortalecer la identidad de tu marca. Un Community Manager profesional te ayuda a mantener una comunicación efectiva y aumentar el engagement con tu público."
+        },
+        "benefits-section": {
+          "heading": "Beneficios de elegirnos",
+          "list": [
+            "Mayor visibilidad y reconocimiento de marca: Estrategias personalizadas para aumentar tu alcance.",
+            "Interacción y fidelización de clientes: Respuestas rápidas y cercanas para fortalecer la relación con tu comunidad.",
+            "Contenido atractivo y relevante: Creación de publicaciones alineadas con los valores de tu negocio.",
+            "Monitoreo y análisis de métricas: Evaluamos el rendimiento de cada estrategia para optimizar resultados.",
+            "Gestión de crisis y reputación online: Respondemos comentarios y reseñas para mantener una imagen positiva."
+          ]
+        }, 
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Características del servicio",
+        "cards": [
+          {
+            "title": "Estrategia de Contenido Personalizada",
+            "content": "Analizamos tu negocio y creamos un plan de contenido alineado con tu audiencia y objetivos."
+          },
+          {
+            "title": " Gestión y Publicación de Contenidos",
+            "content": "Diseñamos, redactamos y programamos publicaciones optimizadas para cada red social."
+          },
+          {
+            "title": "Interacción y Atención a la Comunidad",
+            "content": "Respondemos mensajes, comentarios y fomentamos la conversación con tu audiencia"
+          },
+          {
+            "title": "Análisis de Métricas y Optimización",
+            "content": "Monitoreamos el rendimiento de las publicaciones y ajustamos la estrategia para mejorar resultados."
+          },
+          {
+            "title": "Gestión de Publicidad en Redes Sociales",
+            "content": "Creamos y gestionamos campañas publicitarias para aumentar el alcance de tu negocio."
+          },
+          {
+            "title": "Branding y Diseño para Redes Sociales",
+            "content": "Creamos una identidad visual unificada con gráficos, colores y estilo coherente con tu marca."
+          }
+        ]
+      },
+      "cto-section": {
+        "heading": "¿Listo para llevar tu marca al siguiente nivel en redes sociales?",
+        "content": "Trabajemos juntos en una estrategia efectiva."
       }
     }
   },
@@ -721,11 +790,17 @@
           "role": "Co-Founder, UX/UI Designer & Frontend Developer "
         },
         {
+          "img-url": "/team/tania.webp",
+          "img-hover-url": "",
+          "fullname": "Tania Yanina Balbuena Casanova",
+          "role": "Community Manager"
+        },
+        {
           "img-url": "/team/caro.webp",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"
-        }
+        }     
       ]
     }
   },
@@ -863,5 +938,12 @@
         "content": "El Prestador de Servicios se reserva el derecho de rescindir unilateralmente el presente contrato en cualquier momento, en caso de que considere, a su discreción razonable, que existe un motivo extraordinario y justificado. Se considerarán motivos extraordinarios y justificados, entre otros, aquellos que impliquen actividades ilegales, inmorales o que vayan en contra de la ética profesional, como el desarrollo de proyectos que promuevan fraude, estafas, o cualquier actividad ilícita. En tal caso, el Prestador de Servicios notificará al Cliente con antelación y se procederá a la finalización de la relación contractual sin que ello genere derecho a reclamación por parte del Cliente. Asimismo, en caso de terminación por los motivos antes indicados, el Prestador de Servicios se reserva el derecho de no ceder el proyecto o cualquier parte del desarrollo realizado hasta ese momento. Todos los materiales y avances quedarán bajo la propiedad y control del Prestador de Servicios y no podrán ser utilizados, compartidos ni reclamados por el Cliente."
       }
     ]
+  },
+  "404":{
+    "title":"Error 404",
+    "subtitle":"Oops! Página no encontrada, pero el código sigue flotando...",
+    "paragraph":"Parece que te perdiste en el camino...",
+    "second-paragraph":"Pero no te preocupes, siempre puedes regresar al inicio",
+    "button":"Inicio"
   }
 }

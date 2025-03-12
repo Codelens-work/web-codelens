@@ -6,6 +6,7 @@
     "web-app": "We develop custom, secure, and scalable web applications to enhance user experience and optimize processes.",
     "api-development": "We connect systems and enhance efficiency with robust and secure APIs. Custom integrations for your business.",
     "seo": "We improve your Google ranking with effective SEO strategies. More traffic, more customers, and greater online visibility.",
+    "community-management":"Boost your brand with our Community Management service. We manage social media, create strategic content, and strengthen your brand identity. Connect with your audience and increase engagement with CodeLens.",
     "about-us": "At CodeLens, we combine creativity and technology to develop innovative digital solutions. Meet our team and our mission.",
     "blog": "Discover trends, tips, and news on web development, design, and SEO in our blog. Learn and optimize your digital business.",
     "terms-and-conditions": "Check our terms and conditions to understand the rules, rights, and responsibilities when using CodeLens services.",
@@ -61,6 +62,17 @@
       "search engine optimization",
       "organic traffic",
       "technical SEO"
+    ],
+    "community-management":[
+      "Community Management",
+      "social media management",
+      "strategic content",
+      "digital branding",
+      "community engagement",
+      "social media marketing",
+      "brand identity",
+      "social media strategy",
+      "social media manager"
     ],
     "about-us": [
       "about us",
@@ -128,7 +140,8 @@
     "aplicaciones-web": "Web Applications Development",
     "diseno": "Web Design",
     "api": "API Development",
-    "seo": "SEO Service"
+    "seo": "SEO Service",
+    "community-management": "Community Management"
   },
   "home": {
     "hero-section": {
@@ -140,7 +153,8 @@
         "Web Application",
         "Custom API",
         "SEO Strategy",
-        "Modern Interface"
+        "Modern Interface",
+        "Social Media Strategy"
       ]
     },
     "about-section": {
@@ -237,7 +251,16 @@
     "testimonials-section": {
       "heading": "Testimonials",
       "subheading": "Success stories with CodeLens",
-      "intro": "These testimonials from our clients reflect our commitment to quality, efficiency, and creativity in every project."
+      "intro": "These testimonials from our clients reflect our commitment to quality, efficiency, and creativity in every project.",
+      "cards": [
+        {
+          "logo": "/logo-clients/logo-SC.svg",
+          "business-name": "Samuel Carranza Photographer - Video editor",
+          "person-fullname": "Samuel Carranza",
+          "content": "I was more than satisfied with the quality of service, professionalism and delivery times. Also the attention to detail and level of service. I was completely surprised with how easy it was to request changes and how they were able to capture the vision of the project. I would definitely work with them again and recommend them to everyone. ",
+          "site-url": "https://samuel-carranza.vercel.app/"
+        }
+      ]
     },
     "faqs-section": {
       "heading": "Frequently Asked Questions",
@@ -322,9 +345,13 @@
           { "text": "Improvement and Optimization", "url": "/en/services/seo" },
           {
             "text": "Web Application Development",
-            "url": "en/services/app-web"
+            "url": "/en/services/app-web"
           },
-          { "text": "API Development", "url": "/en/services/development-api" }
+          { "text": "API Development", "url": "/en/services/development-api" },
+          {
+            "text": "Community Management",
+            "url": "/en/services/community-management"
+          }
         ]
       },
       "find-way-list": {
@@ -351,7 +378,6 @@
     "web-app": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Home | Services | Web Application Development",
         "heading": "Custom Web Application Development to Boost Your Business",
         "content": "At CodeLens, we develop tailored web applications designed specifically to optimize and enhance your company's processes. Whether it's a management system, an automation tool, or a communication platform, we transform your ideas into functional, secure, and scalable applications."
       },
@@ -401,7 +427,6 @@
     "seo": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Home | Services | Website Improvement and Optimization",
         "heading": "Website Improvement and Optimization",
         "content": "At CodeLens, we transform existing websites to maximize their performance, update their design, and add functionalities that increase their impact. Whether improving loading speed, updating the design, or integrating new features, our team ensures your site meets your goals."
       },
@@ -447,7 +472,6 @@
     "web-design": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Home | Services | Web Design",
         "heading": "Web Design",
         "content": "At CodeLens, we transform your ideas into visually appealing and effective designs that communicate your values and captivate your users. We specialize in creating intuitive and aesthetically impactful interfaces that make every visit a memorable experience."
       },
@@ -496,7 +520,6 @@
     "web-development": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Home | Services | Web Development from Scratch",
         "heading": "Web Development from Scratch",
         "content": "At CodeLens, we believe an effective website is more than just a pretty page. From design to functionality, we build tailor-made digital solutions that represent the essence of your brand and connect authentically with your audience."
       },
@@ -545,7 +568,6 @@
     "api-development": {
       "hero": {
         "background-url": "",
-        "breadcrumb": "Home | Services | API Development",
         "heading": "API Development that Empowers Your Users",
         "content": "At CodeLens, we design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their users. These APIs are designed to be secure, scalable, and easy to implement, ensuring that your clients can integrate them without complications."
       },
@@ -601,6 +623,63 @@
       "cto-section": {
         "heading": "Do you need an API that connects your systems securely and efficiently?",
         "content": "Let's talk about your project!"
+      }
+    },
+    "community-management": {
+      "hero": {
+        "background-url": "",
+        "heading": "Boost Your Brand with a Professional Community Management Strategy",
+        "content": "At CodeLens, we help brands and businesses build a strong social media presence through effective Community Management strategies. From content planning to interaction management and branding, we ensure your business grows in the digital environment."
+      },
+      "about-section": {
+        "value-proposal": {
+          "heading": "Why Invest in Community Management",
+          "content": "Social media is a key tool for connecting with your audience and strengthening your brand identity. A professional Community Manager helps you maintain effective communication and increase engagement with your audience."
+        },
+        "benefits-section": {
+          "heading": "Benefits of Choosing Us",
+          "list": [
+            "Greater visibility and brand recognition: Personalized strategies to expand your reach.",
+            "Customer interaction and loyalty: Fast and friendly responses to strengthen relationships with your community.",
+            "Engaging and relevant content: Creation of posts aligned with your business values.",
+            "Monitoring and metrics analysis: We evaluate the performance of each strategy to optimize results.",
+            "Crisis management and online reputation: We respond to comments and reviews to maintain a positive image."
+          ]
+        }, 
+        "about-img": ""
+      },
+      "features-section": {
+        "heading": "Service Features",
+        "cards": [
+          {
+            "title": "Customized Content Strategy",
+            "content": "We analyze your business and create a content plan aligned with your audience and goals."
+          },
+          {
+            "title": "Content Management and Publishing",
+            "content": "We design, write, and schedule optimized posts for each social network."
+          },
+          {
+            "title": "Community Interaction and Support",
+            "content": "We respond to messages, comments, and encourage conversations with your audience."
+          },
+          {
+            "title": "Metrics Analysis and Optimization",
+            "content": "We monitor post performance and adjust the strategy to improve results."
+          },
+          {
+            "title": "Social Media Advertising Management",
+            "content": "We create and manage advertising campaigns to increase your business reach."
+          },
+          {
+            "title": "Branding and Social Media Design",
+            "content": "We create a unified visual identity with graphics, colors, and a style consistent with your brand."
+          }
+        ]
+      },
+      "cto-section": {
+        "heading": "Ready to Take Your Brand to the Next Level on Social Media?",
+        "content": "Let's work together on an effective strategy."
       }
     }
   },
@@ -675,6 +754,12 @@
           "img-hover-url": "",
           "fullname": "Yanina Unrein",
           "role": "Co-Founder, UX/UI Designer & Frontend Developer "
+        },
+        {
+          "img-url": "/team/tania.webp",
+          "img-hover-url": "",
+          "fullname": "Tania Yanina Balbuena Casanova",
+          "role": "Community Manager"
         },
         {
           "img-url": "/team/caro.webp",
@@ -819,5 +904,12 @@
         "content": "The Service Provider reserves the right to unilaterally terminate this contract at any time if it reasonably considers that there is an extraordinary and justified reason. Extraordinary and justified reasons include, among others, activities that are illegal, immoral, or against professional ethics, such as developing projects that promote fraud, scams, or any illicit activity. In such cases, the Service Provider will notify the Client in advance and proceed with the termination of the contractual relationship without entitling the Client to any claims. Additionally, in case of termination for the reasons mentioned above, the Service Provider reserves the right not to transfer the project or any part of the development completed up to that point. All materials and progress will remain the property and under the control of the Service Provider and may not be used, shared, or claimed by the Client."
       }
     ]
+  },
+  "404": {
+    "title": "Error 404",
+    "subtitle": "Oops! Page not found, but the code keeps floating...",
+    "paragraph": "It looks like you got lost along the way...",
+    "second-paragraph": "But don't worry, you can always go back to the homepage.",
+    "button": "Home"
   }
 }

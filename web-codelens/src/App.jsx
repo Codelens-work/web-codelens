@@ -161,6 +161,14 @@ function App() {
       ),
     },
     {
+      path: "/en/services/community-management",
+      element: (
+        <MainLayout>
+          <CommunityManagement />
+        </MainLayout>
+      ),
+    },
+    {
       path:  "/terminos-y-condiciones",
       element: (
         <MainLayout>

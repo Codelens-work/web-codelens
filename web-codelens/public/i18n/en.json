@@ -245,6 +245,12 @@
           "content": "We design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their own users.",
           "icon": "apiDevLogo",
           "url": "/servicios/desarrollo-api"
+        },
+        {
+          "title": "Community Management",
+          "content": "We manage your online presence and interactions with your community, focusing on building authentic and lasting relationships between your brand and your target audience.",
+          "icon": "communityManagementLogo",
+          "url": "/servicios/community-management"
         }
       ]
     },
@@ -268,7 +274,7 @@
       "content": [
         {
           "question": "What services does CodeLens offer?",
-          "answer": "At CodeLens, we specialize in:<ul><li><strong>Web Development</strong> from scratch.</li><li>Custom <strong> Web Design</strong> focused on user experience.</li><li><strong>Enhancement</strong> of existing Websites.</li><li><strong>Web Application Development </strong>, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!</li></ul>"
+          "answer": "At CodeLens, we specialize in:<ul><li><strong>Web Development</strong> from scratch.</li><li>Custom <strong> Web Design</strong> focused on user experience.</li><li><strong>Enhancement</strong> of existing Websites.</li><li><strong>Web Application Development </strong>, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!</li><li><strong>Community Management</strong>, to manage your online presence and foster authentic relationships with your community on social media.</li></ul>"
         },
         {
           "question": "What types of businesses or projects do you accept?",

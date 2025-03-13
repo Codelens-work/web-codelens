@@ -65,7 +65,7 @@ function App() {
       ),
     },
     {
-      path: "/en/About-Us",
+      path: "/en/about-us",
       element: (
         <MainLayout>
           <About />
@@ -161,7 +161,7 @@ function App() {
       ),
     },
     {
-      path:  "/terminos-y-condiciones",
+      path:  "/terminos-condiciones",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -169,7 +169,7 @@ function App() {
       ),
     },
     {
-      path: "/en/Terms-and-Conditions",
+      path: "/en/terms-conditions",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -177,7 +177,7 @@ function App() {
       ),
     },
     {
-      path: "/politica-de-privacidad",
+      path: "/politica-privacidad",
       element: (
         <MainLayout>
           <PrivacyPolicy />
@@ -185,7 +185,7 @@ function App() {
       ),
     },
     {
-      path: "/en/Privacy-Policy",
+      path: "/en/privacy-policy",
       element: (
         <MainLayout>
           <PrivacyPolicy />

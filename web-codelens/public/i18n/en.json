@@ -358,17 +358,17 @@
         "title": "Find your way",
         "items": [
           { "text": "Home", "url": "/" },
-          { "text": "About Us", "url": "/en/About-Us" },
+          { "text": "About Us", "url": "/en/about-us" },
           { "text": "Blog", "url": "/en/blog" }
         ]
       },
       "help-list": {
         "title": "Help",
         "items": [
-          { "text": "FAQs", "url": "/en/FAQs" },
-          { "text": "Contact", "url": "/en/Contact" },
-          { "text": "Terms and Conditions", "url": "/en/Terms-and-Conditions" },
-          { "text": "Privacy Policy", "url": "/en/Privacy-Policy" }
+          { "text": "FAQs", "url": "/en/faqs" },
+          { "text": "Contact", "url": "/en/contact" },
+          { "text": "Terms and Conditions", "url": "/en/terms-conditions" },
+          { "text": "Privacy Policy", "url": "/en/privacy-policy" }
         ]
       }
     }

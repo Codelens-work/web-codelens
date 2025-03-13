@@ -8,7 +8,6 @@
     justify-content: center;
     align-items: center;
     max-width: 4400px;
-    padding: 15px;
 }
 
 .left-column-service,
@@ -43,7 +42,7 @@
     justify-content: center;
     align-items    : flex-start;
     gap            : 1rem;
-    padding        : 50px;
+    padding        : 0 50px;
     height: auto;
     width:auto;
 }
@@ -80,10 +79,6 @@
     flex-direction : column;
     justify-content: center;
     gap            : 35px;
-    padding-top    : 0;
-    padding-bottom : 0;
-    padding        : 1rem;
-    padding-bottom : 4rem;
     min-width: 300px;
     max-width: 4400px;
 }

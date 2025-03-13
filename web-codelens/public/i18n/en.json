@@ -363,7 +363,7 @@
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          { "text": "Home", "url": "/" },
+          { "text": "Home", "url": "/#Home" },
           { "text": "About Us", "url": "/en/About-Us" },
           { "text": "Blog", "url": "/en/blog" }
         ]
@@ -371,8 +371,8 @@
       "help-list": {
         "title": "Help",
         "items": [
-          { "text": "FAQs", "url": "/en/FAQs" },
-          { "text": "Contact", "url": "/en/Contact" },
+          { "text": "FAQs", "url": "/#FAQs" },
+          { "text": "Contact", "url": "/#Contact" },
           { "text": "Terms and Conditions", "url": "/en/Terms-and-Conditions" },
           { "text": "Privacy Policy", "url": "/en/Privacy-Policy" }
         ]

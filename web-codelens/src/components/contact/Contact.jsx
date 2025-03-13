@@ -5,8 +5,9 @@ import Section from "../section/Section";
 import { motion } from 'framer-motion';
 
 const Contact = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const tContact = t("home.contact-section", { returnObjects: true });
+    const currentLanguage = i18n.language
 
     const slideInLeft = {
         hidden: { opacity: 0, x: -30 },
@@ -34,7 +35,7 @@ const Contact = () => {
 
   return (
    <Section className="contact-container-section">
-      <div id="Contact" className="contact-container">
+      <div id={ currentLanguage === 'en' ? "Contact" : "Contacto"} className="contact-container">
         <motion.div 
         initial="hidden"
         whileInView="visible"

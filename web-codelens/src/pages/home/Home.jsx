@@ -15,9 +15,9 @@ import GetToKnow from "../../components/getToKnow/getToKnow";
 import SectionReference from "../../components/references/SectionReferences";
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
-  
+  const currentLanguage = i18n.language
   const route = t("footer-section.lists.find-way-list.items", {
     returnObjects: true,
   });
@@ -56,7 +56,7 @@ const Home = () => {
 
         }}
       >
-        <div id="Home" className="hero-content-container">
+        <div id={currentLanguage === 'en' ? "Home" : "Inicio"} className="hero-content-container">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>
@@ -86,10 +86,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-- Arreglar footer
-- Arreglar before
-
-
-*/

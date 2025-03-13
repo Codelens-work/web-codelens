@@ -377,7 +377,7 @@
         "items": [
           {
             "text": "Inicio",
-            "url": "/"
+            "url": "/#Inicio"
           },
           {
             "text": "Sobre Nosotros",
@@ -394,11 +394,11 @@
         "items": [
           {
             "text": "FAQs",
-            "url": "/preguntas-frecuentes"
+            "url": "/#preguntas-frecuentes"
           },
           {
             "text": "Contacto",
-            "url": "/contacto"
+            "url": "/#Contacto"
           },
           {
             "text": "Términos y condiciones",

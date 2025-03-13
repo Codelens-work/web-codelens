@@ -4,13 +4,14 @@ import { useTranslation, Trans } from 'react-i18next'
 
 const Faqs = () => {
 
-  const { t } = useTranslation()
+  const { t , i18n} = useTranslation()
 
   const sectionContent = t("home.faqs-section", {returnObjects: true})
 
+  const currentLanguage = i18n.language
 
   return(
-<section className='faqs-section'>
+<section id={currentLanguage === 'en' ? 'FAQs' : 'preguntas-frecuentes'} className='faqs-section'>
   <div className='faqs-text-container'>
   <h2>{sectionContent.heading}</h2>
   <p>{sectionContent.intro}</p>

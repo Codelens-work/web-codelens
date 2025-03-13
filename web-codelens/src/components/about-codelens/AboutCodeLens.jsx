@@ -55,7 +55,7 @@ const AboutCodeLens = () => {
                         variants={itemVariants}
                     >
                         <picture>
-                            <img src="icons/logo_completo.svg" alt="Logo CodeLens" />
+                            <img src="/icons/logo_completo.svg" alt="Logo CodeLens" />
                         </picture>
                     </motion.div>
                     <motion.div

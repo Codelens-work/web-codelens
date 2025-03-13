@@ -11,7 +11,7 @@ import { useEffect } from "react";
 
 
 export function ApiService() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const tApiBenedit = t(
     "services-pages.api-development.about-section.benefits-section.list",
@@ -61,12 +61,12 @@ export function ApiService() {
           <p className="paragraph-service">
             {t("services-pages.api-development.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
+          <LinkButton label={t('btn-contact.text')} href={i18n.language === 'en' ? "/#contact" : "/#contacto"} size="small" />
         </motion.div>
       </Hero>
 
       <Services
-        img="../service/api.svg"
+        img="/service/api.svg"
         titleOne={t(
           "services-pages.api-development.about-section.value-proposal.heading"
         )}

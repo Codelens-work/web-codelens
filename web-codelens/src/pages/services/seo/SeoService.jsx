@@ -12,7 +12,7 @@ import { motion } from 'framer-motion';
 
 export function SeoService() {
 
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const tBenefits = t(
     "services-pages.seo.about-section.benefits-section.list",
     { returnObjects: true }
@@ -63,12 +63,12 @@ export function SeoService() {
           <p className="paragraph-service">
             {t('services-pages.seo.hero.content')}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
+          <LinkButton label={t('btn-contact.text')} href={i18n.language === 'en' ? "/#contact" : "/#contacto"} size="small" />
       </motion.div>
     </Hero>
 
       <Services
-        img="../service/seo.svg"
+        img="/service/seo.svg"
         titleOne={t('services-pages.seo.about-section.value-proposal.heading')}
         paragraphOne={t('services-pages.seo.about-section.value-proposal.content')}
         titleTwo={t('services-pages.seo.about-section.benefits-section.heading')}

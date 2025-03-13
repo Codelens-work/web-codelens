@@ -11,18 +11,27 @@ const HomeServices = ({ t }) => {
   const [offsetX, setOffsetX] = useState(0); // Guarda distancia q se arrastro
   const carouselRef = useRef(null);
   const length = services.length;
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+
   const cardWidth = 320; //tamaños de las cards
   const gap = 35;
 
+   // Detectar cambios en el tamaño de la ventana y actualizar `isMobile`
+   useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 500);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   // Centrar automáticamente la card en el carrusel
   useEffect(() => {
-    if (carouselRef.current) {
+    if (isMobile && carouselRef.current) {
       //se  calcula el desplazamiento horizontal
       //newScrollLeft es la cantidad de pixeles que se desplaza
       const newScrollLeft = activeSlide * (cardWidth + gap); 
       carouselRef.current.scrollTo({ left: newScrollLeft, behavior: "smooth" });
     }
-  }, [activeSlide]);
+  }, [activeSlide, isMobile]);
 
   
   //marca que se empezo a arrastrar y la pocicion inicial
@@ -58,13 +67,15 @@ const HomeServices = ({ t }) => {
         </div>
         <span>{t.intro}</span>
       </div>
-      <div className="home-services-carousel">
+      <div className={`home-services-carousel ${isMobile ? "mobile" : "desktop"}`}>
         <div
           className="home-carousel-slides"
           ref={carouselRef}
           style={{
-            transform: `translateX(calc(-${activeSlide * cardWidth}px + ${offsetX}px))`,
+            transform: isMobile ? `translateX(${-activeSlide * (cardWidth + gap)}px)` : "none",
             transition: isDragging ? "none" : "transform 0.3s ease-out",
+            overflow: isMobile ? "auto" : "visible", // En desktop desactiva el scroll
+            justifyContent: isMobile ? "flex-start" : "center", // Centra en desktop
           }}
           onMouseDown={handleDragStart}
           onMouseMove={handleDragMove}

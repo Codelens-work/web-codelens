@@ -17,14 +17,13 @@ import i18n from "i18next";
 const NavBar = () => {
 
   const { t } = useTranslation();
+  
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
     
   };
-
-  
 
   const [navActive, setNavActive] = useState(false);
   const [expanded, setExpanded] = useState(false); // Estado del menú
@@ -51,6 +50,7 @@ const NavBar = () => {
   const webDevelopmentText = services[0]?.text;
   const webDesignUrl = services[1]?.url;
   const webDesignText = services[1]?.text;
+  const seoText = services[2]?.text;
   const seoUrl = services[2]?.url;
   const appWebUrl = services[3]?.url;
   const appWebText = services[3]?.text;
@@ -178,7 +178,7 @@ const NavBar = () => {
                     className="dropdown-item"
                     onClick={() => handleDropdownItemClick(seoUrl)}
                   >
-                    SEO
+                    {seoText}
                   </Dropdown.Item>
                   <Dropdown.Item
                     className="dropdown-item"

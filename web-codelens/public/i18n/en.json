@@ -363,7 +363,7 @@
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          { "text": "Home", "url": "/" },
+          { "text": "Home", "url": "/#Home" },
           { "text": "About Us", "url": "/en/About-Us" },
           { "text": "Blog", "url": "/en/blog" }
         ]

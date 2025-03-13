@@ -17,14 +17,13 @@ import i18n from "i18next";
 const NavBar = () => {
 
   const { t } = useTranslation();
+  
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
     
   };
-
-  
 
   const [navActive, setNavActive] = useState(false);
   const [expanded, setExpanded] = useState(false); // Estado del menú
@@ -205,7 +204,8 @@ const NavBar = () => {
               </Dropdown>
               <a
                 onClick={() => {
-                  navigate("/#Contact");
+                  const url = i18n.language === 'en' ? "/#Contact" : "/#Contacto"
+                  navigate(url);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"

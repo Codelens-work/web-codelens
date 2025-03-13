@@ -377,7 +377,7 @@
         "items": [
           {
             "text": "Inicio",
-            "url": "/#Inicio"
+            "url": "/#inicio"
           },
           {
             "text": "Sobre Nosotros",
@@ -398,7 +398,7 @@
           },
           {
             "text": "Contacto",
-            "url": "/#Contacto"
+            "url": "/#contacto"
           },
           {
             "text": "Términos y condiciones",

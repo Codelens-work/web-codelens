@@ -363,18 +363,18 @@
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          { "text": "Home", "url": "/#Home" },
-          { "text": "About Us", "url": "/en/About-Us" },
+          { "text": "Home", "url": "/#home" },
+          { "text": "About Us", "url": "/en/about-Us" },
           { "text": "Blog", "url": "/en/blog" }
         ]
       },
       "help-list": {
         "title": "Help",
         "items": [
-          { "text": "FAQs", "url": "/#FAQs" },
-          { "text": "Contact", "url": "/#Contact" },
-          { "text": "Terms and Conditions", "url": "/en/Terms-and-Conditions" },
-          { "text": "Privacy Policy", "url": "/en/Privacy-Policy" }
+          { "text": "FAQs", "url": "/#faqs" },
+          { "text": "Contact", "url": "/#contact" },
+          { "text": "Terms and Conditions", "url": "/en/terms-and-conditions" },
+          { "text": "Privacy Policy", "url": "/en/privacy-policy" }
         ]
       }
     }

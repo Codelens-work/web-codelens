@@ -65,7 +65,7 @@ function App() {
       ),
     },
     {
-      path: "/en/About-Us",
+      path: "/en/about-Us",
       element: (
         <MainLayout>
           <About />
@@ -177,7 +177,7 @@ function App() {
       ),
     },
     {
-      path: "/en/Terms-and-Conditions",
+      path: "/en/terms-and-conditions",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -193,7 +193,7 @@ function App() {
       ),
     },
     {
-      path: "/en/Privacy-Policy",
+      path: "/en/privacy-policy",
       element: (
         <MainLayout>
           <PrivacyPolicy />

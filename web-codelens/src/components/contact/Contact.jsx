@@ -35,7 +35,7 @@ const Contact = () => {
 
   return (
    <Section className="contact-container-section">
-      <div id={ currentLanguage === 'en' ? "Contact" : "Contacto"} className="contact-container">
+      <div id={ currentLanguage === 'en' ? "contact" : "contacto"} className="contact-container">
         <motion.div 
         initial="hidden"
         whileInView="visible"

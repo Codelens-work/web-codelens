@@ -117,7 +117,9 @@ const NavBar = () => {
               className="logo"
               src="/icons/logo_nombre.svg"
               alt="Logo"
-              onClick={() => navigate("/#Home")}
+              onClick={() => {
+                const url = i18n.language === 'en' ? "/#home" : "/#inicio"
+                navigate(url)} }
               style={{ cursor: "pointer" }}
             />
           </Navbar.Brand>
@@ -138,7 +140,7 @@ const NavBar = () => {
             <Nav className="navbar-links-custom d-flex align-items-center">
               <a
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#Home" : "/#Inicio"
+                  const url = i18n.language === 'en' ? "/#home" : "/#inicio"
                   navigate(url);
                   setExpanded(false); // Cierra el menú al navegar
                 }}
@@ -205,7 +207,7 @@ const NavBar = () => {
               </Dropdown>
               <a
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#Contact" : "/#Contacto"
+                  const url = i18n.language === 'en' ? "/#contact" : "/#contacto"
                   navigate(url);
                   setExpanded(false);
                 }}

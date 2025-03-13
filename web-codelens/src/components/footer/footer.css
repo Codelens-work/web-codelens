@@ -1,11 +1,14 @@
 footer {
-  padding: 30px;
+  padding: 20px;
+  padding-top: 50px;
   width: 100%;
 }
 .containerTitle {
   font-size: 20px;
   color: var(--purple);
 }
+
+/*Todo lo que no es el copyright*/
 .firstRowContainer {
   width: 100%;
   height: auto;
@@ -15,16 +18,23 @@ footer {
   gap: 30px;
 }
 
-.firstRowContainer > div {
+.urlContainer > div {
 height: auto;
 padding: 10px;
-flex: 1;
 min-width: min(100%, 300px);
 }
 
 #footerLogo {
   height: 158px;
   width: 242px;
+}
+
+/*Contenedor de todos los bloques de links*/
+.urlContainer {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  flex-wrap: wrap;
 }
 
 /*Iconos de redes sociales*/
@@ -108,4 +118,19 @@ min-width: min(100%, 300px);
 
 a:hover::after {
   width: 100%;
+}
+
+@media  (width <= 1024px) {
+.firstRowContainer {
+  flex-direction: column;
+}
+
+.socialLogoContainer{
+  align-self: center;
+}
+
+.urlContainer {
+  justify-content: space-evenly;
+}
+
 }

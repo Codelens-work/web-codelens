@@ -1,5 +1,4 @@
 .faqs-section {
-  padding: 60px 30px;
   background-color: var(--light-blue);
   display: flex;
   flex-direction: column;
@@ -12,8 +11,8 @@
   text-align: center;
 }
 
-.faqs-text-container p {
-  font-size: clamp(0.5rem, 3vw, 1rem);
+.faqs-text-container p, .faqs-section ul {
+  font-size: clamp(1rem, 3vw, 1rem);
 }
 
 

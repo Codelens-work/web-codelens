@@ -15,8 +15,14 @@ import GetToKnow from "../../components/getToKnow/getToKnow";
 import SectionReference from "../../components/references/SectionReferences";
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
+  const currentLanguage = i18n.language
+  const route = t("footer-section.lists.find-way-list.items", {
+    returnObjects: true,
+  });
+  
+  const aboutUrl = route[1].url;
 
   useEffect(() => {
     const hash = location.hash;
@@ -28,10 +34,10 @@ const Home = () => {
       }
     }
   }, [location]);
- 
+
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.home")}
@@ -39,7 +45,7 @@ const Home = () => {
         <meta
           name="keywords"
           content={t("keywords.home", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -47,10 +53,10 @@ const Home = () => {
         media={{
           type: "video",
           src: "/hero/Hero.mp4",
-          
+
         }}
       >
-        <div id="Home" className="hero-content-container">
+        <div id={currentLanguage === 'en' ? "Home" : "Inicio"} className="hero-content-container">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>
@@ -71,7 +77,7 @@ const Home = () => {
         btn={t("btn-contact.text")}
       />
       <HomeServices t={t("home.services-section", { returnObjects: true })} />
-      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} />
+      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl}/>
       <SectionReference /> 
       <Contact />
       <Faqs />
@@ -80,13 +86,3 @@ const Home = () => {
 };
 
 export default Home;
-
-/*
-- Arreglar li -> poner iconos
-	- cambiar lógica de active
-- arreglar contenedor de cards para que no tenga padding
-- Arreglar contenido
-- Agregar controles
-
-
-*/

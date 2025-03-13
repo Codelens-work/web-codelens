@@ -1,22 +1,25 @@
 .get-to-know-section {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  background-color: var(--white);
 }
 
-.get-to-know-section > div {
-  width: 100%;
-  max-width: 500px;
-}
 
 .get-to-know-content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 20px 10px;
+  padding: 20px 10px 20px 60px;
   gap: 10px;
+  flex: 2 1 500px;
+}
+
+.get-to-know-img {
+  flex: 1 2 300px;
+  max-width: 400px;
 }
 
 .get-to-know-content p {
@@ -34,13 +37,14 @@
   object-fit: contain;
 }
 
-@media (width < 822px) {
+@media (width <= 764px) {
   .get-to-know-content {
+    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
     text-align: center;
   }
+
 }

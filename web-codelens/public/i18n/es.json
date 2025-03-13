@@ -187,12 +187,12 @@
             "label": "Email",
             "placeholder": "example@example.com",
             "invalid-mail-error": "Debe ingresar un email válido",
-            "validation-error": "El email debe tener entre 6 y 254 caracteres"
+            "validation-error": "El email debe tener entre 6 y 25 caracteres"
           },
           "business": {
             "label": "Empresa o negocio",
             "placeholder": "Nombre de tu empresa",
-            "validation-error": "El campo debe tener entre 2 y 100 caracteres."
+            "validation-error": "El campo debe tener entre 2 y 25 caracteres."
           },
           "content": {
             "label": "¿Cómo podemos ayudar?",
@@ -245,6 +245,12 @@
           "content": "Diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios.",
           "icon": "apiDevLogo",
           "url": "/servicios/desarrollo-api"
+        },
+        {
+          "title": "Community Management",
+          "content": "Gestionamos tu presencia online y las interacciones con tu comunidad, enfocándonos en construir relaciones auténticas y duraderas entre tu marca y tu público objetivo.",
+          "icon": "communityManagementLogo",
+          "url": "/servicios/community-management"
         }
       ]
     },
@@ -268,7 +274,7 @@
       "content": [
         {
           "question": "¿Cuáles son los servicios que ofrece CodeLens?",
-          "answer": "En CodeLens, nos especializamos en: <ul><li><strong>Desarrollo Web</strong> desde cero.</li><li><strong>Diseño Web</strong> personalizado y enfocado en la experiencia del usuario.</li><li><strong>Mejora de Sitios Web</strong> existentes</li><li><strong>Desarrollo de Aplicaciones Web</strong>, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!</li></ul>"
+          "answer": "En CodeLens, nos especializamos en: <ul><li><strong>Desarrollo Web</strong> desde cero.</li><li><strong>Diseño Web</strong> personalizado y enfocado en la experiencia del usuario.</li><li><strong>Mejora de Sitios Web</strong> existentes</li><li><strong>Desarrollo de Aplicaciones Web</strong>, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!</li><li><strong>Community Management</strong>, para gestionar tu presencia online y fomentar relaciones auténticas con tu comunidad en redes sociales.</li></ul>"
         },
         {
           "question": "¿Qué tipo de empresas o proyectos aceptan?",
@@ -371,7 +377,7 @@
         "items": [
           {
             "text": "Inicio",
-            "url": "/"
+            "url": "/#Inicio"
           },
           {
             "text": "Sobre Nosotros",
@@ -388,11 +394,11 @@
         "items": [
           {
             "text": "FAQs",
-            "url": "/preguntas-frecuentes"
+            "url": "/#preguntas-frecuentes"
           },
           {
             "text": "Contacto",
-            "url": "/contacto"
+            "url": "/#Contacto"
           },
           {
             "text": "Términos y condiciones",

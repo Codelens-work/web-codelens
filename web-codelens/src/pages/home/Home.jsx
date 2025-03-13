@@ -56,7 +56,7 @@ const Home = () => {
 
         }}
       >
-        <div id={currentLanguage === 'en' ? "Home" : "Inicio"} className="hero-content-container">
+        <div id={currentLanguage === 'en' ? "home" : "inicio"} className="hero-content-container">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>
@@ -65,7 +65,7 @@ const Home = () => {
             <div className="hero-button">
               <LinkButton
                 label={t("btn-contact.text")}
-                href="/#Contact"
+                href={currentLanguage === 'en' ? "/#contact" : "/#contacto"}
                 size="normal"
               />
             </div>
@@ -75,6 +75,7 @@ const Home = () => {
       <HomeAbout
         t={t("home.about-section", { returnObjects: true })}
         btn={t("btn-contact.text")}
+        currentLanguage={currentLanguage}
       />
       <HomeServices t={t("home.services-section", { returnObjects: true })} />
       <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl}/>

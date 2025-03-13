@@ -169,7 +169,7 @@ function App() {
       ),
     },
     {
-      path:  "/terminos-y-condiciones",
+      path:  "/terminos-condiciones",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -177,7 +177,7 @@ function App() {
       ),
     },
     {
-      path: "/en/terms-and-conditions",
+      path: "/en/terms-conditions",
       element: (
         <MainLayout>
           <TermsAndConditions />
@@ -185,7 +185,7 @@ function App() {
       ),
     },
     {
-      path: "/politica-de-privacidad",
+      path: "/politicas-privacidad",
       element: (
         <MainLayout>
           <PrivacyPolicy />

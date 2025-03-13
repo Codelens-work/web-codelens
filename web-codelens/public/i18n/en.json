@@ -373,7 +373,7 @@
         "items": [
           { "text": "FAQs", "url": "/#faqs" },
           { "text": "Contact", "url": "/#contact" },
-          { "text": "Terms and Conditions", "url": "/en/terms-and-conditions" },
+          { "text": "Terms and Conditions", "url": "/en/terms-conditions" },
           { "text": "Privacy Policy", "url": "/en/privacy-policy" }
         ]
       }

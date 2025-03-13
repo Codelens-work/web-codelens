@@ -2,7 +2,7 @@ import LinkButton from "../linkButton/LinkButton"
 import Section from "../section/Section"
 import './homeAbout.css'
 
-const HomeAbout = ({ t, btn }) => {
+const HomeAbout = ({ t, btn, currentLanguage }) => {
   return (
     <Section className="home-about-section">
       <div className="home-about-img">
@@ -13,7 +13,7 @@ const HomeAbout = ({ t, btn }) => {
         <h2>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>
-        <LinkButton label={btn} size="normal" href="/#Contact" />
+        <LinkButton label={btn} size="normal" href={currentLanguage === 'en' ? "/#contact" : "/#contacto"} />
       </div>
     </Section>
   )

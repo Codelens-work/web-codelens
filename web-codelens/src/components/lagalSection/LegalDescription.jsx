@@ -5,7 +5,7 @@ const LegalDescription = ({ paragraph, secondParagraph, thirdParagraph, textColo
   return (
     <div className="legal-description-container">
       <div className="right-column">
-        <img src="public/imgs/conditions.svg" alt='conditions'  />
+        <img src="/imgs/conditions.svg" alt='conditions'  />
       </div>
 
       <div className="left-column">

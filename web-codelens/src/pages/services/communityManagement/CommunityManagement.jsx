@@ -8,7 +8,7 @@ import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs";
 import { motion } from 'framer-motion';
 
 export function CommunityManagement() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const tApiBenedit = t(
     "services-pages.community-management.about-section.benefits-section.list",
@@ -54,12 +54,12 @@ export function CommunityManagement() {
           <p className="paragraph-service">
             {t("services-pages.community-management.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
+          <LinkButton label={t('btn-contact.text')} href={i18n.language === 'en' ? "/#contact" : "/#contacto"} size="small" />
         </motion.div>
       </Hero>
 
       <Services
-        img="../service/community-manager.svg"
+        img="/service/community-manager.svg"
         titleOne={t(
           "services-pages.community-management.about-section.value-proposal.heading"
         )}

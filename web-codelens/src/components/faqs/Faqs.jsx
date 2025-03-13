@@ -11,7 +11,7 @@ const Faqs = () => {
   const currentLanguage = i18n.language
 
   return(
-<section id={currentLanguage === 'en' ? 'FAQs' : 'preguntas-frecuentes'} className='faqs-section'>
+<section id={currentLanguage === 'en' ? 'faqs' : 'preguntas-frecuentes'} className='faqs-section'>
   <div className='faqs-text-container'>
   <h2>{sectionContent.heading}</h2>
   <p>{sectionContent.intro}</p>

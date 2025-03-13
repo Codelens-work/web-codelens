@@ -118,7 +118,9 @@ const NavBar = () => {
               className="logo"
               src="/icons/logo_nombre.svg"
               alt="Logo"
-              onClick={() => navigate("/#Home")}
+              onClick={() => {
+                const url = i18n.language === 'en' ? "/#home" : "/#inicio"
+                navigate(url)} }
               style={{ cursor: "pointer" }}
             />
           </Navbar.Brand>
@@ -139,7 +141,8 @@ const NavBar = () => {
             <Nav className="navbar-links-custom d-flex align-items-center">
               <a
                 onClick={() => {
-                  navigate("/#Home");
+                  const url = i18n.language === 'en' ? "/#home" : "/#inicio"
+                  navigate(url);
                   setExpanded(false); // Cierra el menú al navegar
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
@@ -205,7 +208,8 @@ const NavBar = () => {
               </Dropdown>
               <a
                 onClick={() => {
-                  navigate("/#Contact");
+                  const url = i18n.language === 'en' ? "/#contact" : "/#contacto"
+                  navigate(url);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"

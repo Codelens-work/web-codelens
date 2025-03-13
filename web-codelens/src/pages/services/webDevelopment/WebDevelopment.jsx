@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { motion } from 'framer-motion';
 
 export function WebDevelopment() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const tBenefits = t(
     "services-pages.web-development.about-section.benefits-section.list",
     { returnObjects: true }
@@ -63,14 +63,14 @@ export function WebDevelopment() {
           </p>
           <LinkButton
             label={t("btn-contact.text")}
-            href="/#Contact"
+            href={i18n.language === 'en' ? "/#contact" : "/#contacto"}
             size="small"
           />
         </motion.div>
       </Hero>
 
       <Services
-        img="../service/webDevelopment.svg"
+        img="/service/webDevelopment.svg"
         titleOne={t(
           "services-pages.web-development.about-section.value-proposal.heading"
         )}

@@ -10,7 +10,7 @@ import { useEffect } from "react";
 import { motion } from 'framer-motion';
 
 export function WebDesing() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const tBenefits = t(
     "services-pages.web-design.about-section.benefits-section.list",
     { returnObjects: true }
@@ -58,13 +58,13 @@ export function WebDesing() {
           </p>
           <LinkButton
             label={t("btn-contact.text")}
-            href="/#Contact"
+            href={i18n.language === 'en' ? "/#contact" : "/#contacto"}
             size="small"
           />
         </motion.div>
       </Hero>
       <Services
-        img="../service/webDesign.svg"
+        img="/service/webDesign.svg"
         titleOne={t(
           "services-pages.web-design.about-section.value-proposal.heading"
         )}

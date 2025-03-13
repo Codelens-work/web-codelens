@@ -9,7 +9,7 @@ import PropTypes from "prop-types";
 import LinkButton from "../linkButton/LinkButton";
 
 const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: false, threshold: 0.1 });
 
@@ -34,7 +34,7 @@ const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
       >
         {paragraphServiceContact}
       </motion.p>
-      <LinkButton href="/#Contact" label={t("home.contact-section.heading")} size="small" />
+      <LinkButton href={i18n.language === 'en' ? "/#contact" : "/#contacto"} label={t("home.contact-section.heading")} size="small" />
     </div>
   );
 };

@@ -11,7 +11,7 @@ import { useEffect } from "react";
 import { motion } from 'framer-motion';
 
 export function AppWeb() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const tBenefits = t(
     "services-pages.web-app.about-section.benefits-section.list",
@@ -65,12 +65,12 @@ export function AppWeb() {
           <p className="paragraph-service">
             {t("services-pages.web-app.hero.content")}
           </p>
-          <LinkButton label={t('btn-contact.text')} href="/#Contact" size="small" />
+          <LinkButton label={t('btn-contact.text')} href={i18n.language === 'en' ? "/#contact" : "/#contacto"} size="small" />
         </motion.div>
       </Hero>
 
       <Services
-        img="../service/appWeb.svg"
+        img="/service/appWeb.svg"
         titleOne={t("services-pages.web-app.about-section.value-proposal.heading")}
         paragraphOne={t("services-pages.web-app.about-section.value-proposal.content")}
         titleTwo={t("services-pages.web-app.about-section.benefits-section.heading")}

@@ -244,13 +244,13 @@
           "title": "API Development",
           "content": "We design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their own users.",
           "icon": "apiDevLogo",
-          "url": "/servicios/desarrollo-api"
+          "url": "development-api"
         },
         {
           "title": "Community Management",
           "content": "We manage your online presence and interactions with your community, focusing on building authentic and lasting relationships between your brand and your target audience.",
           "icon": "communityManagementLogo",
-          "url": "/servicios/community-management"
+          "url": "community-management"
         }
       ]
     },
@@ -363,18 +363,18 @@
       "find-way-list": {
         "title": "Find your way",
         "items": [
-          { "text": "Home", "url": "/#Home" },
-          { "text": "About Us", "url": "/en/About-Us" },
+          { "text": "Home", "url": "/#home" },
+          { "text": "About Us", "url": "/en/about-us" },
           { "text": "Blog", "url": "/en/blog" }
         ]
       },
       "help-list": {
         "title": "Help",
         "items": [
-          { "text": "FAQs", "url": "/#FAQs" },
-          { "text": "Contact", "url": "/#Contact" },
-          { "text": "Terms and Conditions", "url": "/en/Terms-and-Conditions" },
-          { "text": "Privacy Policy", "url": "/en/Privacy-Policy" }
+          { "text": "FAQs", "url": "/#faqs" },
+          { "text": "Contact", "url": "/#contact" },
+          { "text": "Terms and Conditions", "url": "/en/terms-conditions" },
+          { "text": "Privacy Policy", "url": "/en/privacy-policy" }
         ]
       }
     }

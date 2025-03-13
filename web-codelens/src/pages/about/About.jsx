@@ -12,7 +12,7 @@ import { useEffect } from "react";
 
 const  About = () => {
   
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -58,7 +58,7 @@ const  About = () => {
           <div className="hero-button">
             <LinkButton 
               label={t('btn-contact.text')}
-              href="/#Contact"
+              href={i18n.language === 'en' ? "/#contact" : "/#contacto"}
               size="normal"
             />
           </div>

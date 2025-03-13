@@ -65,7 +65,7 @@ function App() {
       ),
     },
     {
-      path: "/en/about-Us",
+      path: "/en/about-us",
       element: (
         <MainLayout>
           <About />

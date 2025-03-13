@@ -17,6 +17,12 @@ import SectionReference from "../../components/references/SectionReferences";
 const Home = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  
+  const route = t("footer-section.lists.find-way-list.items", {
+    returnObjects: true,
+  });
+  
+  const aboutUrl = route[1].url;
 
   useEffect(() => {
     const hash = location.hash;
@@ -71,7 +77,7 @@ const Home = () => {
         btn={t("btn-contact.text")}
       />
       <HomeServices t={t("home.services-section", { returnObjects: true })} />
-      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} />
+      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl}/>
       <SectionReference /> 
       <Contact />
       <Faqs />

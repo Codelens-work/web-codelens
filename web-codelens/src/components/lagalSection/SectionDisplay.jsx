@@ -2,26 +2,57 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "../lagalSection/legalSection.css";
 
-
 const SectionDisplay = ({ titles, description }) => {
-  //deberia recibir un array de ambos y mapearlo
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const selectSection = (i) => {
-    setActiveIndex(i);
+    setActiveIndex(activeIndex === i ? -1 : i);
   };
 
-  return (
-    <div className="section-display-container ">
-      <div className="left-column titles-for-display">
-        {/*active tiene que apaerecer solo si se hace click en el titulo*/}
+  if (isMobile) {
+    return (
+      <div className="section-display-container mobile">
         {titles.map((title, i) => (
-          <p key={i} onClick={()=> selectSection(i)} className={activeIndex === i ? "active" : ""}>
-            {title}
-          </p>
+          <div key={i} className="accordion-item">
+            <div 
+              className={`accordion-title ${activeIndex === i ? "active" : ""}`}
+              onClick={() => selectSection(i)}
+            >
+              {title}
+            </div>
+            <div className={`accordion-content ${activeIndex === i ? "show" : ""}`}>
+              <p>{description[i]}</p>
+            </div>
+          </div>
         ))}
       </div>
-      <div className="right-column p-for-display ">
+    );
+  }
+
+  return (
+    <div className="section-display-container desktop">
+      <div className="left-column titles-for-display">
+        {titles.map((title, i) => (
+          <span 
+            key={i} 
+            onClick={() => selectSection(i)} 
+            className={activeIndex === i ? "active" : ""}
+          >
+            {title}
+          </span>
+        ))}
+      </div>
+      <div className="right-column p-for-display">
         <p>{description[activeIndex]}</p>
       </div>
     </div>

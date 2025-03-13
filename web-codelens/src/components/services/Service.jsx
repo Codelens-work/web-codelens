@@ -22,7 +22,7 @@ const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
         <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+        viewport={{ once: true, amount:  0.2 }} 
         variants={slideInLeft}
         className="right-column-service"
       >
@@ -43,7 +43,7 @@ const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
               className="left-column-service"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount:  0.5 }} // Se activa cuando el 20% del componente es visible
+              viewport={{ once: true, amount:  0.2 }} 
               variants={slideInRight}
             > 
               <img src={img}alt={`imgService`} />

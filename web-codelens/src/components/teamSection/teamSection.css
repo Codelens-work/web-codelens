@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: center;
     gap: 50px;
-    padding: 60px 0;
     background: var(--white);
+    padding: 30px 0;
 }
 
 .team-section-content{
@@ -73,10 +73,6 @@
 
 /* Tablet layout */
 @media (min-width: 768px) and (max-width: 1023px) {
-    .team-section{
-        padding: 60px 45px;
-    }
-
     .team-section-content span {
         text-align: left;
         width: 95%;
@@ -89,7 +85,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         overflow-x: visible;
-        padding: 2rem;
+        padding: 1rem;
         margin: 0 auto;
         max-width: 900px;
     }
@@ -102,8 +98,8 @@
 
 /* Desktop layout */
 @media (min-width: 1024px) {
-    .team-section{
-        padding: 60px 70px;
+    .team-section-content{
+        padding-left: 70px;
     }
 
     .team-section-content span {

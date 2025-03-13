@@ -840,15 +840,15 @@
       },
       {
         "title": "Información que recopilamos",
-        "content": "Recopilamos diferentes categorías de información personal incluyendo: Información de identificación personal: nombre, dirección de correo electrónico, número de teléfono, dirección postal. Datos de pago: información relacionada con los pagos realizados por nuestros productos o servicios. Datos de navegación: información recopilada automáticamente mientras navega por nuestro sitio (dirección IP, tipo de navegador, páginas visitadas, etc.). Datos de uso: información sobre cómo utiliza nuestro sitio web, servicios y productos"
+        "content": "<p>Recopilamos diferentes categorías de información personal incluyendo:<ul><li><strong>Información de identificación personal:</strong> nombre, dirección de correo electrónico, número de teléfono, dirección postal.</li><li><strong>Datos de pago:</strong> información relacionada con los pagos realizados por nuestros productos o servicios.</li><li><strong>Datos de navegación:</strong> información recopilada automáticamente mientras navega por nuestro sitio (dirección IP, tipo de navegador, páginas visitadas, etc.).</li><li><strong>Datos de uso:</strong> información sobre cómo utiliza nuestro sitio web, servicios y productos</li></ul></p>"
       },
       {
         "title": "Cómo utilizamos su información",
-        "content": "Utilizamos su información personal con fines específicos, como: Procesamiento de pedidos: gestionar compras y transacciones. Mejora de los servicios: optimizar la experiencia del usuario en nuestro sitio web. Comunicación: enviarle información importante sobre nuestros servicios, promociones o actualizaciones de su cuenta. Cumplimiento de obligaciones legales: garantizar el cumplimiento de requisitos legales y normativos."
+        "content": "<p>Utilizamos su información personal con fines específicos, como:<ul><li><strong>Procesamiento de pedidos:</strong> gestionar compras y transacciones.</li><li><strong>Mejora de los servicios:</strong> optimizar la experiencia del usuario en nuestro sitio web.</li><li><strong>Comunicación:</strong> enviarle información importante sobre nuestros servicios, promociones o actualizaciones de su cuenta.</li><li><strong>Cumplimiento de obligaciones legales:</strong> garantizar el cumplimiento de requisitos legales y normativos.</li></ul></p>"
       },
       {
         "title": "Compartir su información",
-        "content": "Nos comprometemos a no vender, alquilar ni compartir su información personal con terceros para fines comerciales sin su consentimiento previo, excepto en las siguientes situaciones: Proveedores de servicios: compartimos su información con terceros que nos asisten en funciones específicas, como el procesamiento de pagos o la gestión de envíos. Cumplimiento legal: podemos divulgar su información personal si es requerida por ley o necesaria para proteger nuestros derechos, seguridad o los de terceros."
+        "content": "<p>Nos comprometemos a no vender, alquilar ni compartir su información personal con terceros para fines comerciales sin su consentimiento previo, excepto en las siguientes situaciones:<ul><li><strong>Proveedores de servicios:</strong> compartimos su información con terceros que nos asisten en funciones específicas, como el procesamiento de pagos o la gestión de envíos.</li><li><strong>Cumplimiento legal:</strong> podemos divulgar su información personal si es requerida por ley o necesaria para proteger nuestros derechos, seguridad o los de terceros.</li></ul></p>"
       },
       {
         "title": "Protección de su información",
@@ -856,11 +856,11 @@
       },
       {
         "title": "Sus derechos sobre su información personal",
-        "content": "De acuerdo con las leyes vigentes, usted tiene los siguientes derechos sobre su información personal: Acceso: Puede solicitar consultar la información que tenemos sobre usted. Rectificación: Puede pedir la corrección de sus datos personales si son incorrectos. Eliminación: Puede solicitar la eliminación de sus datos personales, sujeto a requisitos legales o contractuales. Oposición al tratamiento: Puede oponerse a ciertos tratamientos de sus datos, como el marketing directo. Para ejercer sus derechos, contáctenos en codelens.ar@gmail.com."
+        "content": "<p>De acuerdo con las leyes vigentes, usted tiene los siguientes derechos sobre su información personal:<ul><li><strong>Acceso:</strong> Puede solicitar consultar la información que tenemos sobre usted.</li><li><strong>Rectificación:</strong> Puede pedir la corrección de sus datos personales si son incorrectos.</li><li><strong>Eliminación:</strong> Puede solicitar la eliminación de sus datos personales, sujeto a requisitos legales o contractuales.</li><li><strong>Oposición al tratamiento:</strong>  Puede oponerse a ciertos tratamientos de sus datos, como el marketing directo. Para ejercer sus derechos, contáctenos en codelens.ar@gmail.com.</li></ul></p>"
       },
       {
         "title": "Cookies y tecnologías similares",
-        "content": "Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Estas herramientas nos permiten: Identificarlo cuando regresa a nuestro sitio Registrar preferencias y personalizar contenido. Analizar el uso del sitio. Puede configurar su navegador para rechazar las cookies o ser notificado cada vez que se envíe una cookie. Sin embargo, esto puede afectar su experiencia en nuestro sitio."
+        "content": "<p>Usamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web. Estas herramientas nos permiten:<ul><li>Identificarlo cuando regresa a nuestro sitio</li><li>Registrar preferencias y personalizar contenido.</li><li>Analizar el uso del sitio.</li></ul>Puede configurar su navegador para rechazar las cookies o ser notificado cada vez que se envíe una cookie. Sin embargo, esto puede afectar su experiencia en nuestro sitio.</p>"
       },
       {
         "title": "Transferencia internacional de datos",

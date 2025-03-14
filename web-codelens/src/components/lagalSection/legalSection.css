@@ -94,7 +94,9 @@
 
 .p-for-display {
     display        : flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     padding-left: 2vw;
 }
 
@@ -106,6 +108,10 @@
     word-wrap    : break-word;
     line-height             : 2rem; /*32px;*/
     padding: 10px;
+}
+
+.p-for-display ul li, .p-for-display h4 {
+  font-size    : clamp(16px, 2vw, 20px);
 }
 
 @media (max-width: 1023px) {
@@ -139,7 +145,6 @@
       overflow: hidden;
       transition: max-height 0.3s ease-out;
       padding: 0 1rem;
-      text-align: center;
     }
   
     .accordion-content.show {
@@ -152,6 +157,8 @@
       font-size: clamp(16px, 2vw, 20px);
       line-height: 1.5;
     }
+
+  
   }
   
   /* Desktop Styles */

@@ -1,7 +1,7 @@
 .get-to-know-section {
   display: flex;
   align-content: center;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: var(--white);
@@ -15,11 +15,13 @@
   padding: 20px 10px 20px 60px;
   gap: 10px;
   flex: 2 1 500px;
+  max-width: 700px;
 }
 
 .get-to-know-img {
   flex: 1 2 300px;
   max-width: 400px;
+  margin: auto;
 }
 
 .get-to-know-content p {

@@ -52,7 +52,7 @@ const Contact = () => {
             </p>
             <img
               className="logo-codelens"
-              src="public/logos/Logo_CodeLens_contacto.svg"
+              src="/logos/Logo_CodeLens_contacto.svg"
               alt="Logo Codelens"
             />
             <h2 className="h2-invitation-two">
@@ -61,10 +61,10 @@ const Contact = () => {
             <p className="invitation-two">
             {t("home.contact-section.socials-message")}
             </p>
-            <p className="invitation-three"> <span><img src="..\icons\Message-contact.svg"/></span>
+            <p className="invitation-three"> <span><img src="/icons/Message-contact.svg"/></span>
             {t("home.contact-section.chat-text")}</p>
             <a className="email" href="mailto:contacto@codelenstech.com">contacto@codelenstech.com</a>
-            <p className="invitation-three"> <span><img src="..\icons\Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
+            <p className="invitation-three"> <span><img src="/icons/Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
             <div className="social-logo-container">
               {/* <img
                 className="logo-social"
@@ -77,7 +77,7 @@ const Contact = () => {
                 className="social-link">
                 <img
                   className="logo-social"
-                  src="public/social/instagram.svg"
+                  src="/social/instagram.svg"
                   alt="instagram"
                 />
                 <span className="tooltip">Codelens.tech</span>

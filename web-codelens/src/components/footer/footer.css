@@ -54,8 +54,9 @@ min-width: min(100%, 300px);
 
 .socialLogoContainer span {
   color: var(--black);
+  display: inline-block;
   text-align: center;
-  font-size: 18px;
+  font-size: clamp(1rem, 2vw, 1.25rem);;
 }
 
 .mediaContainer {

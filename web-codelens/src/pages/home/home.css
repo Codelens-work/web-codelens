@@ -4,6 +4,11 @@
     margin: 0 auto;
 }
 
+.container-hero-home{
+    position: relative;
+    top: 100px;
+}
+
 .title-container{
     margin-top: 62px;
 }

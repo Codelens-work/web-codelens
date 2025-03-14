@@ -56,7 +56,7 @@ const Home = () => {
 
         }}
       >
-        <div id={currentLanguage === 'en' ? "home" : "inicio"} className="hero-content-container">
+        <div id={currentLanguage === 'en' ? "home" : "inicio"} className="hero-content-container container-hero-home">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>

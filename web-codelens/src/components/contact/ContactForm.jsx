@@ -132,7 +132,7 @@ const ContactForm = () => {
 
     if (formIsValid) {
       await sendEmail(event);
-      console.log(formData);
+      //console.log(formData);
       setFormData({
         name: "",
         email: "",
@@ -169,7 +169,7 @@ const ContactForm = () => {
         setModalIsOpen(!modalIsOpen);
       }
     } catch (error) {
-      console.log(error);
+      //console.log(error);
       setMsjApi({ title: modalErrorTitle, text: modalErrorText });
       setModalIsOpen(!modalIsOpen);
     }

@@ -217,11 +217,11 @@ const NavBar = () => {
                 {t("titles.contact")}
               </a>
               <a
-                onClick={() => {
-                  navigate(blogUrl);
-                  setExpanded(false);
+                onClick={(e) => {
+                  e.preventDefault(); // Evita que se siga el enlace
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
+                style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
               >
                 {t("titles.blog")}
               </a>

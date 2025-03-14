@@ -14,8 +14,8 @@ const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
   const isInView = useInView(ref, { triggerOnce: false, threshold: 0.1 });
 
   useEffect(() => {
-    console.log("Elemento referenciado:", ref.current);
-    console.log("isInView:", isInView);
+    //console.log("Elemento referenciado:", ref.current);
+    //console.log("isInView:", isInView);
   }, [isInView]);
   
   return (

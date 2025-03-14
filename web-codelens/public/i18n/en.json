@@ -802,7 +802,7 @@
     "privacy-section": [
       {
         "title": "Introduction",
-        "content": "At CodeLens, we are committed to respecting your privacy and protecting your personal information in accordance with applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA)."
+        "content": "<p>At CodeLens, we are committed to respecting your privacy and protecting your personal information in accordance with applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>"
       },
       {
         "title": "Information We Collect",
@@ -818,7 +818,7 @@
       },
       {
         "title": "Protecting Your Information",
-        "content": "We implement appropriate security measures to protect your personal information against unauthorized access, use, or disclosure. This includes the use of encryption technologies and other physical and technical protections."
+        "content": "<p>We implement appropriate security measures to protect your personal information against unauthorized access, use, or disclosure. This includes the use of encryption technologies and other physical and technical protections.</p>"
       },
       {
         "title": "Your Rights Over Your Personal Information",
@@ -830,11 +830,11 @@
       },
       {
         "title": "International Data Transfers",
-        "content": "We do not transfer your personal information except in cases necessary for the provision of our services (e.g., a payment service provider)."
+        "content": "<p>We do not transfer your personal information except in cases necessary for the provision of our services (e.g., a payment service provider).</p>"
       },
       {
         "title": "Changes to This Privacy Policy",
-        "content": "We reserve the right to modify this privacy policy at any time. Any updates will be posted on this page with the date of the last revision. We recommend checking this page regularly to stay informed about potential changes."
+        "content": "<p>We reserve the right to modify this privacy policy at any time. Any updates will be posted on this page with the date of the last revision. We recommend checking this page regularly to stay informed about potential changes.</p>"
       }
     ]
   },
@@ -855,59 +855,59 @@
     "terms-section": [
       {
         "title": "Service Agreement",
-        "content": "By hiring the software development and web design services offered by CodeLens, the client accepts all the terms and conditions set forth herein. We commit to providing our services professionally, meeting the agreed quality standards and deadlines."
+        "content": "<p>By hiring the software development and web design services offered by CodeLens, the client accepts all the terms and conditions set forth herein. We commit to providing our services professionally, meeting the agreed quality standards and deadlines.</p>"
       },
       {
         "title": "Payment Methods",
-        "content": "To facilitate payment for our services, CodeLens offers the following options: Accepted Payment Methods: Bank transfer (through MercadoPago, Naranja X, Belo, or other virtual wallets and transfer methods). Payment Terms: Advance Payment: A 50% advance payment of the total budget is required at the start of the project. Final Payment: Once the project is completed and approved by the client, the final payment must be made. The project will only be delivered to the client after full payment is received. Referral System: CodeLens offers benefits for clients who refer new projects. Details of the referral system, including rewards and application conditions, will be communicated to the client separately."
+        "content": "<p>To facilitate payment for our services, CodeLens offers the following options:<ul><li><strong>Accepted Payment Methods:</strong> Bank transfer (through MercadoPago, Naranja X, Belo, or other virtual wallets and transfer methods).</li><li><strong> Payment Terms:</strong><ul><li><strong>Advance Payment:</strong> A 50% advance payment of the total budget is required at the start of the project.</li><li><strong>Final Payment:</strong> Once the project is completed and approved by the client, the final payment must be made. The project will only be delivered to the client after full payment is received.</li></ul></li><li><strong>Referral System:</strong> CodeLens offers benefits for clients who refer new projects. Details of the referral system, including rewards and application conditions, will be communicated to the client separately.</li></ul></p>"
       },
       {
         "title": "Refund Policy",
-        "content": "CodeLens does not offer refunds once the project has started. In case of cancellation by the client, the advance payment will not be refundable, and the project will not be delivered. In exceptional circumstances, other agreements may be considered, always at CodeLens' discretion."
+        "content": "<p>CodeLens does not offer refunds once the project has started. In case of cancellation by the client, the advance payment will not be refundable, and the project will not be delivered. In exceptional circumstances, other agreements may be considered, always at CodeLens' discretion.</p>"
       },
       {
         "title": "Intellectual Property",
-        "content": "Intellectual Property Rights: All projects developed by CodeLens will be considered CodeLens' intellectual property until full payment for the project has been made. Once the final payment is completed, the client obtains exclusive usage rights over the delivered project. Footer Acknowledgment: Although the client receives exclusive usage rights, the site's footer will include a reference to CodeLens as the project developer. This reference must remain visible and cannot be removed without CodeLens' prior consent. Protection Against Misuse: The client may not use the delivered project in a way that infringes on third-party rights, violates laws or regulations, or damages CodeLens' reputation. CodeLens reserves the right to take necessary actions if inappropriate use of the project is detected or if the footer reference is removed without authorization."
+        "content": "<ul><li><strong>Intellectual Property Rights:</strong> All projects developed by CodeLens will be considered CodeLens' intellectual property until full payment for the project has been made. Once the final payment is completed, the client obtains exclusive usage rights over the delivered project.</li><li><strong>Footer Acknowledgment:</strong> Although the client receives exclusive usage rights, the site's footer will include a reference to CodeLens as the project developer. This reference must remain visible and cannot be removed without CodeLens' prior consent.</li><li><strong>Protection Against Misuse:</strong> The client may not use the delivered project in a way that infringes on third-party rights, violates laws or regulations, or damages CodeLens' reputation. CodeLens reserves the right to take necessary actions if inappropriate use of the project is detected or if the footer reference is removed without authorization.</li></ul>"
       },
       {
         "title": "Products and Services",
-        "content": "5.1 Product Availability Product and service information, including prices and availability, is provided for reference only and may change without prior notice. We reserve the right to discontinue or modify offers at any time. 5.2 Product Information The descriptions, images, and product information available on the site are provided for informational purposes. However, errors may occur, and we do not guarantee that all information is accurate, complete, or error-free. 5.3 Returns and Refunds Our returns and refund policy is defined in our [Return Policy]. We are committed to providing clear information and processing all return requests according to this policy."
+        "content": "<div><h4>5.1 Product Availability</h4><p>Product and service information, including prices and availability, is provided for reference only and may change without prior notice. We reserve the right to discontinue or modify offers at any time.</p><h4>5.2 Product Information</h4><p>The descriptions, images, and product information available on the site are provided for informational purposes. However, errors may occur, and we do not guarantee that all information is accurate, complete, or error-free.</p><h4>5.3 Returns and Refunds</h4><p>Our returns and refund policy is defined in our [Return Policy]. We are committed to providing clear information and processing all return requests according to this policy.</p></div>"
       },
       {
         "title": "Links to Third-Party Sites",
-        "content": "The site may contain links to third-party websites. These links are provided for convenience only. We have no control over these sites and are not responsible for their content, privacy policies, or practices. Accessing these sites is at your own risk."
+        "content": "<p>The site may contain links to third-party websites. These links are provided for convenience only. We have no control over these sites and are not responsible for their content, privacy policies, or practices. Accessing these sites is at your own risk.</p>"
       },
       {
         "title": "Confidentiality",
-        "content": "CodeLens commits to protecting all confidential information provided by the client during the project's development. This information will only be used for the specific purposes of the project and will not be disclosed to third parties without the client’s consent, except when necessary for service fulfillment. https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas"
+        "content": "<p>CodeLens is committed to protecting all confidential information provided by the client during the development of the project. This information will be used solely for the specific purposes of the project and will not be disclosed to third parties without the client's consent, except when necessary for the execution of the service. <a href='https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas'>Register private personal databases</a></p>"
       },
       {
         "title": "Modifications and Revisions",
-        "content": "The client has the right to request adjustments or revisions during the project’s development, as long as they fall within the previously agreed scope. Any significant change requiring additional work beyond the original project scope may incur additional costs, which will be communicated to the client before implementation."
+        "content": "<p>The client has the right to request adjustments or revisions during the development of the project, as long as they fall within the previously agreed scope. Any significant changes that require additional work or go beyond the original project scope may incur additional costs, which will be communicated to the client before implementation.</p>"
       },
       {
         "title": "Disclaimer",
-        "content": "The site is provided 'as is' and 'as available.' CodeLens makes no representations or warranties, express or implied, regarding the operation of the site or the accuracy of the information contained in it. To the extent permitted by law, we disclaim all liability for any loss or damage, including direct, indirect, special, or incidental damages, resulting from the use or inability to use this site."
+        "content": "<p>The site is provided 'as is' and 'as available.' CodeLens makes no representations or warranties, express or implied, regarding the operation of the site or the accuracy of the information contained in it. To the extent permitted by law, we disclaim all liability for any loss or damage, including direct, indirect, special, or incidental damages, resulting from the use or inability to use this site.</p>"
       },
       {
         "title": "Technical Support and Maintenance",
-        "content": "Unless a specific maintenance plan is agreed upon, CodeLens is not responsible for providing technical support or updates after the project's delivery. Support or maintenance services can be contracted separately if requested by the client."
+        "content": "<p>Unless a specific maintenance plan is agreed upon, CodeLens is not responsible for providing technical support or updates after the project's delivery. Support or maintenance services can be contracted separately if requested by the client.</p>"
       },
       {
         "title": "Force Majeure",
-        "content": "We will not be responsible for delays or failures due to unforeseeable events, such as natural disasters, wars, strikes, acts of terrorism, technological failures, or pandemics."
+        "content": "<p>We will not be responsible for delays or failures due to unforeseeable events, such as natural disasters, wars, strikes, acts of terrorism, technological failures, or pandemics.</p>"
       },
       {
         "title": "Modifications to the Terms and Conditions",
-        "content": "CodeLens reserves the right to modify these Terms and Conditions at any time. Modifications will take effect from the date of publication on our website or when directly notified to the client. We recommend reviewing this section periodically to stay informed about the current terms. These terms and conditions ensure clarity regarding responsibilities, rights, and limitations for both the client and CodeLens and help maintain a professional and transparent relationship."
+        "content": "<p>CodeLens reserves the right to modify these Terms and Conditions at any time. Modifications will take effect from the date of publication on our website or when directly notified to the client. We recommend reviewing this section periodically to stay informed about the current terms.</p><p>These terms and conditions ensure clarity regarding responsibilities, rights, and limitations for both the client and CodeLens and help maintain a professional and transparent relationship.</p>"
       },
       {
         "title": "Right of Withdrawal",
-        "content": "If you are a consumer, you may have the right to a withdrawal period under consumer protection laws. Please check our Refund Policy for more information."
+        "content": "<p>If you are a consumer, you may have the right to a withdrawal period under consumer protection laws. Please check our Refund Policy for more information.</p>"
       },
       {
         "title": "Termination of Service",
-        "content": "The Service Provider reserves the right to unilaterally terminate this contract at any time if it reasonably considers that there is an extraordinary and justified reason. Extraordinary and justified reasons include, among others, activities that are illegal, immoral, or against professional ethics, such as developing projects that promote fraud, scams, or any illicit activity. In such cases, the Service Provider will notify the Client in advance and proceed with the termination of the contractual relationship without entitling the Client to any claims. Additionally, in case of termination for the reasons mentioned above, the Service Provider reserves the right not to transfer the project or any part of the development completed up to that point. All materials and progress will remain the property and under the control of the Service Provider and may not be used, shared, or claimed by the Client."
+        "content": "<p>The Service Provider reserves the right to unilaterally terminate this contract at any time if it reasonably considers that there is an extraordinary and justified reason. Extraordinary and justified reasons include, among others, activities that are illegal, immoral, or against professional ethics, such as developing projects that promote fraud, scams, or any illicit activity. In such cases, the Service Provider will notify the Client in advance and proceed with the termination of the contractual relationship without entitling the Client to any claims.</p><p>Additionally, in case of termination for the reasons mentioned above, the Service Provider reserves the right not to transfer the project or any part of the development completed up to that point. All materials and progress will remain the property and under the control of the Service Provider and may not be used, shared, or claimed by the Client.</p>"
       }
     ]
   },

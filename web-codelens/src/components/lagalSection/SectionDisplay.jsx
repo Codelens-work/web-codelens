@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { Trans } from "react-i18next";
 import "../lagalSection/legalSection.css";
 
 const SectionDisplay = ({ titles, description }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1024);
+  const transTags = {ul: <ul />, li: <li />, strong: <strong />, a: <a />, div: <div/>, h4: <h4/>}
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -31,7 +33,7 @@ const SectionDisplay = ({ titles, description }) => {
               {title}
             </div>
             <div className={`accordion-content ${activeIndex === i ? "show" : ""}`}>
-              <p>{description[i]}</p>
+              <Trans components={transTags}>{description[i]}</Trans>
             </div>
           </div>
         ))}
@@ -53,7 +55,7 @@ const SectionDisplay = ({ titles, description }) => {
         ))}
       </div>
       <div className="right-column p-for-display">
-        <p>{description[activeIndex]}</p>
+        <Trans components={transTags}>{description[activeIndex]}</Trans>
       </div>
     </div>
   );

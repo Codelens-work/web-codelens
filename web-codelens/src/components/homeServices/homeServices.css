@@ -24,12 +24,17 @@ html, body {
 }
 
 .home-services-carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
   padding-top: 30px;
   width      : 100%;
   max-width  : 100vw;
-  height     : auto;
+/*   height     : auto;
   overflow   : hidden;
-  position   : relative;
+  position   : relative; */
 }
 
 .home-carousel-slides {
@@ -116,14 +121,25 @@ html, body {
     flex-shrink: 0;
     position   : relative;
     transition : transform 0.5s;
-    
-
   }
 
   .wrapper {
     padding-left: 20%;
     height      : 80px;
+  }
+  
+  .card-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media(min-width:500px){
+  .home-services-carousel{
+    flex-direction: row;
     
   }
-
 }

@@ -1,20 +1,55 @@
 import Section from '../section/Section' 
 import LinkButton from '../linkButton/LinkButton'
+import { motion } from 'framer-motion'
 import './getToKnow.css'
 
 const GetToKnow = ({ t, url }) => {
 
+  const slideInLeft = {
+    hidden: { opacity: 0, x: -30 },
+    visible: { 
+        opacity: 1, 
+        x: 0, 
+        transition: { 
+            duration: 0.8, 
+            ease: "easeOut" 
+        } 
+    },
+};
+
+const slideInRight = {
+    hidden: { opacity: 0, x: 30 },
+    visible: { 
+        opacity: 1, 
+        x: 0, 
+        transition: { 
+            duration: 0.8, 
+            ease: "easeOut" 
+        } 
+    },
+};
+
   return(
     <Section className='get-to-know-section'>
-      <div className="get-to-know-content">
+      <motion.div 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount:  0.2 }}
+      variants={slideInLeft}
+      className="get-to-know-content">
         <h2 className='h2-line'>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>
         <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={url} size="normal" />
-      </div>
-      <div className="get-to-know-img">
+      </motion.div>
+      <motion.div 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount:  0.2 }}
+      variants={slideInRight}
+      className="get-to-know-img">
         <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />
-      </div>
+      </motion.div>
     </Section>
   )
 }

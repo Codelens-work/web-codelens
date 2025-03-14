@@ -11,7 +11,7 @@ const LegalDescription = ({ paragraph, secondParagraph, thirdParagraph, textColo
       <div className="left-column">
         <p>{paragraph}</p>
         <p>{secondParagraph}</p>
-        <p>{thirdParagraph} <spam className= "textColor">{textColor}</spam></p>
+        <p>{thirdParagraph} <span className= "textColor">{textColor}</span></p>
       </div>
     </div>
   );

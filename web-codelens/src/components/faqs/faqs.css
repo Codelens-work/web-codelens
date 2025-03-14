@@ -15,6 +15,10 @@
   font-size: clamp(1rem, 3vw, 1rem);
 }
 
+.motion {
+  width: auto;
+}
+
 .accordion {
   width: 100%;
   display: flex;

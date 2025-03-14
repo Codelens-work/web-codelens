@@ -806,15 +806,15 @@
       },
       {
         "title": "Information We Collect",
-        "content": "<p>We collect different categories of personal information, including:<ul><li><strong>Personally identifiable information:</strong> name, email address, phone number, mailing address.</li><li><strong>Payment data:</strong><li><strong>Browsing data:</strong> information automatically collected while browsing our site (IP address, browser type, pages visited, etc.).</li><li><strong>Usage data:</strong> information about how you use our website, services, and products.</li></ul></p>"
+        "content": "<p>We collect different categories of personal information, including:</p><ul><li><strong>Personally identifiable information:</strong> name, email address, phone number, mailing address.</li><li><strong>Payment data:</strong><li><strong>Browsing data:</strong> information automatically collected while browsing our site (IP address, browser type, pages visited, etc.).</li><li><strong>Usage data:</strong> information about how you use our website, services, and products.</li></ul>"
       },
       {
         "title": "How We Use Your Information",
-        "content": "<p>We use your personal information for specific purposes, such as:<ul><li><strong>Order processing:</strong> managing purchases and transactions.</li><li><strong>Service improvement:</strong> optimizing the user experience on our website.</li><li><strong>Communication:</strong> sending you important information about our services, promotions, or account updates.</li><li><strong>Legal compliance:</strong> ensuring compliance with legal and regulatory requirements.</li></ul></p>"
+        "content": "<p>We use your personal information for specific purposes, such as:</p><ul><li><strong>Order processing:</strong> managing purchases and transactions.</li><li><strong>Service improvement:</strong> optimizing the user experience on our website.</li><li><strong>Communication:</strong> sending you important information about our services, promotions, or account updates.</li><li><strong>Legal compliance:</strong> ensuring compliance with legal and regulatory requirements.</li></ul>"
       },
       {
         "title": "Sharing Your Information",
-        "content": "<p>We are committed to not selling, renting, or sharing your personal information with third parties for commercial purposes without your prior consent, except in the following situations:<ul><li><strong>Service providers:</strong> we share your information with third parties who assist us with specific functions, such as payment processing or shipping management.</li><li><strong>Legal compliance:</strong> we may disclose your personal information if required by law or necessary to protect our rights, security, or those of third parties.</li></ul></p>"
+        "content": "<p>We are committed to not selling, renting, or sharing your personal information with third parties for commercial purposes without your prior consent, except in the following situations:</p><ul><li><strong>Service providers:</strong> we share your information with third parties who assist us with specific functions, such as payment processing or shipping management.</li><li><strong>Legal compliance:</strong> we may disclose your personal information if required by law or necessary to protect our rights, security, or those of third parties.</li></ul>"
       },
       {
         "title": "Protecting Your Information",
@@ -822,11 +822,11 @@
       },
       {
         "title": "Your Rights Over Your Personal Information",
-        "content": "<p>In accordance with applicable laws, you have the following rights regarding your personal information:<ul><li><strong>Access:</strong> You can request to review the information we hold about you.</li><li><strong>Rectification:</strong>You can request corrections to your personal data if it is incorrect.</li><li><strong>Deletion:</strong> Puede solicitar la eliminación de sus datos personales, sujeto a requisitos legales o contractuales.</li><li><strong>Oposición al tratamiento:</strong>  You can request the deletion of your personal data, subject to legal or contractual requirements. Objection to processing: You can object to certain data processing activities, such as direct marketing. To exercise your rights, contact us at codelens.ar@gmail.com.</li></ul></p>"
+        "content": "<p>In accordance with applicable laws, you have the following rights regarding your personal information:</p><ul>  <li><strong>Access:</strong> You can request to review the information we hold about you.</li><li><strong>Rectification:</strong> You can request corrections to your personal data if it is incorrect.</li><li><strong>Deletion:</strong> You can request the deletion of your personal data, subject to legal or contractual requirements.</li><li><strong>Objection to processing:</strong> You can object to certain data processing activities, such as direct marketing.</li></ul><p>To exercise your rights, contact us at codelens.ar@gmail.com.</p>"
       },
       {
         "title": "Cookies and Similar Technologies",
-        "content": "<p>We use cookies and similar technologies to enhance your experience on our website. These tools allow us to:<ul><li>Identify you when you return to our site.</li><li>Record preferences and personalize content.</li><li>Analyze site usage.</li></ul>You can set your browser to reject cookies or notify you each time a cookie is sent. However, this may affect your experience on our site.</p>"
+        "content": "<p>We use cookies and similar technologies to enhance your experience on our website. These tools allow us to:</p><ul><li>Identify you when you return to our site.</li><li>Record preferences and personalize content.</li><li>Analyze site usage.</li></ul>You can set your browser to reject cookies or notify you each time a cookie is sent. However, this may affect your experience on our site."
       },
       {
         "title": "International Data Transfers",
@@ -859,7 +859,7 @@
       },
       {
         "title": "Payment Methods",
-        "content": "<p>To facilitate payment for our services, CodeLens offers the following options:<ul><li><strong>Accepted Payment Methods:</strong> Bank transfer (through MercadoPago, Naranja X, Belo, or other virtual wallets and transfer methods).</li><li><strong> Payment Terms:</strong><ul><li><strong>Advance Payment:</strong> A 50% advance payment of the total budget is required at the start of the project.</li><li><strong>Final Payment:</strong> Once the project is completed and approved by the client, the final payment must be made. The project will only be delivered to the client after full payment is received.</li></ul></li><li><strong>Referral System:</strong> CodeLens offers benefits for clients who refer new projects. Details of the referral system, including rewards and application conditions, will be communicated to the client separately.</li></ul></p>"
+        "content": "<p>To facilitate payment for our services, CodeLens offers the following options:</p><ul><li><strong>Accepted Payment Methods:</strong> Bank transfer (through MercadoPago, Naranja X, Belo, or other virtual wallets and transfer methods).</li><li><strong> Payment Terms:</strong><ul><li><strong>Advance Payment:</strong> A 50% advance payment of the total budget is required at the start of the project.</li><li><strong>Final Payment:</strong> Once the project is completed and approved by the client, the final payment must be made. The project will only be delivered to the client after full payment is received.</li></ul></li><li><strong>Referral System:</strong> CodeLens offers benefits for clients who refer new projects. Details of the referral system, including rewards and application conditions, will be communicated to the client separately.</li></ul>"
       },
       {
         "title": "Refund Policy",

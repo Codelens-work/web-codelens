@@ -1,13 +1,26 @@
 import './footer.css'
 import { useTranslation } from 'react-i18next'
+import { useNavigate, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Footer() {
 
   const { t } = useTranslation()
-
+  const navigate = useNavigate()
+  const location = useLocation()
   const footer = t('footer-section', { returnObjects: true })
-
   const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footer.lists;
+
+   useEffect(() => {
+      const hash = location.hash;
+      //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
+      if (hash) {
+        const targetSection = document.querySelector(hash);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [location]);
 
   return (
     <footer>
@@ -24,7 +37,7 @@ export default function Footer() {
             <span className="containerTitle">{servicesList.title}</span>
             <ul className="footerList">
               {servicesList.items.map((item, i) => {
-                return <li key={i}><a href={item.url}>{item.text}</a></li>
+                return <li key={i}><a href={item.url} onClick={() => { navigate(item.url)}}>{item.text}</a></li>
               })}
             </ul>
           </div>
@@ -35,7 +48,7 @@ export default function Footer() {
                 if(item.url === '/blog' || item.url === '/en/blog') {
                   return <li key={i}  className='disabled'><a href='#' onClick={(e) => {e.preventDefault()}}>{item.text}</a></li>
                 }
-                return <li key={i}><a href={item.url}>{item.text}</a></li>
+                return <li key={i}><a href={item.url} onClick={() => { navigate(item.url)}}>{item.text}</a></li>
               })}
             </ul>
           </div>
@@ -43,7 +56,7 @@ export default function Footer() {
             <span className="containerTitle">{helpList.title}</span>
             <ul className="footerList">
               {helpList.items.map((item, i) => {
-                return <li key={i}><a href={item.url}>{item.text}</a></li>
+                return <li key={i}><a onClick={() => { navigate(item.url)}}>{item.text}</a></li>
               })}
             </ul>
           </div>

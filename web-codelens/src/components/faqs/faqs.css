@@ -15,10 +15,17 @@
   font-size: clamp(1rem, 3vw, 1rem);
 }
 
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .accordion-item {
   background-color: transparent;
   border: unset;
+  width: 80%;
 }
 
 .accordion .accordion-item:first-child .accordion-button {
@@ -47,8 +54,8 @@
   font-weight: 700;
 }
 
-@media(width>1000px) {
-  .accordion {
-    width: 80%;
+@media(width<=1000px) {
+  .accordion-item {
+    width: 96%;
   }
   }

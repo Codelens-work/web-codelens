@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet";
-import { Hero } from "../../../components/hero/Hero.js";
+import { Hero } from "../../../components/hero/Hero";
 import "./WebDevelopment.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
 import Services from "../../../components/services/Services.jsx";

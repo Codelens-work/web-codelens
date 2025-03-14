@@ -8,7 +8,7 @@ const SectionReference = () => {
     const { t } = useTranslation()
 
     const testimonials = t('home.testimonials-section.cards', { returnObjects: true });
-    console.log('Testimonials data:', testimonials); // Debug log
+    //console.log('Testimonials data:', testimonials); // Debug log
 
     return (
         <Section className='reference-container'>

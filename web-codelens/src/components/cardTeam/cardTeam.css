@@ -38,6 +38,7 @@
     width: 5rem;
     flex-shrink: 0;
     text-align: center;
+    color: var(--black);
   }
 
   .card-team.mobile summary:focus {
@@ -53,6 +54,13 @@
     align-content: center;
     flex-wrap: wrap;
     padding: 1.5rem 1em;
+  }
+
+  .details-container{
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 5px;
+    color: var(--white);
+    border-radius: 5px;
   }
   
   .card-team.mobile:hover,

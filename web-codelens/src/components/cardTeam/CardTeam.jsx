@@ -40,8 +40,10 @@ const CardTeam = ({ member }) => {
         />
       </summary>
       <div className="details-content-wrapper">
+      <div className='details-container'>
         <h3>{member.fullname}</h3>
         <p>{member.role}</p>
+      </div>
       </div>
     </details>
   );

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import LegalSection from "../../components/lagalSection/LegalSection";
-import { Hero } from "../../components/hero/Hero";
+import { Hero } from "/src/components/hero/Hero.tsx";
 import { useTranslation } from "react-i18next";
 import "./termsPage.css";
 

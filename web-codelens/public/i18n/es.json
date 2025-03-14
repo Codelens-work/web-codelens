@@ -889,7 +889,7 @@
     "terms-section": [
       {
         "title": "Acuerdo de Servicios",
-        "content": "Al contratar los servicios de desarrollo de software y diseño web ofrecidos por CodeLens, el cliente acepta todos los términos y condiciones aquí establecidos. Nos comprometemos a prestar nuestros servicios de manera profesional, cumpliendo con los estándares de calidad y plazos acordados con el cliente."
+        "content": "<p>Al contratar los servicios de desarrollo de software y diseño web ofrecidos por CodeLens, el cliente acepta todos los términos y condiciones aquí establecidos. Nos comprometemos a prestar nuestros servicios de manera profesional, cumpliendo con los estándares de calidad y plazos acordados con el cliente.</p>"
       },
       {
         "title": "Medios de Pago",
@@ -897,7 +897,7 @@
       },
       {
         "title": "Política de Reembolsos",
-        "content": "CodeLens no ofrece reembolsos una vez iniciado el proyecto. En caso de cancelación por parte del cliente, el anticipo no será reembolsable y el proyecto no será entregado. En circunstancias excepcionales, se podrán considerar otros acuerdos, siempre a la discreción de CodeLens."
+        "content": "<p>CodeLens no ofrece reembolsos una vez iniciado el proyecto. En caso de cancelación por parte del cliente, el anticipo no será reembolsable y el proyecto no será entregado. En circunstancias excepcionales, se podrán considerar otros acuerdos, siempre a la discreción de CodeLens.</p>"
       },
       {
         "title": "Propiedad Intelectual",
@@ -905,11 +905,11 @@
       },
       {
         "title": "Productos y servicios",
-        "content": "<ul><li><h4>5.1 Disponibilidad de productos</h4><p>La información sobre productos y servicios, incluidos precios y disponibilidad, se proporciona sólo como referencia y puede cambiar sin previo aviso. Nos reservamos el derecho de interrumpir o modificar ofertas en cualquier momento.</p></li><li><h4>5.2 Información de productos</h4><p>Las descripciones, imágenes e información de productos disponibles en el sitio se proporcionan con fines informativos. Sin embargo, pueden ocurrir errores, y no garantizamos que toda la información sea precisa, completa o libre de errores.</p></li><li><h4>5.3 Devoluciones y reembolsos</h4><p>Nuestra política de devoluciones y reembolsos está definida en nuestra [Política de devoluciones]. Nos comprometemos a proporcionar información clara y a procesar todas las solicitudes de devolución conforme a esta política.</p></li></ul>"
+        "content": "<div><h4>5.1 Disponibilidad de productos</h4><p>La información sobre productos y servicios, incluidos precios y disponibilidad, se proporciona sólo como referencia y puede cambiar sin previo aviso. Nos reservamos el derecho de interrumpir o modificar ofertas en cualquier momento.</p><h4>5.2 Información de productos</h4><p>Las descripciones, imágenes e información de productos disponibles en el sitio se proporcionan con fines informativos. Sin embargo, pueden ocurrir errores, y no garantizamos que toda la información sea precisa, completa o libre de errores.</p><h4>5.3 Devoluciones y reembolsos</h4><p>Nuestra política de devoluciones y reembolsos está definida en nuestra [Política de devoluciones]. Nos comprometemos a proporcionar información clara y a procesar todas las solicitudes de devolución conforme a esta política.</p></div>"
       },
       {
         "title": "Enlaces a sitios de terceros",
-        "content": "El sitio puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan únicamente como una conveniencia. No tenemos control sobre estos sitios y no somos responsables de su contenido, políticas de privacidad ni prácticas. Acceder a estos sitios es bajo tu propio riesgo."
+        "content": "<p>El sitio puede contener enlaces a sitios web de terceros. Estos enlaces se proporcionan únicamente como una conveniencia. No tenemos control sobre estos sitios y no somos responsables de su contenido, políticas de privacidad ni prácticas. Acceder a estos sitios es bajo tu propio riesgo.</p>"
       },
       {
         "title": "Confidencialidad",
@@ -917,19 +917,19 @@
       },
       {
         "title": "Modificaciones y Revisiones",
-        "content": "El cliente tiene derecho a solicitar ajustes o revisiones durante el desarrollo del proyecto, siempre que se encuentren dentro del alcance previamente acordado. Cualquier cambio significativo que implique trabajo adicional o fuera del alcance del proyecto original podrá incurrir en costos adicionales, que serán comunicados al cliente antes de su implementación."
+        "content": "<p>El cliente tiene derecho a solicitar ajustes o revisiones durante el desarrollo del proyecto, siempre que se encuentren dentro del alcance previamente acordado. Cualquier cambio significativo que implique trabajo adicional o fuera del alcance del proyecto original podrá incurrir en costos adicionales, que serán comunicados al cliente antes de su implementación.</p>"
       },
       {
         "title": "Exención de responsabilidad",
-        "content": "El sitio se proporciona 'tal como está' y 'según disponibilidad'. CodeLens no ofrece declaraciones ni garantías, expresas o implícitas, sobre el funcionamiento del sitio o la precisión de la información contenida en él. En la medida permitida por la ley, rechazamos toda responsabilidad por cualquier pérdida o daño, incluidos daños directos, indirectos, especiales o incidentales, que resulten del uso o la imposibilidad de usar este sitio."
+        "content": "<p>El sitio se proporciona 'tal como está' y 'según disponibilidad'. CodeLens no ofrece declaraciones ni garantías, expresas o implícitas, sobre el funcionamiento del sitio o la precisión de la información contenida en él. En la medida permitida por la ley, rechazamos toda responsabilidad por cualquier pérdida o daño, incluidos daños directos, indirectos, especiales o incidentales, que resulten del uso o la imposibilidad de usar este sitio.</p>"
       },
       {
         "title": "Soporte Técnico y Mantenimiento",
-        "content": "A menos que se acuerde un plan de mantenimiento específico, CodeLens no se hace responsable de ofrecer soporte técnico o actualizaciones después de la entrega del proyecto. Los servicios de soporte o mantenimiento podrán contratarse de manera independiente si el cliente lo solicita."
+        "content": "<p>A menos que se acuerde un plan de mantenimiento específico, CodeLens no se hace responsable de ofrecer soporte técnico o actualizaciones después de la entrega del proyecto. Los servicios de soporte o mantenimiento podrán contratarse de manera independiente si el cliente lo solicita.</p>"
       },
       {
         "title": "Fuerza mayor",
-        "content": "No seremos responsables de retrasos o incumplimientos debido a eventos imprevisibles, como desastres naturales, guerras, huelgas, actos de terrorismo o fallos tecnológicos, pandemias."
+        "content": "<p>No seremos responsables de retrasos o incumplimientos debido a eventos imprevisibles, como desastres naturales, guerras, huelgas, actos de terrorismo o fallos tecnológicos, pandemias.</p>"
       },
       {
         "title": "Modificaciones a los Términos y Condiciones",
@@ -937,7 +937,7 @@
       },
       {
         "title": "Derechos de desistimiento",
-        "content": "Si eres consumidor, puedes tener derecho a un período de desistimiento según las leyes de protección al consumidor. Consulta nuestra Política de reembolsos para más información."
+        "content": "<p>Si eres consumidor, puedes tener derecho a un período de desistimiento según las leyes de protección al consumidor. Consulta nuestra Política de reembolsos para más información.</p>"
       },
       {
         "title": "Terminación de servicio",

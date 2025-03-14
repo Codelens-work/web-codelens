@@ -108,6 +108,10 @@
     padding: 10px;
 }
 
+.p-for-display ul li, .p-for-display h4 {
+  font-size    : clamp(16px, 2vw, 20px);
+}
+
 @media (max-width: 1023px) {
     .section-display-container.mobile {
       flex-direction: column;

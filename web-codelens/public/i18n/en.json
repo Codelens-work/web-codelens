@@ -855,7 +855,7 @@
     "terms-section": [
       {
         "title": "Service Agreement",
-        "content": "By hiring the software development and web design services offered by CodeLens, the client accepts all the terms and conditions set forth herein. We commit to providing our services professionally, meeting the agreed quality standards and deadlines."
+        "content": "<p>By hiring the software development and web design services offered by CodeLens, the client accepts all the terms and conditions set forth herein. We commit to providing our services professionally, meeting the agreed quality standards and deadlines.</p>"
       },
       {
         "title": "Payment Methods",
@@ -863,7 +863,7 @@
       },
       {
         "title": "Refund Policy",
-        "content": "CodeLens does not offer refunds once the project has started. In case of cancellation by the client, the advance payment will not be refundable, and the project will not be delivered. In exceptional circumstances, other agreements may be considered, always at CodeLens' discretion."
+        "content": "<p>CodeLens does not offer refunds once the project has started. In case of cancellation by the client, the advance payment will not be refundable, and the project will not be delivered. In exceptional circumstances, other agreements may be considered, always at CodeLens' discretion.</p>"
       },
       {
         "title": "Intellectual Property",
@@ -871,31 +871,31 @@
       },
       {
         "title": "Products and Services",
-        "content": "<ul><li><h4>5.1 Product Availability</h4><p>Product and service information, including prices and availability, is provided for reference only and may change without prior notice. We reserve the right to discontinue or modify offers at any time.</p></li><li><h4>5.2 Product Information</h4><p>The descriptions, images, and product information available on the site are provided for informational purposes. However, errors may occur, and we do not guarantee that all information is accurate, complete, or error-free.</p></li><li><h4>5.3 Returns and Refunds</h4><p>Our returns and refund policy is defined in our [Return Policy]. We are committed to providing clear information and processing all return requests according to this policy.</p></li></ul>"
+        "content": "<div><h4>5.1 Product Availability</h4><p>Product and service information, including prices and availability, is provided for reference only and may change without prior notice. We reserve the right to discontinue or modify offers at any time.</p><h4>5.2 Product Information</h4><p>The descriptions, images, and product information available on the site are provided for informational purposes. However, errors may occur, and we do not guarantee that all information is accurate, complete, or error-free.</p><h4>5.3 Returns and Refunds</h4><p>Our returns and refund policy is defined in our [Return Policy]. We are committed to providing clear information and processing all return requests according to this policy.</p></div>"
       },
       {
         "title": "Links to Third-Party Sites",
-        "content": "The site may contain links to third-party websites. These links are provided for convenience only. We have no control over these sites and are not responsible for their content, privacy policies, or practices. Accessing these sites is at your own risk."
+        "content": "<p>The site may contain links to third-party websites. These links are provided for convenience only. We have no control over these sites and are not responsible for their content, privacy policies, or practices. Accessing these sites is at your own risk.</p>"
       },
       {
         "title": "Confidentiality",
-        "content": ""
+        "content": "<p>CodeLens is committed to protecting all confidential information provided by the client during the development of the project. This information will be used solely for the specific purposes of the project and will not be disclosed to third parties without the client's consent, except when necessary for the execution of the service. <a href='https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas'>Register private personal databases</a></p>"
       },
       {
         "title": "Modifications and Revisions",
-        "content": "<p>CodeLens commits to protecting all confidential information provided by the client during the project's development. This information will only be used for the specific purposes of the project and will not be disclosed to third parties without the client’s consent, except when necessary for service fulfillment.<a href='https://www.argentina.gob.ar/registrar-bases-de-datos-personales-privadas'>Register personal private Databases</a></p>"
+        "content": "<p>The client has the right to request adjustments or revisions during the development of the project, as long as they fall within the previously agreed scope. Any significant changes that require additional work or go beyond the original project scope may incur additional costs, which will be communicated to the client before implementation.</p>"
       },
       {
         "title": "Disclaimer",
-        "content": "The site is provided 'as is' and 'as available.' CodeLens makes no representations or warranties, express or implied, regarding the operation of the site or the accuracy of the information contained in it. To the extent permitted by law, we disclaim all liability for any loss or damage, including direct, indirect, special, or incidental damages, resulting from the use or inability to use this site."
+        "content": "<p>The site is provided 'as is' and 'as available.' CodeLens makes no representations or warranties, express or implied, regarding the operation of the site or the accuracy of the information contained in it. To the extent permitted by law, we disclaim all liability for any loss or damage, including direct, indirect, special, or incidental damages, resulting from the use or inability to use this site.</p>"
       },
       {
         "title": "Technical Support and Maintenance",
-        "content": "Unless a specific maintenance plan is agreed upon, CodeLens is not responsible for providing technical support or updates after the project's delivery. Support or maintenance services can be contracted separately if requested by the client."
+        "content": "<p>Unless a specific maintenance plan is agreed upon, CodeLens is not responsible for providing technical support or updates after the project's delivery. Support or maintenance services can be contracted separately if requested by the client.</p>"
       },
       {
         "title": "Force Majeure",
-        "content": "We will not be responsible for delays or failures due to unforeseeable events, such as natural disasters, wars, strikes, acts of terrorism, technological failures, or pandemics."
+        "content": "<p>We will not be responsible for delays or failures due to unforeseeable events, such as natural disasters, wars, strikes, acts of terrorism, technological failures, or pandemics.</p>"
       },
       {
         "title": "Modifications to the Terms and Conditions",
@@ -903,7 +903,7 @@
       },
       {
         "title": "Right of Withdrawal",
-        "content": "If you are a consumer, you may have the right to a withdrawal period under consumer protection laws. Please check our Refund Policy for more information."
+        "content": "<p>If you are a consumer, you may have the right to a withdrawal period under consumer protection laws. Please check our Refund Policy for more information.</p>"
       },
       {
         "title": "Termination of Service",

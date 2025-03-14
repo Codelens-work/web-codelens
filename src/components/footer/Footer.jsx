@@ -5,11 +5,15 @@ import { useEffect } from 'react'
 
 export default function Footer() {
 
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
   const footer = t('footer-section', { returnObjects: true })
+  
   const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footer.lists;
+
+  
+  console.log("debug list services", servicesList)
 
    useEffect(() => {
       const hash = location.hash;

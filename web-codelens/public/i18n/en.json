@@ -802,7 +802,7 @@
     "privacy-section": [
       {
         "title": "Introduction",
-        "content": "At CodeLens, we are committed to respecting your privacy and protecting your personal information in accordance with applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA)."
+        "content": "<p>At CodeLens, we are committed to respecting your privacy and protecting your personal information in accordance with applicable privacy laws, including the Personal Information Protection and Electronic Documents Act (PIPEDA).</p>"
       },
       {
         "title": "Information We Collect",
@@ -818,7 +818,7 @@
       },
       {
         "title": "Protecting Your Information",
-        "content": "We implement appropriate security measures to protect your personal information against unauthorized access, use, or disclosure. This includes the use of encryption technologies and other physical and technical protections."
+        "content": "<p>We implement appropriate security measures to protect your personal information against unauthorized access, use, or disclosure. This includes the use of encryption technologies and other physical and technical protections.</p>"
       },
       {
         "title": "Your Rights Over Your Personal Information",
@@ -830,11 +830,11 @@
       },
       {
         "title": "International Data Transfers",
-        "content": "We do not transfer your personal information except in cases necessary for the provision of our services (e.g., a payment service provider)."
+        "content": "<p>We do not transfer your personal information except in cases necessary for the provision of our services (e.g., a payment service provider).</p>"
       },
       {
         "title": "Changes to This Privacy Policy",
-        "content": "We reserve the right to modify this privacy policy at any time. Any updates will be posted on this page with the date of the last revision. We recommend checking this page regularly to stay informed about potential changes."
+        "content": "<p>We reserve the right to modify this privacy policy at any time. Any updates will be posted on this page with the date of the last revision. We recommend checking this page regularly to stay informed about potential changes.</p>"
       }
     ]
   },

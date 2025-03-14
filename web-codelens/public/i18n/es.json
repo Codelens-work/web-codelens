@@ -829,14 +829,14 @@
     "about-section": {
       "about-img": "",
       "content": [
-        "En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
-        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad."
+        "<p>En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
+        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad.</p>"
       ]
     },
     "privacy-section": [
       {
         "title": "Introducción",
-        "content": "En CodeLens estamos comprometidos con el respeto de su privacidad y con la protección de su información personal de acuerdo con las leyes vigentes sobre privacidad, incluida la Ley de Protección de Información Personal y Documentos Electrónicos (LPRPDE)."
+        "content": "<p>En CodeLens estamos comprometidos con el respeto de su privacidad y con la protección de su información personal de acuerdo con las leyes vigentes sobre privacidad, incluida la Ley de Protección de Información Personal y Documentos Electrónicos (LPRPDE).</p>"
       },
       {
         "title": "Información que recopilamos",
@@ -852,7 +852,7 @@
       },
       {
         "title": "Protección de su información",
-        "content": "Implementamos medidas de seguridad adecuadas para proteger su información personal contra el acceso, uso o divulgación no autorizados. Esto incluye el uso de tecnologías de encriptación y otras protecciones físicas y técnicas."
+        "content": "<p>Implementamos medidas de seguridad adecuadas para proteger su información personal contra el acceso, uso o divulgación no autorizados. Esto incluye el uso de tecnologías de encriptación y otras protecciones físicas y técnicas.</p>"
       },
       {
         "title": "Sus derechos sobre su información personal",
@@ -864,11 +864,11 @@
       },
       {
         "title": "Transferencia internacional de datos",
-        "content": "No transferimos su información personal, excepto en los casos necesarios para la prestación de nuestros servicios (por ejemplo, un proveedor de servicios de pago)."
+        "content": "<p>No transferimos su información personal, excepto en los casos necesarios para la prestación de nuestros servicios (por ejemplo, un proveedor de servicios de pago).</p>"
       },
       {
         "title": "Modificaciones a esta política de privacidad",
-        "content": "Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier actualización será publicada en esta página con la fecha de la última revisión. Le recomendamos revisar esta página regularmente para estar informado de posibles cambios."
+        "content": "<p>Nos reservamos el derecho de modificar esta política de privacidad en cualquier momento. Cualquier actualización será publicada en esta página con la fecha de la última revisión. Le recomendamos revisar esta página regularmente para estar informado de posibles cambios.</p>"
       }
     ]
   },

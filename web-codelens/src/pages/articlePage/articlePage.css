@@ -1,0 +1,43 @@
+.article-page {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .header-image {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .article-content h1,
+  .article-content h2 {
+    margin: 20px 0;
+  }
+  
+  .article-content p {
+    line-height: 1.6;
+  }
+  
+  .related-articles {
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .related-articles h3 {
+    margin-bottom: 10px;
+  }
+  
+  .article-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+  
+  .article-navigation .prev,
+  .article-navigation .next {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+  }

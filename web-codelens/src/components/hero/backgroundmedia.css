@@ -1,0 +1,24 @@
+.background-media {
+  position: absolute;
+  top: -20%; /* Añadimos espacio extra arriba y abajo para el efecto parallax */
+  left: 0;
+  width: 100%;
+  height: 140%; /* Altura extra para permitir el movimiento */
+  overflow: hidden;
+  will-change: transform; /* Optimización de rendimiento */
+}
+
+.background-media__content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform-origin: center;
+  will-change: transform;
+}
+
+.background-media__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(155, 93, 229, 0.7) 39.51%, rgba(211, 231, 249, 0.8) 67.51%);
+}

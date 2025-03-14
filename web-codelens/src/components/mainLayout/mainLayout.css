@@ -1,0 +1,12 @@
+/* Formato del hijo */
+.main-layout{
+    display: flex;
+    min-height: 100dvh;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    overflow: auto;
+    background-color:#E9ECEF;
+}

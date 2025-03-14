@@ -1,0 +1,228 @@
+.medium-container,
+.large-container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3sease, box-shadow 0.3 sease;
+    background: var(--white);
+    overflow  : hidden;
+
+    padding: 0;
+    margin : 0;
+}
+
+.medium-container:hover,
+.large-container:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
+    transform : scale(1.04);
+}
+
+
+/*linck al blog*/
+.view-more {
+    text-decoration: none;
+    color          : var(--purple);
+}
+
+.view-more:hover {
+    font-weight: bold;
+
+}
+
+/*!! Card Mediano*/
+.medium-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    flex-direction : column;
+    width          : auto;
+    height         : auto;
+    margin         : 1vw;
+
+    border-top-left-radius    : 20px;
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius : 20px;
+
+}
+
+.medium-container .img-container img {
+    width                  : clamp(16rem, 12.5vw + 12.5rem, 24rem);
+    height                 : auto;
+    border-top-left-radius : 20px;
+    border-top-right-radius: 20px;
+}
+
+.medium-content {
+    margin: .8vw;
+}
+
+.medium-container h2 {
+    font-size : clamp(1rem, 2vw + 1rem, 1.5rem);
+    margin-top: 4vh;
+}
+
+/*!! contenedor Fecha y link al blog */
+.date-more-container {
+    justify-content: center;
+    justify-self   : center;
+    align-items    : center;
+    flex-direction : row;
+    gap            : 7vw;
+
+    display    : inline-flex;
+    width      : auto;
+    min-width  : fit-content;
+    white-space: nowrap;
+
+}
+
+.date,
+.view-more {
+    padding: 0;
+    margin : 0;
+}
+
+
+
+
+
+/*!! Card Grande*/
+.large-container {
+    display           : flex;
+    flex-direction    : row-reverse;
+    justify-content   : center;
+    align-items       : center;
+    /* width          : 1074px;
+    height            : 340px; */
+    width             : auto;
+    height            : auto;
+    padding           : 0;
+    margin            : 0;
+
+    border-top-left-radius: 20px;
+
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+
+    border-bottom-left-radius: 20px;
+}
+
+.large-content {
+    margin         : 1vw;
+    display        : flex;
+    flex-direction : column;
+    justify-content: left;
+    align-items    : flex-start;
+    gap            : 2vh;
+    width          : clamp(15rem, 20vw + 20rem, 40rem)
+}
+
+
+.large-container h2 {
+    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+    margin   : 4vh;
+    margin   : 0;
+    padding  : 0;
+}
+
+.large-container p {
+    font-size: clamp(0.6rem, 2vw + 1rem, 1rem);
+
+    margin : 0;
+    padding: 0;
+}
+
+
+.large-container .date-more-container {
+    gap: 25vw;
+}
+
+
+.large-container .img-container img {
+    width : clamp(15rem, 33vw, 30rem);
+    height: auto;
+
+    border-top-right-radius   : 20px;
+    border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 750px) {
+    .large-container {
+        flex-direction: column;
+        width         : auto;
+        align-items   : center;
+    }
+
+    .large-container .img-container {
+        width          : auto;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+    }
+
+    .large-container .img-container img {
+        width        : clamp(5rem, 20vw + 15rem, 30rem);
+        height       : auto;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .large-content {
+        width     : clamp(5rem, 10vw + 15rem, 28rem);
+       
+        padding   : 0.01rem;
+        /* Agrega padding para evitar que el texto toque los bordes */
+        text-align: center;
+        margin: 10px;
+    }
+    .large-container .date-more-container{
+        gap: clamp(2rem, 1vw + 2rem, 10rem);
+        
+    }
+}
+
+
+
+/*--LastArticles--*/
+.main-card-container {
+    width : 100%;
+    height: auto;
+
+    display          : flex;
+    flex-wrap        : wrap;
+    /* flex-direction: column; */
+    justify-content  : center;
+    align-items      : center;
+    border           : none;
+
+    background: var(--white);
+
+}
+
+.title-articles {
+    width        : 95%;
+    padding      : 1vw;
+    margin-top   : 5vh;
+    border-bottom: 2px solid #2E2E2E;
+}
+
+.title-articles h1 {
+    color     : var(--purple);
+    text-align: left;
+}
+
+.large-card-container {
+
+    margin-top: 10vh;
+}
+
+.medium-card-container {
+    margin               : 6rem;
+    padding              : 0;
+    width                : 100%;
+    /* display           : flex;
+    flex-wrap            : wrap; */
+    display              : grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-items          : center;
+    column-gap           : 2vw;
+    row-gap              : .5vh;
+}

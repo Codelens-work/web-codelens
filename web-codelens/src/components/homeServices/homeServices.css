@@ -1,0 +1,145 @@
+:root {
+  --padding: 2rem;
+}
+
+/* 
+html, body {
+  overflow-x: hidden;
+} */
+
+.home-services-section {
+  background   : var(--purple);
+  background   : radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
+}
+
+.home-services-content {
+  display       : flex;
+  flex-direction: column;
+  padding       : 0 60px;
+
+}
+
+.home-services-section span {
+  font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
+}
+
+.home-services-carousel {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  width      : 100%;
+  max-width  : 100vw;
+/*   height     : auto;
+  overflow   : hidden;
+  position   : relative; */
+}
+
+.home-carousel-slides {
+  padding        : 10px;
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: center;
+  gap            : 35px;
+  row-gap        : 35px;
+
+
+}
+
+.home-carousel-bullets {
+  display: none;
+}
+
+.home-carousel-bullets li {
+  --size          : 10px;
+  list-style-type : none;
+  height          : var(--size);
+  width           : var(--size);
+  border-radius   : 50%;
+  background-color: grey;
+}
+
+.home-carousel-bullets .activeSlide {
+  background-color: var(--marine-green);
+}
+
+.izq,
+.der {
+  border: 1px solid red;
+  height: 50px;
+  width : 50px;
+}
+
+@media (width <=768px) {
+  .home-services-section {
+    padding-left : 0;
+    padding-right: 0;
+
+  }
+
+  .home-services-content {
+    align-items: center;
+
+  }
+}
+
+.wrapper {
+  height: auto;
+}
+
+@media (width <=500px) {
+  .home-carousel-slides {
+    flex-wrap         : nowrap;
+    justify-content   : flex-start;
+    scroll-behavior   : smooth;
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+    scrollbar-width   : none;
+    /* Firefox */
+    scroll-snap-type  : x mandatory;
+    scroll-snap-align : center;
+  }
+
+  .home-carousel-slides::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+
+  }
+
+  .home-carousel-bullets {
+    margin-top     : 10px;
+    display        : flex;
+    gap            : 10px;
+    justify-content: center;
+    padding        : 0;
+    
+  }
+
+  .home-carousel-slides>div {
+    flex-shrink: 0;
+    position   : relative;
+    transition : transform 0.5s;
+  }
+
+  .wrapper {
+    padding-left: 20%;
+    height      : 80px;
+  }
+  
+  .card-container-mobile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+@media(min-width:500px){
+  .home-services-carousel{
+    flex-direction: row;
+    
+  }
+}

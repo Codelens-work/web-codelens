@@ -1,0 +1,133 @@
+.card-team {
+    color: var(--white);
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Mobile Styles */
+  .card-team.mobile {
+    display: flex;
+    flex-direction: row;
+    background: transparent;
+    height: 30rem;
+  }
+  
+  .card-team.mobile::marker {
+    content: '';
+  }
+  
+  .card-team.mobile summary img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transition: filter 0.5s ease;
+  }
+  
+/*   .card-team.mobile[open] summary img {
+    filter: brightness(0.5);
+  } */
+  
+  .card-team.mobile summary {
+    padding: 1rem 1em;
+    width: 5rem;
+    flex-shrink: 0;
+    text-align: center;
+    color: var(--black);
+  }
+
+  .card-team.mobile summary:focus {
+    outline: none;
+  }
+  
+  .card-team.mobile .details-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 200px;
+    height: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 1.5rem 1em;
+  }
+
+  .details-container{
+    background-color: rgba(0, 0, 0, 0.582);
+    padding: 5px;
+    color: var(--white);
+    border-radius: 5px;
+  }
+  
+  .card-team.mobile:hover,
+  .card-team.mobile:has(summary:focus) {
+    outline: 2px solid var(--purple);
+    outline-offset: 3px;
+  }
+  
+  .card-team.mobile .details-content-wrapper h3,
+  .card-team.mobile .details-content-wrapper p {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: all 0.5s ease;
+    transition-delay: 0.5s;
+  }
+  
+  .card-team.mobile[open] .details-content-wrapper h3,
+  .card-team.mobile[open] .details-content-wrapper p {
+    transform: none;
+    opacity: 1;
+    transition-delay: 0.5s;
+  }
+  
+  /* Desktop Styles */
+  .card-team.desktop {
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-team.desktop:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card-team.desktop .image-container {
+    width: 100%;
+    height: 25rem;
+    overflow: hidden;
+    border-radius: 2rem;
+  }
+  
+  .card-team.desktop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-team.desktop:hover img {
+    transform: scale(1.05);
+  }
+  
+  .card-team.desktop .content-wrapper {
+    padding: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+    color: var(--black);
+  }
+  
+  .card-team.desktop h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .card-team.desktop p {
+    margin: 0;
+    opacity: 0.8;
+  }

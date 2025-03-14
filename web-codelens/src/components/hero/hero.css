@@ -1,0 +1,22 @@
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 1rem;
+  margin: 0;
+  overflow: hidden; /* Importante para contener el parallax */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+}
+
+@media(min-width: 1024px) {
+  .hero {
+    height: 890px;
+  }
+}

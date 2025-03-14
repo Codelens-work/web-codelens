@@ -1,0 +1,127 @@
+.team-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    background: var(--white);
+    padding: 30px 0;
+}
+
+.team-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-section-content h2 {
+    position: relative;
+    font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
+    padding-left: clamp(38px, 8vw, 60px); /* Asegura espacio para el before */
+}
+
+.team-section-content h2::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0; /* Se mantiene alineado con el padding del h2 */
+    width: clamp(30px, 5vw, 50px);
+    height: 3px;
+    background-color: var(--marine-green);
+    transform: translateY(-50%);
+}
+
+ 
+.team-intro{
+    font-size: 1rem;
+    text-align: center;
+    color: var(--black);
+}
+
+.team-section-cards {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    padding: 1rem;
+    margin: 0 -1rem; /* Compensate for the padding */
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .team-section-cards::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Center the cards container */
+  .team-section-cards::before,
+  .team-section-cards::after {
+    content: '';
+    min-width: calc(35% - 150px); /* Half of viewport minus half of card width */
+  }
+  
+  /* Ensure each card snaps */
+  .team-section-cards > * {
+    scroll-snap-align: center;
+    flex: 0 0 auto;
+  }
+
+
+/* Tablet layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .team-section-content span {
+        text-align: left;
+        width: 95%;
+        font-size: 1.125rem;
+    }
+
+    .team-section-cards {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        overflow-x: visible;
+        padding: 1rem;
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
+    .team-section-cards::before,
+    .team-section-cards::after {
+        display: none;
+    }
+}
+
+/* Desktop layout */
+@media (min-width: 1024px) {
+    .team-section-content{
+        padding-left: 70px;
+    }
+
+    .team-section-content span {
+        text-align: left;
+        width: 95%;
+        font-size: 1.125rem;
+    }
+
+    .team-section-cards {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        overflow-x: visible;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding-top: 60px;
+    }
+
+    .team-section-cards::before,
+    .team-section-cards::after {
+        display: none;
+    }
+}
+  

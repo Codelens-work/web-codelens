@@ -1,0 +1,43 @@
+.reference-container{
+    background: var(--light-blue);
+}
+
+.reference-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-left: 5%;
+    padding: 60PX 10PX;
+}
+
+.reference-intro span{
+    font-size: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem);
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.reference-intro p{
+    font-size: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem);
+    color: var(--black);
+    max-width: 80%;
+}
+
+.card-reference-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media(width > 769px){
+    .reference-intro {
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 80px;
+        gap: 5px;
+    }   
+}

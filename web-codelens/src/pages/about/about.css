@@ -1,0 +1,43 @@
+.about-hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.about-title{
+    text-align: center;
+    font-size: clamp(3rem, 2.6071rem + 1.9643vw, 4.375rem);
+    color: var(--white);
+}
+
+.about-subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.about-description{
+    text-align: center;
+    font-size: 1.125rem;
+    line-height: 1.625rem;
+    color: var(--black);
+    margin-top: 10px;
+    max-width: 590px;
+}
+
+
+.hero-button{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+@media(min-width: 1024px){
+    .about-subtitle{
+        font-size: 2.6rem;
+    }
+
+    .about-description{
+        font-size: 1.4rem;
+    } 
+}

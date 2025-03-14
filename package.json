@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "react-bootstrap": "^2.10.7"
+    "i18next-http-backend": "^3.0.2",
+    "react-bootstrap": "^2.10.7",
+    "react-i18next": "^15.4.0"
   }
 }

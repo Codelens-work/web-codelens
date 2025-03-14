@@ -44,7 +44,7 @@ min-width: min(100%, 300px);
 }
 
 .socialLogoContainer {
-  width: 305px;
+  max-width: 300px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;

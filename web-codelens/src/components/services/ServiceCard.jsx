@@ -37,8 +37,8 @@ const ServiceCard = ({ titleCarts, descriptionCart }) => {
 };
 
 ServiceCard.propTypes = {
-  titleCarts: PropTypes.arrayOf(PropTypes.string).isRequired,
-  descriptionCart: PropTypes.arrayOf(PropTypes.string).isRequired,
+  titleCarts: PropTypes.string.isRequired,
+  descriptionCart: PropTypes.string.isRequired,
 };
 
 export default ServiceCard;

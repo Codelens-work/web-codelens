@@ -1,11 +1,12 @@
-.hero-content{
-    top: 95px;
-}
-
 .hero-content-container{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+}
+
+.container-hero-home{
+    position: relative;
+    top: 100px;
 }
 
 .title-container{

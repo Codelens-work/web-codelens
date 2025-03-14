@@ -121,6 +121,18 @@ a:hover::after {
   width: 100%;
 }
 
+.footerList .disabled a {
+  color: gray;
+}
+
+.footerList .disabled:hover a {
+  color: gray;
+}
+
+.disabled a:hover::after {
+  width: 0;
+}
+
 @media  (width <= 1024px) {
 .firstRowContainer {
   flex-direction: column;

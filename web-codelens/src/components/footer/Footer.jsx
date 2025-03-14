@@ -32,6 +32,9 @@ export default function Footer() {
             <span className="containerTitle">{findWayList.title}</span>
             <ul className="footerList">
               {findWayList.items.map((item, i) => {
+                if(item.url === '/blog' || item.url === '/en/blog') {
+                  return <li key={i}  className='disabled'><a href='#' onClick={(e) => {e.preventDefault()}}>{item.text}</a></li>
+                }
                 return <li key={i}><a href={item.url}>{item.text}</a></li>
               })}
             </ul>

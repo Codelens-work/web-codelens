@@ -9,7 +9,7 @@ const HomeAbout = ({ t, btn, currentLanguage }) => {
         <img src="/imgs/homeIntroImg.svg" alt="About image" />
       </div>
       <div className="home-about-content">
-        <img className="home-about-logo" src="/logos/homeAboutLogo.webp" alt="Codelens Logo" />
+        <img className="home-about-logo" src="/logos/homeAboutLogo.svg" alt="Codelens Logo" />
         <h2>{t.heading}</h2>
         <span>{t.subheading}</span>
         <p>{t.description}</p>

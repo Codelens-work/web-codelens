@@ -4,7 +4,7 @@ import './cardHomeService.css'
 const CardHomeService = ({title, content, icon, cta, serviceUrl, activeClass}) => {
   return(
     <div className={`home-service-card ${activeClass}`}>
-      <img src={"/logos/" + icon + ".webp"} alt={title + " logo"} />
+      <img src={"/logos/" + icon + ".svg"} alt={title + " logo"} />
       <h3>{title}</h3>
       <p>{content}</p>
       <LinkButton label={cta} size="small" href={"/servicios/" + serviceUrl} />

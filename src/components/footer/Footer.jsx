@@ -1,16 +1,13 @@
 import './footer.css'
-import { useTranslation } from 'react-i18next'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
-export default function Footer() {
+export default function Footer({footerTexts}) {
 
-  const { t } = useTranslation()
   const navigate = useNavigate()
   const location = useLocation()
-  const footer = t('footer-section', { returnObjects: true })
 
-  const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footer.lists;
+  const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footerTexts.lists;
 
 
   useEffect(() => {
@@ -28,7 +25,7 @@ export default function Footer() {
       <div className='firstRowContainer'>
         <div className="socialLogoContainer">
           <a href="/"><img id="footerLogo" src="/icons/logo_completo.svg" alt="Logo" /></a>
-          <span>{footer.intro}</span>
+          <span>{footerTexts.intro}</span>
           <div className="mediaContainer">
             <a href="https://www.instagram.com/codelens.tech/" target='_blank'><img src="/icons/icon_instagram.svg" alt="Instagram" /></a>
           </div>

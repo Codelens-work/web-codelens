@@ -220,7 +220,7 @@ const NavBar = () => {
                 onClick={(e) => {
                   e.preventDefault(); // Evita que se siga el enlace
                 }}
-                className="link-navbar-custom mx-2 btn btn-outline-light"
+                className="link-navbar-custom mx-2 btn btn-outline-light blog-disabled"
                 style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
               >
                 {t("titles.blog")}

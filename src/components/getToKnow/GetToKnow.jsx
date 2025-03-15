@@ -48,7 +48,7 @@ const slideInRight = {
       viewport={{ once: true, amount:  0.2 }}
       variants={slideInRight}
       className="get-to-know-img">
-        <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />
+        <img src="/imgs/get-to-know-us.svg" alt={t.heading + " photo"} />
       </motion.div>
     </Section>
   )

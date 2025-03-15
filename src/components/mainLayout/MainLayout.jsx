@@ -10,7 +10,7 @@ const MainLayout = () => {
 
     return (
         <div className='main-layout'>
-            <NavBar />
+            <NavBar footerLists={t("footer-section.lists", {returnObjects: true})} />
             <div className="main-content">
                 <Outlet/>
             </div>

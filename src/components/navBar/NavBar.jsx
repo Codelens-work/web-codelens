@@ -14,7 +14,9 @@ import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
 
-const NavBar = () => {
+const NavBar = ({footerLists}) => {
+
+
 
   const { t } = useTranslation();
 
@@ -36,12 +38,8 @@ const NavBar = () => {
     setExpanded(false);
   };
 
-  const services = t("footer-section.lists.services-list.items", {
-    returnObjects: true,
-  });
-  const route = t("footer-section.lists.find-way-list.items", {
-    returnObjects: true,
-  });
+  const services = footerLists["services-list"].items;
+  const route = footerLists["find-way-list"].items;
 
   const webDevelopmentUrl = services[0]?.url;
   const webDevelopmentText = services[0]?.text;
@@ -58,6 +56,8 @@ const NavBar = () => {
   const aboutUrl = route[1].url;
   const aboutText = route[1].text;
 
+  const homeUrl = i18n.language === 'en' ? "/#home" : "/#inicio"
+  const contactUrl = i18n.language === 'en' ? "/#contact" : "/#contacto"
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,8 +104,7 @@ const NavBar = () => {
               src="/icons/logo_nombre.svg"
               alt="Logo"
               onClick={() => {
-                const url = i18n.language === 'en' ? "/#home" : "/#inicio"
-                navigate(url)
+                navigate(homeUrl)
               }}
               style={{ cursor: "pointer" }}
             />
@@ -125,8 +124,7 @@ const NavBar = () => {
             <Nav className="navbar-links-custom d-flex align-items-center">
               <a
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#home" : "/#inicio"
-                  navigate(url);
+                  navigate(homeUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
@@ -192,8 +190,8 @@ const NavBar = () => {
               </Dropdown>
               <a
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#contact" : "/#contacto"
-                  navigate(url);
+                  
+                  navigate(contactUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"

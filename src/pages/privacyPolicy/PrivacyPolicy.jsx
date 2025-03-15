@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.privacy-policy")}
@@ -23,35 +23,35 @@ const PrivacyPolicy = () => {
         <meta
           name="keywords"
           content={t("keywords.privacy-policy", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
-    <Hero
-      media={{
-        type: 'image',
-        src: '/hero/hero-terms-privacity.webp',
-      }}
-    >
-      <div className="terms-hero-content">
-        <h1 className="terms-title-hero">{t('privacy-page.hero.heading')}</h1>
-      </div>
-    </Hero>
-    <LegalSection
-      title={"Política de Privacidad de CodeLens"}
-      paragraph={
-        tPrivAbout[0]
-      }
-      secondParagraph={
-        tPrivAbout[1]
-      }
+      <Hero
+        media={{
+          type: 'image',
+          src: '/hero/hero-terms-privacity.webp',
+        }}
+      >
+        <div className="terms-hero-content">
+          <h1 className="terms-title-hero">{t('privacy-page.hero.heading')}</h1>
+        </div>
+      </Hero>
+      <LegalSection
+        title={"Política de Privacidad de CodeLens"}
+        paragraph={
+          tPrivAbout[0]
+        }
+        secondParagraph={
+          tPrivAbout[1]
+        }
 
-      titles={tPrivSectionTitle}
-      description={tPrivSectionContent}
-   
-    />
+        titles={tPrivSectionTitle}
+        description={tPrivSectionContent}
+
+      />
     </>
-    );
-  };
+  );
+};
 
 export default PrivacyPolicy;

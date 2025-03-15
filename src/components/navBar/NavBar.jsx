@@ -17,16 +17,16 @@ import i18n from "i18next";
 const NavBar = () => {
 
   const { t } = useTranslation();
-  
+
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
-    
+
   };
 
   const [navActive, setNavActive] = useState(false);
-  const [expanded, setExpanded] = useState(false); // Estado del menú
+  const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
@@ -42,9 +42,6 @@ const NavBar = () => {
   const route = t("footer-section.lists.find-way-list.items", {
     returnObjects: true,
   });
-  const routeHelp = t("footer-section.lists.help-list.items", {
-    returnObjects: true,
-  });
 
   const webDevelopmentUrl = services[0]?.url;
   const webDevelopmentText = services[0]?.text;
@@ -58,25 +55,15 @@ const NavBar = () => {
   const apiText = services[4]?.text;
   const communityUrl = services[5]?.url;
   const communityText = services[5]?.text;
-
-  const homeText = route[0].text;
   const aboutUrl = route[1].url;
   const aboutText = route[1].text;
-  const blogUrl = route[2].url;
 
-  const faqsUrl = routeHelp[0].url;
-  const faqsText = routeHelp[0].text;
-  const termsAndConditionsUrl = routeHelp[2].url;
-  const termsAndConditionsText = routeHelp[2].text;
-  const privacyPolicyUrl = routeHelp[3].url;
-  const privacyPolicyText = routeHelp[3].text;
 
   useEffect(() => {
     const handleScroll = () => {
       setNavActive(window.scrollY > 50);
     };
 
-    // Toggle body scroll when menu is open
     if (expanded) {
       document.body.classList.add("menu-open");
     } else {
@@ -87,16 +74,14 @@ const NavBar = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      // Make sure to remove the class when component unmounts
       document.body.classList.remove("menu-open");
     };
-  }, [expanded]); // Add expanded as a dependency
+  }, [expanded]);
 
   const location = useLocation();
 
   useEffect(() => {
     const hash = location.hash;
-    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
     if (hash) {
       const targetSection = document.querySelector(hash);
       if (targetSection) {
@@ -120,11 +105,11 @@ const NavBar = () => {
               alt="Logo"
               onClick={() => {
                 const url = i18n.language === 'en' ? "/#home" : "/#inicio"
-                navigate(url)} }
+                navigate(url)
+              }}
               style={{ cursor: "pointer" }}
             />
           </Navbar.Brand>
-          {/* Botón hamburguesa */}
           <Navbar.Toggle
             aria-controls="navbar-nav"
             className="hamburger-menu"
@@ -136,14 +121,13 @@ const NavBar = () => {
               className="menu-icon"
             />
           </Navbar.Toggle>
-          {/* Menú colapsable personalizado */}
           <div className={`navbar-collapse ${expanded ? "show" : ""}`}>
             <Nav className="navbar-links-custom d-flex align-items-center">
               <a
                 onClick={() => {
                   const url = i18n.language === 'en' ? "/#home" : "/#inicio"
                   navigate(url);
-                  setExpanded(false); // Cierra el menú al navegar
+                  setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
@@ -218,10 +202,10 @@ const NavBar = () => {
               </a>
               <a
                 onClick={(e) => {
-                  e.preventDefault(); // Evita que se siga el enlace
+                  e.preventDefault();
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
-                style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
+                style={{ cursor: "not-allowed", opacity: 0.5 }}
               >
                 {t("titles.blog")}
               </a>

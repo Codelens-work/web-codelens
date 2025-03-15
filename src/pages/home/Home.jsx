@@ -21,12 +21,11 @@ const Home = () => {
   const route = t("footer-section.lists.find-way-list.items", {
     returnObjects: true,
   });
-  
+
   const aboutUrl = route[1].url;
 
   useEffect(() => {
     const hash = location.hash;
-    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
     if (hash) {
       const targetSection = document.querySelector(hash);
       if (targetSection) {
@@ -78,8 +77,8 @@ const Home = () => {
         currentLanguage={currentLanguage}
       />
       <HomeServices t={t("home.services-section", { returnObjects: true })} />
-      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl}/>
-      <SectionReference /> 
+      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl} />
+      <SectionReference />
       <Contact />
       <Faqs />
     </>

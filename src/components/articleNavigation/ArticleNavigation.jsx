@@ -11,11 +11,10 @@ const ArticleNavigation = ({ prevArticle, nextArticle }) => {
     <div className="article-navigation">
       {prevArticle && (
         <div className="navigation-container">
-            <div className="nav-item prev">
+          <div className="nav-item prev">
             <picture className="icon-navigation">
               <img src="blog/prev.svg" alt="previous" />
             </picture>
-            {/* Pasa las props image y description */}
             <ArticleCardSmall image={prevArticle.image} description={prevArticle.description} />
           </div>
           <div>
@@ -24,18 +23,17 @@ const ArticleNavigation = ({ prevArticle, nextArticle }) => {
         </div>
       )}
       {nextArticle && (
-       <div className="navigation-container">
+        <div className="navigation-container">
           <div className="nav-item next">
-            {/* Pasa las props image y description */}
             <ArticleCardSmall image={nextArticle.image} description={nextArticle.description} />
             <picture className="icon-navigation">
               <img src="blog/next.svg" alt="next" />
             </picture>
           </div>
           <div>
-          <span> {t("blog.navigation.next")}</span>
+            <span> {t("blog.navigation.next")}</span>
+          </div>
         </div>
-       </div>
       )}
     </div>
   );

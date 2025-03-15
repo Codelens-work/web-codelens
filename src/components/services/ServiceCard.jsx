@@ -24,7 +24,7 @@ const ServiceCard = ({ titleCarts, descriptionCart }) => {
   const handleMouseLeave = () => {
     const card = cardRef.current;
     if (card) {
-      card.style.transform = "rotateX(0) rotateY(0) scale(1)"; // Restablece TODOO
+      card.style.transform = "rotateX(0) rotateY(0) scale(1)"; 
     }
   };
 

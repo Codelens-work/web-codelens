@@ -17,7 +17,7 @@ export function AppWeb() {
     "services-pages.web-app.about-section.benefits-section.list",
     { returnObjects: true }
   );
-  
+
   const tFeatures = t("services-pages.web-app.features-section.cards", {
     returnObjects: true,
   });
@@ -30,11 +30,9 @@ export function AppWeb() {
     window.scrollTo(0, 0);
   }, [location]);
 
-  const test = t("services-pages", {returnObjects: true })
-
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.web-app")}
@@ -42,7 +40,7 @@ export function AppWeb() {
         <meta
           name="keywords"
           content={t("keywords.web-app", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -51,13 +49,13 @@ export function AppWeb() {
           type: "image",
           src: "/hero/hero-apps.webp",
         }}
-      > 
-      <motion.div 
-        className="hero__title-container-appWeb"
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8, ease: "easeOut" }} 
       >
+        <motion.div
+          className="hero__title-container-appWeb"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           <Breadcrumb currentService={t('breadcrumbs.aplicaciones-web')} />
           <h1 className="title-service-appWeb">
             {t("services-pages.web-app.hero.heading")}
@@ -78,8 +76,8 @@ export function AppWeb() {
         titleCarts={tCartsTitle}
         descriptionCart={tCartsContent}
         titleServiceContact={t("services-pages.web-app.cto-section.heading")}
-      paragraphServiceContact={t("services-pages.web-app.cto-section.content")}
-      
+        paragraphServiceContact={t("services-pages.web-app.cto-section.content")}
+
       />
     </>
   );

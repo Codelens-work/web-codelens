@@ -39,7 +39,7 @@ const Contact = () => {
         <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount:  0.2 }} // Se activa cuando el 20% del componente es visible
+        viewport={{ once: true, amount:  0.2 }} 
         variants={slideInLeft}
         className="left-c text-container"
       >
@@ -66,11 +66,6 @@ const Contact = () => {
             <a className="email" href="mailto:contacto@codelenstech.com">contacto@codelenstech.com</a>
             <p className="invitation-three"> <span><img src="/icons/Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
             <div className="social-logo-container">
-              {/* <img
-                className="logo-social"
-                src="public/social/facebook.svg"
-                alt="facebook"
-              /> */}
               <a href="https://www.instagram.com/codelens.tech/" 
                 target="_blank"
                 rel="noopener noreferrer" 
@@ -88,7 +83,7 @@ const Contact = () => {
           className="right-c "
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount:  0.2 }} // Se activa cuando el 20% del componente es visible
+          viewport={{ once: true, amount:  0.2 }} 
           variants={slideInRight}
         >
           <ContactForm />

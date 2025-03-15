@@ -16,7 +16,7 @@ const TermsAndConditions = () => {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.terms-and-conditions")}
@@ -24,7 +24,7 @@ const TermsAndConditions = () => {
         <meta
           name="keywords"
           content={t("keywords.terms-and-conditions", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>

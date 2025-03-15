@@ -30,7 +30,7 @@ export function ApiService() {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.api-development")}
@@ -38,7 +38,7 @@ export function ApiService() {
         <meta
           name="keywords"
           content={t("keywords.api-development", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -48,13 +48,13 @@ export function ApiService() {
           src: "/hero/hero-api.webp",
         }}
       >
-        <motion.div 
-        className="hero__title-container-api"
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-      >
-        <Breadcrumb currentService={t('breadcrumbs.api')} />
+        <motion.div
+          className="hero__title-container-api"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <Breadcrumb currentService={t('breadcrumbs.api')} />
           <h1 className="title-service">
             {t("services-pages.api-development.hero.heading")}
           </h1>

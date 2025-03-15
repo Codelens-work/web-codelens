@@ -26,176 +26,97 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: (
-        <MainLayout>
-          <Home />
-        </MainLayout>
-      ),
-    },
-    {
-      path: '/nosotros',
-      element: (
-        <MainLayout>
-          <About />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/about-us",
-      element: (
-        <MainLayout>
-          <About />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/desarrollo-api",
-      element: (
-        <MainLayout>
-          <ApiService />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/development-api",
-      element: (
-        <MainLayout>
-          <ApiService />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/app-web",
-      element: (
-        <MainLayout>
-          <AppWeb />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/app-web",
-      element: (
-        <MainLayout>
-          <AppWeb />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/diseno-web",
-      element: (
-        <MainLayout>
-          <WebDesing />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/web-design",
-      element: (
-        <MainLayout>
-          <WebDesing />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/desarrollo-web",
-      element: (
-        <MainLayout>
-          <WebDevelopment />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/web-development",
-      element: (
-        <MainLayout>
-          <WebDevelopment />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/seo",
-      element: (
-        <MainLayout>
-          <SeoService />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/seo",
-      element: (
-        <MainLayout>
-          <SeoService />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/servicios/community-management",
-      element: (
-        <MainLayout>
-          <CommunityManagement />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/services/community-management",
-      element: (
-        <MainLayout>
-          <CommunityManagement />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/terminos-condiciones",
-      element: (
-        <MainLayout>
-          <TermsAndConditions />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/terms-conditions",
-      element: (
-        <MainLayout>
-          <TermsAndConditions />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/politicas-privacidad",
-      element: (
-        <MainLayout>
-          <PrivacyPolicy />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/privacy-policy",
-      element: (
-        <MainLayout>
-          <PrivacyPolicy />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/blog",
-      element: (
-        <MainLayout>
-          <Blog />
-        </MainLayout>
-      ),
-    },
-    {
-      path: "/en/blog",
-      element: (
-        <MainLayout>
-          <Blog />
-        </MainLayout>
-      ),
+      element: <MainLayout />,
+      children: [
+        {
+          index: true,
+          element: <Home />
+        },
+        {
+        path: '/nosotros',
+        element: <About />
+      },
+      {
+        path: "/en/about-us",
+        element: <About />
+      },
+      {
+        path: "/servicios/desarrollo-api",
+        element: <ApiService />
+      },
+      {
+        path: "/en/services/development-api",
+        element: <ApiService />
+      },
+      {
+        path: "/servicios/app-web",
+        element: <AppWeb />
+      },
+      {
+        path: "/en/services/app-web",
+        element: <AppWeb />
+      },
+      {
+        path: "/servicios/diseno-web",
+        element: <WebDesing />
+      },
+      {
+        path: "/en/services/web-design",
+        element: <WebDesing />
+      },
+      {
+        path: "/servicios/desarrollo-web",
+        element: <WebDevelopment />
+      },
+      {
+        path: "/en/services/web-development",
+        element: <WebDevelopment />
+      },
+      {
+        path: "/servicios/seo",
+        element: <SeoService />
+      },
+      {
+        path: "/en/services/seo",
+        element: <SeoService />
+      },
+      {
+        path: "/servicios/community-management",
+        element: <CommunityManagement />
+      },
+      {
+        path: "/en/services/community-management",
+        element: <CommunityManagement />
+      },
+      {
+        path: "/terminos-condiciones",
+        element: <TermsAndConditions />
+      },
+      {
+        path: "/en/terms-conditions",
+        element: <TermsAndConditions />
+      },
+      {
+        path: "/politicas-privacidad",
+        element: <PrivacyPolicy />
+      },
+      {
+        path: "/en/privacy-policy",
+        element: <PrivacyPolicy />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
+      },
+      {
+        path: "/en/blog",
+        element: <Blog />
+      }]
     },
     {
       path: "/*",
       element: <NotFound />,
-    },
+    }
   ]);
   return <RouterProvider router={router} />;
 }

@@ -18,11 +18,13 @@ const Home = () => {
   const { t, i18n } = useTranslation();
   const location = useLocation();
   const currentLanguage = i18n.language
-  const route = t("footer-section.lists.find-way-list.items", {
+  const homeText =  t('home', { returnObjects: true })
+  const footerLists = t("footer-section.lists", {
     returnObjects: true,
   });
-
-  const aboutUrl = route[1].url;
+  const btnLabel = t("btn-contact.text");
+  const aboutUrl = footerLists["find-way-list"].items[1].url;
+  const contactUrl = footerLists["help-list"].items[1].url;
 
   useEffect(() => {
     const hash = location.hash;
@@ -39,7 +41,9 @@ const Home = () => {
       <Helmet>
         <meta
           name="description"
-          content={t("metadescription.home")}
+          content={t("metadescription.home", {
+            returnObjects: true,
+          })}
         />
         <meta
           name="keywords"
@@ -63,8 +67,8 @@ const Home = () => {
             <RotatingTitle />
             <div className="hero-button">
               <LinkButton
-                label={t("btn-contact.text")}
-                href={currentLanguage === 'en' ? "/#contact" : "/#contacto"}
+                label={btnLabel}
+                href={contactUrl}
                 size="normal"
               />
             </div>
@@ -72,12 +76,12 @@ const Home = () => {
         </div>
       </Hero>
       <HomeAbout
-        t={t("home.about-section", { returnObjects: true })}
-        btn={t("btn-contact.text")}
+        t={homeText["about-section"]}
+        btn={btnLabel}
         currentLanguage={currentLanguage}
       />
-      <HomeServices t={t("home.services-section", { returnObjects: true })} />
-      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl} />
+      <HomeServices t={homeText["services-section"]} />
+      <GetToKnow t={homeText["get-to-know-section"]} url={aboutUrl} />
       <SectionReference />
       <Contact />
       <Faqs />

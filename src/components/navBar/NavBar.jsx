@@ -10,15 +10,10 @@ import {
 import { useNavigate } from "react-router-dom";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
 
-const NavBar = ({footerLists}) => {
-
-
-
-  const { t } = useTranslation();
+const NavBar = ({titles, footerLists}) => {
 
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
@@ -40,6 +35,7 @@ const NavBar = ({footerLists}) => {
 
   const services = footerLists["services-list"].items;
   const route = footerLists["find-way-list"].items;
+  const contact = footerLists["help-list"].items;
 
   const webDevelopmentUrl = services[0]?.url;
   const webDevelopmentText = services[0]?.text;
@@ -56,8 +52,8 @@ const NavBar = ({footerLists}) => {
   const aboutUrl = route[1].url;
   const aboutText = route[1].text;
 
-  const homeUrl = i18n.language === 'en' ? "/#home" : "/#inicio"
-  const contactUrl = i18n.language === 'en' ? "/#contact" : "/#contacto"
+  const homeUrl = route[0].url
+  const contactUrl = contact[1].url
 
   useEffect(() => {
     const handleScroll = () => {
@@ -129,7 +125,7 @@ const NavBar = ({footerLists}) => {
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
-                {t("titles.home")}
+                {titles.home}
               </a>
               <a
                 onClick={() => {
@@ -138,7 +134,7 @@ const NavBar = ({footerLists}) => {
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
-                {t(aboutText)}
+                {aboutText}
               </a>
               <Dropdown
                 show={dropdown}
@@ -147,7 +143,7 @@ const NavBar = ({footerLists}) => {
                 className="dropdown-mobile mx-2"
               >
                 <DropdownToggle className="dropdown-title">
-                  {t("titles.services")}
+                  {titles.services}
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-custom">
                   <Dropdown.Item
@@ -196,7 +192,7 @@ const NavBar = ({footerLists}) => {
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
-                {t("titles.contact")}
+                {titles.contact}
               </a>
               <a
                 onClick={(e) => {
@@ -205,7 +201,7 @@ const NavBar = ({footerLists}) => {
                 className="link-navbar-custom mx-2 btn btn-outline-light"
                 style={{ cursor: "not-allowed", opacity: 0.5 }}
               >
-                {t("titles.blog")}
+                {titles.blog}
               </a>
               <div className="navbar-language">
                 <picture className="icon-language-container">

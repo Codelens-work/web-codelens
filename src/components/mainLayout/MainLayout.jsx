@@ -6,17 +6,23 @@ import { useTranslation } from 'react-i18next';
 import './mainLayout.css';
 const MainLayout = () => {
 
-    const { t } = useTranslation()
+  const { t } = useTranslation()
 
-    return (
-        <div className='main-layout'>
-            <NavBar footerLists={t("footer-section.lists", {returnObjects: true})} />
-            <div className="main-content">
-                <Outlet/>
-            </div>
-            <Footer footerTexts={t('footer-section', { returnObjects: true })} />
-        </div>
-    )
+  const titles = t("titles", { returnObjects: true })
+  const footerSection = t('footer-section', { returnObjects: true })
+
+  return (
+    <div className='main-layout'>
+      <NavBar
+        footerLists={footerSection.lists}
+        titles={titles}
+      />
+      <div className="main-content">
+        <Outlet />
+      </div>
+      <Footer footerTexts={footerSection} />
+    </div>
+  )
 }
 
 export default MainLayout

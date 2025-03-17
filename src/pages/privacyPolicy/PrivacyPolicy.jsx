@@ -3,15 +3,17 @@ import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "/src/components/hero/Hero.tsx";
 import "./privacityPolicy.css";
 import { useTranslation } from 'react-i18next'
+import { useScrollToTop } from "/src/hooks/useScroll";
 
 const PrivacyPolicy = () => {
 
   const { t } = useTranslation()
   const tPrivAbout = t('privacy-page.about-section.content', { returnObjects: true });
   const tPrivSection = t('privacy-page.privacy-section', { returnObjects: true });
-
   const tPrivSectionTitle = tPrivSection.map((item) => item.title);
   const tPrivSectionContent = tPrivSection.map((item) => item.content);
+
+  useScrollToTop()
 
   return (
     <>

@@ -18,3 +18,11 @@ export const useScrollIntoView = () => {
 }
 
 
+export const useScrollToTop = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  return
+}
+

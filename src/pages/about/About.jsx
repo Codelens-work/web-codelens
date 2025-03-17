@@ -7,17 +7,14 @@ import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/ValuesSection';
 import TeamSection from '../../components/teamSection/TeamSection';
-import { useEffect } from "react";
+import { useScrollToTop } from "/src/hooks/useScroll";
 
 
 const About = () => {
 
   const { t, i18n } = useTranslation()
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
-
+  useScrollToTop()
+  
   return (
     <>
       <Helmet>

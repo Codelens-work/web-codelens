@@ -5,10 +5,8 @@ import LinkButton from "../../../components/linkButton/LinkButton.jsx";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs.jsx";
-import { useEffect } from "react";
-
-
 import { motion } from 'framer-motion';
+import { useScrollToTop } from "../../../hooks/useScroll.jsx";
 
 export function AppWeb() {
   const { t, i18n } = useTranslation();
@@ -25,10 +23,7 @@ export function AppWeb() {
   const tCartsTitle = tFeatures.map((item) => item.title);
   const tCartsContent = tFeatures.map((item) => item.content);
 
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  useScrollToTop()
 
   return (
     <>

@@ -4,7 +4,7 @@ import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
 import LastArticles from "../../components/blogCard/lastArticles";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
-import { useEffect } from "react";
+import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
   const { t } = useTranslation();
@@ -18,9 +18,7 @@ const Blog = () => {
     description: "Descripción del siguiente artículo",
   };
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  useScrollToTop()
 
   return (
     <>

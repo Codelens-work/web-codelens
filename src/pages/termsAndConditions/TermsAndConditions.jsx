@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "/src/components/hero/Hero.tsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "/src/hooks/useScroll";
 import "./termsPage.css";
 
 const TermsAndConditions = () => {
@@ -13,6 +14,8 @@ const TermsAndConditions = () => {
 
   const tTermsSeccionTitles = tTermsSeccion.map((item) => item.title);
   const tTermsSeccionContent = tTermsSeccion.map((item) => item.content);
+
+  useScrollToTop()
 
   return (
     <>

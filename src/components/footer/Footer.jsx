@@ -1,24 +1,12 @@
 import './footer.css'
-import { useNavigate, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
+import { useScrollIntoView } from '/src/hooks/useScroll'
 
 export default function Footer({footerTexts}) {
-
+  
   const navigate = useNavigate()
-  const location = useLocation()
-
   const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footerTexts.lists;
-
-
-  useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      const targetSection = document.querySelector(hash);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
+  useScrollIntoView()
 
   return (
     <footer>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useScrollIntoView } from '/src/hooks/useScroll'
 import {
   Navbar,
   Nav,
@@ -74,17 +74,7 @@ const NavBar = ({titles, footerLists}) => {
     };
   }, [expanded]);
 
-  const location = useLocation();
-
-  useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      const targetSection = document.querySelector(hash);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
+  useScrollIntoView()
 
   return (
     <header>

@@ -6,8 +6,7 @@ import LinkButton from "../../components/linkButton/LinkButton";
 import { SpanTitleHome } from "../../components/span-title-home/SpanTitleHome";
 import Contact from "../../components/contact/Contact";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useScrollIntoView } from '/src/hooks/useScroll'
 import Faqs from "../../components/faqs/Faqs";
 import HomeAbout from "../../components/homeAbout/HomeAbout";
 import HomeServices from "../../components/homeServices/HomeServices";
@@ -16,7 +15,6 @@ import SectionReference from "../../components/references/SectionReferences";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
-  const location = useLocation();
   const currentLanguage = i18n.language
   const homeText =  t('home', { returnObjects: true })
   const footerLists = t("footer-section.lists", {
@@ -25,17 +23,8 @@ const Home = () => {
   const btnLabel = t("btn-contact.text");
   const aboutUrl = footerLists["find-way-list"].items[1].url;
   const contactUrl = footerLists["help-list"].items[1].url;
-
-  useEffect(() => {
-    const hash = location.hash;
-    if (hash) {
-      const targetSection = document.querySelector(hash);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
+  
+  useScrollIntoView()
   return (
     <>
       <Helmet>

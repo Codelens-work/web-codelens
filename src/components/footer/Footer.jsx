@@ -1,5 +1,5 @@
 import './footer.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link } from 'react-router-dom'
 import { useScrollIntoView } from '/src/hooks/useScroll'
 
 export default function Footer({footerTexts}) {
@@ -23,7 +23,7 @@ export default function Footer({footerTexts}) {
             <span className="containerTitle">{servicesList.title}</span>
             <ul className="footerList">
               {servicesList.items.map((item, i) => {
-                return <li key={i}><a href={item.url} onClick={() => { navigate(item.url) }}>{item.text}</a></li>
+                return <li key={i}><Link to={item.url}>{item.text}</Link></li>
               })}
             </ul>
           </div>
@@ -34,7 +34,7 @@ export default function Footer({footerTexts}) {
                 if (item.url === '/blog' || item.url === '/en/blog') {
                   return <li key={i} className='disabled'><a href='#' onClick={(e) => { e.preventDefault() }}>{item.text}</a></li>
                 }
-                return <li key={i}><a href={item.url} onClick={() => { navigate(item.url) }}>{item.text}</a></li>
+                return <li key={i}><Link to={item.url}>{item.text}</Link></li>
               })}
             </ul>
           </div>
@@ -42,7 +42,7 @@ export default function Footer({footerTexts}) {
             <span className="containerTitle">{helpList.title}</span>
             <ul className="footerList">
               {helpList.items.map((item, i) => {
-                return <li key={i}><a onClick={() => { navigate(item.url) }}>{item.text}</a></li>
+                return <li key={i}><Link to={item.url}>{item.text}</Link></li>
               })}
             </ul>
           </div>

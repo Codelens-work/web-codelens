@@ -1,10 +1,9 @@
 import './footer.css'
-import { useNavigate, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { useScrollIntoView } from '/src/hooks/useScroll'
 
 export default function Footer({footerTexts}) {
   
-  const navigate = useNavigate()
   const { "services-list": servicesList, "find-way-list": findWayList, "help-list": helpList } = footerTexts.lists;
   useScrollIntoView()
 

@@ -7,7 +7,7 @@ import {
   DropdownMenu,
   DropdownToggle,
 } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import i18n from "i18next";
@@ -108,24 +108,24 @@ const NavBar = ({titles, footerLists}) => {
           </Navbar.Toggle>
           <div className={`navbar-collapse ${expanded ? "show" : ""}`}>
             <Nav className="navbar-links-custom d-flex align-items-center">
-              <a
+              <Link 
+                to={homeUrl}
                 onClick={() => {
-                  navigate(homeUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
                 {titles.home}
-              </a>
-              <a
+              </Link>
+              <Link 
+                to={aboutUrl}
                 onClick={() => {
-                  navigate(aboutUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
                 {aboutText}
-              </a>
+              </Link>
               <Dropdown
                 show={dropdown}
                 onToggle={() => setDropdown(!dropdown)}
@@ -174,17 +174,16 @@ const NavBar = ({titles, footerLists}) => {
                   </Dropdown.Item>
                 </DropdownMenu>
               </Dropdown>
-              <a
+              <Link
+                to={contactUrl}
                 onClick={() => {
-                  
-                  navigate(contactUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
                 {titles.contact}
-              </a>
-              <a
+              </Link>
+              <Link
                 onClick={(e) => {
                   e.preventDefault();
                 }}
@@ -192,7 +191,7 @@ const NavBar = ({titles, footerLists}) => {
                 style={{ cursor: "not-allowed", opacity: 0.5 }}
               >
                 {titles.blog}
-              </a>
+              </Link>
               <div className="navbar-language">
                 <picture className="icon-language-container">
                   <img

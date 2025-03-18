@@ -1,12 +1,9 @@
 import './aboutCodelens.css';
-import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Section from '../section/Section';
 
-const AboutCodeLens = () => {
-  const { t } = useTranslation()
-  const aboutUs = t('about-us-page', { returnObjects: true})
+const AboutCodeLens = ({aboutUsText}) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.2
@@ -47,7 +44,7 @@ const AboutCodeLens = () => {
           <motion.h2
             variants={itemVariants}
           >
-            {aboutUs["about-section"].heading}
+            {aboutUsText.heading}
           </motion.h2>
           <div className='about-Codelens-content'>
             <motion.div
@@ -61,7 +58,7 @@ const AboutCodeLens = () => {
             <motion.div
               variants={containerVariants}
             >
-              {aboutUs["about-section"].content.map((paragraph, index) => (
+              {aboutUsText.content.map((paragraph, index) => (
                 <motion.p
                   key={index}
                   className="about-paragraph"

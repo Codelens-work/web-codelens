@@ -13,6 +13,8 @@ import { useScrollToTop } from "/src/hooks/useScroll";
 const About = () => {
 
   const { t, i18n } = useTranslation()
+
+  const aboutUs = t('about-us-page', {returnObjects: true})
   useScrollToTop()
   
   return (
@@ -43,13 +45,13 @@ const About = () => {
         >
           <div className="about-hero-content">
             <h1 className="about-title">
-              {t('about-us-page.hero.heading')}
+              {aboutUs.hero.heading}
             </h1>
             <h2 className='about-subtitle'>
-              {t('about-us-page.hero.sub-heading')}
+              {aboutUs.hero['sub-heading']}
             </h2>
             <p className="about-description">
-              {t('about-us-page.hero.content')}
+              {aboutUs.hero.content}
             </p>
             <div className="hero-button">
               <LinkButton
@@ -61,9 +63,9 @@ const About = () => {
           </div>
         </motion.div>
       </Hero>
-      <AboutCodeLens />
-      <ValueSection />
-      <TeamSection />
+      <AboutCodeLens aboutUsText={aboutUs['about-section']}/>
+      <ValueSection  valuesSectionText={aboutUs['values-section']}/>
+      <TeamSection  teamSectionContent={aboutUs['team-section']}/>
     </>
   );
 }

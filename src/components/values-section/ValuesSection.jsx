@@ -1,12 +1,10 @@
 import './valuesSection.css';
-import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer';
 import CardValue from '../cardValueSection/cardValue';
 
-const ValueSection = () => {
-  const { t } = useTranslation()
+const ValueSection = ({valuesSectionText}) => {
 
-  const values = t('about-us-page.values-section.cards', { returnObjects: true });
+  const values = valuesSectionText.cards;
 
 
   const { ref, inView } = useInView({
@@ -18,7 +16,7 @@ const ValueSection = () => {
     <>
       <div className='value-section' ref={ref}>
         <div className='team-section-content'>
-          <h2>{t('about-us-page.values-section.heading')}</h2>
+          <h2>{valuesSectionText.heading}</h2>
         </div>
         <div className='cards-container'>
           {values.map((value, index) => (

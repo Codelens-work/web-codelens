@@ -1,20 +1,21 @@
 import "./App.css";
+import { useEffect, lazy } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import MainLayout from "./components/mainLayout/MainLayout.jsx";
-import { ApiService } from "./pages/services/apiservices/ApiService.jsx";
-import { AppWeb } from "./pages/services/appWeb/AppWeb.jsx";
-import { WebDesing } from "./pages/services/webDesing/WebDesing.jsx";
-import { WebDevelopment } from "./pages/services/webDevelopment/WebDevelopment.jsx";
-import { SeoService } from "./pages/services/seo/SeoService.jsx";
-import TermsAndConditions from "./pages/termsAndConditions/TermsAndConditions.jsx";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy.jsx";
-import Home from "./pages/home/Home.jsx";
-import About from "./pages/about/About.jsx";
-import Blog from "./pages/blog/Blog.jsx";
-import NotFound from "./pages/notFound/NotFound.jsx";
-import { useEffect } from "react";
 import i18n from "i18next";
-import { CommunityManagement } from "./pages/services/communityManagement/CommunityManagement.jsx";
+
+const Home = lazy(() => import('./pages/home/Home.jsx'));
+const About = lazy(() => import('./pages/about/About.jsx'));
+const Blog = lazy(() => import('./pages/blog/Blog.jsx'));
+const NotFound = lazy(() => import('./pages/notFound/NotFound.jsx'));
+const MainLayout = lazy(() => import('./components/mainLayout/MainLayout.jsx'));
+const ApiService = lazy(() => import('./pages/services/apiservices/ApiService.jsx'))
+const AppWeb = lazy(() => import('./pages/services/appWeb/AppWeb.jsx'))
+const SeoService = lazy(() =>"./pages/services/seo/SeoService.jsx");
+const TermsAndConditions = lazy(() => "./pages/termsAndConditions/TermsAndConditions.jsx");
+const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.jsx"));
+const WebDesing = lazy(() => import("./pages/services/webDesing/WebDesing.jsx"));
+const WebDevelopment = lazy(() => import("./pages/services/webDevelopment/WebDevelopment.jsx"));
+const CommunityManagement = lazy(() => import("./pages/services/communityManagement/CommunityManagement.jsx"));
 
 function App() {
 

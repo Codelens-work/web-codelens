@@ -1,8 +1,9 @@
-import React from 'react';
+import {Suspense} from 'react';
 import Footer from '../footer/Footer';
 import NavBar from '../navBar/NavBar';
 import { Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Spinner } from 'react-bootstrap';
 import './mainLayout.css';
 const MainLayout = () => {
 
@@ -18,7 +19,9 @@ const MainLayout = () => {
         titles={titles}
       />
       <div className="main-content">
-        <Outlet />
+        <Suspense fallback={<Spinner animation='border' role='status'/>}>
+          <Outlet />
+        </Suspense>
       </div>
       <Footer footerTexts={footerSection} />
     </div>

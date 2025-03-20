@@ -187,8 +187,8 @@ const NavBar = ({titles, footerLists}) => {
                 onClick={(e) => {
                   e.preventDefault();
                 }}
-                className="link-navbar-custom mx-2 btn btn-outline-light"
-                style={{ cursor: "not-allowed", opacity: 0.5 }}
+                className="link-navbar-custom mx-2 btn btn-outline-light blog-disabled"
+                style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
               >
                 {titles.blog}
               </Link>

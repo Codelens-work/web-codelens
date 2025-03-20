@@ -4,7 +4,7 @@
     align-self         : center;
     width              : 100vw;
     height             : 100vh;
-    background-image   : url('/imgs/404.webp');
+    background-image   : url('/imgs/404.svg');
     background-size    : cover;
     background-position: center;
     background-repeat  : no-repeat;

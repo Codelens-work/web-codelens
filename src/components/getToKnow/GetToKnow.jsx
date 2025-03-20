@@ -42,13 +42,13 @@ const GetToKnow = ({ t, url }) => {
         <p>{t.description}</p>
         <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={url} size="normal" />
       </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={slideInRight}
-        className="get-to-know-img">
-        <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />
+      <motion.div 
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount:  0.2 }}
+      variants={slideInRight}
+      className="get-to-know-img">
+        <img src="/imgs/get-to-know-us.svg" alt={t.heading + " photo"} />
       </motion.div>
     </Section>
   )

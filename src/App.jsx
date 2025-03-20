@@ -8,14 +8,14 @@ const About = lazy(() => import('./pages/about/About.jsx'));
 const Blog = lazy(() => import('./pages/blog/Blog.jsx'));
 const NotFound = lazy(() => import('./pages/notFound/NotFound.jsx'));
 const MainLayout = lazy(() => import('./components/mainLayout/MainLayout.jsx'));
-const ApiService = lazy(() => import('./pages/services/apiservices/ApiService.jsx'))
-const AppWeb = lazy(() => import('./pages/services/appWeb/AppWeb.jsx'))
-const SeoService = lazy(() =>"./pages/services/seo/SeoService.jsx");
-const TermsAndConditions = lazy(() => "./pages/termsAndConditions/TermsAndConditions.jsx");
 const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.jsx"));
-const WebDesing = lazy(() => import("./pages/services/webDesing/WebDesing.jsx"));
-const WebDevelopment = lazy(() => import("./pages/services/webDevelopment/WebDevelopment.jsx"));
-const CommunityManagement = lazy(() => import("./pages/services/communityManagement/CommunityManagement.jsx"));
+const TermsAndConditions = lazy(() => import("./pages/termsAndConditions/TermsAndConditions.jsx"));
+const ApiService = lazy(() => import('./pages/services/apiservices/ApiService.jsx').then((module) => { return { default: module.ApiService} }))
+const AppWeb = lazy(() => import('./pages/services/appWeb/AppWeb.jsx').then((module) => { return { default: module.AppWeb} }))
+const SeoService = lazy(() => import("./pages/services/seo/SeoService.jsx").then((module) => { return { default: module.SeoService} }));
+const WebDesing = lazy(() => import("./pages/services/webDesing/WebDesing.jsx").then((module) => { return { default: module.WebDesing} }));
+const WebDevelopment = lazy(() => import("./pages/services/webDevelopment/WebDevelopment.jsx").then((module) => { return { default: module.WebDevelopment} }));
+const CommunityManagement = lazy(() => import("./pages/services/communityManagement/CommunityManagement.jsx").then((module) => { return { default: module.CommunityManagement} }));
 
 function App() {
 

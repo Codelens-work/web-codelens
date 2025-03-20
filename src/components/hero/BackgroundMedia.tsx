@@ -4,10 +4,11 @@ import './backgroundmedia.css';
 interface BackgroundMediaProps {
   type: 'video' | 'image';
   src: string;
+  alt?: string;
   hasOverlay?: boolean;
 }
 
-export function BackgroundMedia({ type, src, hasOverlay = true }: BackgroundMediaProps) {
+export function BackgroundMedia({ type, src,alt, hasOverlay = true }: BackgroundMediaProps) {
   const mediaRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,7 +39,7 @@ export function BackgroundMedia({ type, src, hasOverlay = true }: BackgroundMedi
       ) : (
         <img 
           src={src} 
-          alt="Background" 
+          alt={alt}
           className="background-media__content" 
         />
       )}

@@ -41,6 +41,7 @@ export function WebDesing() {
         media={{
           type: "image",
           src: "/hero/hero-desing.webp",
+          alt: t('services-pages.web-design.hero.background-alt')
         }}
       >
       <motion.div 
@@ -65,6 +66,7 @@ export function WebDesing() {
       </Hero>
       <Services
         img="/service/webDesign.svg"
+        altImg={t("services-pages.web-design.about-section.value-proposal.alt-img")}
         titleOne={t(
           "services-pages.web-design.about-section.value-proposal.heading"
         )}

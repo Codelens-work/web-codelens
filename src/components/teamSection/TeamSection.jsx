@@ -11,9 +11,9 @@ const TeamSection = () => {
     return (
       <div className='team-section'>
         <Section>
-          <div className='team-section-content'>
-            <h2>{t('about-us-page.team-section.heading')}</h2>
-            <span className='team-intro'>{t('about-us-page.team-section.intro')}</span>
+          <div className='team-section-content h2-line-container'>
+            <h2 className='h2-line'>{t('about-us-page.team-section.heading')}</h2>
+            <span className='team-intro paragraph-custom-small'>{t('about-us-page.team-section.intro')}</span>
           </div>
           <div className="team-section-cards">
             {team.map((member, index) => (

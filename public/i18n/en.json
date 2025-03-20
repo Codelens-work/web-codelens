@@ -158,15 +158,17 @@
       ]
     },
     "about-section": {
+      "img-alt":"Graphic showcasing programming icons for HTML, CSS, and JavaScript in a web development context.",
       "heading": "We Are",
       "subheading": "Your Trusted and Creative Web Development Team",
-      "description": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."
+      "description": "At CodeLens, we understand that every project is unique. We specialize in building digital solutions tailored to the needs of small and medium-sized businesses, creating an effective and lasting online presence."    
     },
     "get-to-know-section": {
       "heading": "Get to Know Us",
       "subheading": "Why Choose Us?",
       "description": "At CodeLens, we take pride in our quality and efficiency in every project. We tailor our solutions to each client's goals and work flexibly to ensure lasting and satisfying results.",
-      "get-to-know-btn": "About us"
+      "get-to-know-btn": "About us",
+      "img-alt":"Young professionals working together in a modern office environment."
     },
     "contact-section": {
       "heading": "Contact Us",
@@ -383,14 +385,15 @@
   "services-pages": {
     "web-app": {
       "hero": {
-        "background-url": "",
+        "background-alt": "A hand pointing at a sticky note with an app design sketch on a whiteboard.",
         "heading": "Custom Web Application Development to Boost Your Business",
         "content": "At CodeLens, we develop tailored web applications designed specifically to optimize and enhance your company's processes. Whether it's a management system, an automation tool, or a communication platform, we transform your ideas into functional, secure, and scalable applications."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Choose a Custom Web Application",
-          "content": "Custom applications help solve specific problems and optimize unique processes within your company, giving you a competitive advantage by improving efficiency and simplifying complex tasks."
+          "content": "Custom applications help solve specific problems and optimize unique processes within your company, giving you a competitive advantage by improving efficiency and simplifying complex tasks.",
+          "alt-img":"Image depicting a split screen with Python and Java code snippets, illustrating programming concepts in both languages."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -432,14 +435,15 @@
     },
     "seo": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Modern workplace with a focus on technology and teamwork.",
         "heading": "Website Improvement and Optimization",
         "content": "At CodeLens, we transform existing websites to maximize their performance, update their design, and add functionalities that increase their impact. Whether improving loading speed, updating the design, or integrating new features, our team ensures your site meets your goals."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Optimize Your Website",
-          "content": "Optimizing a website helps improve its performance and adapt it to current user expectations and needs, allowing you to compete more effectively in the digital market."
+          "content": "Optimizing a website helps improve its performance and adapt it to current user expectations and needs, allowing you to compete more effectively in the digital market.",
+          "alt-img":"A group of professionals collaborating on a website design, with the term SEO prominently displayed on the screen."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -477,14 +481,15 @@
     },
     "web-design": {
       "hero": {
-        "background-url": "",
+        "background-alt": "A designer working on a web design sketchbook with color palettes and a computer in the background.",
         "heading": "Web Design",
         "content": "At CodeLens, we transform your ideas into visually appealing and effective designs that communicate your values and captivate your users. We specialize in creating intuitive and aesthetically impactful interfaces that make every visit a memorable experience."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Choose a Custom Web Design",
-          "content": "A well-crafted web design not only enhances your site's appearance but also improves its functionality and user experience, helping you better connect with your audience."
+          "content": "A well-crafted web design not only enhances your site's appearance but also improves its functionality and user experience, helping you better connect with your audience",
+          "alt-img":"A desktop computer screen filled with assorted items, including folders, applications, and images, in a digital workspace."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -525,14 +530,15 @@
     },
     "web-development": {
       "hero": {
-        "background-url": "",
+        "background-alt": "A laptop displaying a HTML design mockup with sketches and notes.",
         "heading": "Web Development from Scratch",
         "content": "At CodeLens, we believe an effective website is more than just a pretty page. From design to functionality, we build tailor-made digital solutions that represent the essence of your brand and connect authentically with your audience."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Choose Custom Development",
-          "content": "Every business is unique, and your website should reflect that. Our team specializes in creating custom websites that align with the specific needs and goals of each client."
+          "content": "Every business is unique, and your website should reflect that. Our team specializes in creating custom websites that align with the specific needs and goals of each client.",
+          "alt-img":" A modern website design showcasing a clean layout and user-friendly interface on a computer screen."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -573,14 +579,15 @@
     },
     "api-development": {
       "hero": {
-        "background-url": "",
+        "background-alt": "A programmer working on a laptop with code visible on the screen.",
         "heading": "API Development that Empowers Your Users",
         "content": "At CodeLens, we design and develop APIs that not only connect systems but also enable our clients to offer innovative services to their users. These APIs are designed to be secure, scalable, and easy to implement, ensuring that your clients can integrate them without complications."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Choose Custom APIs for Your Business",
-          "content": "In a digital world where connectivity and efficiency are key, custom APIs allow you to create tailor-made solutions to meet your business's specific needs."
+          "content": "In a digital world where connectivity and efficiency are key, custom APIs allow you to create tailor-made solutions to meet your business's specific needs.",
+          "alt-img":"A graphic illustrating API development services, featuring code snippets and interconnected systems to represent integration."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -633,14 +640,15 @@
     },
     "community-management": {
       "hero": {
-        "background-url": "",
+        "background-alt": "A collaborative business strategy brainstorming session with charts and graphs on paper.",
         "heading": "Boost Your Brand with a Professional Community Management Strategy",
         "content": "At CodeLens, we help brands and businesses build a strong social media presence through effective Community Management strategies. From content planning to interaction management and branding, we ensure your business grows in the digital environment."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Why Invest in Community Management",
-          "content": "Social media is a key tool for connecting with your audience and strengthening your brand identity. A professional Community Manager helps you maintain effective communication and increase engagement with your audience."
+          "content": "Social media is a key tool for connecting with your audience and strengthening your brand identity. A professional Community Manager helps you maintain effective communication and increase engagement with your audience.",
+          "alt-img":"A group of professionals discussing social media marketing strategies, surrounded by laptops and marketing materials in an office."
         },
         "benefits-section": {
           "heading": "Benefits of Choosing Us",
@@ -691,7 +699,7 @@
   },
   "about-us-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "A diverse group of young people gathered around a laptop, engaged in discussion and sharing ideas.",
       "heading": "Get to Know Us",
       "sub-heading": "We Innovate to Transform Your Business",
       "content": "Turn ideas into online excellence with our innovative solutions and strategic digital services."
@@ -709,27 +717,33 @@
       "cards": [
         {
           "icon": "/cards-values/card1.svg",
-          "content": "Working side by side, every step of the way"
+          "content": "Working side by side, every step of the way",
+          "alt":"icon team embraced"
         },
         {
           "icon": "/cards-values/card2.svg",
-          "content": "We adapt faster than a chameleon at a color festival"
+          "content": "We adapt faster than a chameleon at a color festival",
+          "alt":"chameleon icon"
         },
         {
           "icon": "/cards-values/card3.svg",
-          "content": "Where others see problems, we see... future bragging rights"
+          "content": "Where others see problems, we see... future bragging rights",
+          "alt":"poop icon with stars"
         },
         {
           "icon": "/cards-values/card4.svg",
-          "content": "Coffee first, logic later"
+          "content": "Coffee first, logic later",
+          "alt":"coffee icon"
         },
         {
           "icon": "/cards-values/card5.svg",
-          "content": "We fine-tune the aim before firing the cannon"
+          "content": "We fine-tune the aim before firing the cannon",
+          "alt":"fired bullet icon"
         },
         {
           "icon": "/cards-values/card6.svg",
-          "content": "We accept challenges, we create solutions"
+          "content": "We accept challenges, we create solutions",
+          "alt":"icon of a person climbing stairs and reaching the finish line"
         }
       ]
     },
@@ -778,6 +792,7 @@
   },
   "blog": {
     "hero-section": {
+      "background-alt":"A person typing on a laptop while creating a blog post.",
       "heading": "Welcome to Our Blog",
       "sub-heading": "Your source for information on technology and web development",
       "description": "Discover the latest news, trends, and tips on technological innovation, web development, and how to boost your business with digital solutions."
@@ -789,11 +804,11 @@
   },
   "privacy-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "A workspace featuring a contract on a clipboard, glasses, coffee, a pen, and a succulent plant.",
       "heading": "CodeLens Privacy Policy"
     },
     "about-section": {
-      "about-img": "",
+      "alt-img": "Illustration of a man holding a pen and signing a contract",
       "content": [
         "At CodeLens, protecting your personal information is our priority. This privacy policy explains how we collect, use, store, and protect your personal data when you use our website or services.",
         "We take our users' privacy very seriously. By using our site “(https://codelens.com/)”, customers agree to the terms of this Privacy Policy."
@@ -840,11 +855,11 @@
   },
   "terms-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "A workspace featuring a contract on a clipboard, glasses, coffee, a pen, and a succulent plant.",
       "heading": "General Terms of Service"
     },
     "about-section": {
-      "about-img": "",
+      "alt-img": "Illustration of a man holding a pen and signing a contract",
       "content": [
         "Welcome to CodeLens' Terms of Use! We are really happy to have you here. Thank you for choosing our services.",
         "Below, we have listed important legal terms that apply to anyone who hires our services. These terms are necessary to protect both you and us and to make our services possible and more enjoyable for everyone.",

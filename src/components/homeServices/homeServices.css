@@ -19,10 +19,6 @@ html, body {
 
 }
 
-.home-services-section span {
-  font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
-}
-
 .home-services-carousel {
   display: flex;
   justify-content: center;

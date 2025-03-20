@@ -6,6 +6,7 @@ import ServiceContact from "./ServiceContact";
 
 const Services = ({
   img,
+  altImg,
   titleOne,
   paragraphOne,
   titleTwo,
@@ -19,6 +20,7 @@ const Services = ({
     <div>
       <Service
         img={img}
+        altImg={altImg}
         titleOne={titleOne}
         paragraphOne={paragraphOne}
         titleTwo={titleTwo}
@@ -37,6 +39,7 @@ const Services = ({
 
 Services.propTypes = {
   img: PropTypes.string.isRequired,
+  altImg: PropTypes.string.isRequired,
   titleOne: PropTypes.string.isRequired,
   paragraphOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string.isRequired,

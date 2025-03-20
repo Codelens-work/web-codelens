@@ -38,8 +38,8 @@ const slideInRight = {
       variants={slideInLeft}
       className="get-to-know-content">
         <h2 className='h2-line'>{t.heading}</h2>
-        <span>{t.subheading}</span>
-        <p>{t.description}</p>
+        <span className='paragraph-custom'>{t.subheading}</span>
+        <p className='paragraph-custom'>{t.description}</p>
         <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={url} size="normal" />
       </motion.div>
       <motion.div 
@@ -48,7 +48,7 @@ const slideInRight = {
       viewport={{ once: true, amount:  0.2 }}
       variants={slideInRight}
       className="get-to-know-img">
-        <img src="/imgs/get-to-know-us.webp" alt={t.heading + " photo"} />
+        <img src="/imgs/get-to-know-us.webp" alt={t["img-alt"]} />
       </motion.div>
     </Section>
   )

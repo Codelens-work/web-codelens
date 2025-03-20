@@ -37,6 +37,7 @@ const  About = () => {
       media={{
         type: 'image',
         src: '/hero/hero-about.webp',
+        alt: t('about-us-page.hero.background-alt')
       }}
     >
       <motion.div 

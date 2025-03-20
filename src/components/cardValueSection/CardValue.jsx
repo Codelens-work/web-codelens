@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
 
-const CardValue = ({ icon, content, index }) => {
+const CardValue = ({ icon, content, alt, index }) => {
     const { ref, inView } = useInView({
       triggerOnce: true,
       threshold: 0.2,
@@ -28,7 +28,7 @@ const CardValue = ({ icon, content, index }) => {
       >
         <div className="card-value">
         <picture>
-          <img src={icon} alt="Icono de valor" />
+          <img src={icon} alt={alt} />
         </picture>
         <span>{content}</span>
         </div>

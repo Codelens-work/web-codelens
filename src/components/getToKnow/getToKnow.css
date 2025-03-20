@@ -24,13 +24,7 @@
   margin: auto;
 }
 
-.get-to-know-content p {
-  font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
-}
-
-
 .get-to-know-content span {
-  font-size: clamp(1.125rem, 1.0179rem + 0.5357vw, 1.5rem);
   color: var(--purple)
 }
 

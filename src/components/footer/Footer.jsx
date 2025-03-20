@@ -28,7 +28,7 @@ export default function Footer() {
     <footer>
       <div className='firstRowContainer'>
         <div className="socialLogoContainer">
-          <a href="/"><img id="footerLogo" src="/icons/logo_completo.svg" alt="Logo" /></a>
+          <a href="/"><img id="footerLogo" src="/icons/logo_completo.svg" alt="CodeLens Logo" /></a>
           <span>{footer.intro}</span>
           <div className="mediaContainer">
             <a href="https://www.instagram.com/codelens.tech/" target='_blank'><img src="/icons/icon_instagram.svg" alt="Instagram" /></a>

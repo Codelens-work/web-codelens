@@ -59,7 +59,7 @@ const HomeServices = ({ t }) => {
         <div className="wrapper">
           <h2 className="h2-line">{t.heading}</h2>
         </div>
-        <span>{t.intro}</span>
+        <span className="paragraph-custom">{t.intro}</span>
       </div>
       <div className="home-services-carousel">
         {services.map((service, i) => (

@@ -37,7 +37,7 @@ const AboutCodeLens = () => {
     };
 
     return (
-        <div className='about-Codelens-section' ref={ref}>
+        <div className='about-Codelens-section flex-center flex-column' ref={ref}>
           <Section>
             <motion.div
                 variants={containerVariants}
@@ -49,13 +49,13 @@ const AboutCodeLens = () => {
                 >
                     {t('about-us-page.about-section.heading')}
                 </motion.h2>
-                <div className='about-Codelens-content'>
+                <div className='about-Codelens-content flex-no-center gap-30 '>
                     <motion.div 
-                        className='about-Codelens-logo'
+                        className='about-Codelens-logo flex-center'
                         variants={itemVariants}
                     >
                         <picture>
-                            <img src="/icons/logo_completo.svg" alt="Logo CodeLens" />
+                            <img src="/icons/logo_completo.svg" alt="CodeLens Logo" />
                         </picture>
                     </motion.div>
                     <motion.div
@@ -64,7 +64,7 @@ const AboutCodeLens = () => {
                         {t('about-us-page.about-section.content', { returnObjects: true }).map((paragraph, index) => (
                             <motion.p 
                                 key={index} 
-                                className="about-paragraph"
+                                className="about-paragraph paragraph-custom-small"
                                 variants={itemVariants}
                             >
                                 {paragraph}

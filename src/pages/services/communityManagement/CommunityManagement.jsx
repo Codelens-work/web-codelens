@@ -45,6 +45,7 @@ export function CommunityManagement() {
         media={{
           type: "image",
           src: "/hero/community-hero.webp",
+          alt: t('services-pages.community-management.hero.background-alt')
         }}
       >
         <motion.div 
@@ -66,6 +67,7 @@ export function CommunityManagement() {
 
       <Services
         img="/service/community-manager.svg"
+        altImg={t("services-pages.community-management.about-section.value-proposal.alt-img")}
         titleOne={t(
           "services-pages.community-management.about-section.value-proposal.heading"
         )}

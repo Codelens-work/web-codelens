@@ -31,6 +31,7 @@ const PrivacyPolicy = () => {
       media={{
         type: 'image',
         src: '/hero/hero-terms-privacity.webp',
+        alt: t('privacy-page.hero.background-alt')
       }}
     >
       <div className="terms-hero-content">
@@ -38,7 +39,8 @@ const PrivacyPolicy = () => {
       </div>
     </Hero>
     <LegalSection
-      title={"Política de Privacidad de CodeLens"}
+      title={t('privacy-page.hero.heading')}
+      altImg={t("privacy-page.about-section.alt-img")}
       paragraph={
         tPrivAbout[0]
       }

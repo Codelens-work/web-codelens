@@ -125,11 +125,6 @@
     cursor: pointer;
   }
 
-  .card-reference:hover {
-    transform: rotateY(10deg) scale(1.05);
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* Sombra más difusa */
-}
-
 @media(width >= 409px){
     .quote-container{
         width: 35px;

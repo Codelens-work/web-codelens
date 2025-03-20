@@ -1,8 +1,4 @@
 .about-Codelens-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     padding: 50px 0;
     background: var(--white);
     gap: 40px;
@@ -16,17 +12,9 @@
 }
 
 .about-Codelens-content{
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    gap: 30px;
 }
 
-.about-Codelens-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .about-Codelens-logo picture{
     display: block;
@@ -39,9 +27,6 @@
     width: 100%
 }
 
-.about-paragraph{
-    font-size: clamp(1rem, 1rem + 0.1786vw, 1.25rem);
-}
 
 .about-paragraph{
     max-width: 900px;

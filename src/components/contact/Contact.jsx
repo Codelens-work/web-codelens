@@ -53,7 +53,7 @@ const Contact = () => {
             <img
               className="logo-codelens"
               src="/logos/Logo_CodeLens_contacto.svg"
-              alt="Logo Codelens"
+              alt="CodeLens Logo"
             />
             <h2 className="h2-invitation-two">
             {t("home.contact-section.contact-cta")}
@@ -78,7 +78,7 @@ const Contact = () => {
                 <img
                   className="logo-social"
                   src="/social/instagram.svg"
-                  alt="instagram"
+                  alt="instagram icon"
                 />
                 <span className="tooltip">Codelens.tech</span>
               </a>

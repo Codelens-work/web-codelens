@@ -46,6 +46,7 @@ export function WebDevelopment() {
         media={{
           type: "image",
           src: "/hero/hero-web.webp",
+          alt: t('services-pages.web-development.hero.background-alt')
         }}
       >
         <motion.div 
@@ -71,6 +72,7 @@ export function WebDevelopment() {
 
       <Services
         img="/service/webDevelopment.svg"
+        altImg={t("services-pages.web-development.about-section.value-proposal.alt-img")}
         titleOne={t(
           "services-pages.web-development.about-section.value-proposal.heading"
         )}

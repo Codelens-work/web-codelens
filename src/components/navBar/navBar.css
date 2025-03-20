@@ -397,6 +397,10 @@ header{
     color: var(--purple); 
   }
 
+.blog-disabled{
+  opacity: 0.3 !important;
+}
+
   /*!! Dropdown !!*/
   .dropdown .dropdown-mobile{
     opacity: 0;

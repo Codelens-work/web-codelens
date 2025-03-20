@@ -5,14 +5,6 @@ import { useNavigate } from "react-router-dom";
 const LinkButton = ({ label, href, size = "normal, small, error" }) => {
   const navigate = useNavigate();
 
-  // const handleClick = (e) => {
-  //   e.preventDefault();
-  //   const targetSection = document.querySelector(href);
-  //   if (targetSection) {
-  //     targetSection.scrollIntoView({ behavior: "smooth" });
-  //   }
-  // };
-
   return (
     <>
       <a

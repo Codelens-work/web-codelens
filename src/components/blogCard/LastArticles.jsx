@@ -126,21 +126,17 @@ const LastArticles = () => {
       noviembre: 11,
       diciembre: 12,
     };
-    //console.log(month, year);
     return new Date(`${year}-${months[month]}-${day}`);
   };
-  // Ordenar por fecha
+
   const sortedCards = [...cards].sort(
     (a, b) => parseDate(b.date) - parseDate(a.date)
   );
 
-  //!agarra la mas actual
   const largeCard = sortedCards[0];
 
-  //* agarra lo que hay entre el 1 y el 10. (9cards)
   const mediumCards = sortedCards.slice(1, 10);
 
-  // toma todo lo que le sigue a la poscion 10 hasta el final del array.
   const remainingCards = sortedCards.slice(11);
 
   return (

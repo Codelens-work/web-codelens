@@ -787,37 +787,37 @@
       "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos cuatro apasionados del desarrollo y diseño, unidos para transformar tus ideas en realidad.",
       "cards": [
         {
-          "img-url": "/team/aylen.webp",
+          "img-url": "/team/aylen.svg",
           "img-hover-url": "",
           "fullname": "Aylen Gil",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "/team/flor.webp",
+          "img-url": "/team/flor.svg",
           "img-hover-url": "",
           "fullname": "Florencia Ríos",
           "role": "Co-Founder, Community Manager & UX/UI Designer"
         },
         {
-          "img-url": "/team/nico.webp",
+          "img-url": "/team/nico.svg",
           "img-hover-url": "",
           "fullname": "Nicolás Romero",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "/team/yani.webp",
+          "img-url": "/team/yani.svg",
           "img-hover-url": "",
           "fullname": "Yanina Unrein",
           "role": "Co-Founder, UX/UI Designer & Fullstack Developer "
         },
         {
-          "img-url": "/team/tania.webp",
+          "img-url": "/team/tania.svg",
           "img-hover-url": "",
           "fullname": "Tania Yanina Balbuena Casanova",
           "role": "Community Manager & Analista Universitaria en Relaciones Públicas"
         },
         {
-          "img-url": "/team/caro.webp",
+          "img-url": "/team/caro.svg",
           "img-hover-url": "",
           "fullname": "Carolina Perez",
           "role": "Commercial Strategist"
@@ -845,8 +845,8 @@
     "about-section": {
       "alt-img": "ilustracion de un hombre sosteniendo una lapicera y firmando un contrato",
       "content": [
-        "<p>En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
-        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad.</p>"
+        "En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
+        "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad."
       ]
     },
     "privacy-section": [

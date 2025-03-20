@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Para manejar el idioma
+import { useTranslation } from "react-i18next";
 import ArticleCardSmall from "../components/ArticleCardSmall";
 import "./articlePage.css";
 
@@ -22,17 +22,14 @@ const ArticlePage = () => {
 
   if (!article) return <p>Cargando...</p>;
 
-  // Buscar el índice del artículo actual
   const currentIndex = articles.findIndex((a) => a.id === id);
   const prevArticle = currentIndex > 0 ? articles[currentIndex - 1] : null;
   const nextArticle = currentIndex < articles.length - 1 ? articles[currentIndex + 1] : null;
 
   return (
     <div className="article-page">
-      {/* Imagen principal */}
       <img src={article.image} alt={article.title[i18n.language]} className="header-image" />
 
-      {/* Contenido del artículo */}
       <div className="article-content">
         {article.content.map((block, index) => {
           switch (block.type) {
@@ -48,7 +45,6 @@ const ArticlePage = () => {
         })}
       </div>
 
-      {/* Aside con artículos relacionados */}
       <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
         {article.related.map((rel) => (
@@ -58,7 +54,6 @@ const ArticlePage = () => {
         ))}
       </aside>
 
-      {/* Navegación Anterior/Siguiente */}
       <div className="article-navigation">
         {prevArticle && (
           <Link to={`/blog/${prevArticle.id}`} className="prev">

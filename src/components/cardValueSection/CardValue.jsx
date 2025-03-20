@@ -9,10 +9,9 @@ const CardValue = ({ icon, content, index }) => {
       threshold: 0.2,
     });
   
-    // 📌 Definir animación para cada tarjeta según su posición
     const getAnimation = () => {
-      if (index < 3) return { initial: { opacity: 0, x: -50 }, animate: { opacity: 1, x: 0 } }; // Primera fila desde la IZQUIERDA
-      return { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } }; // Segunda fila desde la DERECHA
+      if (index < 3) return { initial: { opacity: 0, x: -50 }, animate: { opacity: 1, x: 0 } }; 
+      return { initial: { opacity: 0, x: 50 }, animate: { opacity: 1, x: 0 } }; 
     };
   
     return (
@@ -23,7 +22,7 @@ const CardValue = ({ icon, content, index }) => {
         transition={{
           duration: 0.6,
           ease: "easeOut",
-          delay: index * 0.2, // ✨ Escalonado
+          delay: index * 0.2, 
         }}
       >
         <div className="card-value">

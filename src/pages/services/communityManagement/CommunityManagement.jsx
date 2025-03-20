@@ -6,14 +6,12 @@ import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs.jsx";
 import { motion } from 'framer-motion';
-import { useEffect } from "react";
+import { useScrollToTop } from "../../../hooks/useScroll.jsx";
 
 export function CommunityManagement() {
   const { t, i18n } = useTranslation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  useScrollToTop()
 
 
   const tApiBenedit = t(
@@ -29,7 +27,7 @@ export function CommunityManagement() {
 
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.community-management")}
@@ -37,7 +35,7 @@ export function CommunityManagement() {
         <meta
           name="keywords"
           content={t("keywords.community-management", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
@@ -47,13 +45,13 @@ export function CommunityManagement() {
           src: "/hero/community-hero.webp",
         }}
       >
-        <motion.div 
-        className="hero__title-container-api"
-        initial={{ opacity: 0, y: 50 }} 
-        animate={{ opacity: 1, y: 0 }} 
-        transition={{ duration: 0.8, ease: "easeOut" }} 
-      >
-        <Breadcrumb currentService={t('breadcrumbs.community-management')} />
+        <motion.div
+          className="hero__title-container-api"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
+          <Breadcrumb currentService={t('breadcrumbs.community-management')} />
           <h1 className="title-service">
             {t("services-pages.community-management.hero.heading")}
           </h1>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useScrollIntoView } from '/src/hooks/useScroll'
 import {
   Navbar,
   Nav,
@@ -7,26 +7,23 @@ import {
   DropdownMenu,
   DropdownToggle,
 } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./navBar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useTranslation } from "react-i18next";
 import i18n from "i18next";
 
 
-const NavBar = () => {
+const NavBar = ({titles, footerLists}) => {
 
-  const { t } = useTranslation();
-  
   const handleLanguageToggle = () => {
     const newLanguage = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLanguage);
     localStorage.setItem("language", newLanguage);
-    
+
   };
 
   const [navActive, setNavActive] = useState(false);
-  const [expanded, setExpanded] = useState(false); // Estado del menú
+  const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
   const [dropdown, setDropdown] = useState(false);
 
@@ -36,15 +33,9 @@ const NavBar = () => {
     setExpanded(false);
   };
 
-  const services = t("footer-section.lists.services-list.items", {
-    returnObjects: true,
-  });
-  const route = t("footer-section.lists.find-way-list.items", {
-    returnObjects: true,
-  });
-  const routeHelp = t("footer-section.lists.help-list.items", {
-    returnObjects: true,
-  });
+  const services = footerLists["services-list"].items;
+  const route = footerLists["find-way-list"].items;
+  const contact = footerLists["help-list"].items;
 
   const webDevelopmentUrl = services[0]?.url;
   const webDevelopmentText = services[0]?.text;
@@ -58,25 +49,17 @@ const NavBar = () => {
   const apiText = services[4]?.text;
   const communityUrl = services[5]?.url;
   const communityText = services[5]?.text;
-
-  const homeText = route[0].text;
   const aboutUrl = route[1].url;
   const aboutText = route[1].text;
-  const blogUrl = route[2].url;
 
-  const faqsUrl = routeHelp[0].url;
-  const faqsText = routeHelp[0].text;
-  const termsAndConditionsUrl = routeHelp[2].url;
-  const termsAndConditionsText = routeHelp[2].text;
-  const privacyPolicyUrl = routeHelp[3].url;
-  const privacyPolicyText = routeHelp[3].text;
+  const homeUrl = route[0].url
+  const contactUrl = contact[1].url
 
   useEffect(() => {
     const handleScroll = () => {
       setNavActive(window.scrollY > 50);
     };
 
-    // Toggle body scroll when menu is open
     if (expanded) {
       document.body.classList.add("menu-open");
     } else {
@@ -87,23 +70,11 @@ const NavBar = () => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      // Make sure to remove the class when component unmounts
       document.body.classList.remove("menu-open");
     };
-  }, [expanded]); // Add expanded as a dependency
+  }, [expanded]);
 
-  const location = useLocation();
-
-  useEffect(() => {
-    const hash = location.hash;
-    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
-    if (hash) {
-      const targetSection = document.querySelector(hash);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
+  useScrollIntoView()
 
   return (
     <header>
@@ -119,12 +90,11 @@ const NavBar = () => {
               src="/icons/logo_nombre.svg"
               alt="Logo"
               onClick={() => {
-                const url = i18n.language === 'en' ? "/#home" : "/#inicio"
-                navigate(url)} }
+                navigate(homeUrl)
+              }}
               style={{ cursor: "pointer" }}
             />
           </Navbar.Brand>
-          {/* Botón hamburguesa */}
           <Navbar.Toggle
             aria-controls="navbar-nav"
             className="hamburger-menu"
@@ -136,28 +106,26 @@ const NavBar = () => {
               className="menu-icon"
             />
           </Navbar.Toggle>
-          {/* Menú colapsable personalizado */}
           <div className={`navbar-collapse ${expanded ? "show" : ""}`}>
             <Nav className="navbar-links-custom d-flex align-items-center">
-              <a
+              <Link 
+                to={homeUrl}
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#home" : "/#inicio"
-                  navigate(url);
-                  setExpanded(false); // Cierra el menú al navegar
-                }}
-                className="link-navbar-custom mx-2 btn btn-outline-light"
-              >
-                {t("titles.home")}
-              </a>
-              <a
-                onClick={() => {
-                  navigate(aboutUrl);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
-                {t(aboutText)}
-              </a>
+                {titles.home}
+              </Link>
+              <Link 
+                to={aboutUrl}
+                onClick={() => {
+                  setExpanded(false);
+                }}
+                className="link-navbar-custom mx-2 btn btn-outline-light"
+              >
+                {aboutText}
+              </Link>
               <Dropdown
                 show={dropdown}
                 onToggle={() => setDropdown(!dropdown)}
@@ -165,7 +133,7 @@ const NavBar = () => {
                 className="dropdown-mobile mx-2"
               >
                 <DropdownToggle className="dropdown-title">
-                  {t("titles.services")}
+                  {titles.services}
                 </DropdownToggle>
                 <DropdownMenu className="dropdown-custom">
                   <Dropdown.Item
@@ -206,25 +174,24 @@ const NavBar = () => {
                   </Dropdown.Item>
                 </DropdownMenu>
               </Dropdown>
-              <a
+              <Link
+                to={contactUrl}
                 onClick={() => {
-                  const url = i18n.language === 'en' ? "/#contact" : "/#contacto"
-                  navigate(url);
                   setExpanded(false);
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >
-                {t("titles.contact")}
-              </a>
-              <a
+                {titles.contact}
+              </Link>
+              <Link
                 onClick={(e) => {
-                  e.preventDefault(); // Evita que se siga el enlace
+                  e.preventDefault();
                 }}
                 className="link-navbar-custom mx-2 btn btn-outline-light blog-disabled"
                 style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
               >
-                {t("titles.blog")}
-              </a>
+                {titles.blog}
+              </Link>
               <div className="navbar-language">
                 <picture className="icon-language-container">
                   <img

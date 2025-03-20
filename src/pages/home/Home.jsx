@@ -6,8 +6,7 @@ import LinkButton from "../../components/linkButton/LinkButton";
 import { SpanTitleHome } from "../../components/span-title-home/SpanTitleHome";
 import Contact from "../../components/contact/Contact";
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useScrollIntoView } from '/src/hooks/useScroll'
 import Faqs from "../../components/faqs/Faqs";
 import HomeAbout from "../../components/homeAbout/HomeAbout";
 import HomeServices from "../../components/homeServices/HomeServices";
@@ -16,31 +15,24 @@ import SectionReference from "../../components/references/SectionReferences";
 
 const Home = () => {
   const { t, i18n } = useTranslation();
-  const location = useLocation();
   const currentLanguage = i18n.language
-  const route = t("footer-section.lists.find-way-list.items", {
+  const homeText =  t('home', { returnObjects: true })
+  const footerLists = t("footer-section.lists", {
     returnObjects: true,
   });
+  const btnLabel = t("btn-contact.text");
+  const aboutUrl = footerLists["find-way-list"].items[1].url;
+  const contactUrl = footerLists["help-list"].items[1].url;
   
-  const aboutUrl = route[1].url;
-
-  useEffect(() => {
-    const hash = location.hash;
-    //Para que el boton lleve a la seccion directamente. (hay un id=*** en el div principal de la seccion)
-    if (hash) {
-      const targetSection = document.querySelector(hash);
-      if (targetSection) {
-        targetSection.scrollIntoView({ behavior: "smooth" });
-      }
-    }
-  }, [location]);
-
+  useScrollIntoView()
   return (
     <>
       <Helmet>
         <meta
           name="description"
-          content={t("metadescription.home")}
+          content={t("metadescription.home", {
+            returnObjects: true,
+          })}
         />
         <meta
           name="keywords"
@@ -64,8 +56,8 @@ const Home = () => {
             <RotatingTitle />
             <div className="hero-button">
               <LinkButton
-                label={t("btn-contact.text")}
-                href={currentLanguage === 'en' ? "/#contact" : "/#contacto"}
+                label={btnLabel}
+                href={contactUrl}
                 size="normal"
               />
             </div>
@@ -73,13 +65,13 @@ const Home = () => {
         </div>
       </Hero>
       <HomeAbout
-        t={t("home.about-section", { returnObjects: true })}
-        btn={t("btn-contact.text")}
+        t={homeText["about-section"]}
+        btn={btnLabel}
         currentLanguage={currentLanguage}
       />
-      <HomeServices t={t("home.services-section", { returnObjects: true })} />
-      <GetToKnow t={t("home.get-to-know-section", { returnObjects: true })} url={aboutUrl}/>
-      <SectionReference /> 
+      <HomeServices t={homeText["services-section"]} />
+      <GetToKnow t={homeText["get-to-know-section"]} url={aboutUrl} />
+      <SectionReference />
       <Contact />
       <Faqs />
     </>

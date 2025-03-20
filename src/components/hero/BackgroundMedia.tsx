@@ -13,7 +13,7 @@ export function BackgroundMedia({ type, src, hasOverlay = true }: BackgroundMedi
   useEffect(() => {
     const handleScroll = () => {
       if (!mediaRef.current) return;
-      
+
       const scrolled = window.pageYOffset;
       const rate = scrolled * 0.5;
       mediaRef.current.style.transform = `translate3d(0, ${rate}px, 0)`;
@@ -26,20 +26,20 @@ export function BackgroundMedia({ type, src, hasOverlay = true }: BackgroundMedi
   return (
     <div ref={mediaRef} className="background-media">
       {type === 'video' ? (
-        <video 
-          autoPlay 
-          muted 
-          loop 
-          playsInline 
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="background-media__content"
         >
           <source src={src} type="video/mp4" />
         </video>
       ) : (
-        <img 
-          src={src} 
-          alt="Background" 
-          className="background-media__content" 
+        <img
+          src={src}
+          alt="Background"
+          className="background-media__content"
         />
       )}
       {hasOverlay && <div className="background-media__overlay" />}

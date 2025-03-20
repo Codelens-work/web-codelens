@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet";
 import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "/src/components/hero/Hero.tsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "/src/hooks/useScroll";
 import "./termsPage.css";
 
 const TermsAndConditions = () => {
@@ -14,9 +15,11 @@ const TermsAndConditions = () => {
   const tTermsSeccionTitles = tTermsSeccion.map((item) => item.title);
   const tTermsSeccionContent = tTermsSeccion.map((item) => item.content);
 
+  useScrollToTop()
+
   return (
     <>
-     <Helmet>
+      <Helmet>
         <meta
           name="description"
           content={t("metadescription.terms-and-conditions")}
@@ -24,7 +27,7 @@ const TermsAndConditions = () => {
         <meta
           name="keywords"
           content={t("keywords.terms-and-conditions", { returnObjects: true }).join(", ")}
-          />
+        />
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>

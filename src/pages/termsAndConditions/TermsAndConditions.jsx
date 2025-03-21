@@ -35,6 +35,7 @@ const TermsAndConditions = () => {
         media={{
           type: "image",
           src: "/hero/hero-terms-privacity.webp",
+          alt: t('terms-page.hero.background-alt')
         }}
       >
         <div className="terms-hero-content">
@@ -44,6 +45,7 @@ const TermsAndConditions = () => {
 
       <LegalSection
         title={t("terms-page.hero.heading")}
+        altImg={t("terms-page.about-section.alt-img")}
         paragraph={tTermsContent[0]}
         secondParagraph={tTermsContent[1]}
         thirdParagraph={tTermsContent[2]}

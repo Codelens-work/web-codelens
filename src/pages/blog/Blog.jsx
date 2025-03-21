@@ -35,6 +35,7 @@ const Blog = () => {
         media={{
           type: "image",
           src: "/hero/hero-blog.webp",
+          alt: t('blog.hero-section.background-alt')
         }}
       >
         <div className="blog-hero-content">

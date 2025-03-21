@@ -44,6 +44,7 @@ export function SeoService() {
         media={{
           type: "image",
           src: "/hero/hero-seo.webp",
+          alt: t('services-pages.seo.hero.background-alt')
         }}
       >
         <motion.div
@@ -65,6 +66,7 @@ export function SeoService() {
 
       <Services
         img="/service/seo.svg"
+        altImg={t("services-pages.seo.about-section.value-proposal.alt-img")}
         titleOne={t('services-pages.seo.about-section.value-proposal.heading')}
         paragraphOne={t('services-pages.seo.about-section.value-proposal.content')}
         titleTwo={t('services-pages.seo.about-section.benefits-section.heading')}

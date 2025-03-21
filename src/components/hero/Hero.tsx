@@ -8,6 +8,7 @@ interface HeroProps {
   media?: {
     type: 'video' | 'image';
     src: string;
+    alt?: string;
   };
   hasOverlay?: boolean;
 }

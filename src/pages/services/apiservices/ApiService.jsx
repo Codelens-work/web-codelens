@@ -44,6 +44,7 @@ export function ApiService() {
         media={{
           type: "image",
           src: "/hero/hero-api.webp",
+          alt: t('services-pages.api-development.hero.background-alt')
         }}
       >
         <motion.div
@@ -65,6 +66,7 @@ export function ApiService() {
 
       <Services
         img="/service/api.svg"
+        altImg={t("services-pages.api-development.about-section.value-proposal.alt-img")}
         titleOne={t(
           "services-pages.api-development.about-section.value-proposal.heading"
         )}

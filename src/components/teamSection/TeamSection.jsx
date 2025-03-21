@@ -9,9 +9,9 @@ const TeamSection = ({teamSectionContent}) => {
     return (
       <div className='team-section'>
         <Section>
-          <div className='team-section-content'>
-            <h2>{teamSectionContent.heading}</h2>
-            <span className='team-intro'>{teamSectionContent.intro}</span>
+          <div className='team-section-content h2-line-container'>
+            <h2 className='h2-line'>{teamSectionContent.heading}</h2>
+            <span className='team-intro paragraph-custom-small'>{teamSectionContent.intro}</span>
           </div>
           <div className="team-section-cards">
             {team.map((member, index) => (

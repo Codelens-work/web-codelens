@@ -155,9 +155,11 @@
         "Estrategia SEO",
         "Interfaz Moderna",
         "Gestión de Redes"
-      ]
+      ],
+      "background-alt":"grupo de rofesionales sentados en una mesa saludandose y dandose las manos"
     },
     "about-section": {
+       "img-alt":"Gráfico que muestra íconos de programación para HTML, CSS y JavaScript en un contexto de desarrollo web.",
       "heading": "Nosotros somos",
       "subheading": "Tu equipo de desarrollo web confiable y creativo",
       "description": "En CodeLens, entendemos que cada proyecto es único. Nos especializamos en construir soluciones digitales adaptadas a las necesidades de pequeñas y medianas empresas, creando presencia online efectiva y duradera."
@@ -166,7 +168,8 @@
       "heading": "Conócenos",
       "subheading": "¿Por qué elegirnos?",
       "description": "En CodeLens, nos enorgullece nuestra calidad y eficiencia en cada proyecto. Adaptamos nuestras soluciones a los objetivos de cada cliente y trabajamos de manera flexible para asegurar resultados duraderos y satisfactorios.",
-      "get-to-know-btn": "Sobre nosotros"
+      "get-to-know-btn": "Sobre nosotros",
+      "img-alt":"Trabajo en equipo entre profesionales en una oficina."
     },
     "contact-section": {
       "heading": "Contáctenos",
@@ -415,14 +418,15 @@
   "services-pages": {
     "web-app": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Mano señalando un diseño de interfaz de aplicación en un papel.",
         "heading": "Desarrollo de Aplicaciones Web Personalizadas para Potenciar tu Negocio",
         "content": "En CodeLens, desarrollamos aplicaciones web a medida, diseñadas específicamente para optimizar y mejorar los procesos de tu empresa. Ya sea un sistema de gestión, una herramienta de automatización, o una plataforma de comunicación, transformamos tus ideas en aplicaciones funcionales, seguras y escalables."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Optar por una Aplicación Web Personalizada",
-          "content": "Las aplicaciones personalizadas permiten resolver problemas específicos y optimizar procesos únicos de tu empresa, brindándote una ventaja competitiva al mejorar la eficiencia y simplificar tareas complejas."
+          "content": "Las aplicaciones personalizadas permiten resolver problemas específicos y optimizar procesos únicos de tu empresa, brindándote una ventaja competitiva al mejorar la eficiencia y simplificar tareas complejas.",
+          "alt-img":"Imagen que muestra un código de programación en Python y Java, representando dos lenguajes de programación populares."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -464,14 +468,15 @@
     },
     "seo": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Personas trabajando juntas en dispositivos digitales en un entorno de oficina.",
         "heading": "Mejora y Optimización de Sitios Web",
         "content": "En CodeLens, transformamos sitios web existentes para maximizar su rendimiento, actualizar su diseño, y añadir funcionalidades que aumenten su impacto. Ya sea mejorando la velocidad de carga, actualizando el diseño, o integrando nuevas características, nuestro equipo se asegura de que tu sitio esté a la altura de tus objetivos."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Optimizar tu Sitio Web",
-          "content": "La optimización de un sitio web ayuda a mejorar su rendimiento y adaptarlo a las expectativas y necesidades actuales de los usuarios, permitiéndote competir en el mercado digital de manera más eficaz"
+          "content": "La optimización de un sitio web ayuda a mejorar su rendimiento y adaptarlo a las expectativas y necesidades actuales de los usuarios, permitiéndote competir en el mercado digital de manera más eficaz",
+          "alt-img":"Grupo de personas trabajando en un proyecto web, con el término SEO destacado en la interfaz."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -509,14 +514,15 @@
     },
     "web-design": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Persona programando y diseñando interfaces en un cuaderno.",
         "heading": "Diseño Web",
         "content": "En CodeLens, transformamos tus ideas en diseños visualmente atractivos y efectivos que comunican tus valores y cautivan a tus usuarios. Nos especializamos en crear interfaces intuitivas y estéticamente impactantes que hacen de cada visita una experiencia memorable."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir un Diseño Web a medida",
-          "content": "Un diseño web bien elaborado no solo mejora la apariencia de tu sitio, sino que también potencia su funcionalidad y mejora la experiencia del usuario, ayudándote a conectar mejor con tu audiencia."
+          "content": "Un diseño web bien elaborado no solo mejora la apariencia de tu sitio, sino que también potencia su funcionalidad y mejora la experiencia del usuario, ayudándote a conectar mejor con tu audiencia.",
+          "alt-img":"Pantalla de ordenador con múltiples íconos y ventanas abiertas, representando un entorno de diseño digital."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -558,14 +564,15 @@
     },
     "web-development": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Una computadora portátil que muestra una maqueta de diseño HTML con bocetos y notas.",
         "heading": "Desarrollo Web desde Cero",
         "content": "En CodeLens, creemos que un sitio web efectivo es más que una página bonita. Desde el diseño hasta la funcionalidad, construimos soluciones digitales a medida que representan la esencia de tu marca y conectan de manera auténtica con tu audiencia."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir Desarrollo a Medida",
-          "content": "Cada negocio es único, y tu sitio web debe reflejarlo. Nuestro equipo se especializa en crear sitios web personalizados que se ajustan a las necesidades y objetivos específicos de cada cliente."
+          "content": "Cada negocio es único, y tu sitio web debe reflejarlo. Nuestro equipo se especializa en crear sitios web personalizados que se ajustan a las necesidades y objetivos específicos de cada cliente.",
+          "alt-img":"Pantalla de computadora que exhibe un diseño web moderno, representando el proceso de desarrollo de un sitio."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -607,14 +614,15 @@
     },
     "api-development": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Programadores colaborando en un proyecto con código visible en la pantalla.",
         "heading": "Desarrollo de APIS que Potencian a Tus Usuarios",
         "content": "En CodeLens, diseñamos y desarrollamos APIs que no solo conectan sistemas, sino que también permiten a nuestros clientes ofrecer servicios innovadores a sus propios usuarios. Estas APIs están diseñadas para ser seguras, escalables y fáciles de implementar, asegurando que tus clientes puedan integrarlas sin complicaciones."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Elegir APIs Personalizadas para Tu Negocio",
-          "content": "En un mundo digital donde la conectividad y la eficiencia son clave, las APIs personalizadas te permiten crear soluciones hechas a medida para satisfacer las necesidades específicas de tu negocio."
+          "content": "En un mundo digital donde la conectividad y la eficiencia son clave, las APIs personalizadas te permiten crear soluciones hechas a medida para satisfacer las necesidades específicas de tu negocio.",
+          "alt-img":"Servicios de desarrollo de API, mostrando un equipo trabajando en computadoras con gráficos de programación en la pantalla."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -667,14 +675,15 @@
     },
     "community-management": {
       "hero": {
-        "background-url": "",
+        "background-alt": "Personas colaborando en ideas de negocio sobre papel.",
         "heading": "Potencia tu Marca con una Estrategia de Community Management Profesional",
         "content": "En CodeLens, ayudamos a marcas y negocios a construir una presencia sólida en redes sociales a través de estrategias efectivas de Community Management. Desde la planificación de contenido hasta la gestión de interacciones y branding, nos aseguramos de que tu negocio crezca en el entorno digital."
       },
       "about-section": {
         "value-proposal": {
           "heading": "Por Qué Invertir en Community Management",
-          "content": "Las redes sociales son una herramienta clave para conectar con tu audiencia y fortalecer la identidad de tu marca. Un Community Manager profesional te ayuda a mantener una comunicación efectiva y aumentar el engagement con tu público."
+          "content": "Las redes sociales son una herramienta clave para conectar con tu audiencia y fortalecer la identidad de tu marca. Un Community Manager profesional te ayuda a mantener una comunicación efectiva y aumentar el engagement con tu público.",
+          "alt-img":"Imagen que representa servicios de marketing en redes sociales, enfocándose en la promoción y el crecimiento digital."
         },
         "benefits-section": {
           "heading": "Beneficios de elegirnos",
@@ -725,7 +734,7 @@
   },
   "about-us-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "Un grupo de profesionales observa atentamente una laptop en un ambiente colaborativo.",
       "heading": "Conócenos",
       "sub-heading": "Innovamos para transformar tu negocio",
       "content": "Convierte ideas en excelencia en línea con nuestras soluciones innovadoras y servicios digitales estratégicos."
@@ -743,27 +752,33 @@
       "cards": [
         {
           "icon": "/cards-values/card1.svg",
-          "content": "Trabajo hombro con hombro"
+          "content": "Trabajo hombro con hombro",
+          "alt":"icon equipo abrazado"
         },
         {
           "icon": "/cards-values/card2.svg",
-          "content": "Nos adaptamos más que un camaleón en feria"
+          "content": "Nos adaptamos más que un camaleón en feria",
+          "alt":"icon camaleón"
         },
         {
           "icon": "/cards-values/card3.svg",
-          "content": "Donde otros ven problemas, nosotros vemos...oportunidades de presumir después"
+          "content": "Donde otros ven problemas, nosotros vemos...oportunidades de presumir después",
+          "alt":"icon de caca con estrellas"
         },
         {
           "icon": "/cards-values/card4.svg",
-          "content": "Café primero, lógica después"
+          "content": "Café primero, lógica después",
+          "alt":"icon de café"
         },
         {
           "icon": "/cards-values/card5.svg",
-          "content": "Ajustamos el tiro antes del cañonazo"
+          "content": "Ajustamos el tiro antes del cañonazo",
+          "alt":"icon de bala disparada"
         },
         {
           "icon": "/cards-values/card6.svg",
-          "content": "Aceptamos retos, creamos soluciones"
+          "content": "Aceptamos retos, creamos soluciones",
+          "alt":"icon de persona subiendo escaleras y llegando a la meta"
         }
       ]
     },
@@ -812,6 +827,7 @@
   },
   "blog": {
     "hero-section": {
+      "background-alt":"Persona escribiendo un nuevo post en un blog en una computadora portátil.",
       "heading": "Bienvenido a Nuestro Blog",
       "sub-heading": "Tu fuente de información en tecnología y desarrollo web",
       "description": "Descubre las últimas noticias, tendencias, y consejos sobre innovación tecnológica, desarrollo web, y cómo potenciar tu negocio con soluciones digitales."
@@ -823,11 +839,11 @@
   },
   "privacy-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "Documento de contrato en una mesa con gafas y café.",
       "heading": "Política de Privacidad de CodeLens"
     },
     "about-section": {
-      "about-img": "",
+      "alt-img": "ilustracion de un hombre sosteniendo una lapicera y firmando un contrato",
       "content": [
         "En CodeLens, la protección de su información personal es nuestra prioridad. Esta política de privacidad explica cómo recopilamos, utilizamos, almacenamos y protegemos sus datos personales cuando utiliza nuestro sitio web o nuestros servicios.",
         "Nos tomamos muy en serio la privacidad de nuestros usuarios. Al utilizar nuestro sitio “(https://codelens.com/)”, los clientes aceptan los términos de esta Política de Privacidad."
@@ -874,11 +890,11 @@
   },
   "terms-page": {
     "hero": {
-      "background-url": "",
+      "background-alt": "Documento de contrato en una mesa con gafas y café.",
       "heading": "Condiciones generales de prestación de servicios"
     },
     "about-section": {
-      "about-img": "",
+      "alt-img": "ilustracion de un hombre sosteniendo una lapicera y firmando un contrato",
       "content": [
         "¡Bienvenido a los términos de uso de CodeLens! Estamos realmente muy contentos de que usted esté a aquí. Gracias por elegir usar nuestros servicios.",
         "A continuación hemos enumerado términos legales importantes que se aplican a cualquier persona que contrata nuestros servicios. Estos términos son necesarios para la protección tanto de usted como de nosotros y para hacer que nuestros servicios sean posibles y más agradables para todos.",

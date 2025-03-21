@@ -43,6 +43,7 @@ export function AppWeb() {
         media={{
           type: "image",
           src: "/hero/hero-apps.webp",
+          alt: t('services-pages.web-app.hero.background-alt')
         }}
       >
         <motion.div
@@ -64,6 +65,7 @@ export function AppWeb() {
 
       <Services
         img="/service/appWeb.svg"
+        altImg={t("services-pages.web-app.about-section.value-proposal.alt-img")}
         titleOne={t("services-pages.web-app.about-section.value-proposal.heading")}
         paragraphOne={t("services-pages.web-app.about-section.value-proposal.content")}
         titleTwo={t("services-pages.web-app.about-section.benefits-section.heading")}

@@ -5,6 +5,7 @@ import "./legalSection.css";
 
 
 const LegalSection = ({
+  altImg,
   paragraph,
   secondParagraph,
   thirdParagraph,
@@ -15,6 +16,7 @@ const LegalSection = ({
   return (
     <div>
       <LegalDescription
+        altImg={altImg}
         paragraph={paragraph}
         secondParagraph={secondParagraph}
         thirdParagraph={thirdParagraph}
@@ -27,6 +29,7 @@ const LegalSection = ({
 
 LegalSection.propTypes = {
   title: PropTypes.string.isRequired,
+  altImg: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
   secondParagraph: PropTypes.string.isRequired,
   thirdParagraph: PropTypes.string,

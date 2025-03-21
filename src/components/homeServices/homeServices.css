@@ -2,11 +2,6 @@
   --padding: 2rem;
 }
 
-/* 
-html, body {
-  overflow-x: hidden;
-} */
-
 .home-services-section {
   background   : var(--purple);
   background   : radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
@@ -15,12 +10,7 @@ html, body {
 .home-services-content {
   display       : flex;
   flex-direction: column;
-  padding       : 0 60px;
-
-}
-
-.home-services-section span {
-  font-size: clamp(1.125rem, 1.0833rem + 0.2083vw, 1.25rem);
+  padding: 0 10px 0 70px;
 }
 
 .home-services-carousel {
@@ -37,51 +27,80 @@ html, body {
   position   : relative; */
 }
 
-.home-carousel-slides {
-  padding        : 10px;
-  display        : flex;
-  flex-wrap      : wrap;
-  justify-content: center;
-  gap            : 35px;
-  row-gap        : 35px;
-
-
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  touch-action: pan-y;
+}
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  touch-action: pan-y;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  box-sizing: border-box;
+  padding: 10px; 
+}
+
+
 .home-carousel-bullets {
-  display: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .home-carousel-bullets li {
-  --size          : 10px;
-  list-style-type : none;
-  height          : var(--size);
-  width           : var(--size);
-  border-radius   : 50%;
+  --size: 12px;
+  list-style: none;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
   background-color: grey;
+  cursor: pointer;
 }
 
 .home-carousel-bullets .activeSlide {
   background-color: var(--marine-green);
 }
 
-.izq,
-.der {
-  border: 1px solid red;
-  height: 50px;
-  width : 50px;
+
+.home-carousel-slides {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 35px;
+  row-gap: 35px;
 }
+
 
 @media (width <=768px) {
   .home-services-section {
     padding-left : 0;
     padding-right: 0;
-
   }
 
   .home-services-content {
     align-items: center;
-
   }
 }
 
@@ -89,57 +108,17 @@ html, body {
   height: auto;
 }
 
-@media (width <=500px) {
+@media (width <= 654px) {
   .home-carousel-slides {
-    flex-wrap         : nowrap;
-    justify-content   : flex-start;
-    scroll-behavior   : smooth;
-    -ms-overflow-style: none;
-    /* Internet Explorer 10+ */
-    scrollbar-width   : none;
-    /* Firefox */
-    scroll-snap-type  : x mandatory;
-    scroll-snap-align : center;
-  }
-
-  .home-carousel-slides::-webkit-scrollbar {
     display: none;
-    /* Safari and Chrome */
-
-  }
-
-  .home-carousel-bullets {
-    margin-top     : 10px;
-    display        : flex;
-    gap            : 10px;
-    justify-content: center;
-    padding        : 0;
-    
-  }
-
-  .home-carousel-slides>div {
-    flex-shrink: 0;
-    position   : relative;
-    transition : transform 0.5s;
-  }
-
-  .wrapper {
-    padding-left: 20%;
-    height      : 80px;
-  }
-  
-  .card-container-mobile{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
   }
 }
 
-@media(min-width:500px){
-  .home-services-carousel{
-    flex-direction: row;
-    
+@media (width > 654px) {
+  .slider-container {
+    display: none;
+  }
+  .home-carousel-bullets {
+    display: none;
   }
 }

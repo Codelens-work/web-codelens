@@ -16,11 +16,11 @@ const ValueSection = ({valuesSectionText}) => {
     <>
       <div className='value-section' ref={ref}>
         <div className='team-section-content'>
-          <h2>{valuesSectionText.heading}</h2>
+          <h2 className='h2-line'>{valuesSectionText.heading}</h2>
         </div>
         <div className='cards-container'>
           {values.map((value, index) => (
-            <CardValue key={index} icon={value.icon} content={value.content} index={index} />
+            <CardValue key={index} icon={value.icon} content={value.content} alt={value.alt} index={index} />
           ))}
         </div>
       </div>

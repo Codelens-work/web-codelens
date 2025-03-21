@@ -29,24 +29,26 @@ const PrivacyPolicy = () => {
         <meta name="author" content="CodeLens" />
         <link rel="canonical" href="https://codelenstech.com/" />
       </Helmet>
-      <Hero
-        media={{
-          type: 'image',
-          src: '/hero/hero-terms-privacity.webp',
-        }}
-      >
-        <div className="terms-hero-content">
-          <h1 className="terms-title-hero">{t('privacy-page.hero.heading')}</h1>
-        </div>
-      </Hero>
-      <LegalSection
-        title={"Política de Privacidad de CodeLens"}
-        paragraph={
-          tPrivAbout[0]
-        }
-        secondParagraph={
-          tPrivAbout[1]
-        }
+    <Hero
+      media={{
+        type: 'image',
+        src: '/hero/hero-terms-privacity.webp',
+        alt: t('privacy-page.hero.background-alt')
+      }}
+    >
+      <div className="terms-hero-content">
+        <h1 className="terms-title-hero">{t('privacy-page.hero.heading')}</h1>
+      </div>
+    </Hero>
+    <LegalSection
+      title={t('privacy-page.hero.heading')}
+      altImg={t("privacy-page.about-section.alt-img")}
+      paragraph={
+        tPrivAbout[0]
+      }
+      secondParagraph={
+        tPrivAbout[1]
+      }
 
         titles={tPrivSectionTitle}
         description={tPrivSectionContent}

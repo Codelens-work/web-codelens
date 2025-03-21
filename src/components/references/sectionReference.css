@@ -9,8 +9,6 @@
     align-items: center;
     text-align: center;
     gap: 10px;
-    padding-left: 5%;
-    padding: 60PX 10PX;
 }
 
 .reference-intro span{
@@ -20,9 +18,8 @@
 }
 
 .reference-intro p{
-    font-size: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem);
     color: var(--black);
-    max-width: 80%;
+    max-width: 85%;
 }
 
 .card-reference-container{
@@ -37,7 +34,6 @@
         justify-content: flex-start;
         align-items: flex-start;
         text-align: left;
-        padding-left: 80px;
         gap: 5px;
     }   
 }

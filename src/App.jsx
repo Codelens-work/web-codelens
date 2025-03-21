@@ -1,7 +1,8 @@
 import "./App.css";
-import { useEffect, lazy } from "react";
+import { useEffect, useState, lazy, Suspense } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import i18n from "i18next";
+import RocketSpinner from "./components/spinner/Spinner.jsx";
 
 const Home = lazy(() => import('./pages/home/Home.jsx'));
 const About = lazy(() => import('./pages/about/About.jsx'));
@@ -18,10 +19,16 @@ const WebDevelopment = lazy(() => import("./pages/services/webDevelopment/WebDev
 const CommunityManagement = lazy(() => import("./pages/services/communityManagement/CommunityManagement.jsx").then((module) => { return { default: module.CommunityManagement} }));
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const savedLanguage = localStorage.getItem("language") || "es";
     i18n.changeLanguage(savedLanguage);
+  
+    // Se ejecuta cuando toda la página ha cargado completamente
+    window.onload = () => {
+      setTimeout(() => setIsLoading(false), 3000); // Agrega un pequeño delay opcional
+    };
   }, []);
 
   const router = createBrowserRouter([
@@ -119,7 +126,11 @@ function App() {
       element: <NotFound />,
     }
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <Suspense fallback={<RocketSpinner />}>
+      <RouterProvider router={router} />
+    </Suspense>
+  );
 }
 
 export default App;

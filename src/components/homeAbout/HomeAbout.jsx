@@ -12,7 +12,7 @@ const HomeAbout = ({ t, btn, currentLanguage }) => {
         <img className="home-about-logo" src="/logos/homeAboutLogo.svg" alt="Codelens Logo" />
         <h2>{t.heading}</h2>
         <span>{t.subheading}</span>
-        <p className="paragraph-custom">{t.description}</p>
+        <p className="paragraph-custom-medium">{t.description}</p>
         <LinkButton label={btn} size="normal" href={currentLanguage === 'en' ? "/#contact" : "/#contacto"} />
       </div>
     </Section>

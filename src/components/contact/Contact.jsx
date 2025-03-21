@@ -44,10 +44,10 @@ const Contact = () => {
         className="left-c text-container"
       >
             <h2 className="h2-invitation-one h2-line">{tContact.heading}</h2>
-            <h3 className="h3-invitation">
+            <h3 className="h3-invitation paragraph-custom-medium">
               {t("home.contact-section.intro-text")}
             </h3>
-            <p className="invitation-one">
+            <p className="invitation-one paragraph-custom-small">
             {t("home.contact-section.intro-description")}
             </p>
             <img
@@ -58,26 +58,28 @@ const Contact = () => {
             <h2 className="h2-invitation-two">
             {t("home.contact-section.contact-cta")}
             </h2>
-            <p className="invitation-two">
+            <p className="invitation-two paragraph-custom-small">
             {t("home.contact-section.socials-message")}
             </p>
+          <div className="social-container">
             <p className="invitation-three"> <span><img src="/icons/Message-contact.svg"/></span>
-            {t("home.contact-section.chat-text")}</p>
-            <a className="email" href="mailto:contacto@codelenstech.com">contacto@codelenstech.com</a>
-            <p className="invitation-three"> <span><img src="/icons/Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
-            <div className="social-logo-container">
-              <a href="https://www.instagram.com/codelens.tech/" 
-                target="_blank"
-                rel="noopener noreferrer" 
-                className="social-link">
-                <img
-                  className="logo-social"
-                  src="/social/instagram.svg"
-                  alt="instagram icon"
-                />
-                <span className="tooltip">Codelens.tech</span>
-              </a>
-            </div>
+              {t("home.contact-section.chat-text")}</p>
+              <a className="email" href="mailto:contacto@codelenstech.com">contacto@codelenstech.com</a>
+              <p className="invitation-three"> <span><img src="/icons/Chat-contact.svg"/></span>{t("home.contact-section.media-text")}</p>
+              <div className="social-logo-container">
+                <a href="https://www.instagram.com/codelens.tech/" 
+                  target="_blank"
+                  rel="noopener noreferrer" 
+                  className="social-link">
+                  <img
+                    className="logo-social"
+                    src="/social/instagram.svg"
+                    alt="instagram icon"
+                  />
+                  <span className="tooltip">Codelens.tech</span>
+                </a>
+              </div>
+          </div>
         </motion.div>
         <motion.div 
           className="right-c "

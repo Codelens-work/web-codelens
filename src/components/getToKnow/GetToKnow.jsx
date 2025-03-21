@@ -38,8 +38,8 @@ const GetToKnow = ({ t, url }) => {
         variants={slideInLeft}
         className="get-to-know-content">
         <h2 className='h2-line'>{t.heading}</h2>
-        <span className='paragraph-custom'>{t.subheading}</span>
-        <p className='paragraph-custom'>{t.description}</p>
+        <span className='paragraph-custom-small'>{t.subheading}</span>
+        <p className='paragraph-custom-medium'>{t.description}</p>
         <LinkButton className='get-to-know-btn' label={t['get-to-know-btn']} href={url} size="normal" />
       </motion.div>
       <motion.div 

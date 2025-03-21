@@ -25,6 +25,7 @@ const SectionReference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.6, delay: 0.1 }}
+          className='paragraph-custom-small'
         >
           {t('home.testimonials-section.subheading')}
         </motion.span>
@@ -34,7 +35,7 @@ const SectionReference = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.7, delay: 0.2 }}
-              className='paragraph-custom'
+          className='paragraph-custom-medium'
         >
           {t('home.testimonials-section.intro')}
         </motion.p>

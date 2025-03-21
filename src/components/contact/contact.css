@@ -13,7 +13,7 @@
     min-width: 300px;
     width: 100%;
     background-color: var(--white);
-    padding: 2rem; 
+    padding: 1rem; 
 }
 
 .left-c,
@@ -28,7 +28,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
     text-align: center;
 }
 
@@ -40,8 +39,8 @@
 }
 
 .logo-codelens {
-    max-width : 140px;
-    max-height: 84px;
+    max-width : 160px;
+    max-height: 90px;
 }
 
 .text-container {
@@ -60,13 +59,22 @@
 }
 
 .h2-invitation-two {
-    font-size: clamp(1.25rem, 1.0044rem + 1.2281vw, 3rem);
+    font-size: clamp(1.25rem, 1.0044rem + 1.2281vw, 2rem);
     text-align : center;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
+    margin: 0;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 0 auto;
 }
 
 .h3-invitation {
-    font-size: clamp(1.25rem, 1.2149rem + 0.1754vw, 1.5rem);
     line-height: 28.13px;
     color      : var(--purple);
     text-align: center;
@@ -74,15 +82,14 @@
 
 .invitation-one {
     text-align: center;
-    font-size: clamp(1.06rem, 0.9649rem + 0.1754vw, 1.25rem);
+    color: var(--black);
 }
 
 .invitation-two {
     font-size  : 1.125rem;
-    font-weight: 300;
     line-height: 21.09px;
     text-align : center;
-    padding-bottom: 1.5rem;
+    color: var(--black);
 }
 
 .invitation-three {
@@ -90,6 +97,7 @@
     font-weight: 300;
     line-height: 23.44px;
     text-align : center;
+    color: var(--black);
 }
 
 

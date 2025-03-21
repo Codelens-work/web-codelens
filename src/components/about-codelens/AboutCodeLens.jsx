@@ -61,7 +61,7 @@ const AboutCodeLens = ({aboutUsText}) => {
               {aboutUsText.content.map((paragraph, index) => (
                 <motion.p
                   key={index}
-                  className="about-paragraph"
+                  className="about-paragraph paragraph-custom-small"
                   variants={itemVariants}
                 >
                   {paragraph}

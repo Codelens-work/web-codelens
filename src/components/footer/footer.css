@@ -44,7 +44,7 @@ min-width: min(100%, 300px);
 }
 
 .socialLogoContainer {
-  max-width: 300px;
+  max-width: 360px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -56,7 +56,7 @@ min-width: min(100%, 300px);
   color: var(--black);
   display: inline-block;
   text-align: center;
-  font-size: clamp(1rem, 2vw, 1.25rem);;
+  font-size: clamp(1rem, 2vw, 1.105rem);;
 }
 
 .mediaContainer {
@@ -146,4 +146,10 @@ a:hover::after {
   justify-content: space-evenly;
 }
 
+}
+
+@media(width > 1024px) {
+  .socialLogoContainer{
+    padding-left: 30px;
+  }
 }

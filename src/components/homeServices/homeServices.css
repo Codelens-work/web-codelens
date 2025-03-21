@@ -2,11 +2,6 @@
   --padding: 2rem;
 }
 
-/* 
-html, body {
-  overflow-x: hidden;
-} */
-
 .home-services-section {
   background   : var(--purple);
   background   : radial-gradient(circle, var(--purple) 0%, var(--light-blue) 65%);
@@ -15,8 +10,7 @@ html, body {
 .home-services-content {
   display       : flex;
   flex-direction: column;
-  padding       : 0 60px;
-
+  padding: 0 10px 0 70px;
 }
 
 .home-services-carousel {

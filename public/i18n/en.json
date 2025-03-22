@@ -275,14 +275,6 @@
       "intro": "Someone else's question might be yours too. Clear your doubts with us.",
       "content": [
         {
-          "question": "What services does CodeLens offer?",
-          "answer": "At CodeLens, we specialize in:<ul><li><strong>Web Development</strong> from scratch.</li><li>Custom <strong> Web Design</strong> focused on user experience.</li><li><strong>Enhancement</strong> of existing Websites.</li><li><strong>Web Application Development </strong>, such as management systems, inventory control, and more. If you have a specific project in mind, contact us to discuss it!</li><li><strong>Community Management</strong>, to manage your online presence and foster authentic relationships with your community on social media.</li></ul>"
-        },
-        {
-          "question": "What types of businesses or projects do you accept?",
-          "answer": "We focus on working with small and medium-sized businesses, as well as entrepreneurs looking to improve their online presence. Our ideal client is someone who needs a tailored solution to stand out in their industry."
-        },
-        {
           "question": "How long does it take to complete a project?",
           "answer": "The duration varies depending on the complexity of the project. A standard website typically takes between 4 to 6 weeks. More complex projects, such as custom applications, may take 2 to 3 months. We always provide an estimated timeline at the beginning."
         },
@@ -291,28 +283,12 @@
           "answer": "Yes, we offer maintenance and support plans to ensure your website or application runs smoothly, with regular updates and security optimization. You can choose the plan that best suits your needs."
         },
         {
-          "question": "How is the development process structured?",
-          "answer": "Our development process consists of several phases: <ul><li><strong>Initial Consultation:</strong> We discuss your goals and requirements.</li><li><strong>Planning and Design:</strong> We create a proposal and initial design.</li><li><strong>Development:</strong> We build the website or application based on the agreed design.</li><li><strong>Testing and Launch:</strong> We test every aspect before making the project live. We maintain constant communication in each phase to keep you updated on the progress.</li></ul>"
-        },
-        {
           "question": "How much does a web development project or application cost?",
           "answer": "The cost depends on the complexity of the project and the specific features you require. We offer personalized quotes after an initial consultation to understand your needs."
         },
         {
-          "question": "What technologies do you use for web development?",
-          "answer": "At CodeLens, we work with modern technologies tailored to each project type, such as HTML, CSS, JavaScript, React, Node.js, and databases like MongoDB or MySQL, among others. This allows us to build scalable and efficient solutions."
-        },
-        {
           "question": "Can I make changes or updates to my site after it's launched?",
           "answer": "Yes, our websites are designed to be flexible. You can make small content updates, or we can assist you with more complex modifications. We also offer maintenance plans for periodic changes."
-        },
-        {
-          "question": "Do I need technical knowledge to work with CodeLens?",
-          "answer": "No, it's not necessary. We handle the entire technical process, from design to development. Just share your vision and objectives with us, and we'll help bring them to life."
-        },
-        {
-          "question": "Can I see examples of previous projects?",
-          "answer": "Of course! You can visit our 'Portfolio' section to see some of the projects we've completed for other clients. Each one reflects our commitment to quality and customization in every design."
         },
         {
           "question": "What payment options are available?",

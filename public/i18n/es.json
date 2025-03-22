@@ -276,14 +276,6 @@
       "intro": "La pregunta de otros, también puede ser la tuya. Sácate las dudas con nosotros",
       "content": [
         {
-          "question": "¿Cuáles son los servicios que ofrece CodeLens?",
-          "answer": "En CodeLens, nos especializamos en: <ul><li><strong>Desarrollo Web</strong> desde cero.</li><li><strong>Diseño Web</strong> personalizado y enfocado en la experiencia del usuario.</li><li><strong>Mejora de Sitios Web</strong> existentes</li><li><strong>Desarrollo de Aplicaciones Web</strong>, como sistemas de gestión, control de inventario, y más. Si tienes un proyecto específico en mente, ¡Contáctanos para discutirlo!</li><li><strong>Community Management</strong>, para gestionar tu presencia online y fomentar relaciones auténticas con tu comunidad en redes sociales.</li></ul>"
-        },
-        {
-          "question": "¿Qué tipo de empresas o proyectos aceptan?",
-          "answer": "Nos enfocamos en trabajar con pequeñas y medianas empresas, así como emprendedores que buscan mejorar su presencia en línea. Nuestro cliente ideal es aquel que necesita una solución personalizada para destacarse en su sector."
-        },
-        {
           "question": "¿Cuánto tiempo tarda en completarse un proyecto?",
           "answer": "La duración varía según la complejidad del proyecto. En general, un sitio web estándar puede tardar entre 4 y 6 semanas. Proyectos más complejos, como aplicaciones personalizadas, pueden requerir de 2 a 3 meses. Siempre proporcionamos un cronograma estimado al inicio."
         },
@@ -292,28 +284,12 @@
           "answer": "Sí, ofrecemos planes de mantenimiento y soporte para garantizar que tu sitio o aplicación funcione correctamente, con actualizaciones periódicas y optimización de seguridad. Puedes elegir el plan que mejor se adapte a tus necesidades"
         },
         {
-          "question": "¿Cómo se estructura el proceso de desarrollo?",
-          "answer": "Nuestro proceso de desarrollo consta de varias fases:<ul><li><strong>Consulta Inicial:</strong> Conversamos sobre tus objetivos y requerimientos.</li><li><strong>Planificación y Diseño:</strong> Creamos una propuesta y diseño inicial.</li><li><strong>Desarrollo:</strong> Construimos el sitio o aplicación según el diseño acordado.</li><li><strong>Pruebas y Lanzamiento:</strong> Probamos cada aspecto antes de lanzar el proyecto en vivo. Mantenemos comunicación constante en cada fase para asegurar que estés al tanto del progreso.</li></ul>"
-        },
-        {
           "question": "¿Cuánto cuesta un proyecto de desarrollo web o una aplicación?",
           "answer": "El costo depende de la complejidad del proyecto y las funcionalidades específicas que requieras. Ofrecemos presupuestos personalizados después de una consulta inicial para entender tus necesidades."
         },
         {
-          "question": "¿Qué tecnologías utilizan para el desarrollo web?",
-          "answer": "En CodeLens trabajamos con tecnologías modernas y adaptadas a cada tipo de proyecto, como HTML, CSS, JavaScript, React, Node.js, y bases de datos como MongoDB o MySQL, entre otras. Esto nos permite construir soluciones escalables y eficientes."
-        },
-        {
           "question": "¿Puedo hacer cambios o actualizaciones en mi sitio después de lanzado?",
           "answer": "Sí, nuestros sitios están diseñados para ser flexibles. Puedes hacer pequeñas actualizaciones de contenido, o nosotros podemos ayudarte con modificaciones más complejas. También ofrecemos planes de mantenimiento para cambios periódicos."
-        },
-        {
-          "question": "¿Necesito tener algún conocimiento técnico para trabajar con CodeLens?",
-          "answer": "No es necesario. Nos encargamos de todo el proceso técnico, desde el diseño hasta el desarrollo. Simplemente comunícanos tu visión y objetivos, y nosotros te ayudaremos a llevarla a cabo."
-        },
-        {
-          "question": "¿Puedo ver ejemplos de proyectos anteriores?",
-          "answer": "Claro, puedes visitar nuestra sección de 'Portafolio' para ver algunos de los proyectos que hemos realizado para otros clientes. Cada uno refleja nuestro compromiso con la calidad y personalización en cada diseño."
         },
         {
           "question": "¿Cuáles son las opciones de pago disponibles?",

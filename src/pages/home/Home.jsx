@@ -45,10 +45,10 @@ const Home = () => {
         media={{
           type: "video",
           src: "/hero/Hero.mp4",
-
         }}
+        id={currentLanguage === 'en' ? "home" : "inicio"}
       >
-        <div id={currentLanguage === 'en' ? "home" : "inicio"} className="hero-content-container">
+        <div className="hero-content-container">
           <div className="span-title-container">
             <SpanTitleHome />
           </div>

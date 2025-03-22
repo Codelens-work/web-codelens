@@ -752,31 +752,31 @@
       "intro": "Behind every line of code, there's a creative and determined mind. We are six passionate developers and designers, ready to turn your ideas into reality.",
       "cards": [
         {
-          "img-url": "/team/aylen.webp",
+          "img-url": "/team/aylen.svg",
           "img-hover-url": "",
           "fullname": "Aylen Gil",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "/team/flor.webp",
+          "img-url": "/team/flor.svg",
           "img-hover-url": "",
           "fullname": "Florencia Ríos",
           "role": "Co-Founder, Community Manager & UX/UI Designer"
         },
         {
-          "img-url": "/team/nico.webp",
+          "img-url": "/team/nico.svg",
           "img-hover-url": "",
           "fullname": "Nicolás Romero",
           "role": "Co-Founder & Fullstack Developer"
         },
         {
-          "img-url": "/team/yani.webp",
+          "img-url": "/team/yani.svg",
           "img-hover-url": "",
           "fullname": "Yanina Unrein",
           "role": "Co-Founder, UX/UI Designer & Fullstack Developer "
         },
         {
-          "img-url": "/team/tania.webp",
+          "img-url": "/team/tania.svg",
           "img-hover-url": "",
           "fullname": "Tania Yanina Balbuena Casanova",
           "role": "Community Manager & Public Relations Analyst"

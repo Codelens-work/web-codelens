@@ -3,15 +3,15 @@ import PropTypes from "prop-types"
 import Section  from "../section/Section";
 import { motion } from 'framer-motion';
 
-const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
+const Service = ({ img, altImg, titleOne, paragraphOne, titleTwo, items }) => {
   // Variants para las animaciones
   const slideInLeft = {
-    hidden: { opacity: 0, x: -50 }, // Antes -100
+    hidden: { opacity: 0, x: -50 }, 
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
   
   const slideInRight = {
-    hidden: { opacity: 0, x: 50 }, // Antes 100
+    hidden: { opacity: 0, x: 50 }, 
     visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
   };
 
@@ -46,7 +46,7 @@ const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
               viewport={{ once: true, amount:  0.2 }} 
               variants={slideInRight}
             > 
-              <img src={img}alt={`imgService`} />
+              <img src={img} alt={altImg} />
               </motion.div>
         </div>
       </Section>
@@ -56,6 +56,7 @@ const Service = ({ img, titleOne, paragraphOne, titleTwo, items }) => {
 
 Service.propTypes={
     img: PropTypes.string.isRequired,
+    altImg: PropTypes.string.isRequired,
     titleOne: PropTypes.string.isRequired,
     paragraphOne: PropTypes.string.isRequired,
     titleTwo: PropTypes.string.isRequired,

@@ -5,7 +5,7 @@ import LinkButton from "../../../components/linkButton/LinkButton.jsx";
 import Services from "../../../components/services/Services.jsx";
 import { useTranslation } from "react-i18next";
 import Breadcrumb from "../../../components/breadcrumbs/Breadcrumbs.jsx";
-import { useEffect } from "react";
+import { useScrollToTop } from "../../../hooks/useScroll.jsx";
 
 import { motion } from 'framer-motion';
 
@@ -22,9 +22,7 @@ export function WebDesing() {
   const tCartsTitle = tFeatures.map((item) => item.title);
   const tCartsContent = tFeatures.map((item) => item.content);
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+  useScrollToTop()
 
   return (
     <>
@@ -41,6 +39,7 @@ export function WebDesing() {
         media={{
           type: "image",
           src: "/hero/hero-desing.webp",
+          alt: t('services-pages.web-design.hero.background-alt')
         }}
       >
       <motion.div 
@@ -65,6 +64,7 @@ export function WebDesing() {
       </Hero>
       <Services
         img="/service/webDesign.svg"
+        altImg={t("services-pages.web-design.about-section.value-proposal.alt-img")}
         titleOne={t(
           "services-pages.web-design.about-section.value-proposal.heading"
         )}

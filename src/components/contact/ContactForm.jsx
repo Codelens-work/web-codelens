@@ -4,14 +4,13 @@ import { useState, useRef } from "react";
 import Modal from "./Modal";
 import { useTranslation } from "react-i18next";
 import "./contact.css";
-import { text } from "framer-motion/client";
 
 const ContactForm = () => {
   const nameRef = useRef(null);
   const emailRef = useRef(null);
   const businessRef = useRef(null);
   const messageRef = useRef(null);
-  const { t, i18n } = useTranslation();
+  const { t} = useTranslation();
   const tForm = t("home.contact-section.contact-form", { returnObjects: true });
 
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -132,7 +131,6 @@ const ContactForm = () => {
 
     if (formIsValid) {
       await sendEmail(event);
-      //console.log(formData);
       setFormData({
         name: "",
         email: "",
@@ -149,13 +147,12 @@ const ContactForm = () => {
   const modalErrorText = tForm.modals.error;
 
   const sendEmail = async () => {
-    // aca llamar a la api
     const formDataToSend = new FormData();
     formDataToSend.append("name", formData.name);
     formDataToSend.append("email", formData.email);
     formDataToSend.append("business", formData.business);
     formDataToSend.append("message", formData.message);
-    formDataToSend.append("_gotcha", ""); // Honeypot anti-spam
+    formDataToSend.append("_gotcha", ""); 
     try {
       const response = await fetch("https://getform.io/f/aroyylnb", {
         method: "POST",
@@ -169,7 +166,6 @@ const ContactForm = () => {
         setModalIsOpen(!modalIsOpen);
       }
     } catch (error) {
-      //console.log(error);
       setMsjApi({ title: modalErrorTitle, text: modalErrorText });
       setModalIsOpen(!modalIsOpen);
     }
@@ -234,8 +230,7 @@ const ContactForm = () => {
                 value={formData.business}
                 onChange={handleChange}
                 className={errors.business.length > 0 ? "input-error" : ""}
-                // minLength={2}
-                // maxLength={25}
+              
               />
               {errors.business.length > 0 && (
               <div className="alert alert-warning">

@@ -1,7 +1,10 @@
 .hero-content-container{
     display: flex;
+    justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+    position: relative;
+    top: 110px;
 }
 
 .title-container{
@@ -19,4 +22,10 @@
         justify-content: flex-start;
         padding-left: 130px;
     }
+
+    .hero-content-container{
+        justify-content: center;
+        top: 160px;
+    }
+   
 }

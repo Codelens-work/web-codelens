@@ -1,11 +1,11 @@
 import PropTypes from "prop-types";
 import "./legalSection.css";
 
-const LegalDescription = ({ paragraph, secondParagraph, thirdParagraph, textColor }) => {
+const LegalDescription = ({altImg, paragraph, secondParagraph, thirdParagraph, textColor }) => {
   return (
     <div className="legal-description-container">
       <div className="right-column">
-        <img src="/imgs/conditions.svg" alt='conditions'  />
+        <img src="/imgs/conditions.svg" alt={altImg}  />
       </div>
 
       <div className="left-column">
@@ -17,6 +17,7 @@ const LegalDescription = ({ paragraph, secondParagraph, thirdParagraph, textColo
   );
 };
 LegalDescription.porpTypes = {
+  altImg: PropTypes.string.isRequired,
   paragraph: PropTypes.string.isRequired,
   secondParagraph: PropTypes.string.isRequired,
   thirdParagraph: PropTypes.string,

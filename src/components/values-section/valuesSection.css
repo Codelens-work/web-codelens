@@ -9,7 +9,7 @@
 .team-section-content h2 {
   position: relative;
   font-size: clamp(1.5625rem, 1.2946rem + 1.3393vw, 2.5rem);
-  padding-left: clamp(38px, 8vw, 60px); /* Asegura espacio para el before */
+  padding-left: clamp(38px, 8vw, 60px); 
 }
 
 .team-section-content h2::before {
@@ -17,7 +17,7 @@
   display: block;
   position: absolute;
   top: 50%;
-  left: 0; /* Se mantiene alineado con el padding del h2 */
+  left: 0; 
   width: clamp(30px, 5vw, 50px);
   height: 3px;
   background-color: var(--marine-green);
@@ -35,8 +35,6 @@
   padding: 2rem;
 }
 
-
-/* Para pantallas de 1024px o más: 3 tarjetas por fila */
 @media (min-width: 1024px) {
   .value-section{
     padding: 80px 70px;
@@ -47,7 +45,7 @@
   }
 }
 
-/* Para pantallas entre 768px y 1023px: 2 tarjetas por fila */
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .cards-container {
     grid-template-columns: repeat(2, 1fr);

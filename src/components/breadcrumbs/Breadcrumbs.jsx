@@ -6,7 +6,6 @@ const Breadcrumbs = ({ currentService }) => {
   const { t } = useTranslation();
   const navigate = useNavigate(); 
 
-  // Función para navegar sin recargar
   const handleHomeClick = (event) => {
     event.preventDefault();
     navigate("/");

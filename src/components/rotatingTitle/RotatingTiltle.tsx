@@ -2,13 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './rotatingtitle.css';
 import { useTranslation } from 'react-i18next'
 
-const services = [
-  'Página Web',
-  'Aplicación Web',
-  'API Personalizada',
-  'Estrategia SEO',
-  'Interfaz Moderna'
-];
 
 export function RotatingTitle() {
   const { t } = useTranslation();
@@ -17,7 +10,7 @@ export function RotatingTitle() {
   const [currentService, setCurrentService] = useState(0);
 
   useEffect(() => {
-    if (!Array.isArray(services) || services.length === 0) return; // Verifica si es un array válido
+    if (!Array.isArray(services) || services.length === 0) return; 
   
     const interval = setInterval(() => {
       setCurrentService((current) => (current + 1) % services.length);

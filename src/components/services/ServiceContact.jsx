@@ -1,6 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import "./service.css";
-import { useNavigate } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { useTranslation } from 'react-i18next'
 
@@ -13,10 +12,6 @@ const ServiceContact = ({titleServiceContact, paragraphServiceContact}) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { triggerOnce: false, threshold: 0.1 });
 
-  useEffect(() => {
-    //console.log("Elemento referenciado:", ref.current);
-    //console.log("isInView:", isInView);
-  }, [isInView]);
   
   return (
     <div ref={ref} className="service-contact">

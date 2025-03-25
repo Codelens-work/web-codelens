@@ -3,11 +3,25 @@
     justify-content: center;
     align-items: center;
     height: 100vh; 
-    background-color: white;
+    background-image: url('/spinner/background.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
   
 .rocket-gif {
     width: 300px; 
     height: 300px;
-    border-radius: 100%;
+    animation: rocketLaunch 1.5s ease-in-out infinite;
+}
+
+@keyframes rocketLaunch {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(150px, -200px) rotate(30deg);
+        opacity: 0;
+    }
 }

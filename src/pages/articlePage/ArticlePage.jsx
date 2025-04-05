@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ArticleCardSmall from "../components/ArticleCardSmall";
+import ArticleContent from "../../components/articleContent/ArticleContent";
 import "./articlePage.css";
 
 const ArticlePage = () => {
@@ -28,22 +29,7 @@ const ArticlePage = () => {
 
   return (
     <div className="article-page">
-      <img src={article.image} alt={article.title[i18n.language]} className="header-image" />
-
-      <div className="article-content">
-        {article.content.map((block, index) => {
-          switch (block.type) {
-            case "h1":
-              return <h1 key={index}>{block[i18n.language]}</h1>;
-            case "h2":
-              return <h2 key={index}>{block[i18n.language]}</h2>;
-            case "p":
-              return <p key={index}>{block[i18n.language]}</p>;
-            default:
-              return null;
-          }
-        })}
-      </div>
+      <ArticleContent></ArticleContent>
 
       <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>

@@ -15,7 +15,6 @@ const ArticlePage = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
-        console.log(data)
         const articleExists = Object.hasOwn(data, slug)
         if (articleExists) {
           setArticle(data[slug])
@@ -28,6 +27,7 @@ const ArticlePage = () => {
       })
   }, [url]);
 
+  // Poner otro spinner bonito o el rocket
   if (!article) return <p>Cargando...</p>;
 
   // const currentIndex = articles.findIndex((a) => a.id === id);
@@ -36,8 +36,9 @@ const ArticlePage = () => {
 
   return (
     <div className="article-page">
+      <img src={article.imgUrl} alt={article.imgAlt}/>
       <h1>{article.h1}</h1>
-      <ArticleContent></ArticleContent>
+      <ArticleContent sections={article.sections} />
 
       {/* <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>

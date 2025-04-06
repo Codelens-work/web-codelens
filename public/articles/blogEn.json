@@ -3,6 +3,7 @@
       "slug": "sitio-web-esencial-negocio",
       "h1": "Why is a website important",
       "imgUrl": "/public/imgs/get-to-know-us.svg",
+      "imgAlt": "Alt de imagen",
       "sections": [
         {
           "h2": "Beneficios de Tener un Sitio Web",

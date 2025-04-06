@@ -1,8 +1,8 @@
 {
   "sitio-web-esencial-negocio": {
-      "slug": "sitio-web-esencial-negocio",
       "h1": "Por qué un Sitio Web es Esencial para tu Negocio",
       "imgUrl": "/public/imgs/get-to-know-us.svg",
+      "imgAlt": "Alt de imagen",
       "sections": [
         {
           "h2": "Beneficios de Tener un Sitio Web",

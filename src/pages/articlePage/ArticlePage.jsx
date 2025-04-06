@@ -1,4 +1,5 @@
-import { useParams, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ArticleContent from "../../components/articleContent/ArticleContent";
 import "./articlePage.css";
@@ -6,18 +7,25 @@ import "./articlePage.css";
 const ArticlePage = () => {
   const { slug } = useParams();
   const { i18n } = useTranslation()
-  // const [articles, setArticles] = useState([]);
-  // const [article, setArticle] = useState(null);
+  const [article, setArticle] = useState(null);
+  const file = i18n.language === 'es' ? 'blogEs.json' : 'blogEn.json'
+  const url = `/articles/${file}`
 
-  // useEffect(() => {
-  //   fetch("/articles.json")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setArticles(data);
-  //       const foundArticle = data.find((a) => a.id === id);
-  //       setArticle(foundArticle);
-  //     });
-  // }, [id]);
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        const articleExists = Object.hasOwn(data, slug)
+        if (articleExists) {
+          setArticle(data[slug])
+        }
+        else throw new Error('El artículo no existe')
+      })
+      .catch((err) => {
+        console.log(err)
+        // Agregar navegación a un 404 que diga que no se encontró el artículo o ya no existe
+      })
+  }, [url]);
 
   // if (!article) return <p>Cargando...</p>;
 

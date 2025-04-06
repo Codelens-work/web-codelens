@@ -4,6 +4,8 @@
       "h1": "Why is a website important",
       "imgUrl": "/public/imgs/get-to-know-us.svg",
       "imgAlt": "Alt de imagen",
+      "metadescription": "",
+      "focusKeyword": "",
       "sections": [
         {
           "h2": "Beneficios de Tener un Sitio Web",

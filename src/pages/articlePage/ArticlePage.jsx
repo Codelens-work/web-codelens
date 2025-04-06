@@ -36,9 +36,11 @@ const ArticlePage = () => {
 
   return (
     <div className="article-page">
-      <img src={article.imgUrl} alt={article.imgAlt}/>
-      <h1>{article.h1}</h1>
-      <ArticleContent sections={article.sections} />
+      <article>
+        <img src={article.imgUrl} alt={article.imgAlt} />
+        <h1>{article.h1}</h1>
+        <ArticleContent sections={article.sections} />
+      </article>
 
       {/* <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>

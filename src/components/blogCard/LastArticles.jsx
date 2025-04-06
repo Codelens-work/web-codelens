@@ -9,7 +9,7 @@ const LastArticles = () => {
       description:
         "El posicionamiento con ayuda del SEO en Montreal es una de las estrategias más importantes para cualquier negocio.",
       date: "15 de enero de 2025",
-      url: "/",
+      url: "/blog/sitio-web-esencial-negocio",
       img: "card-img",
     },
     {

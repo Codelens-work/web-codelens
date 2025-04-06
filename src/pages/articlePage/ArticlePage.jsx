@@ -1,37 +1,36 @@
-import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ArticleCardSmall from "../components/ArticleCardSmall";
 import ArticleContent from "../../components/articleContent/ArticleContent";
 import "./articlePage.css";
 
 const ArticlePage = () => {
-  const { id } = useParams();
-  const { i18n } = useTranslation();
-  const [articles, setArticles] = useState([]);
-  const [article, setArticle] = useState(null);
+  const { slug } = useParams();
+  const { i18n } = useTranslation()
+  // const [articles, setArticles] = useState([]);
+  // const [article, setArticle] = useState(null);
 
-  useEffect(() => {
-    fetch("/articles.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setArticles(data);
-        const foundArticle = data.find((a) => a.id === id);
-        setArticle(foundArticle);
-      });
-  }, [id]);
+  // useEffect(() => {
+  //   fetch("/articles.json")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       setArticles(data);
+  //       const foundArticle = data.find((a) => a.id === id);
+  //       setArticle(foundArticle);
+  //     });
+  // }, [id]);
 
-  if (!article) return <p>Cargando...</p>;
+  // if (!article) return <p>Cargando...</p>;
 
-  const currentIndex = articles.findIndex((a) => a.id === id);
-  const prevArticle = currentIndex > 0 ? articles[currentIndex - 1] : null;
-  const nextArticle = currentIndex < articles.length - 1 ? articles[currentIndex + 1] : null;
+  // const currentIndex = articles.findIndex((a) => a.id === id);
+  // const prevArticle = currentIndex > 0 ? articles[currentIndex - 1] : null;
+  // const nextArticle = currentIndex < articles.length - 1 ? articles[currentIndex + 1] : null;
 
   return (
     <div className="article-page">
+      <h1>{i18n.language == 'es' ? 'Articulo' : 'Article in englich'}</h1>
       <ArticleContent></ArticleContent>
 
-      <aside className="related-articles">
+      {/* <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
         {article.related.map((rel) => (
           <Link to={`/blog/${rel.id}`} key={rel.id}>
@@ -51,7 +50,7 @@ const ArticlePage = () => {
             {nextArticle.title[i18n.language]} →
           </Link>
         )}
-      </div>
+      </div> */}
     </div>
   );
 };

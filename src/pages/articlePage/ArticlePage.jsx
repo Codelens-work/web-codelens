@@ -15,6 +15,7 @@ const ArticlePage = () => {
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
+        console.log(data)
         const articleExists = Object.hasOwn(data, slug)
         if (articleExists) {
           setArticle(data[slug])
@@ -27,7 +28,7 @@ const ArticlePage = () => {
       })
   }, [url]);
 
-  // if (!article) return <p>Cargando...</p>;
+  if (!article) return <p>Cargando...</p>;
 
   // const currentIndex = articles.findIndex((a) => a.id === id);
   // const prevArticle = currentIndex > 0 ? articles[currentIndex - 1] : null;
@@ -35,7 +36,7 @@ const ArticlePage = () => {
 
   return (
     <div className="article-page">
-      <h1>{i18n.language == 'es' ? 'Articulo' : 'Article in englich'}</h1>
+      <h1>{article.h1}</h1>
       <ArticleContent></ArticleContent>
 
       {/* <aside className="related-articles">

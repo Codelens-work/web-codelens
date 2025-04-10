@@ -9,7 +9,10 @@ const ArticlePage = () => {
   const { i18n } = useTranslation()
   const [article, setArticle] = useState(null);
   const file = i18n.language === 'es' ? 'blogEs.json' : 'blogEn.json'
+  const lang = i18n.language
   const url = `/articles/${file}`
+  const testUrl = "/articles/blogArticles.json"
+
 
   useEffect(() => {
     fetch(url)

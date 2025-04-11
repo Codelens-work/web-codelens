@@ -1,34 +1,34 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import ArticleContent from "../../components/articleContent/ArticleContent";
+import { BlogContext } from "../../context/BlogContext";
 import "./articlePage.css";
 
 const ArticlePage = () => {
+  const { getArticleBySlug } = useContext(BlogContext)
   const { slug } = useParams();
   const { i18n } = useTranslation()
   const [article, setArticle] = useState(null);
-  const file = i18n.language === 'es' ? 'blogEs.json' : 'blogEn.json'
   const lang = i18n.language
-  const url = `/articles/${file}`
-  const testUrl = "/articles/blogArticles.json"
 
 
   useEffect(() => {
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => {
-        const articleExists = Object.hasOwn(data, slug)
-        if (articleExists) {
-          setArticle(data[slug])
+    const getCurrentArticle = () => {
+      try {
+        const currentArticle = getArticleBySlug(slug)
+        if(!currentArticle){
+          throw new Error("No se encontró ningún artículo")
         }
-        else throw new Error('El artículo no existe')
-      })
-      .catch((err) => {
-        console.log(err)
-        // Agregar navegación a un 404 que diga que no se encontró el artículo o ya no existe
-      })
-  }, [url]);
+        setArticle(currentArticle)
+       }
+       catch {
+        console.log(error)
+        // Poner lógica para redirigir a 404 indicando que el artículo no existe
+       }
+    }
+   getCurrentArticle()
+  }, []);
 
   // Poner otro spinner bonito o el rocket
   if (!article) return <p>Cargando...</p>;
@@ -40,9 +40,9 @@ const ArticlePage = () => {
   return (
     <div className="article-page">
       <article>
-        <img src={article.imgUrl} alt={article.imgAlt} />
-        <h1>{article.h1}</h1>
-        <ArticleContent sections={article.sections} />
+        <img src={article.imgUrl} alt={article.imgAlt[lang]} />
+        <h1>{article.h1[lang]}</h1>
+        <ArticleContent sections={article.sections[lang]} />
       </article>
 
       {/* <aside className="related-articles">

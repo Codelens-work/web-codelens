@@ -18,13 +18,24 @@ export function BlogProvider({children}) {
     return articleDataList
   }
 
-//tener todos los artículos disponibles
-// obtener artículo por slug
-// obtener artículo anterior y siguiente
+// Obtener el artículo entero según el slug, o sea todo en inglés y en español
+const getArticleBySlug = (slug) =>{
+  for (let article of articles){
+    if (article.slug.en == slug || article.slug.es == slug){
+      return article
+    }
+  }
+  return null
+}
+
+// const getPrevNextArticle = (slug) => {
+//   //obtener titulo, imagen y fecha del articulo anterior y el siguiente al indicado
+// }
 
   return (
     <BlogContext.Provider value={{
-      getArticlesListData
+      getArticlesListData,
+      getArticleBySlug
     }}>
       {children}
     </BlogContext.Provider>

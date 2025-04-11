@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./blogCard.css";
 import BlogCard from "./BlogCard";
+import { BlogContext } from "../../context/BlogContext";
+
 
 const LastArticles = () => {
   const cards = [
@@ -109,6 +111,11 @@ const LastArticles = () => {
       img: "card-img",
     },
   ];
+
+  const { getArticlesListData } = useContext(BlogContext)
+
+  const contextCards = getArticlesListData("es")
+  console.log(contextCards)
 
   const parseDate = (dateString) => {
     const [day, month, year] = dateString.split(" de ");

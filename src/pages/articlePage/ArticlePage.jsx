@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import ArticleContent from "../../components/articleContent/ArticleContent";
 import { BlogContext } from "../../context/BlogContext";
 import "./articlePage.css";
+import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
 
 const ArticlePage = () => {
   const { getArticleBySlug } = useContext(BlogContext)
@@ -44,7 +45,7 @@ const ArticlePage = () => {
         <h1>{article.h1[lang]}</h1>
         <ArticleContent sections={article.sections[lang]} />
       </article>
-
+      <ArticleNavigation currentArticle={slug}/>
       {/* <aside className="related-articles">
         <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
         {article.related.map((rel) => (

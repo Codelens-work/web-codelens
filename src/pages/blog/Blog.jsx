@@ -2,8 +2,7 @@ import { Helmet } from "react-helmet";
 import "./blog.css";
 import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
-import LastArticles from "../../components/blogCard/lastArticles";
-import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
+import LastArticles from "../../components/blogCard/LastArticles";
 import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
@@ -49,7 +48,6 @@ const Blog = () => {
         </div>
       </Hero>
       <LastArticles />
-      <ArticleNavigation prevArticle={prevArticle} nextArticle={nextArticle} />
     </>
   );
 };

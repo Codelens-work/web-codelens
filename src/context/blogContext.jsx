@@ -28,14 +28,28 @@ const getArticleBySlug = (slug) =>{
   return null
 }
 
-// const getPrevNextArticle = (slug) => {
-//   //obtener titulo, imagen y fecha del articulo anterior y el siguiente al indicado
-// }
+const getAdjacentArticles = (slug) => {
+  //obtener titulo, imagen y fecha del articulo anterior y el siguiente al indicado
+  const current = getArticleBySlug(slug)
+  const adjacents = {}
+  
+  articles.forEach((article, i) => {
+    if(article.id === current.id + 1 && i <= articles.length){   
+      adjacents.next = {id: article.id, slug: article.slug , imgUrl: article.imgUrl, imgAlt: article.imgAlt, h1: article.h1, createdDate: article.createdDate}
+    }
+    if(article.id === current.id - 1 && i >= 0){
+      adjacents.prev = {id: article.id, slug: article.slug , imgUrl: article.imgUrl, imgAlt: article.imgAlt, h1: article.h1, createdDate: article.createdDate}
+    }
+  })
+
+return adjacents
+}
 
   return (
     <BlogContext.Provider value={{
       getArticlesListData,
-      getArticleBySlug
+      getArticleBySlug,
+      getAdjacentArticles
     }}>
       {children}
     </BlogContext.Provider>

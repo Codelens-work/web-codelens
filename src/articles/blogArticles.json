@@ -200,5 +200,207 @@
         }
       ]
     }
+  },
+  {
+    "id": 3,
+    "createdDate": "2025-04-10 18:00",
+    "slug": {
+      "en": "test-slug",
+      "es": "slug-test"
+    },
+    "h1": {
+      "en": "This is a test slug",
+      "es": "Este es un slug de test"
+    },
+    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgAlt": {
+      "es": "Imagen de artículo",
+      "en": "Article img"
+    },
+    "metadescription": {
+      "en": "",
+      "es": ""
+    },
+    "focusKeyword": {
+      "en": "",
+      "es": ""
+    },
+    "sections": {
+      "en": [
+        {
+          "h2": "Benefits of a website",
+          "h3": "Ventajas Clave",
+          "p": [
+            "Un sitio web bien diseñado puede ofrecer múltiples ventajas.",
+            "A continuación, se presentan algunos de los beneficios más importantes."
+          ],
+          "ul": [
+            "Mayor visibilidad y alcance de clientes",
+            "Mejora la credibilidad y confianza",
+            "Disponibilidad 24/7",
+            "Facilidad para promocionar productos y servicios"
+          ]
+        },
+        {
+          "h2": "Cómo Crear un Sitio Web Exitoso",
+          "h3": "Diseño Atractivo y Funcional",
+          "p": [
+            "Es importante que tu sitio tenga un diseño profesional y sea fácil de navegar."
+          ],
+          "ul": []
+        },
+        {
+          "h2": "Optimización para Motores de Búsqueda (SEO)",
+          "h3": "Factores Claves",
+          "p": [
+            "El SEO ayuda a que tu sitio aparezca en los primeros resultados de Google.",
+            "Un buen posicionamiento web puede aumentar significativamente el tráfico de clientes potenciales."
+          ],
+          "ul": [
+            "Uso de palabras clave relevantes",
+            "Optimización de imágenes y velocidad de carga",
+            "Estrategias de contenido de calidad"
+          ]
+        }
+      ],
+      "es": [
+        {
+          "h2": "Beneficios de Tener un Sitio Web",
+          "h3": "Ventajas Clave",
+          "p": [
+            "Un sitio web bien diseñado puede ofrecer múltiples ventajas.",
+            "A continuación, se presentan algunos de los beneficios más importantes."
+          ],
+          "ul": [
+            "Mayor visibilidad y alcance de clientes",
+            "Mejora la credibilidad y confianza",
+            "Disponibilidad 24/7",
+            "Facilidad para promocionar productos y servicios"
+          ]
+        },
+        {
+          "h2": "Cómo Crear un Sitio Web Exitoso",
+          "h3": "Diseño Atractivo y Funcional",
+          "p": [
+            "Es importante que tu sitio tenga un diseño profesional y sea fácil de navegar."
+          ],
+          "ul": []
+        },
+        {
+          "h2": "Optimización para Motores de Búsqueda (SEO)",
+          "h3": "Factores Claves",
+          "p": [
+            "El SEO ayuda a que tu sitio aparezca en los primeros resultados de Google.",
+            "Un buen posicionamiento web puede aumentar significativamente el tráfico de clientes potenciales."
+          ],
+          "ul": [
+            "Uso de palabras clave relevantes",
+            "Optimización de imágenes y velocidad de carga",
+            "Estrategias de contenido de calidad"
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "createdDate": "2025-04-11 01:00",
+    "slug": {
+      "en": "yada-yada",
+      "es": "blabla-blabla"
+    },
+    "h1": {
+      "en": "Yada yada yada",
+      "es": "Blablabla"
+    },
+    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgAlt": {
+      "es": "Imagen de artículo",
+      "en": "Article img"
+    },
+    "metadescription": {
+      "en": "",
+      "es": ""
+    },
+    "focusKeyword": {
+      "en": "",
+      "es": ""
+    },
+    "sections": {
+      "en": [
+        {
+          "h2": "Benefits of a website",
+          "h3": "Ventajas Clave",
+          "p": [
+            "Un sitio web bien diseñado puede ofrecer múltiples ventajas.",
+            "A continuación, se presentan algunos de los beneficios más importantes."
+          ],
+          "ul": [
+            "Mayor visibilidad y alcance de clientes",
+            "Mejora la credibilidad y confianza",
+            "Disponibilidad 24/7",
+            "Facilidad para promocionar productos y servicios"
+          ]
+        },
+        {
+          "h2": "Cómo Crear un Sitio Web Exitoso",
+          "h3": "Diseño Atractivo y Funcional",
+          "p": [
+            "Es importante que tu sitio tenga un diseño profesional y sea fácil de navegar."
+          ],
+          "ul": []
+        },
+        {
+          "h2": "Optimización para Motores de Búsqueda (SEO)",
+          "h3": "Factores Claves",
+          "p": [
+            "El SEO ayuda a que tu sitio aparezca en los primeros resultados de Google.",
+            "Un buen posicionamiento web puede aumentar significativamente el tráfico de clientes potenciales."
+          ],
+          "ul": [
+            "Uso de palabras clave relevantes",
+            "Optimización de imágenes y velocidad de carga",
+            "Estrategias de contenido de calidad"
+          ]
+        }
+      ],
+      "es": [
+        {
+          "h2": "Beneficios de Tener un Sitio Web",
+          "h3": "Ventajas Clave",
+          "p": [
+            "Un sitio web bien diseñado puede ofrecer múltiples ventajas.",
+            "A continuación, se presentan algunos de los beneficios más importantes."
+          ],
+          "ul": [
+            "Mayor visibilidad y alcance de clientes",
+            "Mejora la credibilidad y confianza",
+            "Disponibilidad 24/7",
+            "Facilidad para promocionar productos y servicios"
+          ]
+        },
+        {
+          "h2": "Cómo Crear un Sitio Web Exitoso",
+          "h3": "Diseño Atractivo y Funcional",
+          "p": [
+            "Es importante que tu sitio tenga un diseño profesional y sea fácil de navegar."
+          ],
+          "ul": []
+        },
+        {
+          "h2": "Optimización para Motores de Búsqueda (SEO)",
+          "h3": "Factores Claves",
+          "p": [
+            "El SEO ayuda a que tu sitio aparezca en los primeros resultados de Google.",
+            "Un buen posicionamiento web puede aumentar significativamente el tráfico de clientes potenciales."
+          ],
+          "ul": [
+            "Uso de palabras clave relevantes",
+            "Optimización de imágenes y velocidad de carga",
+            "Estrategias de contenido de calidad"
+          ]
+        }
+      ]
+    }
   }
 ]

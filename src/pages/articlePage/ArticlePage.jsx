@@ -5,6 +5,7 @@ import ArticleContent from "../../components/articleContent/ArticleContent";
 import { BlogContext } from "../../context/BlogContext";
 import "./articlePage.css";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
+import RelatedArticles from "../../components/relatedArticles/RelatedArticles";
 
 const ArticlePage = () => {
   const { getArticleBySlug } = useContext(BlogContext)
@@ -46,27 +47,7 @@ const ArticlePage = () => {
         <ArticleContent sections={article.sections[lang]} />
       </article>
       <ArticleNavigation currentArticle={slug}/>
-      {/* <aside className="related-articles">
-        <h3>{i18n.language === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
-        {article.related.map((rel) => (
-          <Link to={`/blog/${rel.id}`} key={rel.id}>
-            <ArticleCardSmall image={rel.image} description={rel[i18n.language]} />
-          </Link>
-        ))}
-      </aside>
-
-      <div className="article-navigation">
-        {prevArticle && (
-          <Link to={`/blog/${prevArticle.id}`} className="prev">
-            ← {prevArticle.title[i18n.language]}
-          </Link>
-        )}
-        {nextArticle && (
-          <Link to={`/blog/${nextArticle.id}`} className="next">
-            {nextArticle.title[i18n.language]} →
-          </Link>
-        )}
-      </div> */}
+      <RelatedArticles currentSlug={slug} lang={lang}/>
     </div>
   );
 };

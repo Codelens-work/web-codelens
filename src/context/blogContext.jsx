@@ -69,12 +69,20 @@ const getRandomArticles = (slug, amount = 5) => {
   return mappedArticles
 }
 
+const sortArticlesByDate = (array, desc) => {
+  const sorted = array.sort((a, b) => {
+    return desc ? new Date(b.createdDate) - new Date(a.createdDate) : new Date(a.createdDate) - new Date(b.createdDate) 
+  })
+  return sorted
+}
+
   return (
     <BlogContext.Provider value={{
       getArticlesListData,
       getArticleBySlug,
       getAdjacentArticles,
-      getRandomArticles
+      getRandomArticles,
+      sortArticlesByDate
     }}>
       {children}
     </BlogContext.Provider>

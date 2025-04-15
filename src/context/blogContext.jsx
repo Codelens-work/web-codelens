@@ -1,9 +1,11 @@
 import { createContext } from "react";
 import articles from '/src/articles/blogArticles.json'
+import { shuffleArray } from "../utils/helpers";
 
 export const BlogContext = createContext()
 
 export function BlogProvider({children}) {
+
   // Lista para las cards del blog, recibe "es" o "en" como parámetro
   const getArticlesListData = (lang) => {
     const articleDataList = articles.map(article => {
@@ -28,6 +30,7 @@ const getArticleBySlug = (slug) =>{
   return null
 }
 
+// Obtener artículo anterior y siguiente al actual
 const getAdjacentArticles = (slug) => {
   //obtener titulo, imagen y fecha del articulo anterior y el siguiente al indicado
   const current = getArticleBySlug(slug)
@@ -45,12 +48,33 @@ const getAdjacentArticles = (slug) => {
 return adjacents
 }
 
+//Obtener x cantidad de artículos random excluyendo actual
+const getRandomArticles = (slug, amount = 5) => {
+  const filtered = articles.filter(article => article.slug.en !== slug && article.slug.es !== slug)
+  if(filtered.length < amount || articles.length <= amount){
+    return []
+  }
+  shuffleArray(filtered)
+  const randomArticles = filtered.slice(0, amount)
+  const mappedArticles = randomArticles.map(article => {
+    return  {
+      h1: article.h1,
+      slug: article.slug,
+      imgUrl: article.imgUrl,
+      imgAlt: article.imgAlt,
+      createdDate: article.createdDate
+    }
+  })
+  
+  return mappedArticles
+}
 
   return (
     <BlogContext.Provider value={{
       getArticlesListData,
       getArticleBySlug,
-      getAdjacentArticles
+      getAdjacentArticles,
+      getRandomArticles
     }}>
       {children}
     </BlogContext.Provider>

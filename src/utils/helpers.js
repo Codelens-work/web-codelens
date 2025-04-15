@@ -1,3 +1,4 @@
+/*Modifica el array original. NO PASAR ARRAY DE ARTÍCULOS*/
 export const shuffleArray = (arrayToShuffle) => {
   let m = arrayToShuffle.length,
       t,

@@ -117,7 +117,6 @@ const LastArticles = () => {
   const contextCards = getArticlesListData("es")
   
   const sorted = sortArticlesByDate(contextCards, true)
-  console.log(sorted)
 
 
   const parseDate = (dateString) => {

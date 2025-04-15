@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../../components/seoHelmet/SeoMeta";
 import { Hero } from "../../../components/hero/Hero";
 import "./WebDevelopment.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
@@ -23,22 +23,22 @@ export function WebDevelopment() {
 
   useScrollToTop()
 
+  const title = t("breadcrumbs.desarrollo-web");
+  const description = t("metadescription.web-development");
+  const keywords = t("keywords.web-development", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/services/web-development"
+    : "https://codelenstech.com/servicios/desarrollo-web";
+
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.web-development")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.web-development", { returnObjects: true }).join(
-            ", "
-          )}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

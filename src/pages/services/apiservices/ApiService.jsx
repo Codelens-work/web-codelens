@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../../components/seoHelmet/SeoMeta";
 import { Hero } from "../../../components/hero/Hero";
 import "./apiservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
@@ -26,20 +26,24 @@ export function ApiService() {
 
   useScrollToTop()
 
+  const title = t("breadcrumbs.api");
+  const description = t("metadescription.api-development");
+  const keywords = t("keywords.api-development", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/services/api-development"
+    : "https://codelenstech.com/servicios/desarrollo-api";
+
+  useScrollToTop();
+
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.api-development")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.api-development", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

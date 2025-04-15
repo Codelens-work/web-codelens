@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import './about.css';
 import { Hero } from '../../components/hero/Hero';
 import LinkButton from '../../components/linkButton/LinkButton';
@@ -8,29 +7,30 @@ import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/ValuesSection';
 import TeamSection from '../../components/teamSection/TeamSection';
 import { useScrollToTop } from "/src/hooks/useScroll";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 
 
 const About = () => {
 
   const { t, i18n } = useTranslation()
+  const canonical = i18n.language === 'en'
+    ? 'https://codelenstech.com/en/about-us'
+    : 'https://codelenstech.com/nosotros';
 
+  const title = t('titles.about-us');
+  const description = t('metadescription.about-us');
+  const keywords = t('keywords.about-us', { returnObjects: true });
   const aboutUs = t('about-us-page', {returnObjects: true})
   useScrollToTop()
   
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.about-us")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.about-us", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: 'image',

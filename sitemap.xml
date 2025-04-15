@@ -1,6 +1,42 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://codelenstech.com/</loc>
-  </url>
+
+  <!-- Página principal -->
+  <url><loc>https://codelenstech.com/</loc></url>
+  <url><loc>https://codelenstech.com/en</loc></url>
+
+  <!-- Nosotros -->
+  <url><loc>https://codelenstech.com/nosotros</loc></url>
+  <url><loc>https://codelenstech.com/en/about-us</loc></url>
+
+  <!-- Servicios -->
+  <url><loc>https://codelenstech.com/servicios/desarrollo-api</loc></url>
+  <url><loc>https://codelenstech.com/en/services/development-api</loc></url>
+
+  <url><loc>https://codelenstech.com/servicios/app-web</loc></url>
+  <url><loc>https://codelenstech.com/en/services/app-web</loc></url>
+
+  <url><loc>https://codelenstech.com/servicios/diseno-web</loc></url>
+  <url><loc>https://codelenstech.com/en/services/web-design</loc></url>
+
+  <url><loc>https://codelenstech.com/servicios/desarrollo-web</loc></url>
+  <url><loc>https://codelenstech.com/en/services/web-development</loc></url>
+
+  <url><loc>https://codelenstech.com/servicios/seo</loc></url>
+  <url><loc>https://codelenstech.com/en/services/seo</loc></url>
+
+  <url><loc>https://codelenstech.com/servicios/community-management</loc></url>
+  <url><loc>https://codelenstech.com/en/services/community-management</loc></url>
+
+  <!-- Blog -->
+  <url><loc>https://codelenstech.com/blog</loc></url>
+  <url><loc>https://codelenstech.com/en/blog</loc></url>
+
+  <!-- Términos y políticas -->
+  <url><loc>https://codelenstech.com/terminos-condiciones</loc></url>
+  <url><loc>https://codelenstech.com/en/terms-conditions</loc></url>
+
+  <url><loc>https://codelenstech.com/politicas-privacidad</loc></url>
+  <url><loc>https://codelenstech.com/en/privacy-policy</loc></url>
+
 </urlset>

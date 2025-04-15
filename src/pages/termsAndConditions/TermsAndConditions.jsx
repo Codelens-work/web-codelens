@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "/src/components/hero/Hero.tsx";
 import { useTranslation } from "react-i18next";
@@ -6,7 +6,7 @@ import { useScrollToTop } from "/src/hooks/useScroll";
 import "./termsPage.css";
 
 const TermsAndConditions = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const tTermsContent = t("terms-page.about-section.content", {
     returnObjects: true,
   });
@@ -15,22 +15,24 @@ const TermsAndConditions = () => {
   const tTermsSeccionTitles = tTermsSeccion.map((item) => item.title);
   const tTermsSeccionContent = tTermsSeccion.map((item) => item.content);
 
-  useScrollToTop()
+  const title = t("titles.terms-and-conditions");
+  const description = t("metadescription.terms-and-conditions");
+  const keywords = t("keywords.terms-and-conditions", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/terms-and-conditions"
+    : "https://codelenstech.com/terms-and-conditions";
+
+  useScrollToTop();
 
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.terms-and-conditions")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.terms-and-conditions", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

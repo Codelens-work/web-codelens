@@ -7,13 +7,14 @@ export const BlogContext = createContext()
 export function BlogProvider({children}) {
 
   // Lista para las cards del blog, recibe "es" o "en" como parámetro
-  const getArticlesListData = (lang) => {
+  const getArticlesListData = () => {
     const articleDataList = articles.map(article => {
       return  {
-        h1: article.h1[lang],
-        slug: article.slug[lang],
+        h1: article.h1,
+        slug: article.slug,
+        metadescription: article.metadescription,
         imgUrl: article.imgUrl,
-        imgAlt: article.imgAlt[lang],
+        imgAlt: article.imgAlt,
         createdDate: article.createdDate
       }
     })

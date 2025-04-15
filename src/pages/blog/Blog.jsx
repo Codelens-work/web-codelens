@@ -6,7 +6,7 @@ import LastArticles from "../../components/blogCard/LastArticles";
 import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const prevArticle = {
     image: "/blog/article1-thumbnail.svg",
@@ -47,7 +47,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles />
+      <LastArticles lang={i18n.language}/>
     </>
   );
 };

@@ -4,7 +4,7 @@ import BlogCard from "./BlogCard";
 import { BlogContext } from "../../context/BlogContext";
 
 
-const LastArticles = () => {
+const LastArticles = ({lang}) => {
   const cards = [
     {
       title: "Titulo del articulo",
@@ -114,39 +114,19 @@ const LastArticles = () => {
 
   const { getArticlesListData, getArticleBySlug, sortArticlesByDate} = useContext(BlogContext)
 
-  const contextCards = getArticlesListData("es")
+  const contextCards = getArticlesListData()
   
-  const sorted = sortArticlesByDate(contextCards, true)
+  const sortedCards = sortArticlesByDate(contextCards, true)
 
 
   const parseDate = (dateString) => {
-    const [day, month, year] = dateString.split(" de ");
-    const months = {
-      enero: 1,
-      febrero: 2,
-      marzo: 3,
-      abril: 4,
-      mayo: 5,
-      junio: 6,
-      julio: 7,
-      agosto: 8,
-      septiembre: 9,
-      octubre: 10,
-      noviembre: 11,
-      diciembre: 12,
-    };
-    return new Date(`${year}-${months[month]}-${day}`);
+    return new Date(dateString).toLocaleDateString("es-AR", { year:"numeric", month:"long", day:"numeric"} )
   };
 
-  const sortedCards = [...cards].sort(
-    (a, b) => parseDate(b.date) - parseDate(a.date)
-  );
-
+console.log(sortedCards)
   const largeCard = sortedCards[0];
 
-  const mediumCards = sortedCards.slice(1, 10);
-
-  const remainingCards = sortedCards.slice(11);
+  const mediumCards = sortedCards.slice(1, sortedCards.length);
 
   return (
     <div className="main-card-container">
@@ -155,11 +135,11 @@ const LastArticles = () => {
       </div>
       <div className="large-card-container">
         <BlogCard
-          title={largeCard.title}
-          description={largeCard.description}
-          date={largeCard.date}
-          img={largeCard.img}
-          url={largeCard.url}
+          title={largeCard.h1[lang]}
+          description={largeCard.metadescription[lang]}
+          date={parseDate(largeCard.createdDate)}
+          img={largeCard.imgUrl}
+          url={largeCard.slug[lang]}
           isLarge={true}
         />
       </div>
@@ -167,10 +147,10 @@ const LastArticles = () => {
         {mediumCards.map((mediumCard, i) => (
           <BlogCard
             key={i}
-            title={mediumCard.title}
-            date={mediumCard.date}
-            img={mediumCard.img}
-            url={mediumCard.url}
+            title={mediumCard.h1[lang]}
+            date={parseDate(mediumCard.createdDate)}
+            img={mediumCard.imgUrl}
+            url={mediumCard.slug[lang]}
             isLarge={false}
           />
         ))}

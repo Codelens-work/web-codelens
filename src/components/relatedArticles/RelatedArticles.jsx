@@ -1,16 +1,19 @@
 import { useEffect, useContext, useState } from "react"
 import { BlogContext } from "../../context/BlogContext"
+import { Link } from 'react-router-dom'
+import ArticleCardSmall from '../articleCardSmall/ArticleCardSmall'
 
 
-const RelatedArticles = ({ lang, currentSlug}) => {
+const RelatedArticles = ({ lang, currentSlug }) => {
 
   const { getRandomArticles } = useContext(BlogContext)
 
   const [articles, setArticles] = useState([])
+
   useEffect(() => {
     try {
       const data = getRandomArticles(currentSlug, 2)
-      if(data.length > 0){
+      if (data.length > 0) {
         setArticles(data)
       }
       else throw new Error("Error al obtener datos")
@@ -19,19 +22,19 @@ const RelatedArticles = ({ lang, currentSlug}) => {
       //Se produjo un error al retornar los artículos
       console.log(console.error())
     }
-  })
+  }, [])
 
-  if(!articles) return <span>Cargando</span>
+  if (!articles) return <span>Cargando</span>
 
-  return(
+  return (
     <aside className="related-articles">
-        <h3>{lang === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
-        {articles.related.map((rel) => (
-          <Link to={`/blog/${rel.id}`} key={rel.id}>
-            <ArticleCardSmall image={rel.image[lang]} description={rel.h1[lang]} />
-          </Link>
-        ))}
-      </aside>
+      <h3>{lang === "es" ? "Artículos Relacionados" : "Related Articles"}</h3>
+      {articles.map((rel, i) => (
+        <Link to={`/blog/${rel.slug[lang]}`} key={i}>
+          <ArticleCardSmall image={rel.imgUrl} description={rel.h1[lang]} />
+        </Link>
+      ))}
+    </aside>
   )
 }
 

@@ -112,13 +112,13 @@ const LastArticles = () => {
     },
   ];
 
-  const { getArticlesListData, getArticleBySlug} = useContext(BlogContext)
+  const { getArticlesListData, getArticleBySlug, sortArticlesByDate} = useContext(BlogContext)
 
   const contextCards = getArticlesListData("es")
-  console.log(contextCards)
+  
+  const sorted = sortArticlesByDate(contextCards, true)
+  console.log(sorted)
 
-  const testArticle = getArticleBySlug("seo-principiantes")
-  console.log(testArticle)
 
   const parseDate = (dateString) => {
     const [day, month, year] = dateString.split(" de ");

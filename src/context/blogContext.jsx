@@ -45,6 +45,7 @@ const getAdjacentArticles = (slug) => {
 return adjacents
 }
 
+
   return (
     <BlogContext.Provider value={{
       getArticlesListData,

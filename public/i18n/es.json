@@ -804,12 +804,15 @@
     },
     "navigation": {
       "previous": "Anterior",
-      "next": "Siguiente"
+      "next": "Siguiente",
+      "more": "Ver más"
     },
-    "articles": [{
-      "title": "Por qué un Sitio Web es Esencial para tu Negocio",
-      "slug": "sitio-web-esencial-negocio"
-    }]
+    "articles-section": {
+      "last-articles": "Últimos artículos"
+    },
+    "related-section": {
+      "related-articles": "Artículos relacionados"
+    }
   },
   "privacy-page": {
     "hero": {

@@ -769,7 +769,14 @@
     },
     "navigation": {
       "previous": "Previous",
-      "next": "Next"
+      "next": "Next",
+      "more": "View more"
+    },
+    "articles-section": {
+      "last-articles": "Last articles"
+    },
+    "related-section": {
+      "related-articles": "Artículos relacionados"
     }
   },
   "privacy-page": {

@@ -8,15 +8,6 @@ import { useScrollToTop } from "../../hooks/useScroll";
 const Blog = () => {
   const { t, i18n } = useTranslation();
 
-  const prevArticle = {
-    image: "/blog/article1-thumbnail.svg",
-    description: "Descripción del artículo anterior",
-  };
-  const nextArticle = {
-    image: "/blog/article2-thumbnail.svg",
-    description: "Descripción del siguiente artículo",
-  };
-
   useScrollToTop()
 
   return (
@@ -47,7 +38,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles lang={i18n.language}/>
+      <LastArticles lang={i18n.language} h1={t('blog.articles-section.last-articles')}/>
     </>
   );
 };

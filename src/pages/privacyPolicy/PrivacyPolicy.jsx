@@ -1,13 +1,13 @@
-import { Helmet } from "react-helmet";
 import LegalSection from "../../components/lagalSection/LegalSection";
 import { Hero } from "/src/components/hero/Hero.tsx";
 import "./privacityPolicy.css";
 import { useTranslation } from 'react-i18next'
 import { useScrollToTop } from "/src/hooks/useScroll";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 
 const PrivacyPolicy = () => {
 
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation();
   const tPrivAbout = t('privacy-page.about-section.content', { returnObjects: true });
   const tPrivSection = t('privacy-page.privacy-section', { returnObjects: true });
   const tPrivSectionTitle = tPrivSection.map((item) => item.title);
@@ -15,20 +15,22 @@ const PrivacyPolicy = () => {
 
   useScrollToTop()
 
+  const title = t('titles.privacy-policy');
+  const description = t('metadescription.privacy-policy');
+  const keywords = t('keywords.privacy-policy', { returnObjects: true });
+
+  const canonical = i18n.language === 'en'
+    ? 'https://codelenstech.com/en/privacy-policy'
+    : 'https://codelenstech.com/politica-de-privacidad';
+
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.privacy-policy")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.privacy-policy", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
     <Hero
       media={{
         type: 'image',

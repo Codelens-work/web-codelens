@@ -1,4 +1,3 @@
-import { Helmet } from "react-helmet";
 import { Hero } from "../../components/hero/Hero";
 import "./home.css";
 import { RotatingTitle } from "../../components/rotatingTitle/RotatingTiltle";
@@ -12,10 +11,12 @@ import HomeAbout from "../../components/homeAbout/HomeAbout";
 import HomeServices from "../../components/homeServices/HomeServices";
 import GetToKnow from "../../components/getToKnow/getToKnow";
 import SectionReference from "../../components/references/SectionReferences";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 
 
 const Home = () => {
   const { t, i18n } = useTranslation();
+  const lang = i18n.language;
   const currentLanguage = i18n.language
   const homeText =  t('home', { returnObjects: true })
   const footerLists = t("footer-section.lists", {
@@ -24,24 +25,22 @@ const Home = () => {
   const btnLabel = t("btn-contact.text");
   const aboutUrl = footerLists["find-way-list"].items[1].url;
   const contactUrl = footerLists["help-list"].items[1].url;
+
+  const canonicalUrl =
+    lang === "en"
+      ? "https://codelenstech.com/en"
+      : "https://codelenstech.com/";
+
   
   useScrollIntoView()
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.home", {
-            returnObjects: true,
-          })}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.home", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+       <SeoMeta
+        title={t("titles.seoHomeTitle")}
+        description={t("metadescription.home")}
+        canonical={canonicalUrl}
+        keywords={t("keywords.home", { returnObjects: true })}
+      />
       <Hero
         media={{
           type: "video",

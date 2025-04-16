@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../../components/seoHelmet/SeoMeta";
 import { Hero } from "../../../components/hero/Hero";
 import "./seoservice.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
@@ -23,23 +23,24 @@ export function SeoService() {
   const tCartsContent = tFeatures.map((item) => item.content);
 
 
-  useScrollToTop()
+  useScrollToTop();
 
+  const title = t("breadcrumbs.seo");
+  const description = t("metadescription.seo");
+  const keywords = t("keywords.seo", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/services/seo"
+    : "https://codelenstech.com/servicios/seo";
 
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.seo")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.seo", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

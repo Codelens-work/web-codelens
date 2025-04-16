@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 import "./blog.css";
 import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ import ArticleNavigation from "../../components/articleNavigation/ArticleNavigat
 import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const prevArticle = {
     image: "/blog/article1-thumbnail.svg",
@@ -20,17 +20,22 @@ const Blog = () => {
 
   useScrollToTop()
 
+  const title = t("titles.blog");
+  const description = t("metadescription.blog");
+  const keywords = t("keywords.blog", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+  ? "https://codelenstech.com/en/blog"
+  : "https://codelenstech.com/blog";
+
   return (
     <>
-      <Helmet>
-        <meta name="description" content={t("metadescription.blog")} />
-        <meta
-          name="keywords"
-          content={t("keywords.blog", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+       <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

@@ -4,6 +4,7 @@ import NavBar from '../navBar/NavBar';
 import { Outlet } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Spinner } from 'react-bootstrap';
+import WhatsAppButton from '../floatingWhatsApp/FloatingWhatsApp';
 import './mainLayout.css';
 const MainLayout = () => {
 
@@ -24,6 +25,7 @@ const MainLayout = () => {
         </Suspense>
       </div>
       <Footer footerTexts={footerSection} />
+      <WhatsAppButton />
     </div>
   )
 }

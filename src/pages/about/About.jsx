@@ -17,7 +17,7 @@ const About = () => {
     ? 'https://codelenstech.com/en/about-us'
     : 'https://codelenstech.com/nosotros';
 
-  const title = t('titles.about-us');
+  const title = t('titles.about');
   const description = t('metadescription.about-us');
   const keywords = t('keywords.about-us', { returnObjects: true });
   const aboutUs = t('about-us-page', {returnObjects: true})

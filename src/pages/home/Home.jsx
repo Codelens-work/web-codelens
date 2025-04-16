@@ -36,7 +36,7 @@ const Home = () => {
   return (
     <>
        <SeoMeta
-        title={t("metatitle.home")}
+        title={t("titles.seoHomeTitle")}
         description={t("metadescription.home")}
         canonical={canonicalUrl}
         keywords={t("keywords.home", { returnObjects: true })}

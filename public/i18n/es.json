@@ -805,7 +805,14 @@
     },
     "navigation": {
       "previous": "Anterior",
-      "next": "Siguiente"
+      "next": "Siguiente",
+      "more": "Ver más"
+    },
+    "articles-section": {
+      "last-articles": "Últimos artículos"
+    },
+    "related-section": {
+      "related-articles": "Artículos relacionados"
     }
   },
   "privacy-page": {

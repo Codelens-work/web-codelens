@@ -11,12 +11,14 @@ const NotFound = lazy(() => import('./pages/notFound/NotFound.jsx'));
 const MainLayout = lazy(() => import('./components/mainLayout/MainLayout.jsx'));
 const PrivacyPolicy = lazy(() => import("./pages/privacyPolicy/PrivacyPolicy.jsx"));
 const TermsAndConditions = lazy(() => import("./pages/termsAndConditions/TermsAndConditions.jsx"));
+const ArticlePage = lazy(() => import("./pages/articlePage/ArticlePage.jsx"));
 const ApiService = lazy(() => import('./pages/services/apiservices/ApiService.jsx').then((module) => { return { default: module.ApiService} }))
 const AppWeb = lazy(() => import('./pages/services/appWeb/AppWeb.jsx').then((module) => { return { default: module.AppWeb} }))
 const SeoService = lazy(() => import("./pages/services/seo/SeoService.jsx").then((module) => { return { default: module.SeoService} }));
 const WebDesing = lazy(() => import("./pages/services/webDesing/WebDesing.jsx").then((module) => { return { default: module.WebDesing} }));
 const WebDevelopment = lazy(() => import("./pages/services/webDevelopment/WebDevelopment.jsx").then((module) => { return { default: module.WebDevelopment} }));
 const CommunityManagement = lazy(() => import("./pages/services/communityManagement/CommunityManagement.jsx").then((module) => { return { default: module.CommunityManagement} }));
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -119,7 +121,17 @@ function App() {
       {
         path: "/en/blog",
         element: <Blog />
-      }]
+      },
+      {
+        path: "/en/blog/:slug",
+        element: <ArticlePage/>
+      },
+      {
+        path: "/blog/:slug",
+        element: <ArticlePage/>
+      }
+    
+    ]
     },
     {
       path: "/*",

@@ -2,21 +2,11 @@ import SeoMeta from "../../components/seoHelmet/SeoMeta";
 import "./blog.css";
 import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
-import LastArticles from "../../components/blogCard/lastArticles";
-import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
+import LastArticles from "../../components/blogCard/LastArticles";
 import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
   const { t, i18n } = useTranslation();
-
-  const prevArticle = {
-    image: "/blog/article1-thumbnail.svg",
-    description: "Descripción del artículo anterior",
-  };
-  const nextArticle = {
-    image: "/blog/article2-thumbnail.svg",
-    description: "Descripción del siguiente artículo",
-  };
 
   useScrollToTop()
 
@@ -25,12 +15,12 @@ const Blog = () => {
   const keywords = t("keywords.blog", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-  ? "https://codelenstech.com/en/blog"
-  : "https://codelenstech.com/blog";
+    ? "https://codelenstech.com/en/blog"
+    : "https://codelenstech.com/blog";
 
   return (
     <>
-       <SeoMeta
+      <SeoMeta
         title={title}
         description={description}
         canonical={canonical}
@@ -53,8 +43,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles />
-      <ArticleNavigation prevArticle={prevArticle} nextArticle={nextArticle} />
+      <LastArticles lang={i18n.language} h1={t('blog.articles-section.last-articles')} />
     </>
   );
 };

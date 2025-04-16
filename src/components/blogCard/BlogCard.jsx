@@ -1,19 +1,23 @@
 import React from "react";
 import "/src/components/blogCard/blogCard.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 import PropTypes from "prop-types";
 
 const BlogCard = ({ title, description, date, url, img, isLarge }) => {
+  const { t } = useTranslation()
   const navigate = useNavigate();
+
+  const more =t('blog.navigation.more')
   
   return (
     <div className={isLarge ? `large-container` : `medium-container `}>
       <div className="img-container">
         {isLarge ? (
-          <img src={`public/blog/${img}.svg`} alt="blog" />
+          <img src={img} alt="blog" />
         ) : (
-          <img src={`public/blog/${img}.svg`} alt="blog" />
+          <img src={img} alt="blog" />
         )}
       </div>
 
@@ -27,7 +31,7 @@ const BlogCard = ({ title, description, date, url, img, isLarge }) => {
         <div className="date-more-container">
           <p className="date">{date}</p>
           <a className="view-more" onClick={() => navigate( url )}>
-            View More
+            {more}
           </a>
         </div>
       </div>

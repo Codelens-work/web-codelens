@@ -15,12 +15,12 @@ const Blog = () => {
   const keywords = t("keywords.blog", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-  ? "https://codelenstech.com/en/blog"
-  : "https://codelenstech.com/blog";
+    ? "https://codelenstech.com/en/blog"
+    : "https://codelenstech.com/blog";
 
   return (
     <>
-       <SeoMeta
+      <SeoMeta
         title={title}
         description={description}
         canonical={canonical}
@@ -43,7 +43,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles lang={i18n.language} h1={t('blog.articles-section.last-articles')}/>
+      <LastArticles lang={i18n.language} h1={t('blog.articles-section.last-articles')} />
     </>
   );
 };

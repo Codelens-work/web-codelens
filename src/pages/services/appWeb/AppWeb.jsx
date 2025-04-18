@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../../components/seoHelmet/SeoMeta";
 import { Hero } from "../../../components/hero/Hero";
 import "./appweb.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
@@ -23,22 +23,24 @@ export function AppWeb() {
   const tCartsTitle = tFeatures.map((item) => item.title);
   const tCartsContent = tFeatures.map((item) => item.content);
 
-  useScrollToTop()
+  const title = t("breadcrumbs.aplicaciones-web");
+  const description = t("metadescription.web-app");
+  const keywords = t("keywords.web-app", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/services/web-app"
+    : "https://codelenstech.com/servicios/aplicaciones-web";
+
+  useScrollToTop();
 
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.web-app")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.web-app", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

@@ -128,7 +128,8 @@
     "terms": "Términos y condiciones",
     "privacy": "Política de privacidad",
     "faqs": "FAQs",
-    "blog": "Blog"
+    "blog": "Blog",
+    "seoHomeTitle": "CodeLens | Convertimos ideas en experiencias digitales memorables."
   },
   "btn-contact": {
     "text": "CONTACTANOS"
@@ -804,7 +805,14 @@
     },
     "navigation": {
       "previous": "Anterior",
-      "next": "Siguiente"
+      "next": "Siguiente",
+      "more": "Ver más"
+    },
+    "articles-section": {
+      "last-articles": "Últimos artículos"
+    },
+    "related-section": {
+      "related-articles": "Artículos relacionados"
     }
   },
   "privacy-page": {

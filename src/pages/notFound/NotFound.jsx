@@ -1,25 +1,27 @@
-import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
 import "./notFound.css";
 import LinkButton from "/src/components/linkButton/LinkButton.jsx";
 import Section from "/src/components/section/Section.jsx";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 
 const NotFound = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const title = t("titles.404");
+  const description = t("metadescription.404");
+  const keywords = t("keywords.404", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/404"
+    : "https://codelenstech.com/404";
+
   return (
     <>
-      <Helmet>
-      <meta
-        name="description"
-        content={t("metadescription.404")}
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
       />
-      <meta
-        name="keywords"
-        content={t("keywords.404", { returnObjects: true }).join(", ")}
-        />
-      <meta name="author" content="CodeLens" />
-      <link rel="canonical" href="https://codelenstech.com/" />
-    </Helmet>
       <div className="error-container">
         <Section className="error-section">
           <div className="content-container">

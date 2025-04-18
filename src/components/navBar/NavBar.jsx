@@ -37,6 +37,7 @@ const NavBar = ({titles, footerLists}) => {
   const route = footerLists["find-way-list"].items;
   const contact = footerLists["help-list"].items;
 
+
   const webDevelopmentUrl = services[0]?.url;
   const webDevelopmentText = services[0]?.text;
   const webDesignUrl = services[1]?.url;
@@ -51,7 +52,8 @@ const NavBar = ({titles, footerLists}) => {
   const communityText = services[5]?.text;
   const aboutUrl = route[1].url;
   const aboutText = route[1].text;
-
+  const blogUrl = route[2].url;
+  const blogText = route[2].text
   const homeUrl = route[0].url
   const contactUrl = contact[1].url
 
@@ -184,13 +186,12 @@ const NavBar = ({titles, footerLists}) => {
                 {titles.contact}
               </Link>
               <Link
-                onClick={(e) => {
-                  e.preventDefault();
-                }}
+                to={blogUrl}
+                onClick={(e)=> {e.preventDefault()}}
+                style= {{color: "gray"}}
                 className="link-navbar-custom mx-2 btn btn-outline-light blog-disabled"
-                style={{ cursor: "not-allowed", opacity: 0.5 }} // Opcional: indicar que está deshabilitado
               >
-                {titles.blog}
+                {blogText}
               </Link>
               <div className="navbar-language">
                 <picture className="icon-language-container">

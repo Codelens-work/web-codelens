@@ -1,36 +1,31 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
 import "./blog.css";
 import { Hero } from "../../components/hero/Hero";
 import { useTranslation } from "react-i18next";
-import LastArticles from "../../components/blogCard/lastArticles";
-import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
+import LastArticles from "../../components/blogCard/LastArticles";
 import { useScrollToTop } from "../../hooks/useScroll";
 
 const Blog = () => {
-  const { t } = useTranslation();
-
-  const prevArticle = {
-    image: "/blog/article1-thumbnail.svg",
-    description: "Descripción del artículo anterior",
-  };
-  const nextArticle = {
-    image: "/blog/article2-thumbnail.svg",
-    description: "Descripción del siguiente artículo",
-  };
+  const { t, i18n } = useTranslation();
 
   useScrollToTop()
 
+  const title = t("titles.blog");
+  const description = t("metadescription.blog");
+  const keywords = t("keywords.blog", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/blog"
+    : "https://codelenstech.com/blog";
+
   return (
     <>
-      <Helmet>
-        <meta name="description" content={t("metadescription.blog")} />
-        <meta
-          name="keywords"
-          content={t("keywords.blog", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",
@@ -48,8 +43,7 @@ const Blog = () => {
           </p>
         </div>
       </Hero>
-      <LastArticles />
-      <ArticleNavigation prevArticle={prevArticle} nextArticle={nextArticle} />
+      <LastArticles lang={i18n.language} h1={t('blog.articles-section.last-articles')} />
     </>
   );
 };

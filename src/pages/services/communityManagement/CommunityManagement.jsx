@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import SeoMeta from "../../../components/seoHelmet/SeoMeta";
 import { Hero } from "../../../components/hero/Hero";
 import "./communityManagement.css";
 import LinkButton from "../../../components/linkButton/LinkButton.jsx";
@@ -13,7 +13,6 @@ export function CommunityManagement() {
 
   useScrollToTop()
 
-
   const tApiBenedit = t(
     "services-pages.community-management.about-section.benefits-section.list",
     { returnObjects: true }
@@ -25,20 +24,22 @@ export function CommunityManagement() {
   const tApiCartsTitle = tApiFeatures.map((item) => item.title);
   const tApiCartsContent = tApiFeatures.map((item) => item.content);
 
+  const title = t("breadcrumbs.community-management");
+  const description = t("metadescription.community-management");
+  const keywords = t("keywords.community-management", { returnObjects: true });
+
+  const canonical = i18n.language === "en"
+    ? "https://codelenstech.com/en/services/community-management"
+    : "https://codelenstech.com/servicios/community-management";
+
   return (
     <>
-      <Helmet>
-        <meta
-          name="description"
-          content={t("metadescription.community-management")}
-        />
-        <meta
-          name="keywords"
-          content={t("keywords.community-management", { returnObjects: true }).join(", ")}
-        />
-        <meta name="author" content="CodeLens" />
-        <link rel="canonical" href="https://codelenstech.com/" />
-      </Helmet>
+      <SeoMeta
+        title={title}
+        description={description}
+        canonical={canonical}
+        keywords={keywords}
+      />
       <Hero
         media={{
           type: "image",

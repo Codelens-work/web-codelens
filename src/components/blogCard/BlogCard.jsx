@@ -13,13 +13,13 @@ const BlogCard = ({ title, description, date, url, img, isLarge }) => {
   
   return (
     <div className={isLarge ? `large-container` : `medium-container `}>
-      <div className="img-container">
+      <picture className="img-container">
         {isLarge ? (
           <img src={img} alt="blog" />
         ) : (
           <img src={img} alt="blog" />
         )}
-      </div>
+      </picture>
 
       <div className={isLarge ? `large-content` : `medium-content`}>
         <h2>{title}</h2>

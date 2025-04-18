@@ -113,23 +113,23 @@ function App() {
       {
         path: "/en/privacy-policy",
         element: <PrivacyPolicy />
-      },
-      {
-        path: "/blog",
-        element: <Blog />
-      },
-      {
-        path: "/en/blog",
-        element: <Blog />
-      },
-      {
-        path: "/en/blog/:slug",
-        element: <ArticlePage/>
-      },
-      {
-        path: "/blog/:slug",
-        element: <ArticlePage/>
       }
+      // {
+      //   path: "/blog",
+      //   element: <Blog />
+      // },
+      // {
+      //   path: "/en/blog",
+      //   element: <Blog />
+      // },
+      // {
+      //   path: "/en/blog/:slug",
+      //   element: <ArticlePage/>
+      // },
+      // {
+      //   path: "/blog/:slug",
+      //   element: <ArticlePage/>
+      // }
     
     ]
     },

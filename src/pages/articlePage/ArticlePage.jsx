@@ -1,11 +1,11 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ArticleContent from "../../components/articleContent/ArticleContent";
 import { BlogContext } from "../../context/BlogContext";
 import "./articlePage.css";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
 import RelatedArticles from "../../components/relatedArticles/RelatedArticles";
+import parse from 'html-react-parser'
 
 const ArticlePage = () => {
   const { getArticleBySlug } = useContext(BlogContext)
@@ -35,6 +35,7 @@ const ArticlePage = () => {
   // Poner otro spinner bonito o el rocket
   if (!article) return <p>Cargando...</p>;
 
+  
 
   return (
     <div>
@@ -45,8 +46,7 @@ const ArticlePage = () => {
         <section className="article-content-container">
           <div className="article-content">
             <div className="content-block">
-              <h1 className="title-article">{article.h1[lang]}</h1>
-              <ArticleContent sections={article.sections[lang]} />
+              {parse(article.content[lang])}
             </div>
             <div className="content-block">
               <RelatedArticles currentSlug={slug} lang={lang} />

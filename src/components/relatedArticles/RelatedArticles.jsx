@@ -1,16 +1,23 @@
 import "./relatedArticles.css"
-import { useContext } from "react"
+import { useContext, useEffect, useState } from "react"
 import { BlogContext } from "../../context/BlogContext"
 import { Link } from 'react-router-dom'
 import ArticleCardSmall from '../articleCardSmall/ArticleCardSmall'
-import { ImDroplet } from "react-icons/im"
 
 
 const RelatedArticles = ({ lang, currentSlug }) => {
 
   const { getRandomArticles } = useContext(BlogContext)
+  const [articles, setArticles] = useState(null)
 
-  const articles = getRandomArticles(currentSlug, 2)
+
+  useEffect(() => {
+    const articlesData = getRandomArticles(currentSlug, 2)
+    setArticles(articlesData)
+  }, [currentSlug])
+  
+
+  if(!articles) return <span>Cargando</span>
 
   return (
 <aside className="related-articles">

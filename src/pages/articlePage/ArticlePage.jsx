@@ -1,11 +1,12 @@
 import { useState, useEffect, useContext } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import ArticleContent from "../../components/articleContent/ArticleContent";
 import { BlogContext } from "../../context/BlogContext";
 import "./articlePage.css";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
 import RelatedArticles from "../../components/relatedArticles/RelatedArticles";
+import SeoMeta from "../../components/seoHelmet/SeoMeta";
+import parse from 'html-react-parser'
 
 const ArticlePage = () => {
   const { getArticleBySlug } = useContext(BlogContext)
@@ -13,7 +14,7 @@ const ArticlePage = () => {
   const { i18n } = useTranslation()
   const [article, setArticle] = useState(null);
   const lang = i18n.language
-
+  const navigate = useNavigate()
 
   useEffect(() => {
     const getCurrentArticle = () => {
@@ -25,28 +26,36 @@ const ArticlePage = () => {
         setArticle(currentArticle)
       }
       catch {
-        console.log(error)
-        // Poner lógica para redirigir a 404 indicando que el artículo no existe
+        navigate("/404");
       }
     }
     getCurrentArticle()
-  }, []);
+  }, [slug]);
 
   // Poner otro spinner bonito o el rocket
   if (!article) return <p>Cargando...</p>;
 
+  const canonical = lang === "en"
+  ? `https://codelenstech.com/en/blog/${article.slug.en}`
+  : `https://codelenstech.com/en/blog/${article.slug.es}`
 
   return (
+    <>
+    <SeoMeta
+    title={article.focusKeyword[lang]}
+    description={article.metadescription[lang]}
+    canonical={canonical}
+    keywords={article.focusKeyword[lang]}
+    />
     <div>
       <article className="article-page">
-       <picture className="article-image">
+        <picture className="article-image">
           <img src={article.imgUrl} alt={article.imgAlt[lang]} />
-       </picture>
+        </picture>
         <section className="article-content-container">
           <div className="article-content">
             <div className="content-block">
-              <h1 className="title-article">{article.h1[lang]}</h1>
-              <ArticleContent sections={article.sections[lang]} />
+              {parse(article.content[lang])}
             </div>
             <div className="content-block">
               <RelatedArticles currentSlug={slug} lang={lang} />
@@ -56,6 +65,7 @@ const ArticlePage = () => {
       </article>
       <ArticleNavigation currentArticle={slug} />
     </div>
+    </>
   );
 };
 

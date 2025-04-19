@@ -16,7 +16,7 @@ const ArticleNavigation = ({ currentArticle }) => {
     <div className="article-navigation">
       {adjacents.prev && (
         <div className="navigation-container">
-          <Link to={`/blog/${adjacents.prev.slug[lang]}`}>
+          <Link className="navigation-art-link" to={`/blog/${adjacents.prev.slug[lang]}`}>
           <div className="nav-item prev">
             <picture className="icon-navigation">
               <img src="/blog/prev.svg" alt="previous" />
@@ -31,7 +31,7 @@ const ArticleNavigation = ({ currentArticle }) => {
       )}
       {adjacents.next && (
         <div className="navigation-container">
-          <Link to={`/blog/${adjacents.next.slug[lang]}`}>
+          <Link className="navigation-art-link" to={`/blog/${adjacents.next.slug[lang]}`}>
           <div className="nav-item next">
             <ArticleCardSmall image={adjacents.next.imgUrl} alt={adjacents.next.imgAlt[lang]} description={adjacents.next.h1[lang]} /> 
             <picture className="icon-navigation">

@@ -42,7 +42,7 @@ const ArticlePage = () => {
   return (
     <>
     <SeoMeta
-    title={article.focusKeyword[lang]}
+    title={article.h1[lang]}
     description={article.metadescription[lang]}
     canonical={canonical}
     keywords={article.focusKeyword[lang]}

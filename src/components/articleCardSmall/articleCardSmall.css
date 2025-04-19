@@ -33,7 +33,5 @@
     font-size: 0.9rem;
     color: var(--black);
     text-align: center;
-    text-decoration: none;
+    text-decoration: none !important;
 }
-
-

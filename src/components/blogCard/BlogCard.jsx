@@ -23,7 +23,7 @@ const BlogCard = ({ title, description, date, url, img, isLarge }) => {
         </picture>
 
         <div className={isLarge ? `large-content` : `medium-content`}>
-          <h2>{title}</h2>
+          <h2 className="title-card-article-blog">{title}</h2>
 
           {isLarge && (
             <p>{description}</p>

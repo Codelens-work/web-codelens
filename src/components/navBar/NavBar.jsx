@@ -186,6 +186,9 @@ const NavBar = ({titles, footerLists}) => {
                 {titles.contact}
               </Link>
               <Link
+                onClick={() => {
+                  setExpanded(false);
+                }}
                 to={blogUrl}
                 className="link-navbar-custom mx-2 btn btn-outline-light"
               >

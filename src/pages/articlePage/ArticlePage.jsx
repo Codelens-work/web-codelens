@@ -30,7 +30,7 @@ const ArticlePage = () => {
       }
     }
     getCurrentArticle()
-  }, []);
+  }, [slug]);
 
   // Poner otro spinner bonito o el rocket
   if (!article) return <p>Cargando...</p>;

@@ -52,6 +52,31 @@
   color: var(--purple);
 }
 
+/* CSS DEL COMPONENTE ARTICLE CONTENT
+.article-sections{
+    padding: 20px 10px;
+}
+
+.article-sections h2 {
+    font-size: clamp(1.5625rem, 1.4748rem + 0.4386vw, 2.1875rem);
+    font-weight: 400;
+    color: var(--black);
+    padding: 10px 0;
+}
+
+.article-sections h3{
+    font-size: clamp(1.25rem, 1.1623rem + 0.4386vw, 1.875rem);
+    font-weight: 500;
+    color: var(--marine-green);
+}
+
+.article-sections p, .article-sections ul li{
+    font-size: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem);
+    color: var(--black);
+}
+
+*/
+
 @media(min-width: 1020px){
   .article-content{
     flex-direction: row;

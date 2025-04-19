@@ -187,9 +187,7 @@ const NavBar = ({titles, footerLists}) => {
               </Link>
               <Link
                 to={blogUrl}
-                onClick={(e)=> {e.preventDefault()}}
-                style= {{color: "gray"}}
-                className="link-navbar-custom mx-2 btn btn-outline-light blog-disabled"
+                className="link-navbar-custom mx-2 btn btn-outline-light"
               >
                 {blogText}
               </Link>

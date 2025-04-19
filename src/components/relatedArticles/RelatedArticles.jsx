@@ -3,8 +3,6 @@ import { useContext, useEffect, useState } from "react"
 import { BlogContext } from "../../context/BlogContext"
 import { Link } from 'react-router-dom'
 import ArticleCardSmall from '../articleCardSmall/ArticleCardSmall'
-import { ImDroplet } from "react-icons/im"
-import RocketSpinner from "../spinner/Spinner"
 
 
 const RelatedArticles = ({ lang, currentSlug }) => {

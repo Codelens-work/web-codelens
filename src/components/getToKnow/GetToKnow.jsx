@@ -48,7 +48,7 @@ const GetToKnow = ({ t, url }) => {
       viewport={{ once: true, amount:  0.2 }}
       variants={slideInRight}
       className="get-to-know-img">
-        <img src="/imgs/get-to-know-us.svg" alt={t["img-alt"]} />
+        <img src="/hero/hero-about.webp" alt={t["img-alt"]} />
       </motion.div>
     </Section>
   )

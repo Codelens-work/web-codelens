@@ -37,14 +37,24 @@ const ArticlePage = () => {
 
 
   return (
-    <div className="article-page">
-      <article>
-        <img src={article.imgUrl} alt={article.imgAlt[lang]} />
-        <h1>{article.h1[lang]}</h1>
-        <ArticleContent sections={article.sections[lang]} />
+    <div>
+      <article className="article-page">
+       <picture className="article-image">
+          <img src={article.imgUrl} alt={article.imgAlt[lang]} />
+       </picture>
+        <section className="article-content-container">
+          <div className="article-content">
+            <div className="content-block">
+              <h1 className="title-article">{article.h1[lang]}</h1>
+              <ArticleContent sections={article.sections[lang]} />
+            </div>
+            <div className="content-block">
+              <RelatedArticles currentSlug={slug} lang={lang} />
+            </div>
+          </div>
+        </section>
       </article>
       <ArticleNavigation currentArticle={slug} />
-      <RelatedArticles currentSlug={slug} lang={lang} />
     </div>
   );
 };

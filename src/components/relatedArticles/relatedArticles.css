@@ -1,0 +1,20 @@
+.related-articles{
+    padding-top: 10px;
+}
+
+.related-articles h3{
+    font-size: clamp(1.25rem, 1.2061rem + 0.2193vw, 1.5625rem);
+    color: var(--black);
+    font-weight: 400;
+}
+
+.related-articles-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.related-articles a {
+    text-decoration: none;
+}
+  

@@ -1,4 +1,5 @@
 import parse from 'html-react-parser'
+import "./ArticleContent.css"
 
 const ArticleContent = ({sections}) => {
 
@@ -29,12 +30,12 @@ const ArticleContent = ({sections}) => {
   }
 
   return (
-<>
-{sections.map((section, i) => {
-  const markdown = generateStringHtml(section)
-  return <section key={`section${i}`}>{parse(markdown)}</section>
-})}
-</>
+    <div className="article-sections">
+      {sections.map((section, i) => {
+        const markdown = generateStringHtml(section)
+        return <section key={`section${i}`}>{parse(markdown)}</section>
+      })}
+    </div>
   )
 }
 

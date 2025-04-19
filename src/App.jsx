@@ -3,6 +3,7 @@ import { useEffect, useState, lazy, Suspense } from "react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import i18n from "i18next";
 import RocketSpinner from "./components/spinner/Spinner.jsx";
+import SeoMeta from "./components/seoHelmet/SeoMeta.jsx";
 
 const Home = lazy(() => import('./pages/home/Home.jsx'));
 const About = lazy(() => import('./pages/about/About.jsx'));
@@ -113,23 +114,23 @@ function App() {
       {
         path: "/en/privacy-policy",
         element: <PrivacyPolicy />
+      },
+      {
+        path: "/blog",
+        element: <Blog />
+      },
+      {
+        path: "/en/blog",
+        element: <Blog />
+      },
+      {
+        path: "/en/blog/:slug",
+        element: <ArticlePage/>
+      },
+      {
+        path: "/blog/:slug",
+        element: <ArticlePage/>
       }
-      // {
-      //   path: "/blog",
-      //   element: <Blog />
-      // },
-      // {
-      //   path: "/en/blog",
-      //   element: <Blog />
-      // },
-      // {
-      //   path: "/en/blog/:slug",
-      //   element: <ArticlePage/>
-      // },
-      // {
-      //   path: "/blog/:slug",
-      //   element: <ArticlePage/>
-      // }
     
     ]
     },

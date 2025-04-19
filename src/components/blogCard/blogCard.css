@@ -1,3 +1,7 @@
+.card-blog-article{
+    cursor: pointer;
+}
+
 .medium-container,
 .large-container {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -8,22 +12,18 @@
     margin : 0;
 }
 
-.medium-container:hover,
-.large-container:hover {
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.25);
-    transform : scale(1.04);
-}
-
-
 /*linck al blog*/
 .view-more {
     text-decoration: none;
     color          : var(--purple);
 }
 
-.view-more:hover {
+.card-blog-article:hover .view-more {
     font-weight: bold;
+}
 
+.card-blog-article:hover .medium-container,.card-blog-article:hover .large-container{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /*!! Card Mediano*/
@@ -33,37 +33,39 @@
     min-width: 250px;
     max-width: 350px;
     width          : 100%;
-    height         : auto;
+    height         : 100%;
     border-radius    : 20px;
+    align-items: stretch;
 }
 
 .medium-container .img-container {
     max-width: 350px;
     width    : 100%;
-    height: 215px;
+    height: auto;
 }
 
 .medium-container .img-container img {
-    width : 100%;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .medium-content{
-    padding: 10px;
+    padding: 20px 10px;
 }
 
-.medium-container h2 {
-    font-size : clamp(1rem, 2vw + 1rem, 1.5rem);
+.medium-container .title-card-article-blog {
+    font-size: clamp(1.125rem, 1.1075rem + 0.0877vw, 1.25rem);
+    font-weight: 400;
 }
 
 /*!! contenedor Fecha y link al blog */
 .date-more-container {
     display         : flex;
+    justify-content : space-between;
     flex-direction : row;
     gap            : 20px;
     width      : auto;
-    min-width  : fit-content;
-    white-space: nowrap;
 }
 
 .date,
@@ -71,7 +73,6 @@
     padding: 0;
     margin : 0;
 }
-
 
 /*!! Card Grande*/
 .large-container {
@@ -81,48 +82,57 @@
     align-items       : center;
     /* width          : 1074px;
     height            : 340px; */
-    width             : auto;
+    max-width: 980px;
     height            : auto;
     padding           : 0;
-    margin            : 0;
     border-radius: 20px;
 }
 
 .large-content {
-    margin         : 1vw;
     display        : flex;
     flex-direction : column;
     justify-content: left;
     align-items    : flex-start;
-    gap            : 2vh;
-    width          : clamp(15rem, 20vw + 20rem, 40rem)
+    gap            : 1rem;
+    padding: 20px;
+    width: 100%;
 }
 
 
-.large-container h2 {
-    font-size: clamp(1rem, 2vw + 1rem, 3rem);
+.large-content .title-card-article-blog {
+    font-size: clamp(1.5625rem, 1.5186rem + 0.2193vw, 1.875rem);
     margin   : 4vh;
+    font-weight: 500;
     margin   : 0;
     padding  : 0;
+    color: var(--black);
 }
 
 .large-container p {
-    font-size: clamp(0.6rem, 2vw + 1rem, 1rem);
+    font-size: clamp(1rem, 0.9825rem + 0.0877vw, 1.125rem);
     margin : 0;
     padding: 0;
 }
 
-
-.large-container .date-more-container {
-    gap: 25vw;
+.large-content .date-more-container {
+    display         : flex;
+    justify-content : space-between;
+    flex-direction  : row;
+    width: 100%;
+    gap             : 20px;
+    width           : auto;
 }
 
+.large-container .img-container {
+    width: 50%; 
+    height: 100%;
+}
 
 .large-container .img-container img {
-    width : clamp(15rem, 33vw, 30rem);
-    height: auto;
-    border-top-right-radius   : 20px;
-    border-bottom-right-radius: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
 }
 
 @media (max-width: 750px) {
@@ -157,6 +167,11 @@
     }
 }
 
+@media (min-width: 750px){
+    .large-container{
+        height: 300px;
+    }
+}
 
 /*--LastArticles--*/
 .main-card-container {
@@ -164,20 +179,17 @@
     height: auto;
     display          : flex;
     flex-wrap        : wrap;
-    /* flex-direction: column; */
     justify-content  : center;
     align-items      : center;
     border           : none;
-
     background: var(--white);
-
 }
 
 .title-articles {
     width        : 95%;
     padding      : 1vw;
     margin-top   : 5vh;
-    border-bottom: 2px solid #2E2E2E;
+    border-bottom: 2px solid var(--black);
 }
 
 .title-articles h1 {
@@ -186,18 +198,15 @@
 }
 
 .large-card-container {
-
-    margin-top: 5vh;
+    padding-top: 4rem;
 }
 
 .medium-card-container {
     padding              : 40px 5px;
     width                : 100%;
-    /* display           : flex;
-    flex-wrap            : wrap; */
-    display              : grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    place-items          : center;
-    column-gap           : 2vw;
-    row-gap              : 1rem;
+    display             : flex;
+    flex-wrap           : wrap;
+    justify-content     : center;
+    gap: 30px;
+    margin-top: 40px;
 }

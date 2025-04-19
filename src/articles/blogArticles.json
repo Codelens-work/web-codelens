@@ -7,10 +7,10 @@
       "es": "sitio-web-esencial-negocio"
     },
     "h1": {
-      "en": "Why is a website important",
-      "es": "Por qué es importante tener un sitio web"
+      "en": "The Importance of a Professional Website for Small and Medium-Sized Businesses",
+      "es": "La importancia de un sitio web profesional para pequeñas y medianas empresas"
     },
-    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgUrl": "/articlesBlog/importancia_sitio_web.svg",
     "imgAlt": {
       "es": "Imagen de artículo",
       "en": "Article img"
@@ -63,39 +63,38 @@
       ],
       "es": [
         {
-          "h2": "Beneficios de Tener un Sitio Web",
-          "h3": "Ventajas Clave",
+          "h2": "",
+          "h3": "",
           "p": [
-            "Un sitio web bien diseñado puede ofrecer múltiples ventajas.",
-            "A continuación, se presentan algunos de los beneficios más importantes."
-          ],
-          "ul": [
-            "Mayor visibilidad y alcance de clientes",
-            "Mejora la credibilidad y confianza",
-            "Disponibilidad 24/7",
-            "Facilidad para promocionar productos y servicios"
-          ]
-        },
-        {
-          "h2": "Cómo Crear un Sitio Web Exitoso",
-          "h3": "Diseño Atractivo y Funcional",
-          "p": [
-            "Es importante que tu sitio tenga un diseño profesional y sea fácil de navegar."
+            "En la era digital actual, tener una presencia en línea sólida ya no es una opción, sino una necesidad para cualquier negocio que busque crecer y prosperar. En CodeLens, entendemos que para muchas pequeñas y medianas empresas, dar el salto al mundo digital puede parecer abrumador. Sin embargo, los beneficios de contar con un sitio web profesional superan con creces la inversión inicial. Veamos por qué."
           ],
           "ul": []
         },
         {
-          "h2": "Optimización para Motores de Búsqueda (SEO)",
-          "h3": "Factores Claves",
+          "h2": "Tu sitio web: la primera impresión digital de tu negocio",
+          "h3": "",
           "p": [
-            "El SEO ayuda a que tu sitio aparezca en los primeros resultados de Google.",
-            "Un buen posicionamiento web puede aumentar significativamente el tráfico de clientes potenciales."
+            "En un mundo donde los consumidores buscan información en línea antes de tomar decisiones de compra, tu sitio web se convierte en la primera impresión que muchos potenciales clientes tendrán de tu negocio. Un diseño poco profesional o una experiencia de usuario deficiente pueden alejar a los visitantes incluso antes de que conozcan lo que ofreces.",
+            "Según estudios recientes, los usuarios forman una opinión sobre un sitio web en menos de 50 milisegundos. Esto significa que tienes menos de un segundo para causar una buena impresión. Un diseño web profesional, con una interfaz limpia, tiempos de carga rápidos y navegación intuitiva, transmite confianza y credibilidad desde el primer momento."
           ],
-          "ul": [
-            "Uso de palabras clave relevantes",
-            "Optimización de imágenes y velocidad de carga",
-            "Estrategias de contenido de calidad"
-          ]
+          "ul": []
+        },
+        {
+          "h2": "Visibilidad las 24 horas, los 7 días de la semana",
+          "h3": "",
+          "p": [
+            "A diferencia de una tienda física con horarios limitados, tu sitio web trabaja por ti sin descanso. Esto significa que tus clientes pueden encontrar información sobre tus productos o servicios, realizar compras o solicitar cotizaciones en cualquier momento, ampliando significativamente tu alcance y disponibilidad.",
+            "Para las pequeñas y medianas empresas, esta presencia constante representa una ventaja competitiva crucial, especialmente frente a competidores más grandes con mayores recursos."
+          ],
+          "ul": []
+        },
+        {
+          "h2": "Alcance global sin fronteras",
+          "h3": "",
+          "p": [
+            "Un sitio web bien optimizado elimina las barreras geográficas, permitiéndote llegar a clientes potenciales en cualquier parte del mundo. Incluso si tu negocio opera principalmente a nivel local, una presencia en línea te permite expandir tu mercado y descubrir nuevas oportunidades de crecimiento."
+          ],
+          "ul": []
         }
       ]
     }
@@ -111,7 +110,7 @@
       "en": "Why do you need SEO",
       "es": "Por qué necesitás SEO"
     },
-    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgUrl": "/public/hero/hero-about.webp",
     "imgAlt": {
       "es": "Imagen de artículo",
       "en": "Article img"
@@ -212,7 +211,7 @@
       "en": "This is a test slug",
       "es": "Este es un slug de test"
     },
-    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgUrl": "/public/hero/hero-about.webp",
     "imgAlt": {
       "es": "Imagen de artículo",
       "en": "Article img"
@@ -313,7 +312,7 @@
       "en": "Yada yada yada",
       "es": "Blablabla"
     },
-    "imgUrl": "/public/imgs/get-to-know-us.svg",
+    "imgUrl": "/public/hero/hero-about.webp",
     "imgAlt": {
       "es": "Imagen de artículo",
       "en": "Article img"

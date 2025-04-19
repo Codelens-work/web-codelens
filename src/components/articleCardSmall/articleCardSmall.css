@@ -1,5 +1,5 @@
 .card {
-    width: 250px;
+    width: 278px;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -33,12 +33,7 @@
     font-size: 0.9rem;
     color: var(--black);
     text-align: center;
-}
-
-@media(min-width: 450px){
-    .card {
-        width: 340px;
-    }
+    text-decoration: none;
 }
 
 

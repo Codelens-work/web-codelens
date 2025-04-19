@@ -129,7 +129,8 @@
     "privacy": "Privacy policy",
     "faqs": "FAQs",
     "blog": "Blog",
-    "seoHomeTitle":"CodeLens | We turn ideas into memorable digital experiences."
+    "seoHomeTitle":"CodeLens | We turn ideas into memorable digital experiences.",
+    "pageTitle": "CodeLens - Custom digital solutions"
   },
   "btn-contact": {
     "text": "CONTACT US"

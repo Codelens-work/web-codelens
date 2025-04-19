@@ -1,9 +1,9 @@
 .article-navigation {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     width: 100%;
     padding: 20px 10px;
     background: var(--white);
@@ -35,8 +35,8 @@
 }
 
 .icon-navigation{
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 
 .icon-navigation img {
@@ -51,3 +51,4 @@
 .next {
   text-align: right;
 }
+

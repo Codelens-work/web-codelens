@@ -21,7 +21,7 @@ const LastArticles = ({h1, lang}) => {
   return (
     <div className="main-card-container">
       <div className="title-articles">
-        <h1>{h1}</h1>
+        <h2>{h1}</h2>
       </div>
       <div className="large-card-container">
         <BlogCard

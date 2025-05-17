@@ -1,6 +1,12 @@
 RewriteEngine On
-RewriteBase /
 
+# 1. Redirigir todo a https://www.
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^(.*)$ https://www.codelenstech.com/$1 [L,R=301]
+
+# 2. Enrutamiento SPA: todas las rutas que no sean archivo ni directorio, sirven index.html
+RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [L]

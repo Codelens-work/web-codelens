@@ -28,8 +28,8 @@ export function AppWeb() {
   const keywords = t("keywords.web-app", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/web-app"
-    : "https://codelenstech.com/servicios/aplicaciones-web";
+    ? "https://www.codelenstech.com/en/services/web-app"
+    : "https://www.codelenstech.com/servicios/aplicaciones-web";
 
   useScrollToTop();
 

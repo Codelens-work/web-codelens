@@ -30,8 +30,8 @@ export function SeoService() {
   const keywords = t("keywords.seo", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/seo"
-    : "https://codelenstech.com/servicios/seo";
+    ? "https://www.codelenstech.com/en/services/seo"
+    : "https://www.codelenstech.com/servicios/seo";
 
   return (
     <>

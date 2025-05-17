@@ -15,8 +15,8 @@ const Blog = () => {
   const keywords = t("keywords.blog", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/blog"
-    : "https://codelenstech.com/blog";
+    ? "https://www.codelenstech.com/en/blog"
+    : "https://www.codelenstech.com/blog";
 
   return (
     <>

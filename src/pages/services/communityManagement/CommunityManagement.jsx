@@ -29,8 +29,8 @@ export function CommunityManagement() {
   const keywords = t("keywords.community-management", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/community-management"
-    : "https://codelenstech.com/servicios/community-management";
+    ? "https://www.codelenstech.com/en/services/community-management"
+    : "https://www.codelenstech.com/servicios/community-management";
 
   return (
     <>

@@ -11,8 +11,8 @@ const NotFound = () => {
   const keywords = t("keywords.404", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/404"
-    : "https://codelenstech.com/404";
+    ? "https://www.codelenstech.com/en/404"
+    : "https://www.codelenstech.com/404";
 
   return (
     <>

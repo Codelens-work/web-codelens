@@ -14,8 +14,8 @@ const About = () => {
 
   const { t, i18n } = useTranslation()
   const canonical = i18n.language === 'en'
-    ? 'https://codelenstech.com/en/about-us'
-    : 'https://codelenstech.com/nosotros';
+    ? 'https://www.codelenstech.com/en/about-us'
+    : 'https://www.codelenstech.com/nosotros';
 
   const title = t('titles.about');
   const description = t('metadescription.about-us');

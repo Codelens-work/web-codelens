@@ -20,8 +20,8 @@ const PrivacyPolicy = () => {
   const keywords = t('keywords.privacy-policy', { returnObjects: true });
 
   const canonical = i18n.language === 'en'
-    ? 'https://codelenstech.com/en/privacy-policy'
-    : 'https://codelenstech.com/politica-de-privacidad';
+    ? 'https://www.codelenstech.com/en/privacy-policy'
+    : 'https://www.codelenstech.com/politica-de-privacidad';
 
   return (
     <>

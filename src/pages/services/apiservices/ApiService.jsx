@@ -31,8 +31,8 @@ export function ApiService() {
   const keywords = t("keywords.api-development", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/api-development"
-    : "https://codelenstech.com/servicios/desarrollo-api";
+    ? "https://www.codelenstech.com/en/services/api-development"
+    : "https://www.codelenstech.com/servicios/desarrollo-api";
 
   useScrollToTop();
 

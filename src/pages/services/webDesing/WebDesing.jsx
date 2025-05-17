@@ -29,8 +29,8 @@ export function WebDesing() {
   const keywords = t("keywords.web-design", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/web-design"
-    : "https://codelenstech.com/servicios/diseno-web";
+    ? "https://www.codelenstech.com/en/services/web-design"
+    : "https://www.codelenstech.com/servicios/diseno-web";
 
   return (
     <>

@@ -2,51 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <!-- Página principal -->
-  <url><loc>https://codelenstech.com/</loc></url>
-  <url><loc>https://codelenstech.com/en</loc></url>
+  <url><loc>https://www.codelenstech.com/</loc></url>
+  <url><loc>https://www.codelenstech.com/en</loc></url>
 
   <!-- Nosotros -->
-  <url><loc>https://codelenstech.com/nosotros</loc></url>
-  <url><loc>https://codelenstech.com/en/about-us</loc></url>
+  <url><loc>https://www.codelenstech.com/nosotros</loc></url>
+  <url><loc>https://www.codelenstech.com/en/about-us</loc></url>
 
   <!-- Servicios -->
-  <url><loc>https://codelenstech.com/servicios/desarrollo-api</loc></url>
-  <url><loc>https://codelenstech.com/en/services/development-api</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/desarrollo-api</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/development-api</loc></url>
 
-  <url><loc>https://codelenstech.com/servicios/app-web</loc></url>
-  <url><loc>https://codelenstech.com/en/services/app-web</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/app-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/app-web</loc></url>
 
-  <url><loc>https://codelenstech.com/servicios/diseno-web</loc></url>
-  <url><loc>https://codelenstech.com/en/services/web-design</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/diseno-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/web-design</loc></url>
 
-  <url><loc>https://codelenstech.com/servicios/desarrollo-web</loc></url>
-  <url><loc>https://codelenstech.com/en/services/web-development</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/desarrollo-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/web-development</loc></url>
 
-  <url><loc>https://codelenstech.com/servicios/seo</loc></url>
-  <url><loc>https://codelenstech.com/en/services/seo</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/seo</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/seo</loc></url>
 
-  <url><loc>https://codelenstech.com/servicios/community-management</loc></url>
-  <url><loc>https://codelenstech.com/en/services/community-management</loc></url>
+  <url><loc>https://www.codelenstech.com/servicios/community-management</loc></url>
+  <url><loc>https://www.codelenstech.com/en/services/community-management</loc></url>
 
   <!-- Blog -->
-  <url><loc>https://codelenstech.com/blog</loc></url>
-  <url><loc>https://codelenstech.com/en/blog</loc></url>
+  <url><loc>https://www.codelenstech.com/blog</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog</loc></url>
 
   <!-- Artículos -->
-   <url><loc>https://codelenstech.com/blog/importancia-sitio-web</loc></url>
-  <url><loc>https://codelenstech.com/en/blog/importance-professional-website</loc></url>
+  <url><loc>https://www.codelenstech.com/blog/importancia-sitio-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog/importance-professional-website</loc></url>
 
-  <url><loc>https://codelenstech.com/blog/actualización-sitio-web</loc></url>
-  <url><loc>https://codelenstech.com/en/blog/website-update</loc></url>
+  <url><loc>https://www.codelenstech.com/blog/actualización-sitio-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog/website-update</loc></url>
 
-  <url><loc>https://codelenstech.com/blog/landing-page</loc></url>
-  <url><loc>https://codelenstech.com/en/blog/landing-page</loc></url>
+  <url><loc>https://www.codelenstech.com/blog/landing-page</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog/landing-page</loc></url>
+
+  <url><loc>https://www.codelenstech.com/blog/velocidad-sitio-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog/website-speed-performance</loc></url>
+
+  <url><loc>https://www.codelenstech.com/blog/tipo-sitio-web</loc></url>
+  <url><loc>https://www.codelenstech.com/en/blog/website-types</loc></url>
 
   <!-- Términos y políticas -->
-  <url><loc>https://codelenstech.com/terminos-condiciones</loc></url>
-  <url><loc>https://codelenstech.com/en/terms-conditions</loc></url>
+  <url><loc>https://www.codelenstech.com/terminos-condiciones</loc></url>
+  <url><loc>https://www.codelenstech.com/en/terms-conditions</loc></url>
 
-  <url><loc>https://codelenstech.com/politicas-privacidad</loc></url>
-  <url><loc>https://codelenstech.com/en/privacy-policy</loc></url>
+  <url><loc>https://www.codelenstech.com/politicas-privacidad</loc></url>
+  <url><loc>https://www.codelenstech.com/en/privacy-policy</loc></url>
 
 </urlset>

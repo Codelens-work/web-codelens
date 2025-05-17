@@ -28,8 +28,8 @@ const Home = () => {
 
   const canonicalUrl =
     lang === "en"
-      ? "https://codelenstech.com/en"
-      : "https://codelenstech.com/";
+      ? "https://www.codelenstech.com/en"
+      : "https://www.codelenstech.com/";
 
   
   useScrollIntoView()

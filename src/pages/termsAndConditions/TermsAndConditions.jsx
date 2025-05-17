@@ -20,8 +20,8 @@ const TermsAndConditions = () => {
   const keywords = t("keywords.terms-and-conditions", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/terms-and-conditions"
-    : "https://codelenstech.com/terms-and-conditions";
+    ? "https://www.codelenstech.com/en/terms-and-conditions"
+    : "https://www.codelenstech.com/terms-and-conditions";
 
   useScrollToTop();
 

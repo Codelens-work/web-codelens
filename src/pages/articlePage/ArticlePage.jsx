@@ -36,8 +36,8 @@ const ArticlePage = () => {
   if (!article) return <p>Cargando...</p>;
 
   const canonical = lang === "en"
-  ? `https://codelenstech.com/en/blog/${article.slug.en}`
-  : `https://codelenstech.com/en/blog/${article.slug.es}`
+  ? `https://www.codelenstech.com/en/blog/${article.slug.en}`
+  : `https://www.codelenstech.com/en/blog/${article.slug.es}`
 
   return (
     <>

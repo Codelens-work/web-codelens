@@ -28,8 +28,8 @@ export function WebDevelopment() {
   const keywords = t("keywords.web-development", { returnObjects: true });
 
   const canonical = i18n.language === "en"
-    ? "https://codelenstech.com/en/services/web-development"
-    : "https://codelenstech.com/servicios/desarrollo-web";
+    ? "https://www.codelenstech.com/en/services/web-development"
+    : "https://www.codelenstech.com/servicios/desarrollo-web";
 
   return (
     <>

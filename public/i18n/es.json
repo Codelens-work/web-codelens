@@ -759,36 +759,6 @@
           "alt":"icon de persona subiendo escaleras y llegando a la meta"
         }
       ]
-    },
-    "team-section": {
-      "heading": "Nuestro equipo central",
-      "intro": "Detrás de cada línea de código hay una mente creativa y perseverante. Somos cuatro apasionados del desarrollo y diseño, unidos para transformar tus ideas en realidad.",
-      "cards": [
-        {
-          "img-url": "/team/aylen.svg",
-          "img-hover-url": "",
-          "fullname": "Aylen Gil",
-          "role": "Co-Founder & Fullstack Developer"
-        },
-        {
-          "img-url": "/team/flor.svg",
-          "img-hover-url": "",
-          "fullname": "Florencia Ríos",
-          "role": "Co-Founder, Community Manager & UX/UI Designer"
-        },
-        {
-          "img-url": "/team/yani.svg",
-          "img-hover-url": "",
-          "fullname": "Yanina Unrein",
-          "role": "Co-Founder, UX/UI Designer & Fullstack Developer "
-        },
-        {
-          "img-url": "/team/tania.svg",
-          "img-hover-url": "",
-          "fullname": "Tania Yanina Balbuena Casanova",
-          "role": "Community Manager & Analista Universitaria en Relaciones Públicas"
-        }
-      ]
     }
   },
   "blog": {

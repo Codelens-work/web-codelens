@@ -5,7 +5,6 @@ import AboutCodeLens from '../../components/about-codelens/AboutCodeLens';
 import { useTranslation } from 'react-i18next'
 import { motion } from 'framer-motion';
 import ValueSection from '../../components/values-section/ValuesSection';
-import TeamSection from '../../components/teamSection/TeamSection';
 import { useScrollToTop } from "/src/hooks/useScroll";
 import SeoMeta from "../../components/seoHelmet/SeoMeta";
 
@@ -66,7 +65,6 @@ const About = () => {
       </Hero>
       <AboutCodeLens aboutUsText={aboutUs['about-section']}/>
       <ValueSection  valuesSectionText={aboutUs['values-section']}/>
-      <TeamSection  teamSectionContent={aboutUs['team-section']}/>
     </>
   );
 }

@@ -119,8 +119,8 @@
   "id": 5,
   "createdDate": "2025-05-17 14:58",
   "slug": {
-    "en": "tipo-sitio-web",
-    "es": "website-types"
+    "en": "website-types",
+    "es": "tipo-sitio-web"
   },
   "imgUrl": "/articlesBlog/sitios-webs.webp",
   "imgAlt": {

@@ -6,6 +6,7 @@ import "./articlePage.css";
 import ArticleNavigation from "../../components/articleNavigation/ArticleNavigation";
 import RelatedArticles from "../../components/relatedArticles/RelatedArticles";
 import SeoMeta from "../../components/seoHelmet/SeoMeta";
+import LoadingSpinner from "../../components/spinner/Spinner";
 import parse from 'html-react-parser'
 
 const ArticlePage = () => {
@@ -33,7 +34,7 @@ const ArticlePage = () => {
   }, [slug]);
 
   // Poner otro spinner bonito o el rocket
-  if (!article) return <p>Cargando...</p>;
+  if (!article) return <LoadingSpinner />;
 
   const canonical = lang === "en"
   ? `https://www.codelenstech.com/en/blog/${article.slug.en}`
